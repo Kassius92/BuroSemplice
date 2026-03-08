@@ -851,3 +851,11 @@ body.mega-open .toc { display: none; }
 .lead-box-soon{padding:24px 20px;}
 .sb-lead-soon{text-align:center;}
 .sb-lead-soon-badge{display:inline-block;margin-top:10px;padding:5px 12px;border-radius:6px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.6);font-size:11px;font-weight:600;}
+
+/* ─── TOOLTIP PAROLE ─── */
+.tip-wrap{position:relative;display:inline;}
+.tip-word{border-bottom:1px dotted rgba(15,76,92,.35);cursor:help;transition:border-color .2s;}
+.tip-word:hover{border-color:#E36414;}
+.tip-bubble{position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#1A1A2E;color:#fff;font-size:12px;font-weight:400;line-height:1.5;padding:8px 12px;border-radius:8px;white-space:normal;width:max-content;max-width:240px;z-index:50;pointer-events:none;box-shadow:0 4px 16px rgba(0,0,0,.15);text-transform:none;letter-spacing:0;}
+.tip-bubble::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:#1A1A2E;}
+@media(max-width:600px){.tip-bubble{max-width:200px;font-size:11px;left:0;transform:none;}.tip-bubble::after{left:20px;transform:none;}}

@@ -13,6 +13,7 @@ import SidebarToggle from '@/components/SidebarToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 import LeadBox from '@/components/LeadBox';
 import SidebarLead from '@/components/SidebarLead';
+import Tip from '@/components/Tip';
 
 export const metadata = {
   title: '730 Precompilato 2026: Come Farlo, Detrazioni, Scadenze e Rimborso',
@@ -117,7 +118,7 @@ export default function Pagina730() {
             <PrintButton />
           </div>
           <div className="hero-right">
-            <div className="hstat"><div className="hn">0€</div><div className="hl">con la precompilata<br/>fai da solo gratis</div></div>
+            <div className="hstat"><div className="hn">0€</div><div className="hl">con la <Tip t="Il 730 che l'Agenzia delle Entrate prepara per te, già parzialmente compilato.">precompilata</Tip><br/>fai da solo gratis</div></div>
             <div className="hstat"><div className="hn">30/9</div><div className="hl">scadenza invio<br/>settembre 2026</div></div>
             <div className="hstat"><div className="hn">~760€</div><div className="hl">rimborso medio<br/>per chi ha il mutuo</div></div>
           </div>
@@ -160,7 +161,7 @@ export default function Pagina730() {
           <div className="sec r" id="cose">
             <div className="sec-tag">Le basi</div>
             <h2>Cos&apos;è il 730, in parole semplici</h2>
-            <p>Quando lavori come dipendente, il tuo datore di lavoro ti toglie le tasse dallo stipendio ogni mese. Il problema è che lui non sa tutto di te: non sa se paghi l&apos;affitto, se vai dal dentista, se hai figli che fanno sport. Lui ti toglie le tasse &quot;a occhio&quot;, basandosi solo sullo stipendio.</p>
+            <p>Quando lavori come dipendente, il tuo datore di lavoro (il <Tip t="Chi ti paga lo stipendio e versa le tasse al posto tuo.">sostituto d&apos;imposta</Tip>) ti toglie le tasse dallo stipendio ogni mese. Il problema è che lui non sa tutto di te: non sa se paghi l&apos;affitto, se vai dal dentista, se hai figli che fanno sport. Lui ti toglie le tasse &quot;a occhio&quot;, basandosi solo sullo stipendio.</p>
             <p>Il 730 serve a dire allo Stato: <span className="hl-text">&quot;Ehi, guarda: ho speso questi soldi durante l&apos;anno. Ridammene un po&apos; indietro.&quot;</span> Nella maggior parte dei casi, durante l&apos;anno hai pagato più tasse del dovuto. Il 730 ti fa riottenere la differenza. Quel rimborso arriva direttamente in busta paga o nella pensione, di solito tra luglio e agosto.</p>
             <p>Si chiama &quot;730&quot; perché è il numero del modello fiscale. Non c&apos;è un motivo poetico — è burocrazia italiana allo stato puro.</p>
             <div className="ib tip r"><div className="ib-t">💡 Perché conviene farlo anche se non sei obbligato</div><p>Molte persone non sono tecnicamente obbligate a fare il 730. Ma farlo ti permette di recuperare soldi: spese mediche, affitto, mutuo, spese scolastiche, abbonamenti ai trasporti... Se non fai il 730, quei soldi li regali allo Stato. È come avere un buono sconto che scade ogni anno: se non lo usi, lo perdi.</p></div>
@@ -203,7 +204,7 @@ export default function Pagina730() {
             <div className="sec-tag">Aggiornamenti</div>
             <h2>Cosa cambia nel 2026</h2>
             <p>Ogni anno le regole cambiano un po&apos;. Ecco le novità più importanti.</p>
-            <div className="ib tip r"><div className="ib-t">💡 Tre scaglioni IRPEF definitivi</div><p>Fino a 28.000€ paghi il 23%, da 28.001€ a 50.000€ paghi il 33% (prima era 35%), oltre i 50.000€ paghi il 43%. Chi guadagna tra 28.000€ e 50.000€ risparmia circa 440€.</p></div>
+            <div className="ib tip r"><div className="ib-t">💡 Tre scaglioni <Tip t="La tassa principale sui redditi. È quella che ti tolgono dalla busta paga ogni mese.">IRPEF</Tip> definitivi</div><p>Fino a 28.000€ paghi il 23%, da 28.001€ a 50.000€ paghi il 33% (prima era 35%), oltre i 50.000€ paghi il 43%. Chi guadagna tra 28.000€ e 50.000€ risparmia circa 440€.</p></div>
             <div className="ib warn r d1"><div className="ib-t">⚠️ Reddito sopra 75.000€? Detrazioni ridotte</div><p>Novità 2026: se guadagni più di 75.000€, le detrazioni al 19% vengono tagliate progressivamente fino ad azzerarsi a 100.000€. Le eccezioni sono spese sanitarie, interessi su mutui prima casa stipulati entro il 2024 e rate di ristrutturazioni già iniziate — quelle restano intere.</p></div>
             <div className="ib warn r d2"><div className="ib-t">⚠️ Figli a carico: limite dei 30 anni</div><p>Grande novità: i figli possono essere considerati fiscalmente a carico <span className="hl-text">solo fino ai 30 anni</span> (prima non c&apos;era limite di età). Se tuo figlio ha più di 30 anni e non è disabile, non puoi più detrarlo.</p></div>
             <div className="ib mon r d2"><div className="ib-t">💶 Detrazione lavoro dipendente aumentata</div><p>Se guadagni meno di 15.000€ all&apos;anno, la detrazione per lavoro dipendente sale da 1.880€ a 1.955€.</p></div>
@@ -215,9 +216,9 @@ export default function Pagina730() {
           <div className="sec bh r" id="detrazioni">
             <div className="sec-tag">Rimborsi</div>
             <h2>Quanto puoi recuperare: le detrazioni</h2>
-            <p>Le detrazioni sono spese che lo Stato ti &quot;rimborsa&quot; in parte. Nella maggior parte dei casi <span className="hl-text">ti restituiscono il 19%</span>. Sembra poco? Ecco i conti concreti.</p>
+            <p>Le <Tip t="Spese che lo Stato ti rimborsa in parte. Paghi 500€ dal dentista? Lo Stato te ne ridà circa il 19% (= 95€).">detrazioni</Tip> sono spese che lo Stato ti &quot;rimborsa&quot; in parte. Nella maggior parte dei casi <span className="hl-text">ti restituiscono il 19%</span>. Sembra poco? Ecco i conti concreti.</p>
             <div className="ucgrid r">
-              <div className="uc r d1"><div className="uc-e">🦷</div><div className="uc-n">800€ dal dentista?</div><div className="uc-d">Ti tornano <strong style={{ color: 'var(--blue)' }}>127€</strong>. 800€ − 129€ franchigia = 671€ × 19%.</div></div>
+              <div className="uc r d1"><div className="uc-e">🦷</div><div className="uc-n">800€ dal dentista?</div><div className="uc-d">Ti tornano <strong style={{ color: 'var(--blue)' }}>127€</strong>. 800€ − 129€ <Tip t="Soglia sotto la quale non ti rimborsano nulla. Per le spese mediche è 129,11€.">franchigia</Tip> = 671€ × 19%.</div></div>
               <div className="uc r d2"><div className="uc-e">🏠</div><div className="uc-n">3.000€ di interessi mutuo?</div><div className="uc-d">Ti tornano <strong style={{ color: 'var(--blue)' }}>570€</strong>. Massimo 760€ con 4.000€ di interessi.</div></div>
               <div className="uc r d3"><div className="uc-e">🚇</div><div className="uc-n">Abbonamento metro 250€?</div><div className="uc-d">Ti tornano <strong style={{ color: 'var(--blue)' }}>47€</strong>. Sommala alle altre voci.</div></div>
               <div className="uc r d4"><div className="uc-e">👶</div><div className="uc-n">Figlio fa nuoto, 500€?</div><div className="uc-d">Ti tornano <strong style={{ color: 'var(--blue)' }}>40€</strong>. Qualsiasi sport, dai 5 ai 18 anni.</div></div>
@@ -253,9 +254,9 @@ export default function Pagina730() {
             <div className="sec-tag">Obblighi</div>
             <h2>Chi deve fare il 730</h2>
             <p><strong>Devi farlo se:</strong> sei un lavoratore dipendente o un pensionato che ha avuto redditi nel 2025. In pratica: se hai ricevuto uno stipendio o una pensione, il 730 è per te.</p>
-            <p><strong>È praticamente obbligatorio se:</strong> hai cambiato lavoro durante l&apos;anno (hai due CU), hai avuto sia stipendio che NASpI, o hai redditi da più fonti. In questi casi, le tasse non sono state calcolate bene e senza il 730 rischi di pagare di più.</p>
+            <p><strong>È praticamente obbligatorio se:</strong> hai cambiato lavoro durante l&apos;anno (hai due CU), hai avuto sia stipendio che NASpI, o hai redditi da più fonti. In questi casi, le tasse non sono state calcolate bene e senza il 730 rischi un <Tip t="Il conto finale: se hai pagato troppe tasse ti ridanno soldi, se ne hai pagate poche devi saldare.">conguaglio</Tip> salato.</p>
             <p><strong>Non sei obbligato, ma ti conviene se:</strong> hai lavorato nello stesso posto tutto l&apos;anno e hai avuto spese che puoi scaricare (dentista, affitto, mutuo, trasporti, sport dei figli). Tecnicamente potresti non farlo — ma perdi il rimborso.</p>
-            <p><strong>Non puoi fare il 730 se:</strong> hai la partita IVA. In quel caso devi fare il Modello Redditi (ex Unico), che è un modulo diverso e più complicato.</p>
+            <p><strong>Non puoi fare il 730 se:</strong> hai la partita IVA. In quel caso devi fare il <Tip t="La dichiarazione dei redditi per chi ha la partita IVA. Più complicata del 730.">Modello Redditi</Tip> (ex Unico), che è un modulo diverso e più complicato.</p>
             <div className="ib warn r"><div className="ib-t">⚠️ Due datori di lavoro = 730 praticamente obbligatorio</div><p>Se hai cambiato lavoro nello stesso anno, ogni datore ti ha tolto le tasse come se fossi stato lì tutto l&apos;anno. Risultato: hai pagato meno tasse del dovuto e devi saldare la differenza. Se non fai il 730, l&apos;Agenzia delle Entrate se ne accorge e ti manda un avviso — con interessi e sanzioni.</p></div>
             <div className="ib tip r"><div className="ib-t">💡 La regola semplice</div><p>Se durante l&apos;anno hai speso soldi per salute, casa, figli, trasporti o animali domestici — fai il 730. Quasi sicuramente ti spetta un rimborso. L&apos;unico motivo per non farlo è se non hai nessuna spesa da scaricare e hai avuto un solo datore di lavoro.</p></div>
           </div>
@@ -268,7 +269,7 @@ export default function Pagina730() {
             <div className="steps r">
               <div className="step r d1"><div className="stepn">0</div><div className="stepb"><strong>Hai lo SPID? Se no, parti da qui</strong><p>Per fare il 730 online da solo ti serve lo SPID (l&apos;identità digitale). Se non ce l&apos;hai, ci vogliono 15 minuti per farlo. Se vai al CAF, lo SPID non ti serve.</p><Link href="/spid" style={{color:'var(--blue)',fontWeight:600,fontSize:'14px'}}>→ Guida SPID: come farlo gratis in 15 minuti</Link></div></div>
               <div className="step r d2"><div className="stepn">1</div><div className="stepb"><strong>Raccogli i documenti</strong><p>Il documento più importante è il <strong>CU</strong> (Certificazione Unica): te lo dà il datore di lavoro entro il 16 marzo. Poi raccogli tutte le ricevute delle spese: mediche, affitto, mutuo, scuola, trasporti, veterinario. La lista completa è nella sezione Documenti qui sotto.</p></div></div>
-              <div className="step r d3"><div className="stepn">2</div><div className="stepb"><strong>Decidi come farlo</strong><p><strong>Da solo online</strong> → gratis, serve SPID, ci metti 1-2 ore. Ideale se hai un solo lavoro e poche spese.<br/><strong>Al CAF</strong> → costa 30-80€, ci metti 30 minuti. Ideale se hai cambiato lavoro o non ti senti sicuro.<br/><strong>Dal commercialista</strong> → costa 80-200€. Ideale per situazioni complesse (immobili, redditi esteri, cripto).</p></div></div>
+              <div className="step r d3"><div className="stepn">2</div><div className="stepb"><strong>Decidi come farlo</strong><p><strong>Da solo online</strong> → gratis, serve SPID, ci metti 1-2 ore. Ideale se hai un solo lavoro e poche spese.<br/><strong>Al <Tip t="Centro di Assistenza Fiscale: un ufficio dove ti fanno il 730 al posto tuo. Spesso legato ai sindacati.">CAF</Tip></strong> → costa 30-80€, ci metti 30 minuti. Ideale se hai cambiato lavoro o non ti senti sicuro.<br/><strong>Dal commercialista</strong> → costa 80-200€. Ideale per situazioni complesse (immobili, redditi esteri, cripto).</p></div></div>
               <div className="step r d4"><div className="stepn">3</div><div className="stepb"><strong>Controlla la precompilata</strong><p>Dal 30 aprile l&apos;Agenzia delle Entrate pubblica il tuo 730 già parzialmente compilato. <strong>Non accettarlo senza controllare.</strong> Le cose che mancano quasi sempre: spese sportive dei figli, affitto, spese mediche pagate di tasca (non in farmacia), abbonamenti trasporti. Se mancano, aggiungile tu.</p></div></div>
               <div className="step r"><div className="stepn">4</div><div className="stepb"><strong>Invia entro il 30 settembre</strong><p>Se lo fai da solo, lo invii direttamente dal sito dell&apos;Agenzia delle Entrate. Se vai al CAF o dal commercialista, lo inviano loro. <strong>Consiglio:</strong> fallo tra maggio e giugno — prima lo fai, prima arriva il rimborso.</p></div></div>
               <div className="step r d1"><div className="stepn">5</div><div className="stepb"><strong>Ricevi il rimborso</strong><p>Se ti spetta un rimborso, <span className="hl-text">lo trovi in busta paga tra luglio e agosto</span>. Pensionati: agosto o settembre. Se invece devi pagare (perché hai avuto due lavori e le tasse non erano state calcolate bene), il datore te lo trattiene dalla busta paga.</p></div></div>
@@ -310,7 +311,7 @@ export default function Pagina730() {
             <h2>I documenti che ti servono</h2>
             <h3>Sempre necessari</h3>
             <ul className="cl">
-              <li className="cli r d1"><div className="ci">📄</div><div className="clb"><strong>CU (Certificazione Unica) 2026</strong><span className="note">Te la dà il datore di lavoro o l&apos;INPS entro il 16 marzo</span></div></li>
+              <li className="cli r d1"><div className="ci">📄</div><div className="clb"><strong><Tip t="Il foglio che il datore di lavoro ti dà entro marzo. Dice quanto hai guadagnato e quante tasse hai pagato.">CU</Tip> (Certificazione Unica) 2026</strong><span className="note">Te la dà il datore di lavoro o l&apos;INPS entro il 16 marzo</span></div></li>
               <li className="cli r d2"><div className="ci">🪪</div><div className="clb"><strong>Documento d&apos;identità e codice fiscale</strong><span className="note">Il tuo e quello del coniuge se fai il 730 congiunto</span></div></li>
               <li className="cli r d3"><div className="ci">🏦</div><div className="clb"><strong>IBAN del tuo conto corrente</strong><span className="note">Per ricevere il rimborso se non hai un sostituto d&apos;imposta</span></div></li>
               <li className="cli r d4"><div className="ci">📋</div><div className="clb"><strong>730 dell&apos;anno precedente</strong><span className="note">Utile per verificare crediti residui da riportare</span></div></li>
@@ -324,7 +325,7 @@ export default function Pagina730() {
               <li className="cli r d1"><div className="ci">⚽</div><div className="clb"><strong>Ricevute spese sportive figli</strong><span className="note">Palestra, piscina, corsi sportivi (figli 5–18 anni)</span></div></li>
               <li className="cli r d2"><div className="ci">🚇</div><div className="clb"><strong>Abbonamento trasporto pubblico</strong><span className="note">Ricevuta annuale o mensile di metro, bus, treno</span></div></li>
               <li className="cli r d3"><div className="ci">🐕</div><div className="clb"><strong>Ricevute spese veterinarie</strong><span className="note">Visite, interventi, farmaci per animali domestici</span></div></li>
-              <li className="cli r d4"><div className="ci">🔨</div><div className="clb"><strong>Fatture ristrutturazione + bonifici parlanti</strong><span className="note">Solo se hai fatto lavori in casa con il bonus</span></div></li>
+              <li className="cli r d4"><div className="ci">🔨</div><div className="clb"><strong>Fatture ristrutturazione + <Tip t="Un bonifico speciale che riporta i dati fiscali del pagamento. Senza questo, perdi la detrazione.">bonifici parlanti</Tip></strong><span className="note">Solo se hai fatto lavori in casa con il bonus</span></div></li>
             </ul>
           </div>
 
@@ -395,7 +396,7 @@ export default function Pagina730() {
             <div className="ib warn r"><div className="ib-t">⚠️ Entro il 25 ottobre: 730 integrativo</div><p>Se ti accorgi di aver dimenticato una spesa o di aver fatto un errore entro il 25 ottobre, puoi inviare un 730 integrativo. Nessuna sanzione.</p></div>
             <div className="ib warn r d1"><div className="ib-t">⚠️ Entro il 30 novembre: Modello Redditi correttivo</div><p>Se la scadenza del 730 è passata, puoi ancora inviare un Modello Redditi (ex Unico) entro il 30 novembre. È un po&apos; più complicato del 730 ma fa lo stesso lavoro. Meglio farlo con un commercialista o al CAF.</p></div>
             <div className="ib warn r d2"><div className="ib-t">⚠️ Dopo il 30 novembre: dichiarazione tardiva</div><p>Puoi inviare la dichiarazione entro 90 giorni dalla scadenza originale (fine dicembre). La sanzione è ridotta: 25€ se non devi pagare nulla, oppure dal 1% al 10% dell&apos;imposta dovuta.</p></div>
-            <div className="ib tip r"><div className="ib-t">💡 Hai dimenticato anni fa?</div><p>Puoi presentare una dichiarazione integrativa entro 5 anni. Se ti spettava un rimborso, puoi ancora recuperarlo. Se dovevi pagare, le sanzioni sono ridotte se ti presenti spontaneamente (si chiama &quot;ravvedimento operoso&quot;). In ogni caso, è sempre meglio regolarizzarsi che ignorare il problema.</p></div>
+            <div className="ib tip r"><div className="ib-t">💡 Hai dimenticato anni fa?</div><p>Puoi presentare una dichiarazione integrativa entro 5 anni. Se ti spettava un rimborso, puoi ancora recuperarlo. Se dovevi pagare, le sanzioni sono ridotte se ti presenti spontaneamente (si chiama <Tip t="Procedura per regolarizzarsi spontaneamente pagando sanzioni ridotte. Più ti sbrighi, meno paghi.">&quot;ravvedimento operoso&quot;</Tip>). In ogni caso, è sempre meglio regolarizzarsi che ignorare il problema.</p></div>
           </div>
 
           {/* FAQ */}
