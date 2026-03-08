@@ -516,8 +516,8 @@ footer{background:var(--cream);border-top:1px solid var(--bd);padding:36px 28px;
 .mega-sub-title:hover { background:rgba(15,76,92,.04); }
 .mega-sub-title::after { content:''; width:6px; height:6px; border-right:1.5px solid #8A8A9A; border-bottom:1.5px solid #8A8A9A; transform:rotate(45deg); transition:transform .25s; flex-shrink:0; margin-right:4px; }
 .mega-sub.open .mega-sub-title::after { transform:rotate(-135deg); }
-.mega-sub-links { max-height:0; overflow:hidden; transition:max-height .3s cubic-bezier(.4,0,.2,1), padding-bottom .3s cubic-bezier(.4,0,.2,1); padding-left:2px; padding-bottom:0; }
-.mega-sub.open .mega-sub-links { max-height:400px; padding-bottom:8px; }
+.mega-sub-links { max-height:0; overflow:hidden; transition:max-height .2s ease-out, padding-bottom .2s ease-out; padding-left:2px; padding-bottom:0; }
+.mega-sub.open .mega-sub-links { max-height:200px; padding-bottom:8px; transition:max-height .3s ease-in, padding-bottom .3s ease-in; }
 .mega-link { display:block; padding:5px 2px; font-size:13.5px; color:#4A5568; text-decoration:none; transition:color .15s; line-height:1.4; }
 .mega-link:hover { color:#E36414; }
 .mega-link.soon { opacity:.4; pointer-events:none; }
@@ -846,7 +846,8 @@ body.mega-open .toc { display: none; }
 /* ─── PROSSIMAMENTE BADGES ─── */
 .lead-soon{text-align:center;padding:8px 0 0;position:relative;z-index:1;}
 .lead-soon p{font-size:13px;color:rgba(255,255,255,.5);margin-top:8px;line-height:1.5;}
-.lead-soon-badge{display:inline-block;padding:6px 16px;border-radius:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.7);font-size:13px;font-weight:600;letter-spacing:.5px;}
+.lead-soon-badge{display:inline-block;padding:6px 16px;border-radius:8px;background:rgba(15,76,92,.08);border:1px solid rgba(15,76,92,.15);color:#0F4C5C;font-size:13px;font-weight:600;letter-spacing:.5px;}
+.lead-box .lead-soon-badge{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.7);}
 .lead-box-soon{padding:24px 20px;}
 .sb-lead-soon{text-align:center;}
 .sb-lead-soon-badge{display:inline-block;margin-top:10px;padding:5px 12px;border-radius:6px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.6);font-size:11px;font-weight:600;}
