@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /ordina
+Disallow: /privacy
+Disallow: /termini
+
+Sitemap: https://zeroburocrazia.it/sitemap.xml
