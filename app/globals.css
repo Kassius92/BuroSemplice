@@ -859,3 +859,19 @@ body.mega-open .toc { display: none; }
 .tip-bubble{position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#1A1A2E;color:#fff;font-size:12px;font-weight:400;line-height:1.5;padding:8px 12px;border-radius:8px;white-space:normal;width:max-content;max-width:240px;z-index:50;pointer-events:none;box-shadow:0 4px 16px rgba(0,0,0,.15);text-transform:none;letter-spacing:0;}
 .tip-bubble::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:#1A1A2E;}
 @media(max-width:600px){.tip-bubble{max-width:200px;font-size:11px;left:0;transform:none;}.tip-bubble::after{left:20px;transform:none;}}
+
+/* ─── NOVITÀ 2026 ─── */
+.nov-section{margin-top:40px;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--border);}
+.nov-section-label{font-size:18px;font-weight:700;color:var(--warm-brown);margin-bottom:8px;}
+.nov-guide-link{display:inline-block;font-size:13px;font-weight:600;color:var(--blue);text-decoration:none;transition:opacity .2s;}
+.nov-guide-link:hover{opacity:.7;}
+.nov-item{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:20px 24px;margin-bottom:12px;}
+.nov-item h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--warm-brown);margin-bottom:8px;line-height:1.4;}
+.nov-item p{font-size:14px;color:var(--text-2);line-height:1.7;margin:0;}
+.nov-badge{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:3px 10px;border-radius:6px;margin-bottom:8px;}
+.nov-badge-big{background:rgba(227,100,20,.1);color:#E36414;}
+.nov-badge-warn{background:rgba(227,100,20,.08);color:#CC5810;}
+.nov-footer-note{margin-top:32px;padding:20px 24px;background:rgba(15,76,92,.03);border-radius:14px;font-size:13px;color:var(--text-3);line-height:1.6;}
+.nov-footer-note p{margin:0 0 8px;}
+.nov-footer-note p:last-child{margin:0;}
+@media(max-width:600px){.nov-item{padding:16px 18px;}.nov-section-label{font-size:16px;}.nov-item h3{font-size:15px;}}

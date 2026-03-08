@@ -4,12 +4,12 @@ import NovitaContent from '@/components/NovitaContent';
 import './novita.css';
 
 export const metadata = {
-  title: 'Novità e scadenze — ZeroBurocrazia',
-  description: 'Novità sulla burocrazia italiana: scadenze, circolari INPS, nuovi bonus e aggiornamenti fiscali spiegati in modo semplice.',
+  title: 'Cosa Cambia nel 2026 — Novità Fiscali, Bonus, IRPEF | ZeroBurocrazia',
+  description: 'Tutti i cambiamenti 2026: nuovi scaglioni IRPEF, detrazioni ridotte sopra 75.000€, bonus ristrutturazione, assegno unico aggiornato. Legge di Bilancio spiegata semplice.',
   alternates: { canonical: 'https://zeroburocrazia.it/novita' },
   openGraph: {
-    title: 'Novità e scadenze — ZeroBurocrazia',
-    description: 'Ogni volta che cambia qualcosa — una circolare INPS, una scadenza, un nuovo bonus — lo spieghiamo qui in parole semplici.',
+    title: 'Cosa Cambia nel 2026 — Novità Fiscali e Bonus | ZeroBurocrazia',
+    description: 'Tutti i cambiamenti della Legge di Bilancio 2026 spiegati in modo semplice: IRPEF, detrazioni, bonus casa, assegno unico, partita IVA.',
     url: 'https://zeroburocrazia.it/novita',
     images: [{ url: '/oghome.png', width: 1200, height: 630 }],
   },

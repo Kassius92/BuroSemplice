@@ -1,191 +1,164 @@
 'use client';
-import { useState } from 'react';
 import Link from 'next/link';
 
-const filters = [
-  { label: 'Tutti', value: 'all' },
-  { label: '💰 Fisco', value: 'fisco' },
-  { label: '🏠 Casa', value: 'casa' },
-  { label: '👨‍👩‍👧 Famiglia', value: 'famiglia' },
-  { label: '💼 Lavoro', value: 'lavoro' },
-  { label: '🪪 Documenti', value: 'documenti' },
-  { label: '⚠️ Scadenze', value: 'scadenza' },
-];
-
 export default function NovitaContent() {
-  const [active, setActive] = useState('all');
-
-  const show = (cats) => {
-    if (active === 'all') return true;
-    return cats.split(' ').includes(active);
-  };
-
   return (
     <>
       {/* HERO */}
       <div className="nov-hero">
-        <div className="nov-label">📢 Aggiornamenti</div>
-        <h1>Novità e scadenze</h1>
-        <p>Ogni volta che cambia qualcosa — una circolare INPS, una scadenza, un nuovo bonus — lo spieghiamo qui in parole semplici.</p>
+        <div className="nov-label">📋 Aggiornato a marzo 2026</div>
+        <h1>Cosa cambia nel 2026</h1>
+        <p>Tutti i cambiamenti reali della Legge di Bilancio 2026, delle circolari INPS e dell&apos;Agenzia delle Entrate. Solo cose certe, già in vigore. Niente rumor.</p>
       </div>
 
-      {/* FILTERS */}
-      <div className="filters">
-        {filters.map(f => (
-          <a
-            key={f.value}
-            className={`filter-pill${active === f.value ? ' active' : ''}`}
-            href="#"
-            onClick={e => { e.preventDefault(); setActive(f.value); }}
-          >
-            {f.label}
-          </a>
-        ))}
-      </div>
-
-      {/* POSTS */}
       <div className="posts">
 
-        {/* FEATURED */}
-        {show('fisco') && (
-          <div className="post-feat" data-category="fisco">
-            <div className="pf-tag"><span className="pf-dot" /> In evidenza</div>
-            <div className="pf-title">Reddito sopra 75.000€? Le detrazioni 2026 cambiano. Ecco cosa devi sapere.</div>
-            <div className="pf-excerpt">La Legge di Bilancio 2025 taglia le detrazioni al 19% per chi guadagna oltre 75.000€. Ma non tutte: spese sanitarie, mutui e ristrutturazioni restano. Ti spieghiamo chi è colpito e cosa fare.</div>
-            <div className="pf-meta">5 marzo 2026 · 3 min di lettura</div>
-            <a href="#" className="pf-read">Leggi tutto</a>
+        {/* ── FISCO E 730 ── */}
+        <div className="nov-section">
+          <div className="nov-section-label">🧾 Fisco e dichiarazione dei redditi</div>
+          <Link href="/730" className="nov-guide-link">Guida completa: Faccio il 730 →</Link>
+        </div>
+
+        <div className="nov-item">
+          <div className="nov-badge nov-badge-big">Importante</div>
+          <h3>Tre scaglioni IRPEF definitivi</h3>
+          <p>La riforma IRPEF diventa strutturale. I nuovi scaglioni: fino a 28.000€ paghi il <strong>23%</strong>, da 28.001€ a 50.000€ il <strong>33%</strong> (prima era 35%), oltre 50.000€ il <strong>43%</strong>. Per chi guadagna tra 28.000€ e 50.000€ il risparmio è di circa 440€ all&apos;anno.</p>
+        </div>
+
+        <div className="nov-item">
+          <div className="nov-badge nov-badge-warn">Attenzione</div>
+          <h3>Reddito sopra 75.000€: detrazioni ridotte</h3>
+          <p>Se guadagni più di 75.000€ lordi, le detrazioni al 19% vengono tagliate progressivamente fino ad azzerarsi a 100.000€. Restano intatte: spese sanitarie, interessi su mutui prima casa (stipulati entro il 2024) e rate di ristrutturazioni già iniziate.</p>
+        </div>
+
+        <div className="nov-item">
+          <div className="nov-badge nov-badge-warn">Attenzione</div>
+          <h3>Figli a carico: limite dei 30 anni</h3>
+          <p>I figli possono essere fiscalmente a carico solo fino ai 30 anni (prima non c&apos;era limite). Se tuo figlio ha più di 30 anni e non è disabile, non puoi più detrarlo nel 730.</p>
+        </div>
+
+        <div className="nov-item">
+          <h3>Detrazione lavoro dipendente aumentata</h3>
+          <p>Per chi guadagna meno di 15.000€ lordi all&apos;anno, la detrazione sale da 1.880€ a <strong>1.955€</strong>.</p>
+        </div>
+
+        <div className="nov-item">
+          <h3>Spese scolastiche: tetto alzato</h3>
+          <p>Il tetto massimo per le spese di istruzione passa da 800€ a <strong>1.000€ per figlio</strong>. Il risparmio massimo sale da 152€ a 190€ per figlio.</p>
+        </div>
+
+        <div className="nov-item">
+          <h3>Bonus affitto per neoassunti</h3>
+          <p>Assunto a tempo indeterminato nel 2025 e trasferito per lavoro? I rimborsi del datore per affitto e alloggio non fanno reddito per i primi due anni, fino a 5.000€/anno.</p>
+        </div>
+
+        <div className="nov-item">
+          <div className="nov-badge nov-badge-warn">Attenzione</div>
+          <h3>Farmaci: serve il pagamento tracciabile</h3>
+          <p>Dal 2025 anche i farmaci da banco senza ricetta richiedono pagamento con carta, bancomat o bonifico per essere detraibili. Restano detraibili in contanti solo i farmaci con ricetta medica e le visite mediche.</p>
+        </div>
+
+        {/* ── CASA ── */}
+        <div className="nov-section">
+          <div className="nov-section-label">🏠 Casa e ristrutturazioni</div>
+          <div style={{display:'flex',gap:'12px',flexWrap:'wrap'}}>
+            <Link href="/ristrutturare" className="nov-guide-link">Ristrutturare casa →</Link>
+            <Link href="/compro-casa" className="nov-guide-link">Compro casa →</Link>
           </div>
-        )}
+        </div>
 
-        {/* POST 1 */}
-        {show('scadenza fisco') && (
-          <a href="#" className="post-card" data-category="scadenza fisco">
-            <div className="pc-top">
-              <span className="pc-cat cat-scadenza">⚠️ Scadenza</span>
-              <span className="pc-date">4 marzo 2026</span>
-            </div>
-            <div className="pc-title">730 precompilato: disponibile dal 2 maggio. Ecco cosa fare prima.</div>
-            <div className="pc-excerpt">L&apos;Agenzia delle Entrate pubblica il precompilato dal 2 maggio. Ma conviene preparare i documenti adesso. Ecco la checklist delle cose da raccogliere nelle prossime settimane.</div>
-            <div className="pc-guide">Collegato alla guida: Faccio il 730</div>
-            <div className="pc-footer">
-              <span className="pc-time">⏱ 2 min</span>
-              <span className="pc-link">Leggi</span>
-            </div>
-          </a>
-        )}
+        <div className="nov-item">
+          <div className="nov-badge nov-badge-big">Importante</div>
+          <h3>Bonus ristrutturazione: 50% prima casa, 36% seconda</h3>
+          <p>La detrazione per ristrutturazione è confermata al <strong>50%</strong> per la prima casa (tetto 96.000€) e scende al <strong>36%</strong> per gli altri immobili. Si recupera in 10 rate annuali nella dichiarazione dei redditi. Lo sconto in fattura e la cessione del credito non sono più disponibili.</p>
+        </div>
 
-        {/* POST 2 */}
-        {show('famiglia') && (
-          <a href="#" className="post-card" data-category="famiglia">
-            <div className="pc-top">
-              <span className="pc-cat cat-famiglia">👨‍👩‍👧 Famiglia</span>
-              <span className="pc-date">1 marzo 2026</span>
-            </div>
-            <div className="pc-title">Assegno unico 2026: importi aggiornati e nuove soglie ISEE.</div>
-            <div className="pc-excerpt">L&apos;INPS ha pubblicato le nuove tabelle. Per un figlio minore con ISEE sotto 17.090€ l&apos;importo sale a 200,99€/mese. Ecco tutti gli scaglioni aggiornati.</div>
-            <div className="pc-guide">Collegato alla guida: Aspetto un figlio</div>
-            <div className="pc-footer">
-              <span className="pc-time">⏱ 2 min</span>
-              <span className="pc-link">Leggi</span>
-            </div>
-          </a>
-        )}
+        <div className="nov-item">
+          <h3>Ecobonus e Sismabonus: stesse aliquote</h3>
+          <p>Anche l&apos;Ecobonus (efficientamento energetico) e il Sismabonus seguono la stessa logica: <strong>50%</strong> per la prima casa, <strong>36%</strong> per le altre. Tetti di spesa invariati (30.000–100.000€ per l&apos;Ecobonus, 96.000€ per il Sismabonus).</p>
+        </div>
 
-        {/* POST 3 */}
-        {show('casa') && (
-          <a href="#" className="post-card" data-category="casa">
-            <div className="pc-top">
-              <span className="pc-cat cat-casa">🏠 Casa</span>
-              <span className="pc-date">27 febbraio 2026</span>
-            </div>
-            <div className="pc-title">Bonus ristrutturazione 2026: confermato al 50% ma con nuovi limiti.</div>
-            <div className="pc-excerpt">La detrazione resta al 50% su un massimo di 96.000€ per la prima casa. Per la seconda casa scende al 36%. Ecco cosa cambia per chi deve iniziare i lavori quest&apos;anno.</div>
-            <div className="pc-guide">Collegato alla guida: Ristrutturare casa</div>
-            <div className="pc-footer">
-              <span className="pc-time">⏱ 3 min</span>
-              <span className="pc-link">Leggi</span>
-            </div>
-          </a>
-        )}
+        <div className="nov-item">
+          <h3>Bonus mobili: confermato al 50%</h3>
+          <p>Puoi detrarre il 50% dell&apos;acquisto di mobili e grandi elettrodomestici fino a 5.000€, ma solo se hai una ristrutturazione in corso o conclusa nell&apos;anno.</p>
+        </div>
 
-        {/* POST 4 */}
-        {show('documenti') && (
-          <a href="#" className="post-card" data-category="documenti">
-            <div className="pc-top">
-              <span className="pc-cat cat-documenti">🪪 Documenti</span>
-              <span className="pc-date">25 febbraio 2026</span>
-            </div>
-            <div className="pc-title">IT Wallet: patente e tessera sanitaria arrivano sull&apos;app IO.</div>
-            <div className="pc-excerpt">Da marzo 2026 puoi avere patente e tessera sanitaria digitali nell&apos;app IO. Serve lo SPID per attivarle. Ecco come funziona e cosa cambia nella pratica.</div>
-            <div className="pc-guide">Collegato alla guida: Faccio lo SPID</div>
-            <div className="pc-footer">
-              <span className="pc-time">⏱ 2 min</span>
-              <span className="pc-link">Leggi</span>
-            </div>
-          </a>
-        )}
+        {/* ── FAMIGLIA ── */}
+        <div className="nov-section">
+          <div className="nov-section-label">👨‍👩‍👧 Famiglia e figli</div>
+          <Link href="/figlio" className="nov-guide-link">Guida: Aspetto un figlio →</Link>
+        </div>
 
-        {/* POST 5 */}
-        {show('fisco scadenza') && (
-          <a href="#" className="post-card" data-category="fisco scadenza">
-            <div className="pc-top">
-              <span className="pc-cat cat-fisco">💰 Fisco</span>
-              <span className="pc-date">20 febbraio 2026</span>
-            </div>
-            <div className="pc-title">ISEE 2026: attenzione alla scadenza del 30 giugno per l&apos;assegno unico.</div>
-            <div className="pc-excerpt">Se presenti l&apos;ISEE entro il 30 giugno, gli arretrati dell&apos;assegno unico ti vengono riconosciuti da gennaio. Ma se lo fai dopo, perdi i mesi precedenti.</div>
-            <div className="pc-guide">Collegato alla guida: Faccio l&apos;ISEE</div>
-            <div className="pc-footer">
-              <span className="pc-time">⏱ 2 min</span>
-              <span className="pc-link">Leggi</span>
-            </div>
-          </a>
-        )}
+        <div className="nov-item">
+          <h3>Assegno unico: importi rivalutati</h3>
+          <p>Gli importi dell&apos;assegno unico sono stati aggiornati con l&apos;inflazione. Per un figlio minore con ISEE sotto 17.090€ l&apos;importo sale a <strong>200,99€/mese</strong>. Per ISEE oltre 45.574€ l&apos;importo minimo è 57,45€/mese. Ricorda: se presenti l&apos;ISEE entro il 30 giugno, gli arretrati vengono riconosciuti da gennaio.</p>
+        </div>
+
+        <div className="nov-item">
+          <h3>Bonus mamme lavoratrici: esteso alle autonome</h3>
+          <p>Il bonus contributivo per le madri lavoratrici con 2 o più figli si estende anche alle lavoratrici autonome. Prima era riservato alle dipendenti.</p>
+        </div>
+
+        {/* ── LAVORO ── */}
+        <div className="nov-section">
+          <div className="nov-section-label">💼 Lavoro</div>
+          <div style={{display:'flex',gap:'12px',flexWrap:'wrap'}}>
+            <Link href="/naspi" className="nov-guide-link">NASpI →</Link>
+            <Link href="/dimissioni" className="nov-guide-link">Dimissioni →</Link>
+            <Link href="/tfr" className="nov-guide-link">TFR →</Link>
+          </div>
+        </div>
+
+        <div className="nov-item">
+          <h3>NASpI: nessun cambiamento sostanziale</h3>
+          <p>I requisiti e le modalità della NASpI restano invariati nel 2026. Gli importi massimi sono rivalutati annualmente dall&apos;INPS.</p>
+        </div>
+
+        <div className="nov-item">
+          <h3>Dimissioni online: procedura invariata</h3>
+          <p>Le dimissioni volontarie continuano a essere obbligatoriamente telematiche tramite il portale del Ministero del Lavoro (servizio accessibile con SPID).</p>
+        </div>
+
+        {/* ── DOCUMENTI E DIGITALE ── */}
+        <div className="nov-section">
+          <div className="nov-section-label">🪪 Documenti e digitale</div>
+          <Link href="/spid" className="nov-guide-link">Guida: Faccio lo SPID →</Link>
+        </div>
+
+        <div className="nov-item">
+          <h3>IT Wallet: patente e tessera sanitaria nell&apos;app IO</h3>
+          <p>Da marzo 2026 puoi avere patente e tessera sanitaria in formato digitale nell&apos;app IO. Serve lo SPID per attivarle. Sono documenti validi a tutti gli effetti — puoi usarli al posto di quelli fisici.</p>
+        </div>
+
+        {/* ── PARTITA IVA ── */}
+        <div className="nov-section">
+          <div className="nov-section-label">📊 Partita IVA</div>
+          <Link href="/piva" className="nov-guide-link">Guida: Apro la Partita IVA →</Link>
+        </div>
+
+        <div className="nov-item">
+          <h3>Forfettario: soglia confermata a 85.000€</h3>
+          <p>Il limite di ricavi per restare nel regime forfettario rimane a 85.000€. Nessuna novità sulle aliquote (15% o 5% per i primi 5 anni di attività).</p>
+        </div>
+
+        <div className="nov-item">
+          <h3>Flat tax incrementale: non rinnovata</h3>
+          <p>La flat tax incrementale al 15% sugli incrementi di reddito, introdotta nel 2023, non è stata rinnovata per il 2026.</p>
+        </div>
 
         {/* SUBSCRIBE BOX */}
         <div className="sub-box">
           <div className="sub-icon">📬</div>
-          <div className="sub-title">Non perderti le scadenze</div>
-          <div className="sub-desc">Ricevi le novità importanti direttamente nella tua email. Niente spam — solo quando cambia qualcosa che ti riguarda.</div>
+          <div className="sub-title">Ricevi gli aggiornamenti</div>
+          <div className="sub-desc">Quando cambiano le regole, te lo diciamo noi. Niente spam — solo le cose che ti riguardano davvero.</div>
           <input className="sub-input" type="email" placeholder="la-tua@email.it" />
           <button className="sub-btn">Iscrivimi</button>
         </div>
 
-        {/* POST 6 */}
-        {show('lavoro') && (
-          <a href="#" className="post-card" data-category="lavoro">
-            <div className="pc-top">
-              <span className="pc-cat cat-lavoro">💼 Lavoro</span>
-              <span className="pc-date">18 febbraio 2026</span>
-            </div>
-            <div className="pc-title">Bonus mamme lavoratrici 2026: confermato, ma cambia la platea.</div>
-            <div className="pc-excerpt">Il bonus contributivo per le madri lavoratrici con 2+ figli resta anche nel 2026. Novità: si estende anche alle autonome. Ecco chi ne ha diritto e come si attiva.</div>
-            <div className="pc-footer">
-              <span className="pc-time">⏱ 2 min</span>
-              <span className="pc-link">Leggi</span>
-            </div>
-          </a>
-        )}
-
-        {/* POST 7 */}
-        {show('casa') && (
-          <a href="#" className="post-card" data-category="casa">
-            <div className="pc-top">
-              <span className="pc-cat cat-casa">🏠 Casa</span>
-              <span className="pc-date">15 febbraio 2026</span>
-            </div>
-            <div className="pc-title">Mutui: i tassi fissi scendono ancora. Conviene surrogare?</div>
-            <div className="pc-excerpt">I tassi fissi sono scesi sotto il 3% per la prima volta da due anni. Se hai un mutuo a tasso variabile sopra il 4%, potrebbe essere il momento di valutare la surroga.</div>
-            <div className="pc-guide">Collegato alla guida: Compro casa</div>
-            <div className="pc-footer">
-              <span className="pc-time">⏱ 3 min</span>
-              <span className="pc-link">Leggi</span>
-            </div>
-          </a>
-        )}
-
-        <div className="load-more">
-          <button className="load-more-btn">Carica altri articoli</button>
+        {/* FOOTER NOTE */}
+        <div className="nov-footer-note">
+          <p><strong>Fonti:</strong> Legge di Bilancio 2026 (L. 207/2024), Agenzia delle Entrate, circolari INPS, D.Lgs. 216/2023 (riforma IRPEF). Ultimo aggiornamento: marzo 2026.</p>
+          <p>Le informazioni in questa pagina sono a scopo informativo. Per decisioni importanti, consulta sempre un professionista.</p>
         </div>
 
       </div>
