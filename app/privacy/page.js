@@ -25,7 +25,7 @@ export default function PrivacyPage() {
         <p className="page-sub">Ultimo aggiornamento: marzo 2026 · Titolare: ZeroBurocrazia</p>
 
         <div className="box-info">
-          <p>Versione breve: le guide sono gratuite e non richiedono dati. Se richiedi la scheda personalizzata, ti chiediamo alcuni dati per prepararla e, con il tuo consenso esplicito, per metterti in contatto con professionisti della tua zona. Puoi revocare il consenso in qualsiasi momento.</p>
+          <p>Versione breve: le guide sono gratuite e non richiedono dati. Se chiedi di essere messo in contatto con un professionista della tua zona, ti chiediamo CAP e telefono. Con il tuo consenso esplicito, condividiamo questi dati con professionisti selezionati affinché possano contattarti. Puoi revocare il consenso in qualsiasi momento.</p>
         </div>
 
         <div className="prose">
@@ -44,18 +44,17 @@ export default function PrivacyPage() {
           </ul>
           <p>Questi dati vengono usati esclusivamente per statistiche aggregate e non vengono mai associati alla tua identità.</p>
 
-          <h3>b) Dati forniti con il form di personalizzazione</h3>
-          <p>Se richiedi una scheda personalizzata gratuita, ti chiediamo:</p>
+          <h3>b) Dati forniti tramite il modulo &quot;Trova professionista&quot;</h3>
+          <p>Se richiedi di essere messo in contatto con un professionista della tua zona, ti chiediamo:</p>
           <ul>
-            <li><strong>Dati di contatto:</strong> nome (facoltativo), email, numero di telefono</li>
-            <li><strong>Dati anagrafici:</strong> età, città o CAP, situazione lavorativa, nucleo familiare</li>
-            <li><strong>Dati economici indicativi:</strong> fascia di reddito annuo lordo</li>
-            <li><strong>Dati specifici per la scheda:</strong> informazioni relative alla tua pratica (es. tipo di lavori per ristrutturazione, fase di acquisto casa, situazione gravidanza, ecc.)</li>
-            <li><strong>Note libere:</strong> qualsiasi dettaglio aggiuntivo che scegli di fornirci</li>
+            <li><strong>CAP</strong> (obbligatorio) — per individuare professionisti nella tua zona</li>
+            <li><strong>Numero di telefono</strong> (obbligatorio) — affinché il professionista possa contattarti</li>
+            <li><strong>Email</strong> (facoltativa) — come canale di contatto aggiuntivo</li>
           </ul>
+          <p>Registriamo inoltre il tipo di guida da cui hai inviato la richiesta (es. &quot;730&quot;, &quot;ISEE&quot;, &quot;Partita IVA&quot;) per indirizzarti al professionista più pertinente.</p>
 
-          <h3>c) Dati raccolti tramite il form promemoria scadenze</h3>
-          <p>Se ti iscrivi al promemoria scadenze, raccogliamo solo il tuo indirizzo email per inviarti comunicazioni informative relative alla scheda di riferimento.</p>
+          <h3>c) Dati raccolti tramite il form newsletter</h3>
+          <p>Se ti iscrivi alla newsletter, raccogliamo solo il tuo indirizzo email per inviarti comunicazioni informative, aggiornamenti sulle guide e novità. Puoi cancellarti in qualsiasi momento con un clic da ogni email.</p>
 
           <h3>d) Cookie</h3>
           <p>Utilizziamo esclusivamente cookie tecnici, necessari al funzionamento del sito (es. preferenza visualizzazione breve/completa). Non utilizziamo cookie di profilazione o di tracciamento pubblicitario. Non è necessario il consenso per i cookie tecnici ai sensi dell&apos;art. 122 del Codice Privacy.</p>
@@ -63,40 +62,40 @@ export default function PrivacyPage() {
           <h2>3. Per cosa usiamo i dati</h2>
           <p>I dati vengono trattati per le seguenti finalità:</p>
           <ul>
-            <li><strong>Generazione della scheda personalizzata</strong> (base giuridica: esecuzione di un servizio richiesto dall&apos;utente, art. 6.1.b GDPR) — Usiamo i dati del form per generare una scheda con importi, bonus, uffici e scadenze calcolati sulla tua situazione. La scheda viene inviata all&apos;email indicata.</li>
-            <li><strong>Contatto con professionisti selezionati</strong> (base giuridica: consenso esplicito, art. 6.1.a GDPR) — Solo se hai dato il consenso specifico nel form, i tuoi dati di contatto e la tua situazione potranno essere condivisi con professionisti qualificati (commercialisti, consulenti fiscali, mediatori creditizi, geometri, consulenti del lavoro) della tua zona, affinché possano contattarti con proposte pertinenti alla tua esigenza.</li>
-            <li><strong>Comunicazioni commerciali da ZeroBurocrazia</strong> (base giuridica: consenso esplicito, art. 6.1.a GDPR) — Solo se hai dato il consenso specifico, potremmo inviarti comunicazioni relative a servizi, guide o novità di ZeroBurocrazia.</li>
+            <li><strong>Contatto con professionisti selezionati</strong> (base giuridica: consenso esplicito, art. 6.1.a GDPR) — Solo se hai prestato il consenso esplicito tramite le apposite caselle nel modulo, i tuoi dati (CAP, telefono, eventuale email e tipo di pratica) vengono condivisi con professionisti qualificati della tua zona affinché possano contattarti in relazione alla tua esigenza specifica. Senza il tuo consenso esplicito, i dati non vengono condivisi con nessuno.</li>
+            <li><strong>Newsletter e comunicazioni informative</strong> (base giuridica: consenso esplicito, art. 6.1.a GDPR) — Solo se ti iscrivi volontariamente alla newsletter, ti inviamo aggiornamenti sulle guide, scadenze e novità.</li>
             <li><strong>Statistiche aggregate</strong> (base giuridica: legittimo interesse, art. 6.1.f GDPR) — Dati di navigazione anonimizzati per capire quali guide sono più utili e migliorare il sito.</li>
           </ul>
 
           <h2>4. Con chi condividiamo i dati</h2>
 
           <h3>a) Professionisti terzi</h3>
-          <p>Solo se hai prestato il consenso esplicito tramite il form di personalizzazione, i tuoi dati potranno essere condivisi con le seguenti categorie di professionisti:</p>
+          <p>Solo se hai prestato il consenso esplicito tramite il modulo &quot;Trova professionista&quot;, i tuoi dati potranno essere condivisi con le seguenti categorie di professionisti:</p>
           <ul>
             <li>Commercialisti e consulenti fiscali</li>
+            <li>CAF (Centri di Assistenza Fiscale) e patronati</li>
             <li>Mediatori creditizi e consulenti mutui</li>
             <li>Geometri, architetti e imprese edili</li>
-            <li>Consulenti del lavoro e patronati</li>
-            <li>Agenti immobiliari</li>
+            <li>Consulenti del lavoro</li>
+            <li>Notai e agenti immobiliari</li>
           </ul>
-          <p>I professionisti ricevono esclusivamente i dati pertinenti alla tua richiesta (es. un commercialista riceverà i dati relativi al 730, non quelli relativi a una ristrutturazione). I professionisti sono tenuti a trattare i tuoi dati nel rispetto del GDPR e a contattarti solo in relazione alla tua esigenza specifica.</p>
+          <p>I professionisti ricevono esclusivamente i dati pertinenti alla tua richiesta (CAP, telefono, tipo di pratica). I professionisti sono tenuti a trattare i tuoi dati nel rispetto del GDPR e a contattarti solo in relazione alla tua esigenza specifica.</p>
 
           <h3>b) Fornitori tecnici</h3>
           <ul>
             <li><strong>Vercel</strong> — hosting del sito</li>
-            <li><strong>Brevo</strong> — invio email promemoria scadenze</li>
-            <li><strong>Google Sheets</strong> — registrazione temporanea dei dati del form per la generazione della scheda</li>
+            <li><strong>Brevo</strong> — invio newsletter</li>
+            <li><strong>Google Sheets</strong> — registrazione temporanea dei dati delle richieste</li>
           </ul>
-          <p>Tutti i fornitori sono selezionati per la conformità al GDPR.</p>
+          <p>Tutti i fornitori sono selezionati per la conformità al GDPR e trattano i dati come responsabili del trattamento.</p>
 
           <h3>c) Dati che non condividiamo mai</h3>
           <p>Non vendiamo i tuoi dati a broker di dati, piattaforme pubblicitarie o soggetti non indicati in questa policy. Non utilizziamo i dati per pubblicità programmatica o profilazione a fini pubblicitari.</p>
 
           <h2>5. Conservazione dei dati</h2>
           <ul>
-            <li><strong>Dati del form:</strong> conservati per un massimo di 24 mesi dalla compilazione, poi eliminati. Se revochi il consenso prima, vengono eliminati entro 30 giorni.</li>
-            <li><strong>Email promemoria:</strong> conservate fino a cancellazione dell&apos;iscrizione (possibile con un clic da ogni email).</li>
+            <li><strong>Dati del modulo &quot;Trova professionista&quot;:</strong> conservati per un massimo di 12 mesi dalla richiesta, poi eliminati. Se revochi il consenso prima, vengono eliminati entro 30 giorni.</li>
+            <li><strong>Email newsletter:</strong> conservate fino a cancellazione dell&apos;iscrizione (possibile con un clic da ogni email).</li>
             <li><strong>Log tecnici:</strong> conservati per un massimo di 30 giorni.</li>
           </ul>
 
@@ -108,13 +107,13 @@ export default function PrivacyPage() {
             <li><strong>Cancellazione</strong> — chiedere l&apos;eliminazione dei tuoi dati</li>
             <li><strong>Portabilità</strong> — ricevere i tuoi dati in formato leggibile</li>
             <li><strong>Opposizione</strong> — opporti al trattamento per finalità di marketing</li>
-            <li><strong>Revoca del consenso</strong> — ritirare il consenso al contatto da parte di professionisti terzi o alle comunicazioni commerciali, in qualsiasi momento, senza pregiudicare la liceità del trattamento effettuato prima della revoca</li>
+            <li><strong>Revoca del consenso</strong> — ritirare il consenso al contatto da parte di professionisti terzi in qualsiasi momento, senza pregiudicare la liceità del trattamento effettuato prima della revoca</li>
           </ul>
           <p>Per esercitare questi diritti scrivi a <a href="mailto:info@zeroburocrazia.it">info@zeroburocrazia.it</a>. Risponderemo entro 30 giorni.</p>
           <p>Se ritieni che i tuoi diritti siano stati violati, puoi presentare reclamo al Garante per la Protezione dei Dati Personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a>).</p>
 
           <h2>7. Minori</h2>
-          <p>ZeroBurocrazia non raccoglie consapevolmente dati da minori di 14 anni. Il form di personalizzazione è riservato a maggiorenni. Se ritieni che un minore ci abbia fornito dati personali, contattaci a <a href="mailto:info@zeroburocrazia.it">info@zeroburocrazia.it</a>.</p>
+          <p>ZeroBurocrazia non raccoglie consapevolmente dati da minori di 16 anni. Il modulo &quot;Trova professionista&quot; è riservato a maggiorenni. Se ritieni che un minore ci abbia fornito dati personali, contattaci a <a href="mailto:info@zeroburocrazia.it">info@zeroburocrazia.it</a>.</p>
 
           <h2>8. Modifiche a questa policy</h2>
           <p>Possiamo aggiornare questa Privacy Policy in caso di modifiche al servizio o alla normativa. La data di &quot;ultimo aggiornamento&quot; in cima alla pagina indica quando è stata modificata l&apos;ultima volta. Per modifiche sostanziali, ti avviseremo con un avviso visibile sul sito.</p>
