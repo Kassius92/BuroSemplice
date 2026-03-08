@@ -35,7 +35,7 @@ export default function SidebarLead({ guida = '' }) {
 
   return (
     <div className="sb-lead">
-      <div className="sb-lead-t">👤 Trova professionista</div>
+      <div className="sb-lead-t">📍 Trova professionista</div>
       <div className="sb-lead-d">CAF, commercialista o consulente nella tua zona.</div>
       {error && <div className="sb-lead-err">{error}</div>}
       <input type="text" placeholder="Il tuo CAP" maxLength={5} value={cap} onChange={e => setCap(e.target.value)} className="sb-lead-input" />

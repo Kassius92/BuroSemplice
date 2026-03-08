@@ -51,7 +51,7 @@ export default function LeadBox({ guida = '', titolo = 'Non vuoi farlo da solo?'
   return (
     <div className="lead-box" id="trova-professionista">
       <div className="lead-header">
-        <div className="lead-icon">👤</div>
+        <div className="lead-icon">📍</div>
         <div>
           <div className="lead-title">{titolo}</div>
           <div className="lead-sub">{sottotitolo}</div>
