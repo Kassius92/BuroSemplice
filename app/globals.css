@@ -516,8 +516,8 @@ footer{background:var(--cream);border-top:1px solid var(--bd);padding:36px 28px;
 .mega-sub-title:hover { background:rgba(15,76,92,.04); }
 .mega-sub-title::after { content:''; width:6px; height:6px; border-right:1.5px solid #8A8A9A; border-bottom:1.5px solid #8A8A9A; transform:rotate(45deg); transition:transform .25s; flex-shrink:0; margin-right:4px; }
 .mega-sub.open .mega-sub-title::after { transform:rotate(-135deg); }
-.mega-sub-links { max-height:0; overflow:hidden; transition:max-height .2s ease-out, padding-bottom .2s ease-out; padding-left:2px; padding-bottom:0; }
-.mega-sub.open .mega-sub-links { max-height:200px; padding-bottom:8px; transition:max-height .3s ease-in, padding-bottom .3s ease-in; }
+.mega-sub-links { max-height:0; overflow:hidden; transition:max-height .3s ease, padding-bottom .3s ease; padding-left:2px; padding-bottom:0; }
+.mega-sub.open .mega-sub-links { max-height:200px; padding-bottom:8px; }
 .mega-link { display:block; padding:5px 2px; font-size:13.5px; color:#4A5568; text-decoration:none; transition:color .15s; line-height:1.4; }
 .mega-link:hover { color:#E36414; }
 .mega-link.soon { opacity:.4; pointer-events:none; }
