@@ -119,8 +119,8 @@ export default function HomePage() {
       <section className="tg-preview">
         <div className="container">
           <div className="tg-preview-header r">
-            <div className="section-label">Ultime notizie</div>
-            <h2 className="section-title">Il TG della burocrazia</h2>
+            <div className="section-label">Questa settimana</div>
+            <h2 className="section-title">Le notizie che ti riguardano</h2>
             <p className="section-subtitle">Ogni settimana le notizie che ti riguardano: scadenze, bonus, circolari. Spiegate semplice.</p>
           </div>
           <div className="tg-preview-grid">

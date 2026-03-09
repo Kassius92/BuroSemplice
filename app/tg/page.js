@@ -6,12 +6,12 @@ import SchemaOrg from '@/components/SchemaOrg';
 import './tg.css';
 
 export const metadata = {
-  title: 'TG della Burocrazia — Notizie Settimanali su Bonus, Scadenze e Novità',
-  description: 'Ogni settimana le notizie burocratiche che ti riguardano: scadenze fiscali, bonus INPS, circolari, cambiamenti. Spiegate semplice.',
+  title: 'Questa Settimana — Notizie su Bonus, Scadenze e Novità Burocratiche',
+  description: 'Ogni settimana le notizie burocratiche che ti riguardano: scadenze, bonus, circolari INPS. Spiegate come te le spiegherebbe un amico.',
   alternates: { canonical: 'https://zeroburocrazia.it/tg' },
   openGraph: {
-    title: 'TG della Burocrazia — Notizie Settimanali',
-    description: 'Ogni settimana le notizie burocratiche che ti riguardano: scadenze, bonus, circolari. Spiegate semplice.',
+    title: 'Questa Settimana — Notizie Settimanali',
+    description: 'Ogni settimana le notizie burocratiche che ti riguardano: scadenze, bonus, circolari. Spiegate come te le spiegherebbe un amico.',
     url: 'https://zeroburocrazia.it/tg',
     type: 'article',
     siteName: 'ZeroBurocrazia',
@@ -55,8 +55,8 @@ export default function TGPage() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
-    name: 'TG della Burocrazia',
-    description: 'Notizie settimanali sulla burocrazia italiana: scadenze, bonus, circolari INPS e Agenzia delle Entrate.',
+    name: 'Questa Settimana',
+    description: 'Notizie settimanali sulla burocrazia italiana: scadenze, bonus, circolari. Spiegate come te le spiegherebbe un amico.',
     url: 'https://zeroburocrazia.it/tg',
     publisher: { '@type': 'Organization', name: 'ZeroBurocrazia', url: 'https://zeroburocrazia.it' },
   };
@@ -71,7 +71,7 @@ export default function TGPage() {
         <div className="tg-hero-bg"></div>
         <div className="tg-hero-c">
           <div className="tg-label"><span className="tg-dot"></span> Ogni settimana</div>
-          <h1>Il TG della <em>burocrazia</em></h1>
+          <h1><em>Questa</em> settimana</h1>
           <p>Ogni settimana raccogliamo le notizie burocratiche che ti riguardano: scadenze, bonus, circolari. Spiegate in italiano, non in burocratese.</p>
         </div>
       </section>
