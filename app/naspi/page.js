@@ -9,6 +9,7 @@ import SidebarToggle from '@/components/SidebarToggle';
 import QuizNaspi from '@/components/QuizNaspi';
 import CalcNaspi from '@/components/CalcNaspi';
 import Tip from '@/components/Tip';
+import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
@@ -87,6 +88,7 @@ export default function Page() {
             </div>
             <div className="hero-source"><strong>Fonti:</strong> INPS · Circolare n. 4/2026 · Legge di Bilancio 2026 · D.Lgs. 22/2015</div>
             <PrintButton />
+            <VersionToggle />
           </div>
           <div className="hero-right">
             <div className="hstat"><div className="hn">1.584€</div><div className="hl">massimo mensile<br/>lordo 2026</div></div>
@@ -103,11 +105,11 @@ export default function Page() {
 
           {/* PERCORSO */}
           <div className="perc r">
-            <span className="perc-label">Percorso</span>
+            <span className="perc-label">Guide correlate</span>
             <div className="perc-steps">
-              <a href="/naspi" className="ps active">{'\uD83D\uDCBC'} NASpI</a><span className="pa">{'\u203A'}</span>
-              <a href="/isee" className="ps">ISEE</a><span className="pa">{'\u203A'}</span>
-              <a href="/730" className="ps">730</a>
+              <a href="/dimissioni" className="ps">✍️ Dimissioni</a>
+              <a href="/tfr" className="ps">💰 TFR</a>
+              <a href="/isee" className="ps">📋 Faccio l'ISEE</a>
             </div>
           </div>
 
@@ -355,6 +357,7 @@ export default function Page() {
 
         {/* SIDEBAR */}
         <aside className="aside">
+          <VersionToggle />
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
             <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Verifica i requisiti</div></div></a>

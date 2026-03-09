@@ -9,6 +9,7 @@ import SidebarToggle from '@/components/SidebarToggle';
 import QuizComproCasa from '@/components/QuizComproCasa';
 import CalcComproCasa from '@/components/CalcComproCasa';
 import Tip from '@/components/Tip';
+import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
@@ -94,6 +95,7 @@ export default function Page() {
             </div>
             <div className="hero-source"><strong>Fonti:</strong> Agenzia delle Entrate · Banca d&apos;Italia · Consiglio Nazionale del Notariato</div>
             <PrintButton />
+            <VersionToggle />
           </div>
           <div className="hero-right">
             <div className="hstat"><div className="hn">2%</div><div className="hl">imposta registro<br/>prima casa</div></div>
@@ -110,12 +112,11 @@ export default function Page() {
 
           {/* PERCORSO */}
           <div className="perc r">
-            <span className="perc-label">Percorso</span>
+            <span className="perc-label">Guide correlate</span>
             <div className="perc-steps">
-              <a href="/spid" className="ps done">{'\u2713'} SPID</a><span className="pa">{'\u203A'}</span>
-              <a href="/isee" className="ps done">{'\u2713'} ISEE</a><span className="pa">{'\u203A'}</span>
-              <a href="/compro-casa" className="ps active">{'\uD83C\uDFE0'} Compro casa</a><span className="pa">{'\u203A'}</span>
-              <a href="/730" className="ps">730</a>
+              <a href="/ristrutturare" className="ps">🔨 Ristrutturare casa</a>
+              <a href="/isee" className="ps">📋 Faccio l'ISEE</a>
+              <a href="/730" className="ps">🧾 Faccio il 730</a>
             </div>
           </div>
 
@@ -367,6 +368,7 @@ export default function Page() {
 
         {/* SIDEBAR */}
         <aside className="aside">
+          <VersionToggle />
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
             <a href="#calcolatore" className="sbtool"><span className="sbtool-i">{'\uD83E\uDDEE'}</span><div><div className="sbtool-n">Calcolatore costi</div><div className="sbtool-d">Stima imposte e spese</div></div></a>

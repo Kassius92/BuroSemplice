@@ -69,7 +69,10 @@ export default function TGPage() {
                   </div>
                   <h3>{n.title}</h3>
                   <p dangerouslySetInnerHTML={{ __html: n.body }} />
-                  {n.link && <a href={n.link} className="tg-news-link">{n.linkText} {'\u2192'}</a>}
+                  <div className="tg-news-footer">
+                    {n.link && <a href={n.link} className="tg-news-link">{n.linkText} {'\u2192'}</a>}
+                    {n.source && <a href={n.source} className="tg-news-source" target="_blank" rel="noopener noreferrer">Fonte: {n.sourceLabel}</a>}
+                  </div>
                 </div>
               ))}
             </div>

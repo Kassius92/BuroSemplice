@@ -6,6 +6,7 @@ import TOC from '@/components/TOC';
 import FAQ from '@/components/FAQ';
 import PrintButton from '@/components/PrintButton';
 import SidebarToggle from '@/components/SidebarToggle';
+import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 import QuizFiglio from '@/components/QuizFiglio';
 import Tip from '@/components/Tip';
@@ -91,6 +92,7 @@ export default function Page() {
             </div>
             <div className="hero-source"><strong>Fonti:</strong> INPS · D.Lgs. 151/2001 · Legge di Bilancio 2026 (L. 199/2025)</div>
             <PrintButton />
+            <VersionToggle />
           </div>
           <div className="hero-right">
             <div className="hstat"><div className="hn">5 mesi</div><div className="hl">congedo maternit&agrave;<br/>obbligatorio all&apos;80%</div></div>
@@ -107,12 +109,11 @@ export default function Page() {
 
           {/* PERCORSO */}
           <div className="perc r">
-            <span className="perc-label">Percorso</span>
+            <span className="perc-label">Guide correlate</span>
             <div className="perc-steps">
-              <a href="/spid" className="ps done">{'\u2713'} SPID</a><span className="pa">{'\u203A'}</span>
-              <a href="/isee" className="ps done">{'\u2713'} ISEE</a><span className="pa">{'\u203A'}</span>
-              <a href="/figlio" className="ps active">{'\uD83D\uDC76'} Aspetto un figlio</a><span className="pa">{'\u203A'}</span>
-              <a href="/730" className="ps">730</a>
+              <a href="/isee" className="ps">📋 Faccio l'ISEE</a>
+              <a href="/mi-sposo" className="ps">💍 Mi sposo</a>
+              <a href="/730" className="ps">🧾 Faccio il 730</a>
             </div>
           </div>
 
@@ -397,6 +398,7 @@ export default function Page() {
 
         {/* SIDEBAR */}
         <aside className="aside">
+          <VersionToggle />
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti utili</div>
             <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz: serve a me?</div><div className="sbtool-d">Scopri se questa guida fa per te</div></div></a>

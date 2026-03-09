@@ -1,6 +1,5 @@
 'use client';
 import { useState, useEffect, useCallback, useRef } from 'react';
-import VersionToggle from './VersionToggle';
 
 export default function TOC({ items }) {
   const [active, setActive] = useState('');
@@ -74,7 +73,6 @@ export default function TOC({ items }) {
               {item.label}
             </a>
           ))}
-          <VersionToggle />
         </div>
       </div>
       <div className="toc-prog">

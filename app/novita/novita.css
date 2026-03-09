@@ -69,3 +69,8 @@
   .post-feat { padding:28px 24px; }
   .pf-title { font-size:22px; }
 }
+
+/* Source links */
+.nov-source{margin-top:16px;padding-top:12px;border-top:1px solid rgba(0,0,0,.06);}
+.nov-source a{font-size:11px;color:#8A8A9A;text-decoration:none;transition:color .2s;}
+.nov-source a:hover{color:#1A1A2E;text-decoration:underline;}

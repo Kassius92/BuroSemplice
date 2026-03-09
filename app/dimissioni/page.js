@@ -8,6 +8,7 @@ import PrintButton from '@/components/PrintButton';
 import SidebarToggle from '@/components/SidebarToggle';
 import QuizDimissioni from '@/components/QuizDimissioni';
 import Tip from '@/components/Tip';
+import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
@@ -85,6 +86,7 @@ export default function Page() {
             </div>
             <div className="hero-source"><strong>Fonti:</strong> Ministero del Lavoro · INPS · D.Lgs. 151/2015 · CCNL Commercio e Metalmeccanici</div>
             <PrintButton />
+            <VersionToggle />
           </div>
           <div className="hero-right">
             <div className="hstat"><div className="hn">Online</div><div className="hl">procedura solo<br/>telematica</div></div>
@@ -101,11 +103,11 @@ export default function Page() {
 
           {/* PERCORSO */}
           <div className="perc r">
-            <span className="perc-label">Percorso</span>
+            <span className="perc-label">Guide correlate</span>
             <div className="perc-steps">
-              <a href="/dimissioni" className="ps active">{'\u270D\uFE0F'} Dimissioni</a><span className="pa">{'\u203A'}</span>
-              <a href="/naspi" className="ps">NASpI</a><span className="pa">{'\u203A'}</span>
-              <a href="/piva" className="ps">Partita IVA</a>
+              <a href="/naspi" className="ps">💼 NASpI</a>
+              <a href="/tfr" className="ps">💰 TFR</a>
+              <a href="/730" className="ps">🧾 Faccio il 730</a>
             </div>
           </div>
 
@@ -318,6 +320,7 @@ export default function Page() {
 
         {/* SIDEBAR */}
         <aside className="aside">
+          <VersionToggle />
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
             <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Verifica la procedura</div></div></a>

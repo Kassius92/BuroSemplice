@@ -103,10 +103,10 @@ body.breve .bh{display:none !important;}
 .r.v{opacity:1;transform:none;}.r.d1{transition-delay:.07s;}.r.d2{transition-delay:.14s;}.r.d3{transition-delay:.21s;}.r.d4{transition-delay:.28s;}
 
 /* PERCORSO */
-.perc{display:flex;align-items:center;gap:14px;background:var(--wh);border:1px solid var(--bd);border-radius:14px;padding:14px 20px;margin-bottom:36px;box-shadow:0 1px 8px rgba(15,76,92,.05);}
-.perc-l{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--t3);white-space:nowrap;}
-.ps{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:600;color:var(--t3);text-decoration:none;padding:5px 12px;border-radius:10px;transition:all .2s;}
-.ps.done{color:var(--sage);}.ps.active{background:var(--blue);color:var(--wh);}
+.perc{display:flex;align-items:center;gap:14px;background:var(--wh);border:1px solid var(--bd);border-radius:14px;padding:14px 20px;margin-bottom:36px;box-shadow:0 1px 8px rgba(15,76,92,.05);flex-wrap:wrap;}
+.perc-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--cat, #E36414);white-space:nowrap;}
+.ps{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:600;color:var(--t2);text-decoration:none;padding:5px 12px;border-radius:10px;transition:all .2s;}
+.ps:hover{background:rgba(var(--cat-rgb, 227,100,20),.08);color:var(--cat, #E36414);}
 .pa{font-size:13px;color:var(--bd);margin:0 2px;}
 
 /* SECTION */
@@ -952,9 +952,7 @@ body.mega-open .toc { display: none; }
 :is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .stepn{background:linear-gradient(135deg,var(--cat-l),rgba(var(--cat-rgb),.2)) !important;color:var(--cat) !important;box-shadow:0 4px 14px rgba(var(--cat-rgb),.18) !important;}
 
 /* Sintesi cards */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .sc.tc-bg{background:var(--cat-l) !important;border-color:rgba(var(--cat-rgb),.18) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .sc.sg-bg{background:var(--cat-l) !important;border-color:rgba(var(--cat-rgb),.18) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .sc.bl-bg{background:var(--cat-l) !important;border-color:rgba(var(--cat-rgb),.18) !important;}
+:is(.cat-fisco,.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .sc{background:var(--cat-l) !important;border-color:rgba(var(--cat-rgb),.18) !important;}
 
 /* Dark block accents */
 :is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .dblock::before{background:radial-gradient(circle,rgba(var(--cat-rgb),.22),transparent 60%) !important;}

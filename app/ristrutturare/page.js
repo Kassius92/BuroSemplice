@@ -6,6 +6,7 @@ import TOC from '@/components/TOC';
 import FAQ from '@/components/FAQ';
 import PrintButton from '@/components/PrintButton';
 import SidebarToggle from '@/components/SidebarToggle';
+import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 import QuizRistrutturare from '@/components/QuizRistrutturare';
 import CalcRistrutturare from '@/components/CalcRistrutturare';
@@ -86,6 +87,7 @@ export default function Page() {
             </div>
             <div className="hero-source"><strong>Fonti:</strong> Agenzia delle Entrate · ENEA · DPR 380/2001 · Legge di Bilancio 2026</div>
             <PrintButton />
+            <VersionToggle />
           </div>
           <div className="hero-right">
             <div className="hstat"><div className="hn">50%</div><div className="hl">detrazione bonus<br/>prima casa 2026</div></div>
@@ -102,12 +104,11 @@ export default function Page() {
 
           {/* PERCORSO */}
           <div className="perc r">
-            <span className="perc-label">Percorso</span>
+            <span className="perc-label">Guide correlate</span>
             <div className="perc-steps">
-              <a href="/spid" className="ps done">{'\u2713'} SPID</a><span className="pa">{'\u203A'}</span>
-              <a href="/isee" className="ps done">{'\u2713'} ISEE</a><span className="pa">{'\u203A'}</span>
-              <a href="/730" className="ps done">{'\u2713'} 730</a><span className="pa">{'\u203A'}</span>
-              <a href="/ristrutturare" className="ps active">{'\uD83D\uDD28'} Ristrutturare casa</a>
+              <a href="/compro-casa" className="ps">🏠 Compro casa</a>
+              <a href="/730" className="ps">🧾 Faccio il 730</a>
+              <a href="/isee" className="ps">📋 Faccio l'ISEE</a>
             </div>
           </div>
 
@@ -362,6 +363,7 @@ export default function Page() {
 
         {/* SIDEBAR */}
         <aside className="aside">
+          <VersionToggle />
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
             <a href="#calcolatore" className="sbtool"><span className="sbtool-i">{'\uD83E\uDDEE'}</span><div><div className="sbtool-n">Calcolatore detrazione</div><div className="sbtool-d">Stima il tuo bonus</div></div></a>

@@ -90,6 +90,8 @@ export default function NovitaContent() {
             <h3>Farmaci: serve il pagamento tracciabile</h3>
             <p>Dal 2025 anche i farmaci da banco senza ricetta richiedono pagamento con carta, bancomat o bonifico per essere detraibili. Restano detraibili in contanti solo i farmaci con ricetta medica e le visite mediche.</p>
           </div>
+        
+          <div className="nov-source"><a href="https://www.gazzettaufficiale.it/eli/id/2025/12/31/25G00213/sg" target="_blank" rel="noopener noreferrer">Fonte: Legge di Bilancio 2026 (L. 199/2025)</a></div>
         </>}
 
         {/* ── CASA ── */}
@@ -117,6 +119,8 @@ export default function NovitaContent() {
             <h3>Bonus mobili: confermato al 50%</h3>
             <p>Puoi detrarre il 50% dell&apos;acquisto di mobili e grandi elettrodomestici fino a 5.000€, ma solo se hai una ristrutturazione in corso o conclusa nell&apos;anno.</p>
           </div>
+        
+          <div className="nov-source"><a href="https://www.agenziaentrate.gov.it/portale/web/guest/bonus-ristrutturazioni" target="_blank" rel="noopener noreferrer">Fonte: Agenzia delle Entrate</a></div>
         </>}
 
         {/* ── FAMIGLIA ── */}
@@ -135,6 +139,8 @@ export default function NovitaContent() {
             <h3>Bonus mamme lavoratrici: esteso alle autonome</h3>
             <p>Il bonus contributivo per le madri lavoratrici con 2 o più figli si estende anche alle lavoratrici autonome.</p>
           </div>
+        
+          <div className="nov-source"><a href="https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.assegno-unico-2026-presentazione-domanda-e-aggiornamento-importi.html" target="_blank" rel="noopener noreferrer">Fonte: INPS — Circolare n. 7/2026</a></div>
         </>}
 
         {/* ── LAVORO ── */}
@@ -157,6 +163,8 @@ export default function NovitaContent() {
             <h3>Dimissioni online: procedura invariata</h3>
             <p>Le dimissioni volontarie continuano a essere obbligatoriamente telematiche tramite il portale del Ministero del Lavoro (accessibile con SPID).</p>
           </div>
+        
+          <div className="nov-source"><a href="https://www.gazzettaufficiale.it/eli/id/2025/12/31/25G00213/sg" target="_blank" rel="noopener noreferrer">Fonte: Legge di Bilancio 2026 (L. 199/2025)</a></div>
         </>}
 
         {/* ── DOCUMENTI ── */}
@@ -170,6 +178,8 @@ export default function NovitaContent() {
             <h3>IT Wallet: patente e tessera sanitaria nell&apos;app IO</h3>
             <p>Da marzo 2026 puoi avere patente e tessera sanitaria in formato digitale nell&apos;app IO. Serve lo SPID per attivarle. Sono documenti validi a tutti gli effetti.</p>
           </div>
+        
+          <div className="nov-source"><a href="https://www.gazzettaufficiale.it/eli/id/2025/12/31/25G00213/sg" target="_blank" rel="noopener noreferrer">Fonte: Legge di Bilancio 2026 (L. 199/2025)</a></div>
         </>}
 
         {/* ── PARTITA IVA ── */}
@@ -188,6 +198,8 @@ export default function NovitaContent() {
             <h3>Flat tax incrementale: non rinnovata</h3>
             <p>La flat tax incrementale al 15% sugli incrementi di reddito non è stata rinnovata per il 2026.</p>
           </div>
+        
+          <div className="nov-source"><a href="https://www.gazzettaufficiale.it/eli/id/2025/12/31/25G00213/sg" target="_blank" rel="noopener noreferrer">Fonte: Legge di Bilancio 2026 (L. 199/2025)</a></div>
         </>}
 
         {/* SUBSCRIBE BOX */}

@@ -9,6 +9,7 @@ import SidebarToggle from '@/components/SidebarToggle';
 import QuizTfr from '@/components/QuizTfr';
 import CalcTfr from '@/components/CalcTfr';
 import Tip from '@/components/Tip';
+import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
@@ -99,6 +100,7 @@ export default function Page() {
             </div>
             <div className="hero-source"><strong>Fonti:</strong> Art. 2120 Codice Civile &middot; INPS &middot; Legge di Bilancio 2026 &middot; Agenzia delle Entrate</div>
             <PrintButton />
+            <VersionToggle />
           </div>
           <div className="hero-right">
             <div className="hstat"><div className="hn">~1 mese</div><div className="hl">di stipendio<br/>per ogni anno</div></div>
@@ -114,12 +116,11 @@ export default function Page() {
         <main className="main">
 
           <div className="perc r">
-            <span className="perc-label">Percorso</span>
+            <span className="perc-label">Guide correlate</span>
             <div className="perc-steps">
-              <a href="/dimissioni" className="ps">{'\u270D\uFE0F'} Dimissioni</a><span className="pa">{'\u203A'}</span>
-              <a href="/tfr" className="ps active">{'\uD83D\uDCB0'} TFR</a><span className="pa">{'\u203A'}</span>
-              <a href="/naspi" className="ps">NASpI</a><span className="pa">{'\u203A'}</span>
-              <a href="/730" className="ps">730</a>
+              <a href="/dimissioni" className="ps">✍️ Dimissioni</a>
+              <a href="/naspi" className="ps">💼 NASpI</a>
+              <a href="/730" className="ps">🧾 Faccio il 730</a>
             </div>
           </div>
 
@@ -350,6 +351,7 @@ export default function Page() {
         </main>
 
         <aside className="aside">
+          <VersionToggle />
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
             <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Verifica la tua situazione</div></div></a>

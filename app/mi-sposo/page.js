@@ -8,6 +8,7 @@ import PrintButton from '@/components/PrintButton';
 import SidebarToggle from '@/components/SidebarToggle';
 import QuizSposo from '@/components/QuizSposo';
 import Tip from '@/components/Tip';
+import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
@@ -99,6 +100,7 @@ export default function Page() {
             </div>
             <div className="hero-source"><strong>Fonti:</strong> Codice Civile &middot; Ministero dell&apos;Interno &middot; INPS &middot; Comuni d&apos;Italia</div>
             <PrintButton />
+            <VersionToggle />
           </div>
           <div className="hero-right">
             <div className="hstat"><div className="hn">16&euro;</div><div className="hl">costo minimo<br/>per le pubblicazioni</div></div>
@@ -114,12 +116,11 @@ export default function Page() {
         <main className="main">
 
           <div className="perc r">
-            <span className="perc-label">Percorso</span>
+            <span className="perc-label">Guide correlate</span>
             <div className="perc-steps">
-              <a href="/mi-sposo" className="ps active">{'\uD83D\uDC8D'} Mi sposo</a><span className="pa">{'\u203A'}</span>
-              <a href="/compro-casa" className="ps">Compro casa</a><span className="pa">{'\u203A'}</span>
-              <a href="/isee" className="ps">ISEE</a><span className="pa">{'\u203A'}</span>
-              <a href="/730" className="ps">730</a>
+              <a href="/compro-casa" className="ps">🏠 Compro casa</a>
+              <a href="/isee" className="ps">📋 Faccio l'ISEE</a>
+              <a href="/730" className="ps">🧾 Faccio il 730</a>
             </div>
           </div>
 
@@ -365,6 +366,7 @@ export default function Page() {
         </main>
 
         <aside className="aside">
+          <VersionToggle />
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
             <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Quale procedura seguire</div></div></a>

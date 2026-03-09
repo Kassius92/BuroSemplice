@@ -8,6 +8,7 @@ import PrintButton from '@/components/PrintButton';
 import SidebarToggle from '@/components/SidebarToggle';
 import QuizSpid from '@/components/QuizSpid';
 import Tip from '@/components/Tip';
+import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
@@ -105,6 +106,7 @@ export default function Page() {
             </div>
             <div className="hero-source"><strong>Fonti:</strong> AgID (Agenzia per l&apos;Italia Digitale) · SPID.gov.it · Provider ufficiali accreditati</div>
             <PrintButton />
+            <VersionToggle />
           </div>
           <div className="hero-right">
             <div className="hstat"><div className="hn">0€</div><div className="hl">costo con CIE<br/>o ufficio postale</div></div>
@@ -123,11 +125,11 @@ export default function Page() {
 
           {/* PERCORSO */}
           <div className="perc r">
-            <span className="perc-label">Percorso</span>
+            <span className="perc-label">Guide correlate</span>
             <div className="perc-steps">
-              <a href="/spid" className="ps active">{'\uD83D\uDD10'} SPID</a><span className="pa">{'\u203A'}</span>
-              <a href="/isee" className="ps">ISEE</a><span className="pa">{'\u203A'}</span>
-              <a href="/730" className="ps">730</a>
+              <a href="/isee" className="ps">📋 Faccio l'ISEE</a>
+              <a href="/730" className="ps">🧾 Faccio il 730</a>
+              <a href="/naspi" className="ps">💼 NASpI</a>
             </div>
           </div>
 
@@ -337,6 +339,7 @@ export default function Page() {
 
         {/* SIDEBAR */}
         <aside className="aside">
+          <VersionToggle />
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
             <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Scopri se ti serve</div></div></a>

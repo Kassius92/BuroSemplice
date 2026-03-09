@@ -116,6 +116,7 @@ export default function Pagina730() {
             </div>
             <div className="hero-source"><strong>Fonti:</strong> Agenzia delle Entrate · INPS · Ministero dell&apos;Economia e delle Finanze · Legge di Bilancio 2026</div>
             <PrintButton />
+            <VersionToggle />
           </div>
           <div className="hero-right">
             <div className="hstat"><div className="hn">0€</div><div className="hl">con la <Tip t="Il 730 che l'Agenzia delle Entrate prepara per te, già parzialmente compilato.">precompilata</Tip><br/>fai da solo gratis</div></div>
@@ -133,11 +134,11 @@ export default function Pagina730() {
         <main className="main">
 
           <div className="perc r">
-            <span className="perc-l">Percorso</span>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              <Link href="/spid" className="ps done">✓ SPID</Link><span className="pa">›</span>
-              <Link href="/isee" className="ps done">✓ ISEE</Link><span className="pa">›</span>
-              <span className="ps active">🧾 730</span>
+            <span className="perc-label">Guide correlate</span>
+            <div className="perc-steps">
+              <a href="/isee" className="ps">📋 Faccio l'ISEE</a>
+              <a href="/spid" className="ps">🪪 Faccio lo SPID</a>
+              <a href="/ristrutturare" className="ps">🔨 Ristrutturare casa</a>
             </div>
           </div>
 
@@ -418,6 +419,7 @@ export default function Pagina730() {
 
         {/* SIDEBAR */}
         <aside className="aside">
+          <VersionToggle />
 <div className="sbsec">
             <div className="sbsec-t">🛠 Strumenti</div>
             <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">🎯</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Scopri se devi farlo</div></div></a>
