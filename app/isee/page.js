@@ -7,6 +7,7 @@ import FAQ from '@/components/FAQ';
 import PrintButton from '@/components/PrintButton';
 import SidebarToggle from '@/components/SidebarToggle';
 import QuizIsee from '@/components/QuizIsee';
+import Tip from '@/components/Tip';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
@@ -36,19 +37,20 @@ const tocItems = [
   { id: 'serve', label: 'A cosa serve' },
   { id: 'come-si-fa', label: 'Come si fa' },
   { id: 'documenti', label: 'Documenti' },
-  { id: 'costi', label: 'Costi', bh: true },
   { id: 'errori', label: 'Errori', bh: true },
-  { id: 'corrente', label: 'ISEE corrente', bh: true },
+  { id: 'esempio', label: 'Esempio pratico', bh: true },
   { id: 'faq', label: 'FAQ', bh: true },
 ];
 
 const faqItems = [
-  { q: "Quanto dura l'ISEE?", a: "<strong>L\u2019ISEE ordinario vale dal giorno in cui lo fai fino al 31 dicembre dello stesso anno.</strong> Quindi un ISEE fatto a gennaio vale 12 mesi, uno fatto a ottobre vale solo 3 mesi. Per questo conviene farlo il prima possibile. Dal 1\u00B0 gennaio dell\u2019anno successivo serve un ISEE nuovo." },
-  { q: "Vivo con i miei genitori, il mio ISEE include i loro redditi?", a: "<strong>S\u00EC, se risulti nel loro stato di famiglia.</strong> Il nucleo familiare dell\u2019ISEE coincide con le persone presenti nello stato di famiglia anagrafico. L\u2019unico modo per avere un ISEE indipendente \u00E8 cambiare residenza e avere un tuo stato di famiglia separato. Attenzione: per alcune prestazioni (come l\u2019universit\u00E0) i genitori rientrano nel calcolo anche se non convivi con loro, a meno che non dimostri di essere economicamente indipendente da almeno 2 anni." },
-  { q: "Sono separato/divorziato, come funziona il nucleo?", a: "Se sei <strong>legalmente separato o divorziato</strong> e hai una residenza diversa dal tuo ex, siete in due nuclei separati. I figli rientrano nel nucleo del genitore con cui convivono. Se invece siete separati di fatto ma ancora sullo stesso stato di famiglia, risultate nello stesso nucleo ISEE. Il consiglio: se ti stai separando e vuoi fare l\u2019ISEE, prima fai il cambio di residenza." },
-  { q: "Ho dei risparmi ma non li uso, mi alzano l'ISEE?", a: "<strong>S\u00EC.</strong> L\u2019ISEE considera il patrimonio mobiliare (conti, depositi, investimenti) oltre ai redditi. C\u2019\u00E8 una franchigia (circa 6.000\u20AC + 2.000\u20AC per ogni figlio) sotto la quale il patrimonio non conta, ma sopra quella soglia ogni euro in pi\u00F9 alza l\u2019ISEE." },
-  { q: "Posso fare l'ISEE da solo senza CAF?", a: "<strong>S\u00EC, dal sito dell\u2019INPS.</strong> La DSU precompilata ha gi\u00E0 quasi tutti i dati. Tu devi solo verificare, eventualmente integrare, e confermare. Serve lo SPID. Se la tua situazione \u00E8 semplice (lavoro dipendente, un conto corrente, nessun immobile di propriet\u00E0), ci metti 15 minuti." },
-  { q: "Ho sbagliato qualcosa nell'ISEE, posso correggerlo?", a: "<strong>S\u00EC.</strong> Puoi presentare una nuova DSU in qualsiasi momento \u2014 la nuova sostituisce la precedente. Se hai gi\u00E0 ricevuto bonus sulla base di un ISEE errato, potresti dover restituire le somme in eccesso. Per questo vale la pena controllare bene i numeri prima di inviare." },
+  { q: "Quanto dura l'ISEE?", a: "<strong>Dal giorno in cui lo fai fino al 31 dicembre dello stesso anno.</strong> Quindi se lo fai a gennaio vale 12 mesi, se lo fai a ottobre vale solo 3. Per questo conviene farlo il prima possibile. Dal 1\u00B0 gennaio serve un ISEE nuovo." },
+  { q: "Vivo con i miei genitori, il mio ISEE include i loro redditi?", a: "<strong>S\u00EC, se risulti nel loro stato di famiglia.</strong> Il nucleo familiare ISEE coincide con chi \u00E8 nello stato di famiglia anagrafico. Per avere un ISEE indipendente devi cambiare residenza e avere un tuo stato di famiglia. Attenzione: per l\u2019universit\u00E0 i genitori contano anche se non convivi con loro, a meno che tu non sia economicamente indipendente da almeno 2 anni." },
+  { q: "Sono separato/divorziato, come funziona il nucleo?", a: "Se sei <strong>legalmente separato o divorziato</strong> e hai residenza diversa dal tuo ex, siete in due nuclei separati. I figli vanno nel nucleo del genitore con cui vivono. Se invece siete separati di fatto ma sullo stesso stato di famiglia, risultate nello stesso nucleo ISEE." },
+  { q: "Ho risparmi che non uso, mi alzano l'ISEE?", a: "<strong>S\u00EC.</strong> L\u2019ISEE conta anche il patrimonio mobiliare \u2014 cio\u00E8 i soldi che hai in banca, nei fondi, negli investimenti. C\u2019\u00E8 una franchigia (circa 6.000\u20AC + 2.000\u20AC per ogni figlio) sotto cui non conta, ma sopra quella soglia ogni euro in pi\u00F9 alza l\u2019ISEE." },
+  { q: "Posso fare l'ISEE da solo senza CAF?", a: "<strong>S\u00EC, dal sito dell\u2019INPS.</strong> La DSU precompilata ha gi\u00E0 quasi tutti i dati dentro. Tu devi solo controllare, aggiungere quello che manca, e confermare. Serve lo SPID. Se la tua situazione \u00E8 semplice (stipendio fisso, un conto, nessun immobile), ci metti 15 minuti." },
+  { q: "Ho sbagliato qualcosa nell'ISEE, posso correggerlo?", a: "<strong>S\u00EC.</strong> Puoi presentare una nuova DSU quando vuoi \u2014 la nuova sostituisce la vecchia. Attenzione: se hai gi\u00E0 ricevuto bonus sulla base di un ISEE sbagliato, potresti dover restituire i soldi in eccesso." },
+  { q: "Cos'\u00E8 l'ISEE corrente?", a: "\u00C8 un ISEE aggiornato alla tua situazione di oggi. Serve se il tuo reddito \u00E8 calato almeno del 25% o il patrimonio \u00E8 sceso del 20% rispetto a quello dichiarato (es. hai perso il lavoro). Si fa come l\u2019ISEE normale ma va rinnovato ogni 6 mesi." },
+  { q: "ISEE e 730 sono la stessa cosa?", a: "<strong>No.</strong> Il 730 \u00E8 la dichiarazione dei redditi \u2014 serve a pagare le tasse e a recuperare soldi (detrazioni). L\u2019ISEE \u00E8 la fotografia della situazione economica della famiglia \u2014 serve a chiedere bonus e agevolazioni. Sono indipendenti. Puoi fare l\u2019ISEE senza aver fatto il 730. Per\u00F2 i redditi del 730 sono tra i dati che l\u2019ISEE usa per il calcolo." },
 ];
 
 export default function Page() {
@@ -59,7 +61,7 @@ export default function Page() {
       url: '/isee',
       image: 'og-isee.png',
       datePublished: '2026-03-04',
-      dateModified: '2026-03-04',
+      dateModified: '2026-03-09',
     }),
     faqSchema(faqItems),
   ];
@@ -77,7 +79,6 @@ export default function Page() {
         <div className="blob b1"></div>
         <div className="blob b2"></div>
         <div className="blob b3"></div>
-
         <svg className="ring" viewBox="0 0 360 360" fill="none">
           <circle cx="180" cy="180" r="170" stroke="#0F4C5C" strokeWidth="1"/>
           <circle cx="180" cy="180" r="130" stroke="#0F4C5C" strokeWidth=".8"/>
@@ -91,38 +92,26 @@ export default function Page() {
           <circle cx="10"  cy="180" r="4" fill="#2A9D8F" opacity=".6"/>
           <circle cx="350" cy="180" r="4" fill="#2A9D8F" opacity=".6"/>
         </svg>
-
         <div className="shimmer-line"></div>
-
         <div className="hero-c">
           <div className="hero-left">
-            <div className="cat-badge">💰 Fisco e soldi</div>
+            <div className="cat-badge">{'\uD83D\uDCB0'} Fisco e soldi</div>
             <div className="hero-tag"><span className="tag-dot"></span> Guida gratuita completa</div>
             <h1>Faccio l&apos;<em>ISEE</em></h1>
             <p className="hero-sub">Cos&apos;&egrave;, a cosa serve, come si fa, quali documenti servono. Se devi chiedere un bonus o un&apos;agevolazione, parti da qui.</p>
             <div className="hero-pills">
-              <span className="pill pill-g">✦ 100% gratuita</span>
-              <span className="pill pill-b">🕐 10 min di lettura</span>
-              <span className="pill pill-w">📅 Validità: 1 gen — 31 dic 2026</span>
-              <span className="pill pill-s">✓ Aggiornato marzo 2026</span>
+              <span className="pill pill-g">{'\u2726'} 100% gratuita</span>
+              <span className="pill pill-b">{'\uD83D\uDD50'} 10 min di lettura</span>
+              <span className="pill pill-w">{'\uD83D\uDCC5'} Validit&agrave;: 1 gen — 31 dic 2026</span>
+              <span className="pill pill-s">{'\u2713'} Aggiornato marzo 2026</span>
             </div>
             <div className="hero-source"><strong>Fonti:</strong> INPS · Agenzia delle Entrate · Ministero del Lavoro e delle Politiche Sociali</div>
             <PrintButton />
           </div>
-
           <div className="hero-right">
-            <div className="hstat">
-              <div className="hn">0€</div>
-              <div className="hl">online con SPID<br/>o gratis al CAF</div>
-            </div>
-            <div className="hstat">
-              <div className="hn">15&apos;</div>
-              <div className="hl">con la precompilata<br/>INPS online</div>
-            </div>
-            <div className="hstat">
-              <div className="hn">31/12</div>
-              <div className="hl">scadenza annuale<br/>vale tutto l&apos;anno</div>
-            </div>
+            <div className="hstat"><div className="hn">0€</div><div className="hl">online con SPID<br/>o gratis al CAF</div></div>
+            <div className="hstat"><div className="hn">15&apos;</div><div className="hl">con la precompilata<br/>INPS online</div></div>
+            <div className="hstat"><div className="hn">31/12</div><div className="hl">scadenza annuale<br/>vale tutto l&apos;anno</div></div>
           </div>
         </div>
       </section>
@@ -138,8 +127,8 @@ export default function Page() {
           <div className="perc r">
             <span className="perc-label">Percorso</span>
             <div className="perc-steps">
-              <a href="/spid" className="ps done">✓ SPID</a><span className="pa">›</span>
-              <a href="/isee" className="ps active">📋 ISEE</a><span className="pa">›</span>
+              <a href="/spid" className="ps done">{'\u2713'} SPID</a><span className="pa">{'\u203A'}</span>
+              <a href="/isee" className="ps active">{'\uD83D\uDCCB'} ISEE</a><span className="pa">{'\u203A'}</span>
               <a href="/730" className="ps">730</a>
             </div>
           </div>
@@ -147,14 +136,14 @@ export default function Page() {
           {/* SINTESI */}
           <div className="sec r" id="sintesi">
             <div className="sintesi">
-              <div className="sintesi-label">⚡ In sintesi</div>
+              <div className="sintesi-label">{'\u26A1'} In sintesi</div>
               <div className="scards">
-                <div className="sc bl r d1"><div className="si">📋</div><div className="sn">1 numero</div><div className="sl">misura la ricchezza del nucleo familiare</div></div>
-                <div className="sc sg r d2"><div className="si">💰</div><div className="sn">0€</div><div className="sl">online o al CAF, gratis</div></div>
-                <div className="sc    r d3"><div className="si">⏱</div><div className="sn">15–20&apos;</div><div className="sl">con la precompilata INPS</div></div>
-                <div className="sc    r d1"><div className="si">📅</div><div className="sn">31/12</div><div className="sl">scade il 31 dicembre di ogni anno</div></div>
-                <div className="sc tc r d2"><div className="si">🔐</div><div className="sn">SPID</div><div className="sl">ti serve per farlo online</div></div>
-                <div className="sc    r d3"><div className="si">🎯</div><div className="sn">Bonus</div><div className="sl">senza ISEE perdi agevolazioni</div></div>
+                <div className="sc bl r d1"><div className="si">{'\uD83D\uDCCB'}</div><div className="sn">1 numero</div><div className="sl">misura la ricchezza del nucleo familiare</div></div>
+                <div className="sc sg r d2"><div className="si">{'\uD83D\uDCB0'}</div><div className="sn">0€</div><div className="sl">online o al CAF, gratis</div></div>
+                <div className="sc    r d3"><div className="si">{'\u23F1'}</div><div className="sn">15–20&apos;</div><div className="sl">con la precompilata INPS</div></div>
+                <div className="sc    r d1"><div className="si">{'\uD83D\uDCC5'}</div><div className="sn">31/12</div><div className="sl">scade il 31 dicembre di ogni anno</div></div>
+                <div className="sc tc r d2"><div className="si">{'\uD83D\uDD10'}</div><div className="sn">SPID</div><div className="sl">ti serve per farlo online</div></div>
+                <div className="sc    r d3"><div className="si">{'\uD83C\uDFAF'}</div><div className="sn">Bonus</div><div className="sl">senza ISEE perdi agevolazioni</div></div>
               </div>
             </div>
             <QuizIsee />
@@ -163,126 +152,81 @@ export default function Page() {
           {/* COS'È */}
           <div className="sec r" id="cose">
             <div className="sec-tag">Le basi</div>
-            <h2>Cos&apos;&egrave; l&apos;ISEE</h2>
-            <p>L&apos;ISEE &egrave; un numero che dice <strong>quanto &egrave; &quot;ricca&quot; la tua famiglia</strong>. Non guarda solo il tuo stipendio — mette insieme i redditi, i risparmi, gli investimenti e gli immobili di tutto il nucleo familiare, e tira fuori un valore in euro.</p>
-            <p>Pi&ugrave; basso &egrave; il tuo ISEE, pi&ugrave; agevolazioni hai diritto a ricevere. Un ISEE di 15.000€ ti apre le porte a quasi tutti i bonus. Un ISEE di 45.000€ ti esclude dalla maggior parte. &Egrave; la &quot;chiave&quot; che lo Stato usa per decidere chi aiutare e quanto.</p>
-            <p>Per ottenerlo devi compilare la <strong>DSU</strong> (Dichiarazione Sostitutiva Unica) — un modulo dove inserisci i dati della famiglia. L&apos;INPS calcola il numero. L&apos;ISEE vale <strong>dal giorno in cui lo fai al 31 dicembre dello stesso anno</strong>.</p>
-            <div className="ib tip r">
-              <div className="ib-t">💡 ISEE e 730 non sono la stessa cosa</div>
-              <p>Il <strong>730</strong> &egrave; la dichiarazione dei redditi — serve a pagare le tasse e recuperare detrazioni. L&apos;<strong>ISEE</strong> &egrave; la fotografia della situazione economica della famiglia — serve a chiedere bonus e agevolazioni. Sono due cose diverse e indipendenti. Puoi fare l&apos;ISEE senza aver fatto il 730 e viceversa. Per&ograve; i dati del 730 (redditi) sono tra quelli che servono per l&apos;ISEE.</p>
+            <h2>Cos&apos;&egrave; l&apos;ISEE (spiegato semplice)</h2>
+
+            <p>Immagina che lo Stato voglia sapere quanto &egrave; &quot;ricca&quot; la tua famiglia, per decidere se aiutarti o no. Non guarda solo lo stipendio — guarda <strong>tutto</strong>: quanto guadagnate, quanto avete in banca, se avete una casa di propriet&agrave;. Mette insieme tutti questi numeri, fa un calcolo, e tira fuori <strong>un solo numero in euro</strong>. Quello &egrave; il tuo ISEE.</p>
+
+            <p>Funziona come un punteggio: pi&ugrave; &egrave; basso, pi&ugrave; bonus puoi ottenere. Con un ISEE di 15.000€ hai diritto a quasi tutto. Con 45.000€ ti escludono dalla maggior parte delle agevolazioni. &Egrave; la &quot;chiave&quot; che apre (o chiude) le porte dei bonus.</p>
+
+            <p>Per ottenere il tuo ISEE devi compilare un modulo chiamato <Tip t="È il modulo dove metti i dati della famiglia: redditi, conti, immobili. Lo compili tu o lo fa il CAF per te. L'INPS lo usa per calcolare il tuo ISEE.">DSU</Tip> (Dichiarazione Sostitutiva Unica). Lo mandi all&apos;INPS, che fa il calcolo e ti restituisce un documento chiamato <Tip t="Il foglio ufficiale con il tuo numero ISEE. Ti serve per chiedere qualsiasi bonus o agevolazione. Lo trovi nella tua area INPS.">attestazione ISEE</Tip>. L&apos;ISEE vale <strong>dal giorno in cui lo fai fino al 31 dicembre</strong> dello stesso anno — poi ne serve uno nuovo.</p>
+
+            <h3>Le parole che devi conoscere</h3>
+            <div className="glossary r">
+              <div className="gl-item r d1"><strong>DSU</strong> — Dichiarazione Sostitutiva Unica. Il modulo dove inserisci tutti i dati della famiglia. Lo compili online sul sito INPS o lo fa il CAF per te.</div>
+              <div className="gl-item r d2"><strong>Nucleo familiare</strong> — Le persone che risultano nel tuo <Tip t="Un documento del Comune che elenca chi abita con te alla stessa residenza. Lo scarichi online con SPID.">stato di famiglia</Tip> anagrafico. Di solito: tu, il tuo partner (se convivete), i figli. L&apos;ISEE si calcola su tutti loro, non solo su di te.</div>
+              <div className="gl-item r d3"><strong>Patrimonio mobiliare</strong> — Tutto quello che hai &quot;in forma liquida&quot;: soldi sul conto corrente, risparmi, investimenti, azioni, fondi, buoni postali, crypto. Anche la PostePay Evolution conta.</div>
+              <div className="gl-item r d4"><strong>Giacenza media</strong> — La media dei soldi che hai avuto sul conto durante l&apos;anno. La banca te la d&agrave; insieme al saldo. Per l&apos;ISEE serve il pi&ugrave; alto tra saldo e giacenza media.</div>
+              <div className="gl-item r d1"><strong>Patrimonio immobiliare</strong> — Case, terreni, garage di propriet&agrave;. Il valore si calcola dalla <Tip t="Un numero che il catasto assegna a ogni immobile. Serve a calcolare quanto vale ai fini fiscali. La trovi sulla visura catastale (scaricabile gratis con SPID).">rendita catastale</Tip>, non dal prezzo di mercato.</div>
+              <div className="gl-item r d2"><strong>ISEE corrente</strong> — Una versione aggiornata dell&apos;ISEE per chi ha avuto un cambiamento importante (perso il lavoro, calo di reddito). Vale 6 mesi.</div>
             </div>
-            <a href="/730" className="xlink r"><span className="xlink-em">🧾</span><div className="xlink-t"><strong>Faccio il 730</strong> — Detrazioni, rimborso, come massimizzare.</div><span className="xlink-ar">→</span></a>
+
+            <div className="ib tip r">
+              <div className="ib-t">{'\uD83D\uDCA1'} ISEE e 730: non sono la stessa cosa</div>
+              <p>Il <strong>730</strong> serve a pagare le tasse e recuperare detrazioni (soldi indietro). L&apos;<strong>ISEE</strong> serve a chiedere bonus e agevolazioni. Sono due cose diverse. Puoi fare l&apos;ISEE anche se non hai fatto il 730. Per&ograve; i redditi che dichiari nel 730 sono tra i dati che l&apos;ISEE usa per il calcolo.</p>
+            </div>
+            <a href="/730" className="xlink r"><span className="xlink-em">{'\uD83E\uDDFE'}</span><div className="xlink-t"><strong>Faccio il 730</strong> — Detrazioni, rimborso, come massimizzare.</div><span className="xlink-ar">{'\u2192'}</span></a>
           </div>
 
           {/* A COSA SERVE */}
           <div className="sec r" id="serve">
             <div className="sec-tag">Utilizzo</div>
             <h2>A cosa serve (in concreto)</h2>
-            <p>Quasi tutti i bonus e le agevolazioni pubbliche in Italia richiedono l&apos;ISEE. Se non lo fai, non puoi chiederli — anche se ne avresti diritto.</p>
+            <p>In Italia, quasi tutti i bonus e le agevolazioni pubbliche richiedono l&apos;ISEE. &Egrave; il biglietto d&apos;ingresso. Se non ce l&apos;hai, non puoi nemmeno fare domanda — anche se quei soldi ti spetterebbero.</p>
             <div className="ucgrid r">
-              <div className="uc r d1"><div className="uc-e">👶</div><div className="uc-n">Assegno unico figli</div><div className="uc-d">Da 58€ a 204€ al mese per figlio. Senza ISEE ricevi il minimo.</div></div>
-              <div className="uc r d2"><div className="uc-e">🏫</div><div className="uc-n">Rette universitarie</div><div className="uc-d">Esonero totale sotto i 22.000€. Riduzioni fino a 30.000€.</div></div>
-              <div className="uc r d3"><div className="uc-e">🍽️</div><div className="uc-n">Mensa scolastica</div><div className="uc-d">Il costo varia in base all&apos;ISEE. Fasce da 0€ a tariffa piena.</div></div>
-              <div className="uc r d4"><div className="uc-e">🏠</div><div className="uc-n">Bonus affitto</div><div className="uc-d">Contributi comunali per l&apos;affitto. Servono ISEE basso + requisiti locali.</div></div>
-              <div className="uc r d1"><div className="uc-e">💊</div><div className="uc-n">Ticket sanitari</div><div className="uc-d">Esenzione dal ticket per visite ed esami se il reddito &egrave; basso.</div></div>
-              <div className="uc r d2"><div className="uc-e">🧒</div><div className="uc-n">Bonus nido</div><div className="uc-d">Fino a 3.000€/anno per l&apos;asilo nido. L&apos;importo dipende dall&apos;ISEE.</div></div>
+              <div className="uc r d1"><div className="uc-e">{'\uD83D\uDC76'}</div><div className="uc-n">Assegno unico figli</div><div className="uc-d">Da 58€ a 204€ al mese per figlio. Senza ISEE ricevi il minimo.</div></div>
+              <div className="uc r d2"><div className="uc-e">{'\uD83C\uDFEB'}</div><div className="uc-n">Rette universitarie</div><div className="uc-d">Esonero totale sotto i 22.000€. Riduzioni fino a 30.000€.</div></div>
+              <div className="uc r d3"><div className="uc-e">{'\uD83C\uDF7D\uFE0F'}</div><div className="uc-n">Mensa scolastica</div><div className="uc-d">Il costo cambia in base all&apos;ISEE. Si va da 0€ a tariffa piena.</div></div>
+              <div className="uc r d4"><div className="uc-e">{'\uD83C\uDFE0'}</div><div className="uc-n">Bonus affitto</div><div className="uc-d">Contributi comunali per l&apos;affitto. Servono ISEE basso + requisiti del tuo Comune.</div></div>
+              <div className="uc r d1"><div className="uc-e">{'\uD83D\uDC8A'}</div><div className="uc-n">Ticket sanitari</div><div className="uc-d">Esenzione dal ticket per visite ed esami con reddito basso.</div></div>
+              <div className="uc r d2"><div className="uc-e">{'\uD83E\uDDD2'}</div><div className="uc-n">Bonus nido</div><div className="uc-d">Fino a 3.600€/anno per l&apos;asilo nido. L&apos;importo dipende dall&apos;ISEE.</div></div>
             </div>
-            <p>E poi: bonus trasporti (60€), bonus psicologo (fino a 1.500€), social card (460€), case popolari, agevolazioni TARI, bonus bollette luce e gas.</p>
+            <p>E poi: bonus trasporti (60€), bonus psicologo (fino a 1.500€), <Tip t="Una carta prepagata da 460€ per famiglie con ISEE sotto 15.000€. Serve per spese alimentari, carburante e trasporti.">social card</Tip> (460€), case popolari, agevolazioni TARI, bonus bollette luce e gas.</p>
             <div className="ib warn r">
-              <div className="ib-t">⚠️ Senza ISEE perdi soldi — esempio concreto</div>
-              <p>Se hai un figlio e non presenti l&apos;ISEE, ricevi l&apos;assegno unico al <strong>minimo</strong>: 58€ al mese. Ma se il tuo ISEE &egrave; sotto i 17.500€, riceveresti <strong>204€ al mese</strong>. Sono <strong>1.752€ all&apos;anno che butti via</strong> solo perch&eacute; non hai compilato un modulo. E ci vogliono 15 minuti.</p>
+              <div className="ib-t">{'\u26A0\uFE0F'} Senza ISEE stai regalando soldi — ecco quanto</div>
+              <p>Hai un figlio e non hai fatto l&apos;ISEE? Ricevi l&apos;assegno unico al minimo: <strong>58€ al mese</strong>. Ma se il tuo ISEE &egrave; sotto i 17.500€, ti spettano <strong>204€ al mese</strong>. Differenza: <strong>1.752€ all&apos;anno buttati via</strong>. Per un modulo che si compila in 15 minuti. E questo &egrave; solo l&apos;assegno unico — senza contare nido, mensa, bollette, universit&agrave;.</p>
             </div>
           </div>
 
           {/* COME SI FA */}
           <div className="sec r" id="come-si-fa">
             <div className="sec-tag">Passo per passo</div>
-            <h2>Come si fa</h2>
-            <p>Hai 3 opzioni. Tutte gratuite (tranne il commercialista).</p>
+            <h2>Come si fa l&apos;ISEE</h2>
+            <p>Hai 3 strade. Due sono completamente gratuite.</p>
 
-            <h3>Opzione 1: Online da solo (DSU precompilata)</h3>
-            <p>Dal 2024 l&apos;INPS mette a disposizione la <strong>DSU precompilata</strong> — un modulo che ha gi&agrave; dentro quasi tutti i tuoi dati (redditi, conti, immobili). Tu devi solo controllare, aggiungere eventuali dati mancanti e confermare.</p>
+            <h3>{'\uD83D\uDFE2'} Passo zero: hai lo SPID?</h3>
+            <p>Per fare l&apos;ISEE online ti serve lo <Tip t="L'identità digitale che ti permette di accedere a tutti i servizi della Pubblica Amministrazione online: INPS, Agenzia delle Entrate, Comune, ecc.">SPID</Tip>. Se non ce l&apos;hai, fallo prima — ci vogliono 15 minuti e non costa niente. Senza SPID puoi comunque andare al CAF, ma online non entri.</p>
+            <a href="/spid" className="xlink r"><span className="xlink-em">{'\uD83D\uDD10'}</span><div className="xlink-t"><strong>Faccio lo SPID</strong> — Come farlo gratis in 15 minuti.</div><span className="xlink-ar">{'\u2192'}</span></a>
+
+            <h3>Opzione 1: Online da solo (la pi&ugrave; veloce)</h3>
+            <p>Dal 2024 l&apos;INPS ti mette a disposizione la <Tip t="Un modulo già compilato dall'INPS con i tuoi dati (redditi, conti, immobili). Tu devi solo controllare che sia tutto giusto e premere 'conferma'.">DSU precompilata</Tip> — un modulo che ha gi&agrave; dentro quasi tutto: redditi, conti, immobili. Tu controlli, aggiungi quello che manca e confermi. Fine.</p>
             <div className="steps r">
-              <div className="step r d1">
-                <div className="stepn">1</div>
-                <div className="stepb">
-                  <strong>Vai su inps.it e accedi con SPID</strong>
-                  <p>Cerca &quot;ISEE precompilato&quot; nella barra di ricerca. Se non hai lo SPID, fallo prima — ci vogliono 15 minuti.</p>
-                </div>
-              </div>
-              <div className="step r d2">
-                <div className="stepn">2</div>
-                <div className="stepb">
-                  <strong>Controlla i dati precompilati</strong>
-                  <p>L&apos;INPS ha gi&agrave; i tuoi redditi, i conti correnti e gli immobili. Verifica che siano corretti. Se manca qualcosa (es. un conto all&apos;estero o un immobile non censito), aggiungilo.</p>
-                </div>
-              </div>
-              <div className="step r d3">
-                <div className="stepn">3</div>
-                <div className="stepb">
-                  <strong>Inserisci i dati del nucleo familiare</strong>
-                  <p>Il nucleo familiare per l&apos;ISEE &egrave; chi risulta nel tuo stato di famiglia + il coniuge (anche se non convivente). Devi inserire i dati di tutti i componenti.</p>
-                </div>
-              </div>
-              <div className="step r d4">
-                <div className="stepn">4</div>
-                <div className="stepb">
-                  <strong>Conferma e invia</strong>
-                  <p>L&apos;INPS calcola il tuo ISEE in pochi giorni (a volte in poche ore). Ricevi l&apos;attestazione nella tua area riservata su inps.it.</p>
-                </div>
-              </div>
+              <div className="step r d1"><div className="stepn">1</div><div className="stepb"><strong>Vai su inps.it e accedi con SPID</strong><p>Cerca &quot;ISEE precompilato&quot; nella barra di ricerca. Se ti perdi, c&apos;&egrave; anche un link diretto: <em>servizi.inps.it → ISEE precompilato</em>.</p></div></div>
+              <div className="step r d2"><div className="stepn">2</div><div className="stepb"><strong>Controlla i dati che l&apos;INPS ha gi&agrave; inserito</strong><p>Troverai i tuoi redditi, i conti correnti e gli immobili gi&agrave; compilati. L&apos;INPS prende questi dati dalle banche e dall&apos;Agenzia delle Entrate. Verifica che siano giusti. Se manca qualcosa (tipo un conto all&apos;estero, una carta prepagata con IBAN, o un immobile non censito), aggiungilo tu.</p></div></div>
+              <div className="step r d3"><div className="stepn">3</div><div className="stepb"><strong>Completa i dati del <Tip t="Le persone nel tuo stato di famiglia + il coniuge anche se vive altrove. I dati di tutti vanno inseriti.">nucleo familiare</Tip></strong><p>Il nucleo &egrave; chi risulta nel tuo stato di famiglia, pi&ugrave; il coniuge (anche se non convivente). Per ognuno servono i dati economici. Se vivi da solo, &egrave; velocissimo. Se vivi con i genitori, servono anche i loro.</p></div></div>
+              <div className="step r d4"><div className="stepn">4</div><div className="stepb"><strong>Conferma e aspetta il risultato</strong><p>L&apos;INPS calcola il tuo ISEE in pochi giorni (spesso in poche ore). L&apos;<Tip t="Il documento ufficiale con il tuo numero ISEE. Lo scarichi dall'area riservata INPS. È quello che ti chiedono quando fai domanda per un bonus.">attestazione</Tip> compare nella tua area riservata su inps.it — la scarichi in PDF.</p></div></div>
             </div>
-            <a href="/spid" className="xlink r"><span className="xlink-em">🔐</span><div className="xlink-t"><strong>Faccio lo SPID</strong> — Come farlo gratis in 15 minuti.</div><span className="xlink-ar">→</span></a>
 
-            <h3>Opzione 2: Al CAF (gratis)</h3>
-            <p>Vai a un CAF con tutti i documenti (lista sotto). Compilano la DSU per te e inviano tutto all&apos;INPS. <strong>&Egrave; gratis</strong> — i CAF vengono pagati dallo Stato per questo servizio. Unico neo: nei primi mesi dell&apos;anno c&apos;&egrave; coda, prenota con anticipo.</p>
+            <h3>Opzione 2: Al CAF (gratis, lo fanno loro)</h3>
+            <p>Vai a un <Tip t="Centro di Assistenza Fiscale. Un ufficio dove ti aiutano gratis con ISEE, 730 e altre pratiche fiscali. Li trovi ovunque: CGIL, CISL, UIL, ACLI, MCL ne hanno uno.">CAF</Tip> con i documenti (lista pi&ugrave; sotto). Compilano tutto loro e mandano la DSU all&apos;INPS. <strong>&Egrave; gratis al 100%</strong> — i CAF vengono pagati dallo Stato per questo servizio. Unico problema: nei primi mesi dell&apos;anno c&apos;&egrave; la fila, quindi prenota con anticipo (meglio a gennaio).</p>
 
-            <h3>Opzione 3: Dal commercialista</h3>
-            <p>Il commercialista pu&ograve; fare l&apos;ISEE per te, ma <strong>ti far&agrave; pagare 30–80€</strong> per un servizio che al CAF &egrave; gratis. Conviene solo se hai una situazione patrimoniale molto complessa (immobili in pi&ugrave; regioni, conti esteri, trust).</p>
+            <h3>Opzione 3: Dal commercialista (a pagamento)</h3>
+            <p>Il commercialista pu&ograve; farlo, ma <strong>ti chiede 30–80€</strong> per qualcosa che al CAF &egrave; gratis. Ha senso solo se la tua situazione &egrave; molto complicata: immobili in pi&ugrave; regioni, conti all&apos;estero, trust, separazione in corso con figli.</p>
 
             <div className="ib mon r">
-              <div className="ib-t">💶 Il consiglio onesto di ZeroBurocrazia</div>
-              <p><strong>Se hai dimestichezza con SPID e computer</strong> → fallo online con la precompilata. Ci metti 15–20 minuti ed &egrave; tutto gratis.<br/><strong>Se non ti fidi o preferisci un aiuto</strong> → vai al CAF. &Egrave; gratis, ci metti mezz&apos;ora, e lo fanno loro. Prenota a gennaio per evitare le code.<br/><strong>Se hai situazioni complesse</strong> (immobili all&apos;estero, separazione in corso) → vai dal commercialista. Paga di pi&ugrave; ma evita errori.</p>
+              <div className="ib-t">{'\uD83D\uDCB6'} Il consiglio onesto</div>
+              <p><strong>Sai usare il computer e hai lo SPID?</strong> → Fallo online. 15 minuti, zero euro, niente code.<br/><strong>Preferisci che qualcuno ti aiuti?</strong> → Vai al CAF. Gratis, mezz&apos;ora, e fanno tutto loro. Prenota a gennaio.<br/><strong>Situazione complicata?</strong> (conti esteri, separazione, eredit&agrave; recenti) → Commercialista. Paghi, ma eviti errori costosi.</p>
             </div>
-          </div>
-{/* DOCUMENTI */}
-          <div className="sec r" id="documenti">
-            <div className="sec-tag">Checklist</div>
-            <h2>Documenti necessari</h2>
-            <p>Questi servono per <strong>tutti i componenti del nucleo familiare</strong> — non solo per te. Se vivi con i genitori, servono anche i loro dati.</p>
 
-            <h3>Documenti di identit&agrave;</h3>
-            <ul className="cl">
-              <li className="cli r d1"><div className="ci">🪪</div><div className="clb"><strong>Documento d&apos;identit&agrave; e codice fiscale</strong><span className="note">Di ogni componente del nucleo familiare</span></div></li>
-              <li className="cli r d2"><div className="ci">👨‍👩‍👧</div><div className="clb"><strong>Stato di famiglia</strong><span className="note">Lo scarichi online con lo SPID dal sito del tuo Comune in 2 minuti</span></div></li>
-            </ul>
-
-            <h3>Redditi (anno 2024)</h3>
-            <ul className="cl">
-              <li className="cli r d1"><div className="ci">🧾</div><div className="clb"><strong>Ultima dichiarazione dei redditi (730 o Redditi)</strong><span className="note">Quella fatta nel 2025 sui redditi del 2024. Se non l&apos;hai fatta, servono le CU.</span></div></li>
-              <li className="cli r d2"><div className="ci">📄</div><div className="clb"><strong>CU 2025 (Certificazione Unica)</strong><span className="note">Te la d&agrave; il datore di lavoro. Se hai la pensione, te la d&agrave; l&apos;INPS.</span></div></li>
-              <li className="cli r d3"><div className="ci">📋</div><div className="clb"><strong>Redditi esenti (se presenti)</strong><span className="note">Borse di studio, assegni di mantenimento, pensioni di invalidit&agrave;, indennit&agrave; di accompagnamento</span></div></li>
-            </ul>
-
-            <h3>Patrimonio (saldo al 31 dicembre 2024)</h3>
-            <ul className="cl">
-              <li className="cli r d1"><div className="ci">🏦</div><div className="clb"><strong>Saldo e giacenza media di tutti i conti correnti</strong><span className="note">Servono sia il saldo al 31/12/2024 sia la giacenza media annua. Lo chiedi alla banca o scarichi dall&apos;home banking.</span></div></li>
-              <li className="cli r d2"><div className="ci">💳</div><div className="clb"><strong>Carte prepagate con IBAN</strong><span className="note">PostePay Evolution, Hype, Revolut, N26 — tutte quelle con IBAN vanno dichiarate come conti correnti</span></div></li>
-              <li className="cli r d3"><div className="ci">📊</div><div className="clb"><strong>Titoli, azioni, obbligazioni, fondi</strong><span className="note">Valore al 31/12/2024. Se hai un deposito titoli, la banca ti d&agrave; il documento.</span></div></li>
-              <li className="cli r d4"><div className="ci">🏠</div><div className="clb"><strong>Valore immobili (rendita catastale)</strong><span className="note">La trovi nella visura catastale, scaricabile gratis dal sito dell&apos;Agenzia delle Entrate con SPID</span></div></li>
-              <li className="cli r d1"><div className="ci">🏗</div><div className="clb"><strong>Mutuo residuo</strong><span className="note">Se hai un mutuo, il debito residuo al 31/12/2024 abbassa il patrimonio immobiliare (e quindi l&apos;ISEE)</span></div></li>
-            </ul>
-
-            <h3>Veicoli</h3>
-            <ul className="cl">
-              <li className="cli r"><div className="ci">🚗</div><div className="clb"><strong>Targa di auto e moto</strong><span className="note">Di tutti i veicoli intestati ai componenti del nucleo</span></div></li>
-            </ul>
-          </div>
-
-          {/* COSTI */}
-          <div className="sec breve-hide r" id="costi">
-            <div className="sec-tag">Confronto</div>
-            <h2>Quanto costa e quanto tempo ci vuole</h2>
             <div className="tw r">
               <table>
                 <thead><tr><th>Metodo</th><th>Costo</th><th>Tempo</th></tr></thead>
@@ -294,12 +238,12 @@ export default function Page() {
               </table>
             </div>
             <div className="ib tip r">
-              <div className="ib-t">💡 Quando conviene farlo</div>
-              <p>L&apos;ISEE vale per tutto l&apos;anno, quindi fallo <strong>il prima possibile</strong> — idealmente a gennaio o febbraio. Molti bonus hanno scadenze o fondi limitati: chi arriva prima, prende di pi&ugrave;. Al CAF le code sono pi&ugrave; corte a inizio anno.</p>
+              <div className="ib-t">{'\uD83D\uDCA1'} Quando conviene farlo</div>
+              <p>L&apos;ISEE vale tutto l&apos;anno, quindi fallo <strong>il prima possibile</strong> — idealmente a gennaio o febbraio. Molti bonus hanno fondi limitati e scadenze: chi arriva prima prende di pi&ugrave;. Al CAF le code sono pi&ugrave; corte a inizio anno.</p>
             </div>
           </div>
 
-          {/* BLOCCO AFFILIAZIONE: ISEE ONLINE */}
+          {/* BLOCCO AFFILIAZIONE */}
           <div className="aff-block r">
             <div className="aff-label">Strumento consigliato</div>
             <div className="aff-body">
@@ -308,44 +252,83 @@ export default function Page() {
                 <div className="aff-text">Carichi i documenti, il CAF compila e invia la DSU per te. Niente code, niente appuntamenti. Gratis o a costo minimo.</div>
                 <div className="aff-note">* Link in partnership — se usi il servizio, ZeroBurocrazia riceve una piccola commissione. Non cambia nulla per te.</div>
               </div>
-              <a href="QUI_LINK_AFFILIATO_ISEE" target="_blank" rel="noopener sponsored" className="aff-btn">
-                Fai l&apos;ISEE online →
-              </a>
+              <a href="QUI_LINK_AFFILIATO_ISEE" target="_blank" rel="noopener sponsored" className="aff-btn">Fai l&apos;ISEE online →</a>
             </div>
+          </div>
+
+          {/* DOCUMENTI */}
+          <div className="sec r" id="documenti">
+            <div className="sec-tag">Checklist</div>
+            <h2>Documenti necessari</h2>
+            <p>Questi servono per <strong>tutti i componenti del nucleo familiare</strong> — non solo per te. Se vivi con i genitori, servono anche i loro dati. Se fai la precompilata online, la maggior parte &egrave; gi&agrave; inserita dall&apos;INPS — ma meglio averli sotto mano per controllare.</p>
+
+            <h3>Documenti di identit&agrave;</h3>
+            <ul className="cl">
+              <li className="cli r d1"><div className="ci">{'\uD83E\uDEAA'}</div><div className="clb"><strong>Documento d&apos;identit&agrave; e codice fiscale</strong><span className="note">Di ogni componente del nucleo familiare</span></div></li>
+              <li className="cli r d2"><div className="ci">{'\uD83D\uDC68\u200D\uD83D\uDC69\u200D\uD83D\uDC67'}</div><div className="clb"><strong>Stato di famiglia</strong><span className="note">Lo scarichi online con lo SPID dal sito del tuo Comune in 2 minuti</span></div></li>
+            </ul>
+
+            <h3>Redditi (anno 2024)</h3>
+            <ul className="cl">
+              <li className="cli r d1"><div className="ci">{'\uD83E\uDDFE'}</div><div className="clb"><strong>Ultima dichiarazione dei redditi (730 o Modello Redditi)</strong><span className="note">Quella fatta nel 2025 sui redditi 2024. Se non l&apos;hai fatta, bastano le CU.</span></div></li>
+              <li className="cli r d2"><div className="ci">{'\uD83D\uDCC4'}</div><div className="clb"><strong><Tip t="Il documento che il datore di lavoro ti dà ogni anno con il riepilogo di quanto hai guadagnato e quante tasse ti ha trattenuto.">CU</Tip> 2025 (Certificazione Unica)</strong><span className="note">Te la d&agrave; il datore di lavoro entro marzo. Se hai la pensione, te la d&agrave; l&apos;INPS.</span></div></li>
+              <li className="cli r d3"><div className="ci">{'\uD83D\uDCCB'}</div><div className="clb"><strong>Redditi esenti (se ne hai)</strong><span className="note">Borse di studio, assegni di mantenimento, pensioni di invalidit&agrave;, indennit&agrave; di accompagnamento</span></div></li>
+            </ul>
+
+            <h3>Patrimonio (saldo al 31 dicembre 2024)</h3>
+            <ul className="cl">
+              <li className="cli r d1"><div className="ci">{'\uD83C\uDFE6'}</div><div className="clb"><strong>Saldo e <Tip t="La media dei soldi che hai avuto sul conto durante tutto l'anno. Non è il saldo di fine anno: è la media giornaliera. La trovi nell'home banking o la chiedi alla banca.">giacenza media</Tip> di tutti i conti</strong><span className="note">Servono sia il saldo al 31/12/2024 sia la giacenza media annua. Li trovi nell&apos;home banking o li chiedi in banca.</span></div></li>
+              <li className="cli r d2"><div className="ci">{'\uD83D\uDCB3'}</div><div className="clb"><strong>Carte prepagate con IBAN</strong><span className="note">PostePay Evolution, Hype, Revolut, N26 — tutte quelle con IBAN contano come conti correnti e vanno dichiarate</span></div></li>
+              <li className="cli r d3"><div className="ci">{'\uD83D\uDCCA'}</div><div className="clb"><strong>Titoli, azioni, obbligazioni, fondi</strong><span className="note">Valore al 31/12/2024. Se hai un deposito titoli, la banca ti d&agrave; il documento.</span></div></li>
+              <li className="cli r d4"><div className="ci">{'\uD83C\uDFE0'}</div><div className="clb"><strong>Valore immobili (<Tip t="Un valore che il catasto assegna a ogni immobile. Non è il prezzo di mercato: è molto più basso. Si usa per calcolare tasse e ISEE. La trovi sulla visura catastale.">rendita catastale</Tip>)</strong><span className="note">La trovi nella visura catastale, scaricabile gratis dal sito dell&apos;Agenzia delle Entrate con SPID</span></div></li>
+              <li className="cli r d1"><div className="ci">{'\uD83C\uDFD7'}</div><div className="clb"><strong>Mutuo residuo</strong><span className="note">Se hai un mutuo, il debito che resta al 31/12/2024 abbassa il patrimonio immobiliare (e quindi l&apos;ISEE)</span></div></li>
+            </ul>
+
+            <h3>Veicoli</h3>
+            <ul className="cl">
+              <li className="cli r"><div className="ci">{'\uD83D\uDE97'}</div><div className="clb"><strong>Targa di auto e moto</strong><span className="note">Di tutti i veicoli intestati ai componenti del nucleo</span></div></li>
+            </ul>
           </div>
 
           {/* ERRORI */}
           <div className="sec breve-hide r" id="errori">
             <div className="sec-tag">Da evitare</div>
-            <h2>Errori da evitare</h2>
-            <div className="ib warn r"><div className="ib-t">⚠️ Dimenticare i conti correnti</div><p>Ogni conto, anche quelli che usi poco, va dichiarato. La PostePay Evolution conta come un conto corrente. Se ometti un conto e l&apos;INPS se ne accorge (e se ne accorge, perch&eacute; incrocia i dati con le banche), l&apos;ISEE viene annullato e perdi tutte le agevolazioni retroattivamente.</p></div>
-            <div className="ib warn r d1"><div className="ib-t">⚠️ Sbagliare il nucleo familiare</div><p>Il nucleo familiare dell&apos;ISEE non &egrave; sempre uguale a chi vive con te. Se sei separato ma non ancora divorziato, il tuo ex coniuge potrebbe rientrare nel nucleo. Questi casi vanno valutati con attenzione — un errore qui cambia tutto il calcolo.</p></div>
-            <div className="ib warn r d2"><div className="ib-t">⚠️ Usare la giacenza media sbagliata</div><p>La banca ti d&agrave; due numeri: il <strong>saldo al 31/12</strong> e la <strong>giacenza media</strong>. Per l&apos;ISEE serve il pi&ugrave; alto dei due. Se a dicembre avevi 500€ ma la giacenza media era 8.000€, nell&apos;ISEE entra 8.000€. Molti sbagliano e mettono solo il saldo.</p></div>
-            <div className="ib warn r d3"><div className="ib-t">⚠️ Non aggiornare l&apos;ISEE dopo un cambiamento importante</div><p>Hai perso il lavoro? Un familiare ha avuto un calo di reddito del 25% o pi&ugrave;? Puoi fare l&apos;<strong>ISEE corrente</strong> (vedi sotto) che riflette la situazione attuale. Se non lo fai, perdi agevolazioni che ti spetterebbero.</p></div>
+            <h2>Gli errori che fanno tutti (e come evitarli)</h2>
+            <div className="ib warn r"><div className="ib-t">{'\u26A0\uFE0F'} Dimenticare un conto corrente</div><p>Hai una PostePay Evolution che usi poco? Un conto Revolut aperto per curiosit&agrave;? <strong>Va dichiarato.</strong> L&apos;INPS incrocia i dati con le banche. Se scopre un conto che hai &quot;dimenticato&quot;, annulla l&apos;ISEE e perdi tutte le agevolazioni retroattivamente. Non ne vale la pena.</p></div>
+            <div className="ib warn r d1"><div className="ib-t">{'\u26A0\uFE0F'} Sbagliare il nucleo familiare</div><p>Il nucleo ISEE non &egrave; sempre chi vive con te fisicamente. Esempio: sei separato di fatto ma non legalmente? Il tuo ex &egrave; ancora nel tuo nucleo. Convivi con il tuo partner senza essere sposati? Siete nello stesso nucleo se avete la stessa residenza. Questi errori cambiano tutto il calcolo — se hai dubbi, chiedi al CAF.</p></div>
+            <div className="ib warn r d2"><div className="ib-t">{'\u26A0\uFE0F'} Mettere solo il saldo e non la giacenza media</div><p>La banca ti d&agrave; due numeri: il <strong>saldo al 31/12</strong> e la <strong><Tip t="La media giornaliera dei soldi che hai avuto sul conto durante l'anno. Se a luglio avevi 20.000€ e a dicembre 500€, la giacenza media sarà circa 10.000€.">giacenza media</Tip></strong>. Nell&apos;ISEE va il pi&ugrave; alto dei due. Se a dicembre avevi 500€ ma la giacenza media era 8.000€, nell&apos;ISEE entra 8.000€. Molti mettono solo il saldo e poi si stupiscono del risultato.</p></div>
+            <div className="ib warn r d3"><div className="ib-t">{'\u26A0\uFE0F'} Non fare l&apos;ISEE corrente quando serve</div><p>Hai perso il lavoro? Il tuo reddito &egrave; calato di almeno il 25%? Puoi fare l&apos;<strong>ISEE corrente</strong> che fotografa la tua situazione di adesso, non di due anni fa. Se non lo fai, il tuo ISEE resta alto e perdi agevolazioni che ti spetterebbero. Costa zero e si fa come l&apos;ISEE normale.</p></div>
           </div>
 
-          {/* ISEE CORRENTE */}
-          <div className="sec breve-hide r" id="corrente">
-            <div className="sec-tag">Aggiornamento</div>
-            <h2>ISEE corrente: se la tua situazione &egrave; cambiata</h2>
-            <p>L&apos;ISEE ordinario fotografa i redditi di <strong>due anni fa</strong> e il patrimonio dell&apos;anno precedente. Ma se nel frattempo la tua vita &egrave; cambiata drasticamente — hai perso il lavoro, un familiare &egrave; venuto a mancare, i redditi sono crollati — quel numero non ti rappresenta pi&ugrave;.</p>
-            <p>Per questo esiste l&apos;<strong>ISEE corrente</strong>: un aggiornamento che tiene conto della situazione attuale.</p>
+          {/* ESEMPIO PRATICO */}
+          <div className="sec breve-hide r" id="esempio">
+            <div className="sec-tag">Caso reale</div>
+            <h2>Esempio pratico: Laura recupera 4.500€</h2>
 
-            <h3>Quando puoi richiederlo</h3>
-            <div className="icgrid r">
-              <div className="ic r d1">
-                <div className="ic-n">Variazione reddito</div>
-                <div className="ic-d">Se un componente ha perso il lavoro, &egrave; in cassa integrazione, o ha avuto una riduzione del reddito superiore al 25%.</div>
-              </div>
-              <div className="ic r d2">
-                <div className="ic-n">Variazione patrimonio</div>
-                <div className="ic-d">Se il patrimonio mobiliare (conti, investimenti) &egrave; diminuito di oltre il 20% rispetto a quello dichiarato.</div>
-              </div>
+            <p><strong>Laura ha 32 anni</strong>, vive a Padova con il compagno Marco e il loro figlio Tommaso di 4 anni. Laura lavora part-time come segretaria (1.200€ al mese), Marco &egrave; magazziniere (1.500€ al mese). Hanno un conto in banca con 8.000€ di risparmi e vivono in affitto.</p>
+
+            <p>Tommaso va all&apos;asilo nido comunale — <strong>380€ al mese</strong>. Laura riceve l&apos;assegno unico per Tommaso, ma siccome non ha mai fatto l&apos;ISEE, prende il minimo: <strong>58€ al mese</strong>. Alla mensa dell&apos;asilo paga la tariffa piena: <strong>7€ al giorno</strong>.</p>
+
+            <p>Un&apos;amica le dice: <em>&quot;Ma hai fatto l&apos;ISEE? Io con l&apos;ISEE pago la met&agrave; del nido.&quot;</em></p>
+
+            <h3>Laura fa l&apos;ISEE</h3>
+            <p>Va sul sito dell&apos;INPS con lo SPID (che gi&agrave; aveva per il Fascicolo Sanitario). Apre la DSU precompilata. I redditi suoi e di Marco sono gi&agrave; dentro. I conti anche. Controlla, conferma. <strong>Tempo totale: 20 minuti.</strong></p>
+
+            <p>Dopo 2 giorni, l&apos;attestazione compare nell&apos;area riservata. Il risultato: <strong>ISEE 16.800€</strong>.</p>
+
+            <h3>Cosa cambia</h3>
+            <div className="dark-block r">
+              <div className="db-row"><span className="db-label">Assegno unico</span><span className="db-old">58€/mese</span><span className="db-arrow">{'\u2192'}</span><span className="db-new">189€/mese</span></div>
+              <div className="db-row"><span className="db-label">Bonus nido</span><span className="db-old">0€/anno</span><span className="db-arrow">{'\u2192'}</span><span className="db-new">2.500€/anno</span></div>
+              <div className="db-row"><span className="db-label">Mensa</span><span className="db-old">7€/giorno</span><span className="db-arrow">{'\u2192'}</span><span className="db-new">3€/giorno</span></div>
+              <div className="db-row db-total"><span className="db-label">Risparmio annuo</span><span className="db-val">+4.572€</span></div>
             </div>
-            <p>L&apos;ISEE corrente si fa allo stesso modo dell&apos;ordinario (online o al CAF), ma va aggiornato ogni 6 mesi — non dura tutto l&apos;anno.</p>
+
+            <p>Laura non ci credeva. <strong>4.572€ in pi&ugrave; all&apos;anno</strong> — soldi che le spettavano da sempre ma che non ha mai chiesto perch&eacute; non aveva un pezzo di carta. E quell&apos;anno prima senza ISEE? Perso. Non si recupera.</p>
+
             <div className="ib tip r">
-              <div className="ib-t">💡 Un esempio pratico</div>
-              <p>Mario nel 2024 guadagnava 30.000€. Nel 2025 ha perso il lavoro e ora prende la NASpI (15.000€). Il suo ISEE ordinario 2026 &egrave; calcolato sui redditi 2024 → risulta alto. Con l&apos;ISEE corrente, usa i redditi attuali → l&apos;ISEE scende e Mario accede a pi&ugrave; bonus. Se non fa l&apos;ISEE corrente, perde agevolazioni per migliaia di euro.</p>
+              <div className="ib-t">{'\uD83D\uDCA1'} La morale</div>
+              <p>L&apos;ISEE &egrave; gratis, si fa in 20 minuti, e vale migliaia di euro. Se non lo fai, non &egrave; che non hai diritto ai bonus — &egrave; che lo Stato non sa che ne hai diritto. Nessuno ti avvisa. Devi farlo tu.</p>
             </div>
           </div>
 
@@ -356,14 +339,13 @@ export default function Page() {
             <FAQ items={faqItems} />
           </div>
 
-          {/* CTA FINALE */}
           {/* GUIDE CORRELATE */}
           <div className="related r">
             <h2>Guide correlate</h2>
             <div className="rg">
-              <a href="/730" className="rc"><span className="rc-e">🧾</span><div className="rc-t">Faccio il 730</div><div className="rc-d">I redditi del 730 sono tra i dati che servono per l&apos;ISEE.</div><span className="rc-ar">→</span></a>
-              <a href="/spid" className="rc"><span className="rc-e">🔐</span><div className="rc-t">Faccio lo SPID</div><div className="rc-d">Per fare l&apos;ISEE online ti serve lo SPID. Come farlo in 15 minuti.</div><span className="rc-ar">→</span></a>
-              <a href="/compro-casa" className="rc"><span className="rc-e">🏠</span><div className="rc-t">Compro casa</div><div className="rc-d">L&apos;immobile entra nell&apos;ISEE. Scopri come viene calcolato.</div><span className="rc-ar">→</span></a>
+              <a href="/730" className="rc"><span className="rc-e">{'\uD83E\uDDFE'}</span><div className="rc-t">Faccio il 730</div><div className="rc-d">I redditi del 730 sono tra i dati che servono per l&apos;ISEE.</div><span className="rc-ar">{'\u2192'}</span></a>
+              <a href="/spid" className="rc"><span className="rc-e">{'\uD83D\uDD10'}</span><div className="rc-t">Faccio lo SPID</div><div className="rc-d">Per fare l&apos;ISEE online ti serve lo SPID. Come farlo in 15 minuti.</div><span className="rc-ar">{'\u2192'}</span></a>
+              <a href="/compro-casa" className="rc"><span className="rc-e">{'\uD83C\uDFE0'}</span><div className="rc-t">Compro casa</div><div className="rc-d">L&apos;immobile entra nell&apos;ISEE. Scopri come viene calcolato.</div><span className="rc-ar">{'\u2192'}</span></a>
             </div>
           </div>
 
@@ -371,23 +353,22 @@ export default function Page() {
 
         {/* SIDEBAR */}
         <aside className="aside">
-<div className="sbsec">
-            <div className="sbsec-t">🛠 Strumenti</div>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">🎯</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Scopri se ti serve</div></div></a>
-            <a href="#costi" className="sbtool"><span className="sbtool-i">📊</span><div><div className="sbtool-n">Confronto metodi</div><div className="sbtool-d">Online vs CAF vs commercialista</div></div></a>
-            <div className="sbtool" style={{opacity:'.5',cursor:'default'}}><span className="sbtool-i">📍</span><div><div className="sbtool-n">Trova CAF vicino</div><div className="sbtool-d"><span className="sbadge">Presto</span></div></div></div>
+          <div className="sbsec">
+            <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
+            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\uD83C\uDFAF'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Scopri se ti serve</div></div></a>
+            <a href="#come-si-fa" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCCA'}</span><div><div className="sbtool-n">Confronto metodi</div><div className="sbtool-d">Online vs CAF vs commercialista</div></div></a>
+            <div className="sbtool" style={{opacity:'.5',cursor:'default'}}><span className="sbtool-i">{'\uD83D\uDCCD'}</span><div><div className="sbtool-n">Trova CAF vicino</div><div className="sbtool-d"><span className="sbadge">Presto</span></div></div></div>
           </div>
           <div className="sbsec">
-            <div className="sbsec-t">📚 Guide correlate</div>
-            <a href="/730" className="sbguide">🧾 Faccio il 730<span className="sbg-ar">→</span></a>
-            <a href="/spid" className="sbguide">🔐 Faccio lo SPID<span className="sbg-ar">→</span></a>
-            <a href="/compro-casa" className="sbguide">🏠 Compro casa<span className="sbg-ar">→</span></a>
+            <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>
+            <a href="/730" className="sbguide">{'\uD83E\uDDFE'} Faccio il 730<span className="sbg-ar">{'\u2192'}</span></a>
+            <a href="/spid" className="sbguide">{'\uD83D\uDD10'} Faccio lo SPID<span className="sbg-ar">{'\u2192'}</span></a>
+            <a href="/compro-casa" className="sbguide">{'\uD83C\uDFE0'} Compro casa<span className="sbg-ar">{'\u2192'}</span></a>
           </div>
           <SidebarToggle />
         </aside>
       </div>
 
-      {/* PROMEMORIA SCADENZE */}
       <BrevoForm pageName="isee" />
       <Footer variant="scheda" />
     </>
