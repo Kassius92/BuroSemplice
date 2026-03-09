@@ -579,3 +579,27 @@
   @media(max-width:520px) { .mega-grid { grid-template-columns:1fr; } .mega-inner { padding:20px; } .mega-foot { flex-direction:column; align-items:flex-start; } }
 
 /* Homepage styles extracted */
+
+/* TG Preview */
+.tg-preview{padding:80px 0;background:var(--wh);}
+.tg-preview-header{text-align:center;margin-bottom:40px;}
+.tg-preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:900px;margin:0 auto;padding:0 24px;}
+.tg-prev-card{display:flex;flex-direction:column;gap:8px;background:var(--cream);border:1px solid var(--bd);border-radius:16px;padding:22px;text-decoration:none;transition:all .3s;position:relative;}
+.tg-prev-card:hover{box-shadow:0 8px 28px rgba(15,76,92,.08);transform:translateY(-2px);}
+.tg-prev-cat{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;padding:3px 8px;border-radius:5px;color:var(--wh);width:fit-content;}
+.tg-prev-fisco{background:#E36414;}
+.tg-prev-lavoro{background:#2563EB;}
+.tg-prev-casa{background:#2A9D8F;}
+.tg-prev-famiglia{background:#7C3AED;}
+.tg-prev-documenti{background:#0F4C5C;}
+.tg-prev-tag{font-size:9px;font-weight:700;padding:3px 8px;border-radius:5px;width:fit-content;}
+.tg-prev-tag-scadenza{background:#FEE2E2;color:#DC2626;}
+.tg-prev-tag-bonus{background:#E0F2EF;color:#2A9D8F;}
+.tg-prev-tag-novita{background:#FFF0E0;color:#E36414;}
+.tg-prev-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:600;color:var(--t1);line-height:1.3;}
+.tg-prev-body{font-size:13px;color:var(--t2);line-height:1.55;}
+.tg-preview-cta{text-align:center;margin-top:32px;}
+.btn-tg{display:inline-flex;align-items:center;gap:6px;padding:12px 28px;border-radius:12px;font-size:14px;font-weight:700;color:var(--tc);border:2px solid var(--tc);text-decoration:none;transition:all .2s;}
+.btn-tg:hover{background:var(--tc);color:var(--wh);}
+
+@media(max-width:768px){.tg-preview-grid{grid-template-columns:1fr;max-width:480px;}}

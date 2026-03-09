@@ -10,6 +10,7 @@ export default function Footer({ variant = 'scheda' }) {
             <div className="footer-text" style={{ marginTop: 4 }}>La burocrazia italiana, semplificata.</div>
           </div>
           <div className="footer-links">
+            <Link href="/tg">Notizie</Link>
             <Link href="/chi-siamo">Chi siamo</Link>
             <Link href="/privacy">Privacy</Link>
             <Link href="/termini">Termini</Link>
@@ -27,6 +28,7 @@ export default function Footer({ variant = 'scheda' }) {
           Zero<span>Burocrazia</span>
         </Link>
         <div className="flinks">
+          <Link href="/tg">Notizie</Link>
           <Link href="/chi-siamo">Chi siamo</Link>
           <Link href="/privacy">Privacy</Link>
           <Link href="/termini">Termini</Link>

@@ -84,6 +84,7 @@ export default function MegaMenu({ isOpen, onClose, variant = 'scheda' }) {
               <strong>11</strong> guide pronte · 40+ in arrivo
             </div>
             <div className="mega-foot-right">
+              <Link href="/tg" className="mega-btn mega-btn-ghost" onClick={onClose}>{'\uD83D\uDCFA'} TG Burocrazia</Link>
               <Link href="/contatti" className="mega-btn mega-btn-primary" onClick={onClose}>Suggerisci una guida</Link>
             </div>
           </div>

@@ -116,6 +116,39 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="tg-preview">
+        <div className="container">
+          <div className="tg-preview-header r">
+            <div className="section-label">Ultime notizie</div>
+            <h2 className="section-title">Il TG della burocrazia</h2>
+            <p className="section-subtitle">Ogni settimana le notizie che ti riguardano: scadenze, bonus, circolari. Spiegate semplice.</p>
+          </div>
+          <div className="tg-preview-grid">
+            <a href="/tg" className="tg-prev-card r">
+              <span className="tg-prev-cat tg-prev-fisco">Fisco</span>
+              <span className="tg-prev-tag tg-prev-tag-scadenza">{'\u23F0'} Scadenza</span>
+              <div className="tg-prev-title">730 precompilato: online dal 30 aprile</div>
+              <div className="tg-prev-body">Novit&agrave; sulle detrazioni figli a carico e nuovo tetto spese scolastiche.</div>
+            </a>
+            <a href="/tg" className="tg-prev-card r">
+              <span className="tg-prev-cat tg-prev-famiglia">Famiglia</span>
+              <span className="tg-prev-tag tg-prev-tag-bonus">{'\uD83D\uDCB0'} Bonus</span>
+              <div className="tg-prev-title">Assegno unico: importi aggiornati da marzo</div>
+              <div className="tg-prev-body">Con ISEE sotto 17.500&euro; salgono a 204,10&euro; per figlio.</div>
+            </a>
+            <a href="/tg" className="tg-prev-card r">
+              <span className="tg-prev-cat tg-prev-lavoro">Lavoro</span>
+              <span className="tg-prev-tag tg-prev-tag-novita">{'\u2728'} Novit&agrave;</span>
+              <div className="tg-prev-title">NASpI: il modulo di domanda ora &egrave; precompilato</div>
+              <div className="tg-prev-body">L&apos;INPS ha semplificato la procedura. Il termine resta 68 giorni.</div>
+            </a>
+          </div>
+          <div className="tg-preview-cta">
+            <a href="/tg" className="btn-tg">Tutte le notizie {'\u2192'}</a>
+          </div>
+        </div>
+      </section>
+
       <section className="final-cta">
         <h2>La burocrazia non dovrebbe essere<br />un lavoro a tempo pieno.</h2>
         <p>Inizia dalla guida che ti serve. Nessuna registrazione, nessun vincolo.</p>
