@@ -7,7 +7,7 @@ import OpenMenuButton from '@/components/OpenMenuButton';
 import './home.css';
 
 export const metadata = {
-  title: 'ZeroBurocrazia — La burocrazia italiana, finalmente zero',
+  title: 'ZeroBurocrazia — Burocrazia? Ci pensiamo noi.',
   description: 'ZeroBurocrazia semplifica la burocrazia italiana: guide gratuite su 730, ISEE, SPID, NASpI, mutui, partita IVA e molto altro. Scritte come te le spiegherebbe un amico.',
   alternates: { canonical: 'https://zeroburocrazia.it' },
   openGraph: { url: 'https://zeroburocrazia.it', images: [{ url: '/oghome.png', width: 1200, height: 630 }] },
