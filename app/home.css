@@ -583,6 +583,7 @@
 /* TG Preview */
 .tg-preview{padding:80px 0;background:var(--wh);}
 .tg-preview-header{text-align:center;margin-bottom:40px;}
+.tg-preview-header .section-subtitle{margin:0 auto;}
 .tg-preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:900px;margin:0 auto;padding:0 24px;}
 .tg-prev-card{display:flex;flex-direction:column;gap:8px;background:var(--cream);border:1px solid var(--bd);border-radius:16px;padding:22px;text-decoration:none;transition:all .3s;position:relative;}
 .tg-prev-card:hover{box-shadow:0 8px 28px rgba(15,76,92,.08);transform:translateY(-2px);}
