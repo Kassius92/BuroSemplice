@@ -121,7 +121,7 @@ export default function HomePage() {
           <div className="tg-preview-header r">
             <div className="section-label">Questa settimana</div>
             <h2 className="section-title">Le notizie che ti riguardano</h2>
-            <p className="section-subtitle">Ogni settimana le notizie che ti riguardano: scadenze, bonus, circolari. Spiegate semplice.</p>
+            <p className="section-subtitle">Ogni settimana raccogliamo scadenze, bonus e circolari che ti riguardano. Spiegate come te le spiegherebbe un amico.</p>
           </div>
           <div className="tg-preview-grid">
             <a href="/tg" className="tg-prev-card r">
