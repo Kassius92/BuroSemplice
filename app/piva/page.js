@@ -283,17 +283,7 @@ export default function Page() {
               <a href="FISCOZEN_LINK" target="_blank" rel="noopener sponsored" className="aff-btn">Prova Fiscozen gratis {'\u2192'}</a>
             </div>
           </div>
-          <div className="aff-block r">
-            <div className="aff-label">Strumento consigliato</div>
-            <div className="aff-body">
-              <div className="aff-left">
-                <div className="aff-title">Apri un conto business gratuito in 5 minuti</div>
-                <div className="aff-text">Conto con IBAN italiano, carta business e fatturazione integrata. Zero canone per i forfettari. Tutto da app.</div>
-                <div className="aff-note">* Link in partnership — se apri il conto, ZeroBurocrazia riceve una piccola commissione. Non cambia nulla per te.</div>
-              </div>
-              <a href="QUI_LINK_AFFILIATO_PIVA_CONTO" target="_blank" rel="noopener sponsored" className="aff-btn">Apri il conto {'\u2192'}</a>
-            </div>
-          </div>
+
 
           {/* DOCUMENTI */}
           <div className="sec r" id="documenti">

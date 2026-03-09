@@ -236,53 +236,7 @@ export default function Page() {
               <div className="step r d1"><div className="stepn">1</div><div className="stepb"><strong>Chiedi almeno 3 preventivi</strong><p>Confronta pi&ugrave; imprese. Il preventivo deve dettagliare ogni voce: manodopera, materiali, smaltimento, spese tecniche. Diffida di chi d&agrave; un prezzo &quot;a corpo&quot; senza voci.</p></div></div>
 
               {/* AFFILIAZIONE PREVENTIVI */}
-              <div className="aff-block r">
-                <div className="aff-label">Strumento consigliato</div>
-                <div className="aff-body">
-                  <div className="aff-left">
-                    <div className="aff-title">Ricevi fino a 4 preventivi gratuiti da imprese della tua zona</div>
-                    <div className="aff-text">Descrivi i lavori, ricevi preventivi dettagliati da professionisti verificati. Confronti e scegli senza impegno.</div>
-                    <div className="aff-note">* Link in partnership — se richiedi preventivi, ZeroBurocrazia riceve una piccola commissione. Non cambia nulla per te.</div>
-                  </div>
-                  <a href="QUI_LINK_AFFILIATO_RISTRUTTURARE_PREV" target="_blank" rel="noopener sponsored" className="aff-btn">Chiedi preventivi {'\u2192'}</a>
-                </div>
-              </div>
-
-              <div className="step r d2"><div className="stepn">2</div><div className="stepb"><strong>Incarica un tecnico abilitato</strong><p>Geometra, architetto o ingegnere. Prepara la pratica edilizia (<Tip t="Comunicazione Inizio Lavori Asseverata: il permesso per la maggior parte dei lavori interni.">CILA</Tip> o <Tip t="Segnalazione Certificata di Inizio Attività: per lavori strutturali pesanti (muri portanti, tetto).">SCIA</Tip>), il progetto e, se serve, l&apos;asseverazione per l&apos;Ecobonus. Il suo compenso &egrave; detraibile.</p></div></div>
-              <div className="step r d3"><div className="stepn">3</div><div className="stepb"><strong>Presenta la pratica in Comune</strong><p>Il tecnico deposita la CILA o SCIA. Per la CILA i lavori possono iniziare subito. Per la SCIA anche, ma il Comune ha 30 giorni per bloccarli.</p></div></div>
-              <div className="step r d1"><div className="stepn">4</div><div className="stepb"><strong>Paga sempre con <Tip t="Un bonifico speciale con causale di legge, il tuo codice fiscale e la P.IVA dell'impresa. La banca ha un modulo apposito. Senza questo bonifico, niente detrazione.">bonifico parlante</Tip></strong><p>Il bonifico deve riportare: causale con riferimento di legge (art. 16-bis DPR 917/86), tuo codice fiscale e partita IVA dell&apos;impresa. <strong>Senza bonifico parlante, niente detrazione.</strong></p></div></div>
-              <div className="step r d2"><div className="stepn">5</div><div className="stepb"><strong>Comunica all&apos;<Tip t="L'ente nazionale per l'efficienza energetica. Devi comunicargli i lavori energetici (Ecobonus) entro 90 giorni dalla fine lavori. Si fa online con SPID.">ENEA</Tip> (se richiesto)</strong><p>Per lavori di efficienza energetica (Ecobonus) devi inviare la comunicazione entro 90 giorni dalla fine lavori. Per il bonus ristrutturazione &quot;puro&quot; non serve.</p></div></div>
-              <div className="step r d3"><div className="stepn">6</div><div className="stepb"><strong>Inserisci la detrazione nel 730</strong><p>Ogni anno per 10 anni, nella dichiarazione dei redditi, indichi la quota annuale. La prima rata parte dall&apos;anno successivo al pagamento.</p></div></div>
-            </div>
-            <a href="/spid" className="xlink r"><span className="xlink-em">{'\uD83D\uDD10'}</span><div className="xlink-t"><strong>Faccio lo SPID</strong> — Serve per ENEA e per il precompilato dell&apos;Agenzia delle Entrate.</div><span className="xlink-ar">{'\u2192'}</span></a>
-          </div>
-
-          {/* DOCUMENTI */}
-          <div className="sec breve-hide r" id="documenti">
-            <div className="sec-tag">Checklist</div>
-            <h2>Documenti da conservare</h2>
-            <p>L&apos;Agenzia delle Entrate pu&ograve; chiederti tutto per <strong>10 anni</strong> dopo l&apos;ultima rata. Non buttare niente.</p>
-            <ul className="cl">
-              <li className="cli r d1"><div className="ci">{'\uD83D\uDCCB'}</div><div className="clb"><strong>Pratica edilizia (CILA/SCIA/PdC)</strong><span className="note">Copia della comunicazione al Comune con ricevuta di deposito</span></div></li>
-              <li className="cli r d2"><div className="ci">{'\uD83D\uDCB3'}</div><div className="clb"><strong>Bonifici parlanti</strong><span className="note">Tutti i pagamenti con la causale corretta (art. 16-bis)</span></div></li>
-              <li className="cli r d3"><div className="ci">{'\uD83E\uDDFE'}</div><div className="clb"><strong>Fatture dell&apos;impresa</strong><span className="note">Devono corrispondere ai lavori autorizzati e ai bonifici</span></div></li>
-              <li className="cli r d1"><div className="ci">{'\uD83D\uDCD0'}</div><div className="clb"><strong>Asseverazione del tecnico</strong><span className="note">Per Ecobonus: attestazione requisiti tecnici. Per Sismabonus: progetto strutturale</span></div></li>
-              <li className="cli r d2"><div className="ci">{'\uD83D\uDCCA'}</div><div className="clb"><strong>APE post-lavori</strong><span className="note">Attestato di Prestazione Energetica aggiornato dopo interventi energetici</span></div></li>
-              <li className="cli r d3"><div className="ci">{'\uD83D\uDCE8'}</div><div className="clb"><strong>Ricevuta ENEA</strong><span className="note">Per interventi energetici: invio entro 90 giorni dalla fine lavori</span></div></li>
-              <li className="cli r d4"><div className="ci">{'\uD83C\uDFE2'}</div><div className="clb"><strong>Delibera e ripartizione spese (condominio)</strong><span className="note">Se i lavori sono su parti comuni: delibera assembleare e tabella millesimale</span></div></li>
-            </ul>
-          </div>
-
-          {/* ERRORI */}
-          <div className="sec breve-hide r" id="errori">
-            <div className="sec-tag">Da evitare</div>
-            <h2>Errori che fanno perdere il bonus</h2>
-            <div className="ib warn r"><div className="ib-t">{'\u26A0\uFE0F'} Pagare senza bonifico parlante</div><p>Un bonifico ordinario, un assegno o un pagamento in contanti ti fanno perdere <strong>l&apos;intera detrazione</strong> su quella fattura. La banca ha un modulo apposito per il <Tip t="Il bonifico speciale con causale di legge, codice fiscale e P.IVA. Senza questo, niente detrazione.">bonifico parlante</Tip>: usalo sempre.</p></div>
-            <div className="ib warn r d1"><div className="ib-t">{'\u26A0\uFE0F'} Fare lavori senza pratica edilizia</div><p>Se l&apos;Agenzia delle Entrate verifica e non trovi la CILA o SCIA, perdi il bonus e prendi una sanzione. Anche un &quot;semplice&quot; rifacimento del bagno richiede la <Tip t="Comunicazione Inizio Lavori Asseverata: il permesso per i lavori interni come bagno, impianti, tramezzi.">CILA</Tip>.</p></div>
-            <div className="ib warn r d2"><div className="ib-t">{'\u26A0\uFE0F'} Non comunicare all&apos;ENEA entro 90 giorni</div><p>Per l&apos;<Tip t="Il bonus per lavori di efficienza energetica: cappotto, pompa di calore, infissi. Richiede comunicazione all'ENEA.">Ecobonus</Tip>, se non invii la comunicazione ENEA entro 90 giorni dalla fine lavori, perdi la detrazione. Il termine &egrave; tassativo.</p></div>
-            <div className="ib warn r d3"><div className="ib-t">{'\u26A0\uFE0F'} Comprare i mobili prima di iniziare i lavori</div><p>Il bonus mobili &egrave; collegato a una ristrutturazione. La data di inizio lavori (sulla pratica edilizia) deve essere <strong>anteriore</strong> alla data di acquisto dei mobili. Se compri prima, perdi la detrazione.</p></div>
-            <div className="ib warn r"><div className="ib-t">{'\u26A0\uFE0F'} Intestare il bonifico a persona diversa</div><p>Chi detrae deve essere chi paga. Se il mutuo &egrave; di tuo marito ma il bonifico parte dal tuo conto, hai un problema. Verifica la coerenza tra pagante e chi chiede la detrazione.</p></div>
-          </div>
+    
 
           {/* ESEMPIO PRATICO */}
           <div className="sec breve-hide r" id="esempio">
@@ -328,17 +282,7 @@ export default function Page() {
           </div>
 
           {/* AFFILIAZIONE MOBILI */}
-          <div className="aff-block r">
-            <div className="aff-label">Strumento consigliato</div>
-            <div className="aff-body">
-              <div className="aff-left">
-                <div className="aff-title">Arreda casa nuova con il bonus mobili: fino a 2.500€ di detrazione</div>
-                <div className="aff-text">Mobili, divani, letti, elettrodomestici classe A+. Paga con bonifico o carta e detrai il 50% in 10 rate.</div>
-                <div className="aff-note">* Link in partnership — se acquisti, ZeroBurocrazia riceve una piccola commissione. Non cambia nulla per te.</div>
-              </div>
-              <a href="QUI_LINK_AFFILIATO_RISTRUTTURARE_MOBILI" target="_blank" rel="noopener sponsored" className="aff-btn">Scopri l&apos;arredamento {'\u2192'}</a>
-            </div>
-          </div>
+
 
           {/* FAQ */}
           <div className="sec breve-hide r" id="faq">

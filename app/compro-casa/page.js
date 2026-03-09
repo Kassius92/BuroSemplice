@@ -277,28 +277,8 @@ export default function Page() {
           </div>
 
           {/* AFFILIAZIONI */}
-          <div className="aff-block r">
-            <div className="aff-label">Strumento consigliato</div>
-            <div className="aff-body">
-              <div className="aff-left">
-                <div className="aff-title">Confronta i tassi mutuo in 2 minuti</div>
-                <div className="aff-text">Inserisci importo, durata e tipo di immobile: vedi le offerte di decine di banche, senza impegno e senza che nessuno ti chiami.</div>
-                <div className="aff-note">* Link in partnership — se richiedi un preventivo, ZeroBurocrazia riceve una piccola commissione. Non cambia nulla per te.</div>
-              </div>
-              <a href="QUI_IL_TUO_LINK_AFFILIATO" target="_blank" rel="noopener sponsored" className="aff-btn">Confronta i mutui {'\u2192'}</a>
-            </div>
-          </div>
-          <div className="aff-block r">
-            <div className="aff-label">Strumento consigliato</div>
-            <div className="aff-body">
-              <div className="aff-left">
-                <div className="aff-title">Confronta le assicurazioni casa: da 8€/mese</div>
-                <div className="aff-text">Incendio, furto, danni da acqua, responsabilit&agrave; civile. Confronta le migliori polizze per la tua nuova casa in 2 minuti.</div>
-                <div className="aff-note">* Link in partnership — se richiedi un preventivo, ZeroBurocrazia riceve una piccola commissione. Non cambia nulla per te.</div>
-              </div>
-              <a href="QUI_LINK_AFFILIATO_CASA_ASSICURAZIONE" target="_blank" rel="noopener sponsored" className="aff-btn">Confronta polizze {'\u2192'}</a>
-            </div>
-          </div>
+
+
 
           {/* ESEMPIO PRATICO */}
           <div className="sec breve-hide r" id="esempio">

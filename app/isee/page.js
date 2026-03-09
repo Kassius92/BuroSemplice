@@ -245,17 +245,7 @@ export default function Page() {
           </div>
 
           {/* BLOCCO AFFILIAZIONE */}
-          <div className="aff-block r">
-            <div className="aff-label">Strumento consigliato</div>
-            <div className="aff-body">
-              <div className="aff-left">
-                <div className="aff-title">Fai l&apos;ISEE online con un CAF a distanza</div>
-                <div className="aff-text">Carichi i documenti, il CAF compila e invia la DSU per te. Niente code, niente appuntamenti. Gratis o a costo minimo.</div>
-                <div className="aff-note">* Link in partnership — se usi il servizio, ZeroBurocrazia riceve una piccola commissione. Non cambia nulla per te.</div>
-              </div>
-              <a href="QUI_LINK_AFFILIATO_ISEE" target="_blank" rel="noopener sponsored" className="aff-btn">Fai l&apos;ISEE online →</a>
-            </div>
-          </div>
+
 
           {/* DOCUMENTI */}
           <div className="sec r" id="documenti">

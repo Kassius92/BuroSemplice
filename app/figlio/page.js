@@ -270,17 +270,7 @@ export default function Page() {
           </div>
 
           {/* AFFILIAZIONE */}
-          <div className="aff-block r">
-            <div className="aff-label">Strumento consigliato</div>
-            <div className="aff-body">
-              <div className="aff-left">
-                <div className="aff-title">Lista nascita: risparmia su passeggino, seggiolino e tutto il necessario</div>
-                <div className="aff-text">Crea la tua lista nascita online: confronta prezzi su migliaia di prodotti per neonato, con recensioni verificate e spedizione gratuita.</div>
-                <div className="aff-note">* Link in partnership — se acquisti tramite questo link, ZeroBurocrazia riceve una piccola commissione. Non cambia nulla per te.</div>
-              </div>
-              <a href="QUI_LINK_AFFILIATO_FIGLIO" target="_blank" rel="noopener sponsored" className="aff-btn">Crea la lista nascita {'\u2192'}</a>
-            </div>
-          </div>
+
 
           {/* DOCUMENTI NEONATO */}
           <div className="sec breve-hide r" id="documenti">

@@ -246,17 +246,7 @@ export default function Page() {
           </div>
 
           {/* BLOCCO AFFILIAZIONE */}
-          <div className="aff-block r">
-            <div className="aff-label">Strumento consigliato</div>
-            <div className="aff-body">
-              <div className="aff-left">
-                <div className="aff-title">Fai lo SPID da casa in 10 minuti con Aruba</div>
-                <div className="aff-text">Riconoscimento via CIE o webcam, senza andare alle Poste. A 9,90€ (una tantum) hai lo SPID attivo in giornata.</div>
-                <div className="aff-note">* Link in partnership — se attivi lo SPID, ZeroBurocrazia riceve una piccola commissione. Non cambia nulla per te.</div>
-              </div>
-              <a href="QUI_LINK_AFFILIATO_SPID" target="_blank" rel="noopener sponsored" className="aff-btn">Attiva SPID con Aruba {'\u2192'}</a>
-            </div>
-          </div>
+
 
           {/* DOCUMENTI */}
           <div className="sec r" id="documenti">

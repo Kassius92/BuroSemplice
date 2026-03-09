@@ -291,17 +291,7 @@ export default function Pagina730() {
 
           {/* LEAD BOX — dopo costi, momento decisionale */}
 {/* AFFILIAZIONE */}
-          <div className="aff-block r">
-            <div className="aff-label">Strumento consigliato</div>
-            <div className="aff-body">
-              <div className="aff-left">
-                <div className="aff-title">Fai il 730 online con un commercialista dedicato</div>
-                <div className="aff-text">Carichi i documenti, un commercialista controlla tutto e massimizza il rimborso. Da 29€. Risparmi tempo e non rischi errori.</div>
-                <div className="aff-note">* Link in partnership — se ti iscrivi, ZeroBurocrazia riceve una piccola commissione. Non cambia nulla per te.</div>
-              </div>
-              <a href="#" target="_blank" rel="noopener sponsored" className="aff-btn btn-soon">Prossimamente</a>
-            </div>
-          </div>
+
 
           {/* DOCUMENTI */}
           <div className="sec r" id="documenti">
