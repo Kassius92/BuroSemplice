@@ -36,7 +36,7 @@ export default function Nav({ variant = 'scheda' }) {
                   <span /><span /><span />
                 </div>
               </button>
-              <Link href="/" className="logo"><div className="logo-mark">Z</div><div className="logo-text">Zero<span>Burocrazia</span><small className="logo-sub">Burocrazia? Ci pensiamo noi.</small></div></Link>
+              <Link href="/" className="logo"><img src="/logo-z.png" alt="ZeroBurocrazia" className="logo-mark" /><div className="logo-text">Zero<span>Burocrazia</span><small className="logo-sub">Burocrazia? Ci pensiamo noi.</small></div></Link>
               <div className="nav-links">
                 <Link href="/novita" className="nav-novita">
                   Novità<span className="nav-dot" />
@@ -59,7 +59,7 @@ export default function Nav({ variant = 'scheda' }) {
                   <span /><span /><span />
                 </div>
               </button>
-              <Link href="/" className="logo"><div className="logo-mark">Z</div><div className="logo-text">Zero<span>Burocrazia</span><small className="logo-sub">Burocrazia? Ci pensiamo noi.</small></div></Link>
+              <Link href="/" className="logo"><img src="/logo-z.png" alt="ZeroBurocrazia" className="logo-mark" /><div className="logo-text">Zero<span>Burocrazia</span><small className="logo-sub">Burocrazia? Ci pensiamo noi.</small></div></Link>
               <Link href="/" className="back" style={{ marginLeft: 'auto' }}>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M15 18l-6-6 6-6"/></svg>
                 Tutte le guide
@@ -79,7 +79,7 @@ export default function Nav({ variant = 'scheda' }) {
                   <span /><span /><span />
                 </div>
               </button>
-              <Link href="/" className="logo"><div className="logo-mark">Z</div><div className="logo-text">Zero<span>Burocrazia</span><small className="logo-sub">Burocrazia? Ci pensiamo noi.</small></div></Link>
+              <Link href="/" className="logo"><img src="/logo-z.png" alt="ZeroBurocrazia" className="logo-mark" /><div className="logo-text">Zero<span>Burocrazia</span><small className="logo-sub">Burocrazia? Ci pensiamo noi.</small></div></Link>
               <div className="nav-links nav-links-novita">
                 <Link href="/">Home</Link>
                 <Link href="/chi-siamo">Chi siamo</Link>

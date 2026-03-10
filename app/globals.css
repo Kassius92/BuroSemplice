@@ -22,8 +22,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--t1);-w
 .nav.s{box-shadow:0 2px 24px rgba(15,76,92,.08);}
 .nav-i{max-width:1110px;margin:0 auto;padding:0 28px;height:100%;display:flex;align-items:center;gap:16px;}
 .logo{display:flex;align-items:center;gap:9px;text-decoration:none;}
-.logo-mark{width:32px;height:32px;background:#0F4C5C;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:#fff;position:relative;flex-shrink:0;}
-.logo-mark::after{content:'';position:absolute;bottom:5px;right:5px;width:5px;height:5px;background:#E36414;border-radius:50%;}
+.logo-mark{width:36px;height:36px;border-radius:8px;flex-shrink:0;object-fit:contain;}
+
 .logo-text{font-family:'DM Sans',sans-serif;font-size:17px;font-weight:700;color:#0F4C5C;letter-spacing:-.2px;line-height:1.1;}
 .logo-text span{color:#E36414;font-weight:700;}
 .logo-sub{display:block;font-size:9px;font-weight:600;color:#8A8A9A;letter-spacing:1.2px;text-transform:uppercase;margin-top:2px;}
