@@ -1,47 +1,59 @@
 'use client';
 import { useState, useEffect } from 'react';
 
-const BREVO_ENDPOINT = 'https://26076dda.sibforms.com/serve/MUIFAOZAUqwpuIYv9EMr7PDrkBg9trLLpxxphgHJPnt7xi4uLEdOek4cX0fA_VWcBexGXTHPGawPmISFbSdJ0rQ0-JYpten6oKYM1NQMLE2ir-9nsWRI5-GUQpeWeASE2plzbGULiFOsMQdEEG6G6EV2xjinB_MkZd-qZq4KcerJ0j1UULgIneKBhwnywCD0BIDh1d3GDFw-FR8K8Q==';
-
 export default function BrevoForm({ pageName = 'default' }) {
   const [email, setEmail] = useState('');
   const [privacy, setPrivacy] = useState(false);
   const [msg, setMsg] = useState(null);
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const key = `bs_remind_${pageName}`;
+      const key = `zb_news_${pageName}`;
       if (localStorage.getItem(key)) setSent(true);
     }
   }, [pageName]);
 
   const handleSubmit = async () => {
-    if (!email || !privacy) {
-      setMsg({ type: 'err', text: 'Inserisci l\'email e accetta la privacy.' });
+    if (!email || !email.includes('@')) {
+      setMsg({ type: 'err', text: 'Inserisci un indirizzo email valido.' });
       return;
     }
-    try {
-      const form = new FormData();
-      form.append('EMAIL', email);
-      form.append('OPT_IN', '1');
-      form.append('email_address_check', '');
-      form.append('locale', 'it');
-      await fetch(BREVO_ENDPOINT, { method: 'POST', body: form, mode: 'no-cors' });
-      setMsg({ type: 'ok', text: 'Iscrizione confermata! Ti terremo aggiornato.' });
-      setSent(true);
-      localStorage.setItem(`bs_remind_${pageName}`, '1');
-    } catch {
-      setMsg({ type: 'err', text: 'Errore di rete. Riprova.' });
+    if (!privacy) {
+      setMsg({ type: 'err', text: 'Devi accettare la privacy policy per iscriverti.' });
+      return;
     }
+
+    setLoading(true);
+    setMsg(null);
+
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, pagina: pageName }),
+      });
+
+      if (res.ok) {
+        setMsg({ type: 'ok', text: 'Iscritto! Riceverai aggiornamenti su scadenze e nuove guide.' });
+        setSent(true);
+        localStorage.setItem(`zb_news_${pageName}`, '1');
+      } else {
+        setMsg({ type: 'err', text: 'Qualcosa non ha funzionato. Riprova.' });
+      }
+    } catch {
+      setMsg({ type: 'err', text: 'Errore di rete. Riprova tra qualche secondo.' });
+    }
+    setLoading(false);
   };
 
   return (
     <div className="remind-box">
       <div className="remind-inner">
-        <div className="remind-icon">🔔</div>
+        <div className="remind-icon">{'\uD83D\uDD14'}</div>
         <div className="remind-title">Resta aggiornato</div>
-        <div className="remind-desc">Novità, scadenze e guide nuove direttamente nella tua inbox. Gratis, niente spam.</div>
+        <div className="remind-desc">Scadenze, nuove guide e consigli utili. Gratis, niente spam, cancelli quando vuoi.</div>
         {msg && <div className={`remind-msg remind-msg--${msg.type}`}>{msg.text}</div>}
         {!sent && (
           <>
@@ -52,16 +64,18 @@ export default function BrevoForm({ pageName = 'default' }) {
                 placeholder="La tua email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                onKeyDown={(e) => { if (e.key === 'Enter') handleSubmit(); }}
               />
-              <button className="remind-btn" onClick={handleSubmit}>Iscriviti</button>
+              <button className="remind-btn" onClick={handleSubmit} disabled={loading}>
+                {loading ? 'Invio...' : 'Iscriviti'}
+              </button>
             </div>
             <label className="remind-check">
               <input type="checkbox" checked={privacy} onChange={(e) => setPrivacy(e.target.checked)} />
-              <span>Accetto la <a href="/privacy" target="_blank" rel="noopener">privacy policy</a>. Posso cancellarmi quando voglio.</span>
+              <span>Accetto la <a href="/privacy" target="_blank" rel="noopener">privacy policy</a></span>
             </label>
           </>
         )}
-        <div className="remind-note">Niente spam, cancelli quando vuoi. <a href="/privacy">Privacy policy</a></div>
       </div>
     </div>
   );
