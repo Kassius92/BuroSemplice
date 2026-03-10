@@ -14,6 +14,7 @@ import Tip from '@/components/Tip';
 export const metadata = {
   title: 'Aspetto un Figlio nel 2026: Bonus, Congedo, Assegno Unico e Documenti',
   description: 'Aspetti un figlio nel 2026? Congedo maternità e paternità, assegno unico, bonus nuovi nati, bonus nido e tutti i documenti da fare. Guida gratuita aggiornata.',
+  keywords: ["aspetto un figlio", "bonus nascita 2026", "congedo maternità", "congedo paternità", "assegno unico", "bonus nido", "bonus nuovi nati", "documenti neonato", "congedo parentale", "ISEE figlio"],
   alternates: { canonical: 'https://zeroburocrazia.it/figlio' },
   openGraph: {
     title: 'Aspetto un Figlio nel 2026: Bonus, Congedo, Assegno Unico e Documenti',

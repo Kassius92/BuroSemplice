@@ -14,6 +14,7 @@ import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 export const metadata = {
   title: 'Spese Mediche Detraibili 2026: Elenco Completo, Calcolo e Come Scaricarle nel 730',
   description: 'Spese mediche detraibili nel 730 2026: elenco completo, franchigia 129,11\u20AC, farmaci, dentista, occhiali, fisioterapia. Come pagare, cosa conservare e quanto recuperi.',
+  keywords: ["spese mediche detraibili", "detrazione spese mediche", "franchigia 129 euro", "spese mediche 730", "farmaci detraibili", "dentista detraibile", "occhiali detraibili", "pagamento tracciabile", "scontrino parlante", "spese mediche 2026"],
   alternates: { canonical: 'https://zeroburocrazia.it/spese-mediche' },
   openGraph: {
     title: 'Spese Mediche Detraibili 2026: Elenco, Calcolo e 730',

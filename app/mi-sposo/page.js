@@ -14,6 +14,7 @@ import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 export const metadata = {
   title: 'Sposarsi nel 2026: Documenti, Costi, Procedura e Regime Patrimoniale',
   description: 'Come sposarsi nel 2026: documenti necessari, pubblicazioni, costi del matrimonio civile e religioso, regime patrimoniale, congedo e bonus. Guida gratuita completa.',
+  keywords: ["matrimonio", "sposarsi 2026", "documenti matrimonio", "pubblicazioni matrimonio", "comunione dei beni", "separazione dei beni", "congedo matrimoniale", "matrimonio civile", "costo matrimonio", "nulla osta"],
   alternates: { canonical: 'https://zeroburocrazia.it/mi-sposo' },
   openGraph: {
     title: 'Sposarsi nel 2026: Documenti, Costi, Procedura e Regime Patrimoniale',

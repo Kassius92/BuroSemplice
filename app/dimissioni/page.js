@@ -14,6 +14,7 @@ import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 export const metadata = {
   title: 'Dimissioni Volontarie Online 2026: Procedura, Preavviso e TFR',
   description: 'Come dare le dimissioni volontarie online nel 2026: procedura telematica INPS, giorni di preavviso per CCNL, revoca entro 7 giorni, TFR e ultima busta paga. Guida gratuita.',
+  keywords: ["dimissioni", "dimissioni volontarie", "dimissioni online", "preavviso dimissioni", "come dare dimissioni", "TFR dimissioni", "giusta causa", "ClicLavoro", "ultima busta paga", "ferie non godute"],
   alternates: { canonical: 'https://zeroburocrazia.it/dimissioni' },
   openGraph: {
     title: 'Dimissioni Volontarie Online 2026: Procedura, Preavviso e TFR',

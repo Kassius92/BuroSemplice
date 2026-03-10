@@ -14,6 +14,7 @@ import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 export const metadata = {
   title: 'Assegno Unico 2026: Importi, Tabella ISEE, Domanda e Calcolo',
   description: 'Assegno Unico Universale 2026: importi aggiornati per fascia ISEE, come fare domanda, maggiorazioni, scadenze e calcolo. Guida completa e gratuita.',
+  keywords: ["assegno unico", "assegno unico 2026", "assegno unico importi", "assegno unico ISEE", "assegno universale", "domanda assegno unico", "maggiorazione figli", "INPS assegno unico", "assegno unico senza ISEE", "bonus figli 2026"],
   alternates: { canonical: 'https://zeroburocrazia.it/assegno-unico' },
   openGraph: {
     title: 'Assegno Unico 2026: Importi, ISEE e Come Fare Domanda',

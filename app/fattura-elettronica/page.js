@@ -14,6 +14,7 @@ import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 export const metadata = {
   title: 'Fattura Elettronica 2026: Come Farla, Obblighi, Software Gratis e Guida Completa',
   description: 'Fattura elettronica 2026: chi deve farla, come funziona il Sistema di Interscambio, software gratuito dell\'Agenzia delle Entrate, scadenze e errori da evitare.',
+  keywords: ["fattura elettronica", "come fare fattura elettronica", "SDI", "codice destinatario", "fattura XML", "fatturazione elettronica 2026", "FatturAE", "nota di credito", "cassetto fiscale", "marca da bollo fattura"],
   alternates: { canonical: 'https://zeroburocrazia.it/fattura-elettronica' },
   openGraph: {
     title: 'Fattura Elettronica 2026: Come Farla, Obblighi e Software Gratis',

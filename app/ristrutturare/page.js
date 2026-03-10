@@ -15,6 +15,7 @@ import Tip from '@/components/Tip';
 export const metadata = {
   title: 'Ristrutturare Casa nel 2026: Bonus, Detrazioni, Permessi e Costi',
   description: 'Ristrutturare casa nel 2026: bonus ristrutturazione 50%, ecobonus, superbonus residuo, permessi comunali, preventivi e detrazioni fiscali. Guida gratuita.',
+  keywords: ["ristrutturazione casa", "bonus ristrutturazione 2026", "detrazione 50", "CILA", "SCIA", "bonifico parlante", "bonus mobili", "ecobonus", "permesso lavori", "ristrutturare casa"],
   alternates: { canonical: 'https://zeroburocrazia.it/ristrutturare' },
   openGraph: {
     title: 'Ristrutturare Casa nel 2026: Bonus, Detrazioni, Permessi e Costi',

@@ -14,6 +14,7 @@ import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 export const metadata = {
   title: 'Come Fare lo SPID nel 2026: Costo, Tempi e Provider Migliore',
   description: 'Come fare lo SPID nel 2026: quale provider scegliere, costo, riconoscimento online o in ufficio, tempi e problemi comuni. Guida gratuita passo per passo.',
+  keywords: ["SPID", "come fare SPID", "SPID 2026", "SPID online", "SPID Poste", "identità digitale", "SPID CIE", "SPID gratis", "provider SPID", "SPID livello 2"],
   alternates: { canonical: 'https://zeroburocrazia.it/spid' },
   openGraph: {
     title: 'Come Fare lo SPID nel 2026: Costo, Tempi e Provider Migliore',

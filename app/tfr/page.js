@@ -15,6 +15,7 @@ import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 export const metadata = {
   title: 'TFR 2026: Calcolo, Tassazione, Anticipo e Quando Spetta',
   description: 'TFR 2026: come si calcola la liquidazione, quanto ti spetta, tassazione separata, anticipo dopo 8 anni, TFR in azienda vs fondo pensione. Guida gratuita aggiornata.',
+  keywords: ["TFR", "trattamento fine rapporto", "liquidazione", "calcolo TFR", "TFR tassazione", "anticipo TFR", "fondo pensione", "TFR in busta paga", "quando arriva TFR", "TFR dimissioni"],
   alternates: { canonical: 'https://zeroburocrazia.it/tfr' },
   openGraph: {
     title: 'TFR 2026: Calcolo, Tassazione, Anticipo e Quando Spetta',

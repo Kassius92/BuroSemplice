@@ -14,6 +14,7 @@ import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 export const metadata = {
   title: 'Regime Forfettario 2026: Requisiti, Tassazione, Limiti e Quanto Paghi Davvero',
   description: 'Regime forfettario 2026: requisiti, tassazione al 5% o 15%, limite 85.000\u20AC, coefficienti di redditivit\u00E0, INPS, cosa puoi e non puoi fare. Guida gratuita completa.',
+  keywords: ["regime forfettario", "forfettario 2026", "flat tax", "imposta sostitutiva 5%", "imposta sostitutiva 15%", "coefficiente redditività", "limite 85000", "codice ATECO forfettario", "contributi INPS forfettario", "partita IVA forfettario"],
   alternates: { canonical: 'https://zeroburocrazia.it/regime-forfettario' },
   openGraph: {
     title: 'Regime Forfettario 2026: Requisiti, Tassazione e Come Funziona',
