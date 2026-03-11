@@ -165,4 +165,13 @@ export const searchIndex = [
   { keywords: ['interessi mutuo', 'detrazione interessi', 'detrazione mutuo 730'], guide: 'Mutuo', href: '/mutuo#faq', desc: 'Detrazione 19% interessi passivi nel 730' },
   { keywords: ['perizia', 'notaio mutuo', 'costi mutuo', 'spese mutuo'], guide: 'Mutuo', href: '/mutuo#esempio', desc: 'Costi extra: notaio, perizia, agenzia, imposte' },
   { keywords: ['ipoteca', 'pignoramento', 'non pago rate mutuo'], guide: 'Mutuo', href: '/mutuo#faq', desc: 'Cosa succede se non paghi le rate' },
+
+  // ═══ CONGEDO PARENTALE ═══
+  { keywords: ['congedo parentale', 'congedo facoltativo', 'astensione facoltativa'], guide: 'Congedo parentale', href: '/congedo-parentale', desc: 'Guida completa al congedo parentale' },
+  { keywords: ['mesi congedo', 'durata congedo', 'quanti mesi congedo'], guide: 'Congedo parentale', href: '/congedo-parentale#durata', desc: 'Quanti mesi spettano a mamma e pap\u00e0' },
+  { keywords: ['indennit\u00e0 congedo', '80% congedo', '30% congedo', 'quanto pagano congedo'], guide: 'Congedo parentale', href: '/congedo-parentale#indennita', desc: 'Indennit\u00e0: 80% per 3 mesi, poi 30%' },
+  { keywords: ['domanda congedo inps', 'come chiedere congedo', 'congedo online'], guide: 'Congedo parentale', href: '/congedo-parentale#come', desc: 'Come fare domanda all\u2019INPS' },
+  { keywords: ['congedo padre', 'congedo pap\u00e0', 'paternit\u00e0 facoltativa'], guide: 'Congedo parentale', href: '/congedo-parentale#durata', desc: 'Congedo parentale per il pap\u00e0' },
+  { keywords: ['congedo 14 anni', 'novit\u00e0 congedo 2026', 'malattia figlio'], guide: 'Congedo parentale', href: '/congedo-parentale#novita', desc: 'Novit\u00e0 2026: esteso a 14 anni' },
+  { keywords: ['congedo ore', 'congedo frazionato', 'part time congedo'], guide: 'Congedo parentale', href: '/congedo-parentale#faq', desc: 'Congedo a ore o frazionato' },
 ];
