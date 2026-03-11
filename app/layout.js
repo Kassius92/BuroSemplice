@@ -1,5 +1,11 @@
 import './globals.css';
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+};
+
 export const metadata = {
   title: { default: 'ZeroBurocrazia — La burocrazia spiegata semplice', template: '%s | ZeroBurocrazia' },
   description: 'Guide gratuite e in linguaggio semplice per affrontare la burocrazia italiana: 730, SPID, ISEE, Partita IVA e molto altro.',
