@@ -127,8 +127,8 @@ export default function Page() {
             <span className="perc-label">Link utili</span>
             <div className="perc-steps">
               <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/spese-sanitarie" target="_blank" rel="noopener noreferrer" className="ps">🏛 Agenzia Entrate</a>
-              <a href="https://sistemats1.sanita.finanze.it/portale/spese-sanitarie-cittadini" target="_blank" rel="noopener noreferrer" className="ps">📋 Sistema Tessera Sanitaria</a>
-              <a href="https://www.salute.gov.it/" target="_blank" rel="noopener noreferrer" className="ps">🏥 Ministero della Salute</a>
+              <a href="https://sistemats1.sanita.finanze.it/portale/spese-sanitarie-cittadini" target="_blank" rel="noopener noreferrer" className="ps">📋 Tessera sanitaria</a>
+              <a href="https://www.salute.gov.it/" target="_blank" rel="noopener noreferrer" className="ps">🏥 Min. Salute</a>
             </div>
           </div>
 
@@ -322,8 +322,8 @@ export default function Page() {
                     <div className="sbsec">
             <div className="sbsec-t">🔗 Link utili</div>
             <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/spese-sanitarie" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Agenzia Entrate</div><div className="sbtool-d">Spese sanitarie detraibili</div></div></a>
-            <a href="https://sistemats1.sanita.finanze.it/portale/spese-sanitarie-cittadini" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Sistema Tessera Sanitaria</div><div className="sbtool-d">Consulta le tue spese mediche</div></div></a>
-            <a href="https://www.salute.gov.it/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏥</span><div><div className="sbtool-n">Ministero della Salute</div><div className="sbtool-d">Informazioni ufficiali</div></div></a>
+            <a href="https://sistemats1.sanita.finanze.it/portale/spese-sanitarie-cittadini" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Tessera sanitaria</div><div className="sbtool-d">Consulta le tue spese mediche</div></div></a>
+            <a href="https://www.salute.gov.it/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏥</span><div><div className="sbtool-n">Min. Salute</div><div className="sbtool-d">Informazioni ufficiali</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

@@ -126,9 +126,9 @@ export default function Page() {
 <div className="perc r">
             <span className="perc-label">Link utili</span>
             <div className="perc-steps">
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-702.assegno-unico-e-universale-per-i-figli-a-carico.html" target="_blank" rel="noopener noreferrer" className="ps">🏛 INPS — Assegno unico</a>
-              <a href="https://serviziweb2.inps.it/PassiWeb/jsp/spid/LoginSPID.jsp?uri=https%3A%2F%2Fservizi2.inps.it%2Fservizi%2FIseePost%2FHome&S=S" target="_blank" rel="noopener noreferrer" className="ps">📋 INPS — ISEE Precompilato</a>
-              <a href="https://www.inps.it/it/it/it/inps-comunica/notizie/tabelle-assegno-unico-universale-2026.html" target="_blank" rel="noopener noreferrer" className="ps">📊 INPS — Tabelle importi</a>
+              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-702.assegno-unico-e-universale-per-i-figli-a-carico.html" target="_blank" rel="noopener noreferrer" className="ps">🏛 Assegno unico</a>
+              <a href="https://serviziweb2.inps.it/PassiWeb/jsp/spid/LoginSPID.jsp?uri=https%3A%2F%2Fservizi2.inps.it%2Fservizi%2FIseePost%2FHome&S=S" target="_blank" rel="noopener noreferrer" className="ps">📋 ISEE online</a>
+              <a href="https://www.inps.it/it/it/it/inps-comunica/notizie/tabelle-assegno-unico-universale-2026.html" target="_blank" rel="noopener noreferrer" className="ps">📊 Tabella importi</a>
             </div>
           </div>
 
@@ -368,9 +368,9 @@ export default function Page() {
           <SidebarToggle />
                     <div className="sbsec">
             <div className="sbsec-t">🔗 Link utili</div>
-            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-702.assegno-unico-e-universale-per-i-figli-a-carico.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">INPS — Assegno unico</div><div className="sbtool-d">Domanda e stato pagamenti</div></div></a>
-            <a href="https://serviziweb2.inps.it/PassiWeb/jsp/spid/LoginSPID.jsp?uri=https%3A%2F%2Fservizi2.inps.it%2Fservizi%2FIseePost%2FHome&S=S" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">INPS — ISEE Precompilato</div><div className="sbtool-d">Serve per gli importi pieni</div></div></a>
-            <a href="https://www.inps.it/it/it/it/inps-comunica/notizie/tabelle-assegno-unico-universale-2026.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📊</span><div><div className="sbtool-n">INPS — Tabelle importi</div><div className="sbtool-d">Importi aggiornati 2026</div></div></a>
+            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-702.assegno-unico-e-universale-per-i-figli-a-carico.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Domanda INPS</div><div className="sbtool-d">Domanda e stato pagamenti</div></div></a>
+            <a href="https://serviziweb2.inps.it/PassiWeb/jsp/spid/LoginSPID.jsp?uri=https%3A%2F%2Fservizi2.inps.it%2Fservizi%2FIseePost%2FHome&S=S" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">ISEE online</div><div className="sbtool-d">Serve per gli importi pieni</div></div></a>
+            <a href="https://www.inps.it/it/it/it/inps-comunica/notizie/tabelle-assegno-unico-universale-2026.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📊</span><div><div className="sbtool-n">Tabella importi</div><div className="sbtool-d">Importi aggiornati 2026</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

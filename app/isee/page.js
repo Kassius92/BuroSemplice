@@ -138,9 +138,9 @@ export default function Page() {
 <div className="perc r">
             <span className="perc-label">Link utili</span>
             <div className="perc-steps">
-              <a href="https://serviziweb2.inps.it/PassiWeb/jsp/spid/LoginSPID.jsp?uri=https%3A%2F%2Fservizi2.inps.it%2Fservizi%2FIseePost%2FHome&S=S" target="_blank" rel="noopener noreferrer" className="ps">🏛 INPS — ISEE Precompilato</a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/isee" target="_blank" rel="noopener noreferrer" className="ps">📋 Agenzia Entrate — ISEE</a>
-              <a href="https://www.lavoro.gov.it/temi-e-priorita/socialcard/pagine/default.aspx" target="_blank" rel="noopener noreferrer" className="ps">💳 Ministero Lavoro</a>
+              <a href="https://serviziweb2.inps.it/PassiWeb/jsp/spid/LoginSPID.jsp?uri=https%3A%2F%2Fservizi2.inps.it%2Fservizi%2FIseePost%2FHome&S=S" target="_blank" rel="noopener noreferrer" className="ps">🏛 ISEE online</a>
+              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/isee" target="_blank" rel="noopener noreferrer" className="ps">📋 Info ISEE</a>
+              <a href="https://www.lavoro.gov.it/temi-e-priorita/socialcard/pagine/default.aspx" target="_blank" rel="noopener noreferrer" className="ps">💳 Bonus e social card</a>
             </div>
           </div>
 
@@ -359,9 +359,9 @@ export default function Page() {
           <SidebarToggle />
                     <div className="sbsec">
             <div className="sbsec-t">🔗 Link utili</div>
-            <a href="https://serviziweb2.inps.it/PassiWeb/jsp/spid/LoginSPID.jsp?uri=https%3A%2F%2Fservizi2.inps.it%2Fservizi%2FIseePost%2FHome&S=S" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">INPS — ISEE Precompilato</div><div className="sbtool-d">Compila l’ISEE online</div></div></a>
-            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/isee" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Agenzia Entrate — ISEE</div><div className="sbtool-d">Info ufficiali e requisiti</div></div></a>
-            <a href="https://www.lavoro.gov.it/temi-e-priorita/socialcard/pagine/default.aspx" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">💳</span><div><div className="sbtool-n">Ministero Lavoro</div><div className="sbtool-d">Bonus e social card con ISEE</div></div></a>
+            <a href="https://serviziweb2.inps.it/PassiWeb/jsp/spid/LoginSPID.jsp?uri=https%3A%2F%2Fservizi2.inps.it%2Fservizi%2FIseePost%2FHome&S=S" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">ISEE online</div><div className="sbtool-d">Compila l’ISEE online</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/isee" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Info ISEE</div><div className="sbtool-d">Info ufficiali e requisiti</div></div></a>
+            <a href="https://www.lavoro.gov.it/temi-e-priorita/socialcard/pagine/default.aspx" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">💳</span><div><div className="sbtool-n">Bonus e social card</div><div className="sbtool-d">Bonus e social card con ISEE</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

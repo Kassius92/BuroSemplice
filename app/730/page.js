@@ -147,7 +147,7 @@ export default function Pagina730() {
             <div className="perc-steps">
               <a href="https://dichiarazioneprecompilata.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="ps">🏛 730 Precompilata</a>
               <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/dichiarazioni/modello-730" target="_blank" rel="noopener noreferrer" className="ps">📋 Istruzioni 730</a>
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.certificazione-unica-2025---cittadino-702.certificazione-unica-2025---cittadino.html" target="_blank" rel="noopener noreferrer" className="ps">📄 Scarica la CU (INPS)</a>
+              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.certificazione-unica-2025---cittadino-702.certificazione-unica-2025---cittadino.html" target="_blank" rel="noopener noreferrer" className="ps">📄 Scarica CU</a>
             </div>
           </div>
 
@@ -425,7 +425,7 @@ export default function Pagina730() {
             <div className="sbsec-t">🔗 Link utili</div>
             <a href="https://dichiarazioneprecompilata.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">730 Precompilata</div><div className="sbtool-d">Accedi al sito dell&apos;Agenzia Entrate</div></div></a>
             <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/dichiarazioni/modello-730" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Istruzioni 730</div><div className="sbtool-d">Modello e istruzioni ufficiali</div></div></a>
-            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.certificazione-unica-2025---cittadino-702.certificazione-unica-2025---cittadino.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">Scarica la CU (INPS)</div><div className="sbtool-d">Certificazione Unica dal sito INPS</div></div></a>
+            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.certificazione-unica-2025---cittadino-702.certificazione-unica-2025---cittadino.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">Scarica CU</div><div className="sbtool-d">Certificazione Unica dal sito INPS</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">📚 Guide correlate</div>

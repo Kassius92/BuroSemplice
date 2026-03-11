@@ -137,8 +137,8 @@ export default function Page() {
             <span className="perc-label">Link utili</span>
             <div className="perc-steps">
               <a href="https://www.spid.gov.it/cos-e-spid/come-attivare-spid/" target="_blank" rel="noopener noreferrer" className="ps">🏛 SPID.gov.it</a>
-              <a href="https://www.agid.gov.it/it/piattaforme/spid/identity-provider" target="_blank" rel="noopener noreferrer" className="ps">📋 AgID — Provider SPID</a>
-              <a href="https://www.anagrafenazionale.interno.it/area-cittadino/" target="_blank" rel="noopener noreferrer" className="ps">📄 ANPR — Servizi al cittadino</a>
+              <a href="https://www.agid.gov.it/it/piattaforme/spid/identity-provider" target="_blank" rel="noopener noreferrer" className="ps">📋 Lista provider</a>
+              <a href="https://www.anagrafenazionale.interno.it/area-cittadino/" target="_blank" rel="noopener noreferrer" className="ps">📄 Servizi ANPR</a>
             </div>
           </div>
 
@@ -344,8 +344,8 @@ export default function Page() {
                     <div className="sbsec">
             <div className="sbsec-t">🔗 Link utili</div>
             <a href="https://www.spid.gov.it/cos-e-spid/come-attivare-spid/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">SPID.gov.it</div><div className="sbtool-d">Come attivare lo SPID</div></div></a>
-            <a href="https://www.agid.gov.it/it/piattaforme/spid/identity-provider" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">AgID — Provider SPID</div><div className="sbtool-d">Elenco ufficiale provider</div></div></a>
-            <a href="https://www.anagrafenazionale.interno.it/area-cittadino/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">ANPR — Servizi al cittadino</div><div className="sbtool-d">Certificati e anagrafe online</div></div></a>
+            <a href="https://www.agid.gov.it/it/piattaforme/spid/identity-provider" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Lista provider</div><div className="sbtool-d">Elenco ufficiale provider</div></div></a>
+            <a href="https://www.anagrafenazionale.interno.it/area-cittadino/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">Portale ANPR</div><div className="sbtool-d">Certificati e anagrafe online</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

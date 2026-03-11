@@ -109,9 +109,9 @@ export default function Page() {
 <div className="perc r">
             <span className="perc-label">Link utili</span>
             <div className="perc-steps">
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/istanze/apertura-partita-iva" target="_blank" rel="noopener noreferrer" className="ps">🏛 Agenzia Entrate — P.IVA</a>
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.iscrizione-alla-gestione-artigiani-e-commercianti-50498.iscrizione-alla-gestione-artigiani-e-commercianti.html" target="_blank" rel="noopener noreferrer" className="ps">📋 INPS — Gestione separata</a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="ps">📄 Fatture e corrispettivi</a>
+              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/istanze/apertura-partita-iva" target="_blank" rel="noopener noreferrer" className="ps">🏛 Aprire P.IVA</a>
+              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.iscrizione-alla-gestione-artigiani-e-commercianti-50498.iscrizione-alla-gestione-artigiani-e-commercianti.html" target="_blank" rel="noopener noreferrer" className="ps">📋 Contributi INPS</a>
+              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="ps">📄 Fatture online</a>
             </div>
           </div>
 
@@ -388,9 +388,9 @@ export default function Page() {
           <SidebarToggle />
                     <div className="sbsec">
             <div className="sbsec-t">🔗 Link utili</div>
-            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/istanze/apertura-partita-iva" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Agenzia Entrate — P.IVA</div><div className="sbtool-d">Apertura e gestione partita IVA</div></div></a>
-            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.iscrizione-alla-gestione-artigiani-e-commercianti-50498.iscrizione-alla-gestione-artigiani-e-commercianti.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">INPS — Gestione separata</div><div className="sbtool-d">Iscrizione e contributi</div></div></a>
-            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">Fatture e corrispettivi</div><div className="sbtool-d">Portale Agenzia Entrate</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/istanze/apertura-partita-iva" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Aprire P.IVA</div><div className="sbtool-d">Apertura e gestione partita IVA</div></div></a>
+            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.iscrizione-alla-gestione-artigiani-e-commercianti-50498.iscrizione-alla-gestione-artigiani-e-commercianti.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Contributi INPS</div><div className="sbtool-d">Iscrizione e contributi</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">Fatture online</div><div className="sbtool-d">Portale Agenzia Entrate</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>
