@@ -338,11 +338,11 @@ export default function Page() {
         {/* SIDEBAR */}
         <aside className="aside">
           <SidebarToggle />
-          <div className="sbsec">
-            <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
-            <a href="#calcolatore" className="sbtool"><span className="sbtool-i">{'\uD83E\uDDEE'}</span><div><div className="sbtool-n">Calcolatore detrazione</div><div className="sbtool-d">Stima il tuo bonus</div></div></a>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Scopri il tuo caso</div></div></a>
-            <div className="sbtool" style={{opacity:'.5',cursor:'default'}}><span className="sbtool-i">{'\uD83D\uDCCD'}</span><div><div className="sbtool-n">Trova tecnico</div><div className="sbtool-d"><span className="sbadge">Presto</span></div></div></div>
+                    <div className="sbsec">
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazione-riqualificazione-energetica" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Agenzia Entrate — Bonus</div><div className="sbtool-d">Detrazioni ristrutturazione</div></div></a>
+            <a href="https://detrazionifiscali.enea.it/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🌿</span><div><div className="sbtool-n">ENEA — Detrazioni</div><div className="sbtool-d">Comunicazione lavori ecobonus</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazione-per-le-ristrutturazioni-edilizie" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Bonus ristrutturazione</div><div className="sbtool-d">Guida ufficiale Agenzia Entrate</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

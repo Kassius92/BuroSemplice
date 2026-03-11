@@ -367,17 +367,17 @@ export default function Page() {
 
         <aside className="aside">
           <SidebarToggle />
-          <div className="sbsec">
-            <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Quale procedura seguire</div></div></a>
-            <a href="#regime" className="sbtool"><span className="sbtool-i">{'\u2696\uFE0F'}</span><div><div className="sbtool-n">Comunione vs separazione</div><div className="sbtool-d">Tabella comparativa</div></div></a>
-            <a href="#costi" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCB0'}</span><div><div className="sbtool-n">Tabella costi</div><div className="sbtool-d">Spese burocratiche reali</div></div></a>
+                    <div className="sbsec">
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://www.anagrafenazionale.interno.it/area-cittadino/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">ANPR — Servizi al cittadino</div><div className="sbtool-d">Certificati e stato civile online</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/agevolprima-casa" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏠</span><div><div className="sbtool-n">Agevolazioni prima casa</div><div className="sbtool-d">Se comprate casa insieme</div></div></a>
+            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-702.assegno-unico-e-universale-per-i-figli-a-carico.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">👶</span><div><div className="sbtool-n">INPS — Assegno unico</div><div className="sbtool-d">Per quando arrivano i figli</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>
             <a href="/compro-casa" className="sbguide">🏠 Compro casa<span className="sbg-ar">→</span></a>
             <a href="/figlio" className="sbguide">👶 Aspetto un figlio<span className="sbg-ar">→</span></a>
-            <span className="sbguide sbguide-soon">🏡 Cambio residenza<span className="sbg-soon">Presto</span></span>
+            <a href="/cambio-residenza" className="sbguide">🏡 Cambio residenza<span className="sbg-ar">→</span></a>
           </div>
         </aside>
       </div>

@@ -308,11 +308,11 @@ export default function Page() {
 
         <aside className="aside">
           <SidebarToggle />
-          <div className="sbsec">
-            <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Scopri se puoi detrarre</div></div></a>
-            <a href="#elenco" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCCB'}</span><div><div className="sbtool-n">Elenco spese</div><div className="sbtool-d">Cosa si pu&ograve; scaricare</div></div></a>
-            <a href="#pagamento" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCB3'}</span><div><div className="sbtool-n">Come pagare</div><div className="sbtool-d">Contanti vs carta</div></div></a>
+                    <div className="sbsec">
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/spese-sanitarie" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Agenzia Entrate</div><div className="sbtool-d">Spese sanitarie detraibili</div></div></a>
+            <a href="https://sistemats1.sanita.finanze.it/portale/spese-sanitarie-cittadini" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Sistema Tessera Sanitaria</div><div className="sbtool-d">Consulta le tue spese mediche</div></div></a>
+            <a href="https://www.salute.gov.it/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏥</span><div><div className="sbtool-n">Ministero della Salute</div><div className="sbtool-d">Informazioni ufficiali</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

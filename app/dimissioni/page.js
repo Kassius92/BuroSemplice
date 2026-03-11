@@ -332,11 +332,11 @@ export default function Page() {
         {/* SIDEBAR */}
         <aside className="aside">
           <SidebarToggle />
-          <div className="sbsec">
-            <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Verifica la procedura</div></div></a>
-            <a href="#preavviso" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCCA'}</span><div><div className="sbtool-n">Tabelle preavviso</div><div className="sbtool-d">Commercio e Metalmeccanici</div></div></a>
-            <a href="#procedura" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCDD'}</span><div><div className="sbtool-n">Procedura online</div><div className="sbtool-d">Passo per passo</div></div></a>
+                    <div className="sbsec">
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://www.lavoro.gov.it/strumenti-e-servizi/dimissioni-volontarie/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Portale dimissioni</div><div className="sbtool-d">Ministero del Lavoro — invia online</div></div></a>
+            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.naspi-702.naspi.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">INPS — Domanda NASpI</div><div className="sbtool-d">Dopo le dimissioni per giusta causa</div></div></a>
+            <a href="https://www.cliclavoro.gov.it/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">💼</span><div><div className="sbtool-n">ClicLavoro</div><div className="sbtool-d">Portale pubblico del lavoro</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

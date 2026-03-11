@@ -375,12 +375,11 @@ export default function Page() {
         {/* SIDEBAR */}
         <aside className="aside">
           <SidebarToggle />
-          <div className="sbsec">
-            <div className="sbsec-t">{'\uD83D\uDD27'} Strumenti</div>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz: serve a me?</div><div className="sbtool-d">Scopri se ti serve</div></div></a>
-            <a href="#calcolatore" className="sbtool"><span className="sbtool-i">{'\uD83E\uDDEE'}</span><div><div className="sbtool-n">Calcolatore tasse</div><div className="sbtool-d">Stima personalizzata</div></div></a>
-            <a href="#forfettario" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCCA'}</span><div><div className="sbtool-n">Forfettario vs Ordinario</div><div className="sbtool-d">Confronto diretto</div></div></a>
-            <div className="sbtool" style={{opacity:'.5',cursor:'default'}}><span className="sbtool-i">{'\uD83D\uDCCD'}</span><div><div className="sbtool-n">Trova commercialista</div><div className="sbtool-d"><span className="sbadge">Presto</span></div></div></div>
+                    <div className="sbsec">
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/istanze/apertura-partita-iva" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Agenzia Entrate — P.IVA</div><div className="sbtool-d">Apertura e gestione partita IVA</div></div></a>
+            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.iscrizione-alla-gestione-artigiani-e-commercianti-50498.iscrizione-alla-gestione-artigiani-e-commercianti.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">INPS — Gestione separata</div><div className="sbtool-d">Iscrizione e contributi</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">Fatture e corrispettivi</div><div className="sbtool-d">Portale Agenzia Entrate</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

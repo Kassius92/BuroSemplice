@@ -355,11 +355,11 @@ export default function Page() {
 
         <aside className="aside">
           <SidebarToggle />
-          <div className="sbsec">
-            <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Scopri se ti spetta</div></div></a>
-            <a href="#importi" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCB0'}</span><div><div className="sbtool-n">Tabella importi</div><div className="sbtool-d">Quanto prendi per fascia ISEE</div></div></a>
-            <a href="#domanda" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCDD'}</span><div><div className="sbtool-n">Come fare domanda</div><div className="sbtool-d">Passo dopo passo</div></div></a>
+                    <div className="sbsec">
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-702.assegno-unico-e-universale-per-i-figli-a-carico.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">INPS — Assegno unico</div><div className="sbtool-d">Domanda e stato pagamenti</div></div></a>
+            <a href="https://serviziweb2.inps.it/PassiWeb/jsp/spid/LoginSPID.jsp?uri=https%3A%2F%2Fservizi2.inps.it%2Fservizi%2FIseePost%2FHome&S=S" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">INPS — ISEE Precompilato</div><div className="sbtool-d">Serve per gli importi pieni</div></div></a>
+            <a href="https://www.inps.it/it/it/it/inps-comunica/notizie/tabelle-assegno-unico-universale-2026.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📊</span><div><div className="sbtool-n">INPS — Tabelle importi</div><div className="sbtool-d">Importi aggiornati 2026</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

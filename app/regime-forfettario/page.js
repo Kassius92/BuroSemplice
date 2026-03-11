@@ -259,11 +259,11 @@ export default function Page() {
 
         <aside className="aside">
           <SidebarToggle />
-          <div className="sbsec">
-            <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Posso entrare nel forfettario?</div></div></a>
-            <a href="#coefficienti" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCCA'}</span><div><div className="sbtool-n">Tabella coefficienti</div><div className="sbtool-d">Quanto paghi per attivit&agrave;</div></div></a>
-            <a href="#limiti" className="sbtool"><span className="sbtool-i">{'\u2696\uFE0F'}</span><div><div className="sbtool-n">Forfettario vs ordinario</div><div className="sbtool-d">Confronto diretto</div></div></a>
+                    <div className="sbsec">
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/regime-forfetario" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Agenzia Entrate — Forfettario</div><div className="sbtool-d">Requisiti e limiti ufficiali</div></div></a>
+            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.iscrizione-alla-gestione-artigiani-e-commercianti-50498.iscrizione-alla-gestione-artigiani-e-commercianti.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">INPS — Contributi</div><div className="sbtool-d">Gestione separata e artigiani</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">Fatture e Corrispettivi</div><div className="sbtool-d">Portale gratuito Agenzia Entrate</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

@@ -349,15 +349,15 @@ export default function Page() {
         {/* SIDEBAR */}
         <aside className="aside">
           <SidebarToggle />
-          <div className="sbsec">
-            <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
-            <a href="#calcolatore" className="sbtool"><span className="sbtool-i">{'\uD83E\uDDEE'}</span><div><div className="sbtool-n">Calcolatore costi</div><div className="sbtool-d">Stima imposte e spese</div></div></a>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Scopri il tuo caso</div></div></a>
-            <div className="sbtool" style={{opacity:'.5',cursor:'default'}}><span className="sbtool-i">{'\uD83D\uDCCD'}</span><div><div className="sbtool-n">Trova notaio</div><div className="sbtool-d"><span className="sbadge">Presto</span></div></div></div>
+                    <div className="sbsec">
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/agevolprima-casa" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Agevolazioni prima casa</div><div className="sbtool-d">Agenzia delle Entrate</div></div></a>
+            <a href="https://www.consap.it/fondo-prima-casa/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🛡</span><div><div className="sbtool-n">Fondo Garanzia Consap</div><div className="sbtool-d">Mutuo con garanzia statale</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/fabbricatiterreni/omi" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📊</span><div><div className="sbtool-n">Osservatorio immobiliare</div><div className="sbtool-d">Quotazioni ufficiali per zona</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>
-            <span className="sbguide sbguide-soon">🏦 Mutuo<span className="sbg-soon">Presto</span></span>
+            <a href="/mutuo" className="sbguide">🏦 Mutuo<span className="sbg-ar">→</span></a>
             <a href="/ristrutturare" className="sbguide">🔨 Ristrutturare casa<span className="sbg-ar">→</span></a>
             <span className="sbguide sbguide-soon">🪑 Bonus mobili<span className="sbg-soon">Presto</span></span>
           </div>

@@ -352,11 +352,11 @@ export default function Page() {
 
         <aside className="aside">
           <SidebarToggle />
-          <div className="sbsec">
-            <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Verifica la tua situazione</div></div></a>
-            <a href="#calcolo" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCCA'}</span><div><div className="sbtool-n">Calcolatore TFR</div><div className="sbtool-d">Stima lordo e netto</div></div></a>
-            <a href="#fondo" className="sbtool"><span className="sbtool-i">{'\u2696\uFE0F'}</span><div><div className="sbtool-n">Azienda vs Fondo</div><div className="sbtool-d">Confronto fiscale</div></div></a>
+                    <div className="sbsec">
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.prospetto-informativo-fondo-di-tesoreria-702.prospetto-informativo-fondo-di-tesoreria.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">INPS — Fondo Tesoreria</div><div className="sbtool-d">TFR nel fondo INPS</div></div></a>
+            <a href="https://www.covip.it/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📊</span><div><div className="sbtool-n">COVIP</div><div className="sbtool-d">Autorità di vigilanza fondi pensione</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/dichiarazioni/modello-730" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Agenzia Entrate — 730</div><div className="sbtool-d">Tassazione TFR e dichiarazione</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

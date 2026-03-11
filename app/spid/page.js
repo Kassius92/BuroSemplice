@@ -330,11 +330,11 @@ export default function Page() {
         {/* SIDEBAR */}
         <aside className="aside">
           <SidebarToggle />
-          <div className="sbsec">
-            <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Scopri se ti serve</div></div></a>
-            <a href="#provider" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCCA'}</span><div><div className="sbtool-n">Confronto provider</div><div className="sbtool-d">Costi e metodi</div></div></a>
-            <div className="sbtool" style={{opacity:'.5',cursor:'default'}}><span className="sbtool-i">{'\uD83D\uDCCD'}</span><div><div className="sbtool-n">Trova ufficio postale</div><div className="sbtool-d"><span className="sbadge">Presto</span></div></div></div>
+                    <div className="sbsec">
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://www.spid.gov.it/cos-e-spid/come-attivare-spid/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">SPID.gov.it</div><div className="sbtool-d">Come attivare lo SPID</div></div></a>
+            <a href="https://www.agid.gov.it/it/piattaforme/spid/identity-provider" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">AgID — Provider SPID</div><div className="sbtool-d">Elenco ufficiale provider</div></div></a>
+            <a href="https://www.anagrafenazionale.interno.it/area-cittadino/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">ANPR — Servizi al cittadino</div><div className="sbtool-d">Certificati e anagrafe online</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

@@ -388,11 +388,11 @@ export default function Page() {
         {/* SIDEBAR */}
         <aside className="aside">
           <SidebarToggle />
-          <div className="sbsec">
-            <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti utili</div>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz: serve a me?</div><div className="sbtool-d">Scopri se questa guida fa per te</div></div></a>
-            <a href="#bonus" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCB0'}</span><div><div className="sbtool-n">Tabella bonus</div><div className="sbtool-d">Tutti gli importi 2026</div></div></a>
-            <div className="sbtool" style={{opacity:'.5',cursor:'default'}}><span className="sbtool-i">{'\uD83E\uDDEE'}</span><div><div className="sbtool-n">Calcolatore bonus</div><div className="sbtool-d"><span className="sbadge">Presto</span></div></div></div>
+                    <div className="sbsec">
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-702.assegno-unico-e-universale-per-i-figli-a-carico.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">INPS — Assegno unico</div><div className="sbtool-d">Domanda e stato pagamenti</div></div></a>
+            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.congedo-parentale-702.congedo-parentale.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">👶</span><div><div className="sbtool-n">INPS — Congedo parentale</div><div className="sbtool-d">Domanda e requisiti</div></div></a>
+            <a href="https://www.salute.gov.it/portale/donna/homeDonna.jsp" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏥</span><div><div className="sbtool-n">Ministero Salute — Donna</div><div className="sbtool-d">Gravidanza e maternità</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

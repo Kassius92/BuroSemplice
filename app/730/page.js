@@ -411,11 +411,10 @@ export default function Pagina730() {
         <aside className="aside">
           <SidebarToggle />
 <div className="sbsec">
-            <div className="sbsec-t">🛠 Strumenti</div>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">🎯</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Scopri se devi farlo</div></div></a>
-            <a href="#calcolatore" className="sbtool"><span className="sbtool-i">🧮</span><div><div className="sbtool-n">Calcolatore rimborso</div><div className="sbtool-d">Stima quanto recuperi</div></div></a>
-            <a href="#detrazioni" className="sbtool"><span className="sbtool-i">📊</span><div><div className="sbtool-n">Tabella detrazioni</div><div className="sbtool-d">Tutte le spese scaricabili</div></div></a>
-            <div className="sbtool" style={{ opacity: '.5', cursor: 'default' }}><span className="sbtool-i">📍</span><div><div className="sbtool-n">Trova CAF vicino</div><div className="sbtool-d"><span className="sbadge">Presto</span></div></div></div>
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://dichiarazioneprecompilata.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">730 Precompilata</div><div className="sbtool-d">Accedi al sito dell&apos;Agenzia Entrate</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/dichiarazioni/modello-730" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Istruzioni 730</div><div className="sbtool-d">Modello e istruzioni ufficiali</div></div></a>
+            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.certificazione-unica-2025---cittadino-702.certificazione-unica-2025---cittadino.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">Scarica la CU (INPS)</div><div className="sbtool-d">Certificazione Unica dal sito INPS</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">📚 Guide correlate</div>

@@ -358,11 +358,11 @@ export default function Page() {
         {/* SIDEBAR */}
         <aside className="aside">
           <SidebarToggle />
-          <div className="sbsec">
-            <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Verifica i requisiti</div></div></a>
-            <a href="#quanto-spetta" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCCA'}</span><div><div className="sbtool-n">Calcolatore NASpI</div><div className="sbtool-d">Stima importo e durata</div></div></a>
-            <a href="#domanda" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCDD'}</span><div><div className="sbtool-n">Procedura domanda</div><div className="sbtool-d">Passo per passo</div></div></a>
+                    <div className="sbsec">
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.naspi-702.naspi.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">INPS — Domanda NASpI</div><div className="sbtool-d">Presenta la domanda online</div></div></a>
+            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.consultazione-domande-di-disoccupazione-702.consultazione-domande-di-disoccupazione.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">INPS — Stato domanda</div><div className="sbtool-d">Controlla lo stato della pratica</div></div></a>
+            <a href="https://www.anpal.gov.it/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">💼</span><div><div className="sbtool-n">ANPAL</div><div className="sbtool-d">Agenzia Nazionale Politiche Attive Lavoro</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

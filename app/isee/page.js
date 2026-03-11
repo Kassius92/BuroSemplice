@@ -346,11 +346,11 @@ export default function Page() {
         {/* SIDEBAR */}
         <aside className="aside">
           <SidebarToggle />
-          <div className="sbsec">
-            <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\uD83C\uDFAF'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Scopri se ti serve</div></div></a>
-            <a href="#come-si-fa" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCCA'}</span><div><div className="sbtool-n">Confronto metodi</div><div className="sbtool-d">Online vs CAF vs commercialista</div></div></a>
-            <div className="sbtool" style={{opacity:'.5',cursor:'default'}}><span className="sbtool-i">{'\uD83D\uDCCD'}</span><div><div className="sbtool-n">Trova CAF vicino</div><div className="sbtool-d"><span className="sbadge">Presto</span></div></div></div>
+                    <div className="sbsec">
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://serviziweb2.inps.it/PassiWeb/jsp/spid/LoginSPID.jsp?uri=https%3A%2F%2Fservizi2.inps.it%2Fservizi%2FIseePost%2FHome&S=S" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">INPS — ISEE Precompilato</div><div className="sbtool-d">Compila l’ISEE online</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/isee" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Agenzia Entrate — ISEE</div><div className="sbtool-d">Info ufficiali e requisiti</div></div></a>
+            <a href="https://www.lavoro.gov.it/temi-e-priorita/socialcard/pagine/default.aspx" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">💳</span><div><div className="sbtool-n">Ministero Lavoro</div><div className="sbtool-d">Bonus e social card con ISEE</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

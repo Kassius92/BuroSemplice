@@ -247,11 +247,11 @@ export default function Page() {
 
         <aside className="aside">
           <SidebarToggle />
-          <div className="sbsec">
-            <div className="sbsec-t">{'\uD83D\uDEE0'} Strumenti</div>
-            <a href="#quiz-serve" className="sbtool"><span className="sbtool-i">{'\u2705'}</span><div><div className="sbtool-n">Quiz &quot;serve a me?&quot;</div><div className="sbtool-d">Devo fare la fattura elettronica?</div></div></a>
-            <a href="#strumenti" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCCA'}</span><div><div className="sbtool-n">Confronto strumenti</div><div className="sbtool-d">Gratis vs a pagamento</div></div></a>
-            <a href="#dati" className="sbtool"><span className="sbtool-i">{'\uD83D\uDCCB'}</span><div><div className="sbtool-n">Dati obbligatori</div><div className="sbtool-d">Checklist completa</div></div></a>
+                    <div className="sbsec">
+            <div className="sbsec-t">🔗 Link utili</div>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Fatture e Corrispettivi</div><div className="sbtool-d">Portale gratuito Agenzia Entrate</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/aree-tematiche/fatturazione-elettronica" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Fatturazione elettronica</div><div className="sbtool-d">Regole e specifiche tecniche</div></div></a>
+            <a href="https://ivaservizi.agenziaentrate.gov.it/ser/api/fatturews/v1/fatture/byid" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">Agenzia Entrate — SDI</div><div className="sbtool-d">Sistema di Interscambio</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>
