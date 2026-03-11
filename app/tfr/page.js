@@ -124,12 +124,12 @@ export default function Page() {
             </div>
           </div>
 
-<div className="related r">
-            <h2>Link utili</h2>
-            <div className="rg">
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.prospetto-informativo-fondo-di-tesoreria-702.prospetto-informativo-fondo-di-tesoreria.html" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">INPS — Fondo Tesoreria</div><div className="rc-d">TFR nel fondo INPS</div><span className="rc-ar">→</span></a>
-              <a href="https://www.covip.it/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📊</span><div className="rc-t">COVIP</div><div className="rc-d">Autorità di vigilanza fondi pensione</div><span className="rc-ar">→</span></a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/dichiarazioni/modello-730" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📋</span><div className="rc-t">Agenzia Entrate — 730</div><div className="rc-d">Tassazione TFR e dichiarazione</div><span className="rc-ar">→</span></a>
+<div className="perc r">
+            <span className="perc-label">Link utili</span>
+            <div className="perc-steps">
+              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.prospetto-informativo-fondo-di-tesoreria-702.prospetto-informativo-fondo-di-tesoreria.html" target="_blank" rel="noopener noreferrer" className="ps">🏛 INPS — Fondo Tesoreria</a>
+              <a href="https://www.covip.it/" target="_blank" rel="noopener noreferrer" className="ps">📊 COVIP</a>
+              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/dichiarazioni/modello-730" target="_blank" rel="noopener noreferrer" className="ps">📋 Agenzia Entrate — 730</a>
             </div>
           </div>
 

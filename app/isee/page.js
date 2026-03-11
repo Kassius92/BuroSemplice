@@ -135,12 +135,12 @@ export default function Page() {
             </div>
           </div>
 
-<div className="related r">
-            <h2>Link utili</h2>
-            <div className="rg">
-              <a href="https://serviziweb2.inps.it/PassiWeb/jsp/spid/LoginSPID.jsp?uri=https%3A%2F%2Fservizi2.inps.it%2Fservizi%2FIseePost%2FHome&S=S" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">INPS — ISEE Precompilato</div><div className="rc-d">Compila l’ISEE online</div><span className="rc-ar">→</span></a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/isee" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📋</span><div className="rc-t">Agenzia Entrate — ISEE</div><div className="rc-d">Info ufficiali e requisiti</div><span className="rc-ar">→</span></a>
-              <a href="https://www.lavoro.gov.it/temi-e-priorita/socialcard/pagine/default.aspx" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">💳</span><div className="rc-t">Ministero Lavoro</div><div className="rc-d">Bonus e social card con ISEE</div><span className="rc-ar">→</span></a>
+<div className="perc r">
+            <span className="perc-label">Link utili</span>
+            <div className="perc-steps">
+              <a href="https://serviziweb2.inps.it/PassiWeb/jsp/spid/LoginSPID.jsp?uri=https%3A%2F%2Fservizi2.inps.it%2Fservizi%2FIseePost%2FHome&S=S" target="_blank" rel="noopener noreferrer" className="ps">🏛 INPS — ISEE Precompilato</a>
+              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/isee" target="_blank" rel="noopener noreferrer" className="ps">📋 Agenzia Entrate — ISEE</a>
+              <a href="https://www.lavoro.gov.it/temi-e-priorita/socialcard/pagine/default.aspx" target="_blank" rel="noopener noreferrer" className="ps">💳 Ministero Lavoro</a>
             </div>
           </div>
 

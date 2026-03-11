@@ -130,12 +130,12 @@ export default function PaginaCambioResidenza() {
             </div>
           </div>
 
-<div className="related r">
-            <h2>Link utili</h2>
-            <div className="rg">
-              <a href="https://www.anagrafenazionale.interno.it/area-cittadino/cambio-di-residenza/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">Portale ANPR</div><div className="rc-d">Fai il cambio online</div><span className="rc-ar">→</span></a>
-              <a href="https://www.anagrafenazionale.interno.it/area-cittadino/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📄</span><div className="rc-t">Certificati anagrafici</div><div className="rc-d">Scarica gratis da ANPR</div><span className="rc-ar">→</span></a>
-              <a href="https://www.ilportaledellautomobilista.it" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🚗</span><div className="rc-t">Portale Automobilista</div><div className="rc-d">Attestazione residenza veicolo</div><span className="rc-ar">→</span></a>
+<div className="perc r">
+            <span className="perc-label">Link utili</span>
+            <div className="perc-steps">
+              <a href="https://www.anagrafenazionale.interno.it/area-cittadino/cambio-di-residenza/" target="_blank" rel="noopener noreferrer" className="ps">🏛 Portale ANPR</a>
+              <a href="https://www.anagrafenazionale.interno.it/area-cittadino/" target="_blank" rel="noopener noreferrer" className="ps">📄 Certificati anagrafici</a>
+              <a href="https://www.ilportaledellautomobilista.it" target="_blank" rel="noopener noreferrer" className="ps">🚗 Portale Automobilista</a>
             </div>
           </div>
 

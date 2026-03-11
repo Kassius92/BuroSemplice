@@ -106,12 +106,12 @@ export default function Page() {
             </div>
           </div>
 
-<div className="related r">
-            <h2>Link utili</h2>
-            <div className="rg">
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/istanze/apertura-partita-iva" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">Agenzia Entrate — P.IVA</div><div className="rc-d">Apertura e gestione partita IVA</div><span className="rc-ar">→</span></a>
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.iscrizione-alla-gestione-artigiani-e-commercianti-50498.iscrizione-alla-gestione-artigiani-e-commercianti.html" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📋</span><div className="rc-t">INPS — Gestione separata</div><div className="rc-d">Iscrizione e contributi</div><span className="rc-ar">→</span></a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📄</span><div className="rc-t">Fatture e corrispettivi</div><div className="rc-d">Portale Agenzia Entrate</div><span className="rc-ar">→</span></a>
+<div className="perc r">
+            <span className="perc-label">Link utili</span>
+            <div className="perc-steps">
+              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/istanze/apertura-partita-iva" target="_blank" rel="noopener noreferrer" className="ps">🏛 Agenzia Entrate — P.IVA</a>
+              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.iscrizione-alla-gestione-artigiani-e-commercianti-50498.iscrizione-alla-gestione-artigiani-e-commercianti.html" target="_blank" rel="noopener noreferrer" className="ps">📋 INPS — Gestione separata</a>
+              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="ps">📄 Fatture e corrispettivi</a>
             </div>
           </div>
 

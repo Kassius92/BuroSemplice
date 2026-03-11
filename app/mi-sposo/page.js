@@ -124,12 +124,12 @@ export default function Page() {
             </div>
           </div>
 
-<div className="related r">
-            <h2>Link utili</h2>
-            <div className="rg">
-              <a href="https://www.anagrafenazionale.interno.it/area-cittadino/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">ANPR — Servizi al cittadino</div><div className="rc-d">Certificati e stato civile online</div><span className="rc-ar">→</span></a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/agevolprima-casa" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏠</span><div className="rc-t">Agevolazioni prima casa</div><div className="rc-d">Se comprate casa insieme</div><span className="rc-ar">→</span></a>
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-702.assegno-unico-e-universale-per-i-figli-a-carico.html" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">👶</span><div className="rc-t">INPS — Assegno unico</div><div className="rc-d">Per quando arrivano i figli</div><span className="rc-ar">→</span></a>
+<div className="perc r">
+            <span className="perc-label">Link utili</span>
+            <div className="perc-steps">
+              <a href="https://www.anagrafenazionale.interno.it/area-cittadino/" target="_blank" rel="noopener noreferrer" className="ps">🏛 ANPR — Servizi al cittadino</a>
+              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/agevolprima-casa" target="_blank" rel="noopener noreferrer" className="ps">🏠 Agevolazioni prima casa</a>
+              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-702.assegno-unico-e-universale-per-i-figli-a-carico.html" target="_blank" rel="noopener noreferrer" className="ps">👶 INPS — Assegno unico</a>
             </div>
           </div>
 

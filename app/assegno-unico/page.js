@@ -123,12 +123,12 @@ export default function Page() {
             </div>
           </div>
 
-<div className="related r">
-            <h2>Link utili</h2>
-            <div className="rg">
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-702.assegno-unico-e-universale-per-i-figli-a-carico.html" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">INPS — Assegno unico</div><div className="rc-d">Domanda e stato pagamenti</div><span className="rc-ar">→</span></a>
-              <a href="https://serviziweb2.inps.it/PassiWeb/jsp/spid/LoginSPID.jsp?uri=https%3A%2F%2Fservizi2.inps.it%2Fservizi%2FIseePost%2FHome&S=S" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📋</span><div className="rc-t">INPS — ISEE Precompilato</div><div className="rc-d">Serve per gli importi pieni</div><span className="rc-ar">→</span></a>
-              <a href="https://www.inps.it/it/it/it/inps-comunica/notizie/tabelle-assegno-unico-universale-2026.html" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📊</span><div className="rc-t">INPS — Tabelle importi</div><div className="rc-d">Importi aggiornati 2026</div><span className="rc-ar">→</span></a>
+<div className="perc r">
+            <span className="perc-label">Link utili</span>
+            <div className="perc-steps">
+              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-702.assegno-unico-e-universale-per-i-figli-a-carico.html" target="_blank" rel="noopener noreferrer" className="ps">🏛 INPS — Assegno unico</a>
+              <a href="https://serviziweb2.inps.it/PassiWeb/jsp/spid/LoginSPID.jsp?uri=https%3A%2F%2Fservizi2.inps.it%2Fservizi%2FIseePost%2FHome&S=S" target="_blank" rel="noopener noreferrer" className="ps">📋 INPS — ISEE Precompilato</a>
+              <a href="https://www.inps.it/it/it/it/inps-comunica/notizie/tabelle-assegno-unico-universale-2026.html" target="_blank" rel="noopener noreferrer" className="ps">📊 INPS — Tabelle importi</a>
             </div>
           </div>
 

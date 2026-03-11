@@ -133,12 +133,12 @@ export default function Page() {
             </div>
           </div>
 
-<div className="related r">
-            <h2>Link utili</h2>
-            <div className="rg">
-              <a href="https://www.spid.gov.it/cos-e-spid/come-attivare-spid/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">SPID.gov.it</div><div className="rc-d">Come attivare lo SPID</div><span className="rc-ar">→</span></a>
-              <a href="https://www.agid.gov.it/it/piattaforme/spid/identity-provider" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📋</span><div className="rc-t">AgID — Provider SPID</div><div className="rc-d">Elenco ufficiale provider</div><span className="rc-ar">→</span></a>
-              <a href="https://www.anagrafenazionale.interno.it/area-cittadino/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📄</span><div className="rc-t">ANPR — Servizi al cittadino</div><div className="rc-d">Certificati e anagrafe online</div><span className="rc-ar">→</span></a>
+<div className="perc r">
+            <span className="perc-label">Link utili</span>
+            <div className="perc-steps">
+              <a href="https://www.spid.gov.it/cos-e-spid/come-attivare-spid/" target="_blank" rel="noopener noreferrer" className="ps">🏛 SPID.gov.it</a>
+              <a href="https://www.agid.gov.it/it/piattaforme/spid/identity-provider" target="_blank" rel="noopener noreferrer" className="ps">📋 AgID — Provider SPID</a>
+              <a href="https://www.anagrafenazionale.interno.it/area-cittadino/" target="_blank" rel="noopener noreferrer" className="ps">📄 ANPR — Servizi al cittadino</a>
             </div>
           </div>
 

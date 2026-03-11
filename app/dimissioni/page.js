@@ -111,12 +111,12 @@ export default function Page() {
             </div>
           </div>
 
-<div className="related r">
-            <h2>Link utili</h2>
-            <div className="rg">
-              <a href="https://www.lavoro.gov.it/strumenti-e-servizi/dimissioni-volontarie/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">Portale dimissioni</div><div className="rc-d">Ministero del Lavoro — invia online</div><span className="rc-ar">→</span></a>
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.naspi-702.naspi.html" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📋</span><div className="rc-t">INPS — Domanda NASpI</div><div className="rc-d">Dopo le dimissioni per giusta causa</div><span className="rc-ar">→</span></a>
-              <a href="https://www.cliclavoro.gov.it/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">💼</span><div className="rc-t">ClicLavoro</div><div className="rc-d">Portale pubblico del lavoro</div><span className="rc-ar">→</span></a>
+<div className="perc r">
+            <span className="perc-label">Link utili</span>
+            <div className="perc-steps">
+              <a href="https://www.lavoro.gov.it/strumenti-e-servizi/dimissioni-volontarie/" target="_blank" rel="noopener noreferrer" className="ps">🏛 Portale dimissioni</a>
+              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.naspi-702.naspi.html" target="_blank" rel="noopener noreferrer" className="ps">📋 INPS — Domanda NASpI</a>
+              <a href="https://www.cliclavoro.gov.it/" target="_blank" rel="noopener noreferrer" className="ps">💼 ClicLavoro</a>
             </div>
           </div>
 
