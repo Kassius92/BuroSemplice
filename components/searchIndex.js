@@ -202,4 +202,14 @@ export const searchIndex = [
   { keywords: ['domicilio digitale', 'inad', 'inad domicilio'], guide: 'PEC', href: '/pec#domicilio', desc: 'Domicilio digitale INAD' },
   { keywords: ['ini-pec', 'inipec', 'cercare pec azienda'], guide: 'PEC', href: '/pec#faq', desc: 'Cercare la PEC di un\u2019azienda su INI-PEC' },
   { keywords: ['pec raccomandata', 'valore legale pec', 'raccomandata digitale'], guide: 'PEC', href: '/pec#cose', desc: 'PEC = raccomandata con ricevuta di ritorno' },
+
+  // ═══ PASSAPORTO ═══
+  { keywords: ['passaporto', 'passaporto elettronico', 'fare passaporto'], guide: 'Passaporto', href: '/passaporto', desc: 'Guida completa al passaporto' },
+  { keywords: ['costo passaporto', 'quanto costa passaporto', '116 euro passaporto'], guide: 'Passaporto', href: '/passaporto#costi', desc: 'Costo passaporto: 116,20\u20ac totali' },
+  { keywords: ['prenotazione passaporto', 'appuntamento passaporto', 'agenda passaporti'], guide: 'Passaporto', href: '/passaporto#come', desc: 'Come prenotare l\u2019appuntamento online' },
+  { keywords: ['documenti passaporto', 'cosa serve passaporto', 'foto passaporto'], guide: 'Passaporto', href: '/passaporto#documenti', desc: 'Documenti necessari per il passaporto' },
+  { keywords: ['tempi passaporto', 'passaporto urgente', 'quanto tempo passaporto'], guide: 'Passaporto', href: '/passaporto#tempi', desc: 'Tempi di rilascio e procedure urgenza' },
+  { keywords: ['rinnovo passaporto', 'passaporto scaduto'], guide: 'Passaporto', href: '/passaporto#faq', desc: 'Il passaporto non si rinnova: si rifà nuovo' },
+  { keywords: ['passaporto posta', 'polis passaporto', 'passaporto ufficio postale'], guide: 'Passaporto', href: '/passaporto#faq', desc: 'Passaporto in Posta (Progetto Polis)' },
+  { keywords: ['passaporto minorenni', 'passaporto bambini', 'passaporto figlio'], guide: 'Passaporto', href: '/passaporto#faq', desc: 'Passaporto per minorenni' },
 ];

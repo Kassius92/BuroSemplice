@@ -70,7 +70,7 @@ export const categories = [
         { name: 'PEC', href: '/pec' },
       ]},
       { title: 'Documenti personali', links: [
-        { name: 'Passaporto', href: '#', soon: true },
+        { name: 'Passaporto', href: '/passaporto' },
         { name: 'Codice fiscale', href: '#', soon: true },
         { name: 'Tessera sanitaria', href: '#', soon: true },
       ]},
