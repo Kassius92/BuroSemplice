@@ -18,7 +18,7 @@ export const categories = [
         { name: 'Regime forfettario', href: '/regime-forfettario' },
         { name: 'Fattura elettronica', href: '/fattura-elettronica' },
         { name: 'Cedolare secca', href: '#', soon: true },
-        { name: 'IMU', href: '#', soon: true },
+        { name: 'IMU', href: '/imu' },
       ]},
     ]
   },

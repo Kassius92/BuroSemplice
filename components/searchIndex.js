@@ -222,4 +222,13 @@ export const searchIndex = [
   { keywords: ['trattamento integrativo', 'bonus Renzi', 'bonus 100 euro'], guide: 'Busta paga', href: '/busta-paga#voci', desc: 'Trattamento integrativo (ex bonus Renzi)' },
   { keywords: ['conguaglio dicembre', 'conguaglio fiscale'], guide: 'Busta paga', href: '/busta-paga#faq', desc: 'Perché a dicembre il netto è più basso' },
   { keywords: ['ferie permessi ROL busta paga', 'ferie residue'], guide: 'Busta paga', href: '/busta-paga#voci', desc: 'Ferie, permessi e ROL in busta paga' },
+
+  // ═══ IMU ═══
+  { keywords: ['IMU', 'imposta municipale', 'tassa casa'], guide: 'IMU', href: '/imu', desc: 'Guida completa all\u2019IMU' },
+  { keywords: ['calcolo IMU', 'formula IMU', 'rendita catastale IMU'], guide: 'IMU', href: '/imu#calcolo', desc: 'Come si calcola l\u2019IMU' },
+  { keywords: ['IMU prima casa', 'esenzione IMU', 'abitazione principale IMU'], guide: 'IMU', href: '/imu#esenzioni', desc: 'Prima casa esente dall\u2019IMU' },
+  { keywords: ['IMU seconda casa', 'aliquota IMU', 'aliquote comunali'], guide: 'IMU', href: '/imu#calcolo', desc: 'IMU seconda casa e aliquote' },
+  { keywords: ['scadenza IMU', '16 giugno IMU', '16 dicembre IMU', 'F24 IMU'], guide: 'IMU', href: '/imu#scadenze', desc: 'Scadenze IMU: 16/6 e 16/12' },
+  { keywords: ['comodato IMU', 'riduzione IMU figlio', 'canone concordato IMU'], guide: 'IMU', href: '/imu#agevolazioni', desc: 'Agevolazioni e riduzioni IMU' },
+  { keywords: ['ravvedimento IMU', 'IMU non pagata', 'sanzioni IMU'], guide: 'IMU', href: '/imu#faq', desc: 'Cosa succede se non paghi l\u2019IMU' },
 ];
