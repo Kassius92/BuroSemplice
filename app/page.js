@@ -55,7 +55,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="h-hero">
         <div className="hero-eyebrow">Guide gratuite &middot; aggiornate al 2026</div>
-        <h1>La burocrazia italiana, <span className="hl">finalmente</span> semplice.</h1>
+        <h1>La burocrazia italiana, <span className="hero-hl">finalmente</span> semplice.</h1>
         <p className="hero-sub">Guide gratuite su 730, ISEE, mutui, bonus e molto altro. Scritte come te le spiegherebbe un amico &mdash; non un avvocato.</p>
         <div className="hero-ctas">
           <a href="#guide" className="btn-primary">Scegli la tua guida &darr;</a>

@@ -25,7 +25,7 @@
   color: var(--t1); margin-bottom: 28px;
   max-width: 700px;
 }
-.h-hero h1 .hl {
+.h-hero h1 .hero-hl {
   background: linear-gradient(178deg, transparent 0%, transparent 45%, rgba(227,100,20,.35) 45%, rgba(227,100,20,.35) 88%, transparent 88%);
   padding: 0 6px;
 }
