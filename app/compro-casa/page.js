@@ -120,6 +120,15 @@ export default function Page() {
             </div>
           </div>
 
+<div className="related r">
+            <h2>Link utili</h2>
+            <div className="rg">
+              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/agevolprima-casa" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">Agevolazioni prima casa</div><div className="rc-d">Agenzia delle Entrate</div><span className="rc-ar">→</span></a>
+              <a href="https://www.consap.it/fondo-prima-casa/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🛡</span><div className="rc-t">Fondo Garanzia Consap</div><div className="rc-d">Mutuo con garanzia statale</div><span className="rc-ar">→</span></a>
+              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/fabbricatiterreni/omi" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📊</span><div className="rc-t">Osservatorio immobiliare</div><div className="rc-d">Quotazioni ufficiali per zona</div><span className="rc-ar">→</span></a>
+            </div>
+          </div>
+
           {/* SINTESI */}
           <div className="sec r" id="sintesi">
             <div className="sintesi">
@@ -136,15 +145,6 @@ export default function Page() {
             <QuizComproCasa />
           </div>
 
-
-          <div className="related r">
-            <h2>Link utili</h2>
-            <div className="rg">
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/agevolprima-casa" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">Agevolazioni prima casa</div><div className="rc-d">Agenzia delle Entrate</div><span className="rc-ar">→</span></a>
-              <a href="https://www.consap.it/fondo-prima-casa/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🛡</span><div className="rc-t">Fondo Garanzia Consap</div><div className="rc-d">Mutuo con garanzia statale</div><span className="rc-ar">→</span></a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/fabbricatiterreni/omi" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📊</span><div className="rc-t">Osservatorio immobiliare</div><div className="rc-d">Quotazioni ufficiali per zona</div><span className="rc-ar">→</span></a>
-            </div>
-          </div>
 
           {/* GLOSSARIO */}
           <div className="sec r" id="parole">

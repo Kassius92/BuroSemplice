@@ -130,6 +130,15 @@ export default function PaginaMutuo() {
             </div>
           </div>
 
+<div className="related r">
+            <h2>Link utili</h2>
+            <div className="rg">
+              <a href="https://www.consap.it/fondo-prima-casa/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">Consap — Fondo Prima Casa</div><div className="rc-d">Requisiti e modulo domanda</div><span className="rc-ar">→</span></a>
+              <a href="https://www.bancaditalia.it/compiti/vigilanza/avvisi-pub/avvisi-crif/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📊</span><div className="rc-t">Banca d&apos;Italia</div><div className="rc-d">Centrale rischi e trasparenza</div><span className="rc-ar">→</span></a>
+              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/agevolprima-casa" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📋</span><div className="rc-t">Agenzia Entrate</div><div className="rc-d">Agevolazioni prima casa</div><span className="rc-ar">→</span></a>
+            </div>
+          </div>
+
           {/* SINTESI */}
           <div className="sec r" id="sintesi">
             <div className="sintesi">
@@ -145,15 +154,6 @@ export default function PaginaMutuo() {
             </div>
           </div>
 
-
-          <div className="related r">
-            <h2>Link utili</h2>
-            <div className="rg">
-              <a href="https://www.consap.it/fondo-prima-casa/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">Consap — Fondo Prima Casa</div><div className="rc-d">Requisiti e modulo domanda</div><span className="rc-ar">→</span></a>
-              <a href="https://www.bancaditalia.it/compiti/vigilanza/avvisi-pub/avvisi-crif/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📊</span><div className="rc-t">Banca d&apos;Italia</div><div className="rc-d">Centrale rischi e trasparenza</div><span className="rc-ar">→</span></a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/agevolprima-casa" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📋</span><div className="rc-t">Agenzia Entrate</div><div className="rc-d">Agevolazioni prima casa</div><span className="rc-ar">→</span></a>
-            </div>
-          </div>
 
           {/* COS'È */}
           <div className="sec r" id="cose">

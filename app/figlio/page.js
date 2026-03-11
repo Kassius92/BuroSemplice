@@ -117,6 +117,15 @@ export default function Page() {
             </div>
           </div>
 
+<div className="related r">
+            <h2>Link utili</h2>
+            <div className="rg">
+              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-702.assegno-unico-e-universale-per-i-figli-a-carico.html" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">INPS — Assegno unico</div><div className="rc-d">Domanda e stato pagamenti</div><span className="rc-ar">→</span></a>
+              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.congedo-parentale-702.congedo-parentale.html" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">👶</span><div className="rc-t">INPS — Congedo parentale</div><div className="rc-d">Domanda e requisiti</div><span className="rc-ar">→</span></a>
+              <a href="https://www.salute.gov.it/portale/donna/homeDonna.jsp" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏥</span><div className="rc-t">Ministero Salute — Donna</div><div className="rc-d">Gravidanza e maternità</div><span className="rc-ar">→</span></a>
+            </div>
+          </div>
+
           {/* SINTESI */}
           <div className="sec r" id="sintesi">
             <div className="sintesi">
@@ -133,15 +142,6 @@ export default function Page() {
             <QuizFiglio />
           </div>
 
-
-          <div className="related r">
-            <h2>Link utili</h2>
-            <div className="rg">
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico-702.assegno-unico-e-universale-per-i-figli-a-carico.html" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">INPS — Assegno unico</div><div className="rc-d">Domanda e stato pagamenti</div><span className="rc-ar">→</span></a>
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.congedo-parentale-702.congedo-parentale.html" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">👶</span><div className="rc-t">INPS — Congedo parentale</div><div className="rc-d">Domanda e requisiti</div><span className="rc-ar">→</span></a>
-              <a href="https://www.salute.gov.it/portale/donna/homeDonna.jsp" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏥</span><div className="rc-t">Ministero Salute — Donna</div><div className="rc-d">Gravidanza e maternità</div><span className="rc-ar">→</span></a>
-            </div>
-          </div>
 
           {/* IL QUADRO */}
           <div className="sec r" id="quadro">

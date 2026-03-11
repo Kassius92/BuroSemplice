@@ -123,6 +123,15 @@ export default function Page() {
             </div>
           </div>
 
+<div className="related r">
+            <h2>Link utili</h2>
+            <div className="rg">
+              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/spese-sanitarie" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">Agenzia Entrate</div><div className="rc-d">Spese sanitarie detraibili</div><span className="rc-ar">→</span></a>
+              <a href="https://sistemats1.sanita.finanze.it/portale/spese-sanitarie-cittadini" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📋</span><div className="rc-t">Sistema Tessera Sanitaria</div><div className="rc-d">Consulta le tue spese mediche</div><span className="rc-ar">→</span></a>
+              <a href="https://www.salute.gov.it/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏥</span><div className="rc-t">Ministero della Salute</div><div className="rc-d">Informazioni ufficiali</div><span className="rc-ar">→</span></a>
+            </div>
+          </div>
+
           {/* SINTESI */}
           <div className="sec r" id="sintesi">
             <div className="sintesi">
@@ -139,15 +148,6 @@ export default function Page() {
             <QuizSpeseMediche />
           </div>
 
-
-          <div className="related r">
-            <h2>Link utili</h2>
-            <div className="rg">
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/spese-sanitarie" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">Agenzia Entrate</div><div className="rc-d">Spese sanitarie detraibili</div><span className="rc-ar">→</span></a>
-              <a href="https://sistemats1.sanita.finanze.it/portale/spese-sanitarie-cittadini" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📋</span><div className="rc-t">Sistema Tessera Sanitaria</div><div className="rc-d">Consulta le tue spese mediche</div><span className="rc-ar">→</span></a>
-              <a href="https://www.salute.gov.it/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏥</span><div className="rc-t">Ministero della Salute</div><div className="rc-d">Informazioni ufficiali</div><span className="rc-ar">→</span></a>
-            </div>
-          </div>
 
           {/* COS'È */}
           <div className="sec r" id="cose">

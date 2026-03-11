@@ -101,6 +101,15 @@ export default function Page() {
             </div>
           </div>
 
+<div className="related r">
+            <h2>Link utili</h2>
+            <div className="rg">
+              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">Fatture e Corrispettivi</div><div className="rc-d">Portale gratuito Agenzia Entrate</div><span className="rc-ar">→</span></a>
+              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/aree-tematiche/fatturazione-elettronica" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📋</span><div className="rc-t">Fatturazione elettronica</div><div className="rc-d">Regole e specifiche tecniche</div><span className="rc-ar">→</span></a>
+              <a href="https://ivaservizi.agenziaentrate.gov.it/ser/api/fatturews/v1/fatture/byid" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📄</span><div className="rc-t">Agenzia Entrate — SDI</div><div className="rc-d">Sistema di Interscambio</div><span className="rc-ar">→</span></a>
+            </div>
+          </div>
+
           {/* SINTESI */}
           <div className="sec r" id="sintesi">
             <div className="sintesi">
@@ -117,15 +126,6 @@ export default function Page() {
             <QuizFatturaE />
           </div>
 
-
-          <div className="related r">
-            <h2>Link utili</h2>
-            <div className="rg">
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">Fatture e Corrispettivi</div><div className="rc-d">Portale gratuito Agenzia Entrate</div><span className="rc-ar">→</span></a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/aree-tematiche/fatturazione-elettronica" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📋</span><div className="rc-t">Fatturazione elettronica</div><div className="rc-d">Regole e specifiche tecniche</div><span className="rc-ar">→</span></a>
-              <a href="https://ivaservizi.agenziaentrate.gov.it/ser/api/fatturews/v1/fatture/byid" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📄</span><div className="rc-t">Agenzia Entrate — SDI</div><div className="rc-d">Sistema di Interscambio</div><span className="rc-ar">→</span></a>
-            </div>
-          </div>
 
           {/* COS'È */}
           <div className="sec r" id="cose">

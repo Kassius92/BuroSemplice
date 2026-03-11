@@ -113,6 +113,15 @@ export default function Page() {
             </div>
           </div>
 
+<div className="related r">
+            <h2>Link utili</h2>
+            <div className="rg">
+              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.naspi-702.naspi.html" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">INPS — Domanda NASpI</div><div className="rc-d">Presenta la domanda online</div><span className="rc-ar">→</span></a>
+              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.consultazione-domande-di-disoccupazione-702.consultazione-domande-di-disoccupazione.html" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📋</span><div className="rc-t">INPS — Stato domanda</div><div className="rc-d">Controlla lo stato della pratica</div><span className="rc-ar">→</span></a>
+              <a href="https://www.anpal.gov.it/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">💼</span><div className="rc-t">ANPAL</div><div className="rc-d">Agenzia Nazionale Politiche Attive Lavoro</div><span className="rc-ar">→</span></a>
+            </div>
+          </div>
+
           {/* SINTESI */}
           <div className="sec r" id="sintesi">
             <div className="sintesi">
@@ -129,15 +138,6 @@ export default function Page() {
             <QuizNaspi />
           </div>
 
-
-          <div className="related r">
-            <h2>Link utili</h2>
-            <div className="rg">
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.naspi-702.naspi.html" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">🏛</span><div className="rc-t">INPS — Domanda NASpI</div><div className="rc-d">Presenta la domanda online</div><span className="rc-ar">→</span></a>
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.consultazione-domande-di-disoccupazione-702.consultazione-domande-di-disoccupazione.html" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">📋</span><div className="rc-t">INPS — Stato domanda</div><div className="rc-d">Controlla lo stato della pratica</div><span className="rc-ar">→</span></a>
-              <a href="https://www.anpal.gov.it/" target="_blank" rel="noopener noreferrer" className="rc"><span className="rc-e">💼</span><div className="rc-t">ANPAL</div><div className="rc-d">Agenzia Nazionale Politiche Attive Lavoro</div><span className="rc-ar">→</span></a>
-            </div>
-          </div>
 
           {/* COS'È */}
           <div className="sec r" id="cose">
