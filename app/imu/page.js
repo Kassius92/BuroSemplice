@@ -35,6 +35,7 @@ const tocItems = [
   { id: 'calcolo', label: 'Come si calcola', bh: true },
   { id: 'scadenze', label: 'Scadenze e come pagare' },
   { id: 'agevolazioni', label: 'Agevolazioni e riduzioni' },
+  { id: 'casi', label: 'Casi particolari' },
   { id: 'esempio', label: 'Esempio pratico' },
   { id: 'faq', label: 'FAQ', bh: true },
 ];
@@ -142,6 +143,8 @@ export default function PaginaIMU() {
             <p>La buona notizia: <strong>se abiti nella tua unica casa, non paghi nulla</strong>. L&apos;abitazione principale (non di lusso) &egrave; completamente esente.</p>
             <p>Paga l&apos;IMU chi possiede: seconde case, case sfitte, immobili commerciali, terreni edificabili, abitazioni di lusso (categorie A/1, A/8, A/9). L&apos;importo dipende dalla <Tip t="Un valore attribuito dall'Agenzia del Territorio a ogni immobile in base a tipo, dimensione e zona. È la base per calcolare l'IMU. La trovi nella visura catastale.">rendita catastale</Tip> e dall&apos;aliquota del tuo Comune.</p>
 
+            <p>Un chiarimento importante: l&apos;IMU <strong>non ha nulla a che fare con il 730</strong>. Il 730 serve a dichiarare i redditi e ottenere rimborsi, l&apos;IMU &egrave; una tassa patrimoniale che paghi per il semplice fatto di possedere un immobile. Si paga con F24 in due rate (giugno e dicembre), indipendentemente dalla dichiarazione dei redditi. Per&ograve;, se affitti l&apos;immobile, dovrai sia pagare l&apos;IMU sia dichiarare il reddito da affitto nel 730 (o scegliere la <a href="/cedolare-secca">cedolare secca</a>).</p>
+
             <div className="ib tip r"><div className="ib-t">📖 Parole che incontrerai in questa guida</div>
               <p><strong>Rendita catastale</strong> &mdash; il valore fiscale del tuo immobile, assegnato dall&apos;Agenzia del Territorio. Lo trovi nella visura catastale.</p>
               <p><strong>Categoria catastale</strong> &mdash; la classificazione dell&apos;immobile (A/2 = appartamento civile, A/3 = economico, C/6 = garage, ecc.).</p>
@@ -229,6 +232,28 @@ export default function PaginaIMU() {
             </div>
           </div>
 
+          {/* CASI PARTICOLARI */}
+          <div className="sec r" id="casi">
+            <div className="sec-tag">Situazioni frequenti</div>
+            <h2>Casi particolari: chi paga quanto</h2>
+            <p>L&apos;IMU genera confusione soprattutto in queste situazioni. Ecco come funziona caso per caso:</p>
+
+            <div className="glossary">
+              <div className="gl-item"><strong>Casa ereditata</strong> &mdash; se erediti un immobile e ci vai a vivere (residenza + dimora), &egrave; la tua abitazione principale: <strong>esente</strong>. Se non ci vai a vivere, paga come seconda casa. In caso di pi&ugrave; eredi, ognuno paga la propria quota di IMU (es. 50% se siete in due).</div>
+              <div className="gl-item"><strong>Separazione e divorzio</strong> &mdash; il coniuge a cui il giudice assegna la casa coniugale &egrave; considerato titolare del diritto di abitazione: paga l&apos;IMU lui (ma &egrave; esente se ci vive). L&apos;altro coniuge, anche se comproprietario, non paga nulla su quella casa.</div>
+              <div className="gl-item"><strong>Nuda propriet&agrave;</strong> &mdash; se hai la nuda propriet&agrave; e un altro ha l&apos;<Tip t="Usufrutto: diritto reale di godere dell'immobile altrui. L'usufruttuario può abitarci o affittarlo. È lui a pagare l'IMU, non il nudo proprietario.">usufrutto</Tip>, l&apos;IMU la paga l&apos;usufruttuario. Tu, nudo proprietario, non devi versare nulla.</div>
+              <div className="gl-item"><strong>Casa in ristrutturazione</strong> &mdash; durante i lavori continui a pagare l&apos;IMU normalmente. Se per&ograve; l&apos;immobile &egrave; dichiarato <strong>inagibile/inabitabile</strong> (perizia o autocertificazione) e non &egrave; usato, hai diritto alla riduzione del 50%.</div>
+              <div className="gl-item"><strong>Immobile occupato abusivamente</strong> &mdash; dal 2023, gli immobili occupati abusivamente sono <strong>esenti dall&apos;IMU</strong>, a condizione che il proprietario abbia presentato denuncia e comunicato il fatto al Comune.</div>
+              <div className="gl-item"><strong>Garage o cantina senza casa</strong> &mdash; se possiedi solo un garage (C/6) senza un&apos;abitazione principale, il garage paga l&apos;IMU come &quot;altro fabbricato&quot;. L&apos;esenzione pertinenza funziona solo se &egrave; collegata all&apos;abitazione principale esente.</div>
+              <div className="gl-item"><strong>Casa affittata</strong> &mdash; paghi l&apos;IMU normalmente, ma se il contratto &egrave; a <Tip t="Canone concordato: affitto calcolato secondo accordi territoriali tra proprietari e inquilini. Dà diritto a riduzione IMU del 25% e cedolare secca al 10%.">canone concordato</Tip> ottieni il 25% di sconto. Attenzione: l&apos;IMU &egrave; sempre a carico del proprietario, mai dell&apos;inquilino.</div>
+              <div className="gl-item"><strong>Due case, lavoro in un&apos;altra citt&agrave;</strong> &mdash; se vivi in una casa ma possiedi anche la casa nella tua citt&agrave; d&apos;origine, la seconda paga l&apos;IMU come &quot;altro fabbricato&quot;. L&apos;esenzione vale solo dove hai residenza + dimora abituale.</div>
+            </div>
+
+            <div className="ib warn r"><div className="ib-t">⚠️ Residenza &quot;finta&quot; = rischio accertamento</div>
+              <p>Alcuni proprietari spostano la residenza in un immobile solo per non pagare l&apos;IMU, senza viverci davvero. I Comuni effettuano controlli incrociati (utenze, consumi, vigili). Se scoprono che la dimora abituale &egrave; altrove, dovrai pagare l&apos;IMU arretrata come seconda casa, pi&ugrave; sanzioni del 30% e interessi.</p>
+            </div>
+          </div>
+
           {/* ESEMPIO */}
           <div className="sec r" id="esempio">
             <div className="sec-tag">Esempio concreto</div>
@@ -252,7 +277,15 @@ export default function PaginaIMU() {
             </div>
 
             <div className="ib tip r" style={{ marginTop: '16px' }}><div className="ib-t">💡 E se Sergio affittasse a canone concordato?</div>
-              <p>L&apos;IMU si ridurrebbe del 25%: 1.068,48 &times; 75% = <strong>801,36&euro;</strong> (400,68&euro; per rata). Affittare a canone concordato conviene anche fiscalmente.</p>
+              <p>L&apos;IMU si ridurrebbe del 25%: 1.068,48 &times; 75% = <strong>801,36&euro;</strong> (400,68&euro; per rata). Affittare a canone concordato conviene anche fiscalmente. Bonus: con il canone concordato puoi usare anche la <a href="/cedolare-secca">cedolare secca al 10%</a>, risparmiando sia sull&apos;IMU che sull&apos;IRPEF.</p>
+            </div>
+
+            <div className="ib tip r" style={{ marginTop: '16px' }}><div className="ib-t">📝 Come compilare l&apos;F24 per l&apos;IMU</div>
+              <p>Nella sezione &quot;IMU e altri tributi locali&quot; indica: il <strong>codice catastale del Comune</strong> (lo trovi sul sito dell&apos;Agenzia delle Entrate), spunta &quot;Acconto&quot; o &quot;Saldo&quot;, inserisci il <strong>numero di immobili</strong> per cui paghi, l&apos;anno di riferimento (2026) e l&apos;importo. Puoi pagare online con home banking, sul sito dell&apos;Agenzia delle Entrate o in banca/posta.</p>
+            </div>
+
+            <div className="ib warn r"><div className="ib-t">⚠️ Ravvedimento operoso: se hai dimenticato di pagare</div>
+              <p>Puoi metterti in regola pagando l&apos;IMU in ritardo con una sanzione ridotta. Quanto prima lo fai, meno paghi: <strong>entro 14 giorni</strong> la sanzione &egrave; dello 0,1% al giorno (massimo 1,4%), <strong>entro 30 giorni</strong> sale all&apos;1,25%, <strong>entro 90 giorni</strong> all&apos;1,67%, <strong>entro 1 anno</strong> al 3,75%. Oltre l&apos;anno, il ravvedimento costa il 4,29%. Se non ti ravvedi, il Comune pu&ograve; emettere un accertamento con sanzione piena del 30% pi&ugrave; interessi. Usa il Modello F24 con il codice tributo normale, aggiungendo il codice degli interessi (es. 3923 per i fabbricati).</p>
             </div>
           </div>
 
