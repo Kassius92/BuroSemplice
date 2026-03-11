@@ -212,4 +212,14 @@ export const searchIndex = [
   { keywords: ['rinnovo passaporto', 'passaporto scaduto'], guide: 'Passaporto', href: '/passaporto#faq', desc: 'Il passaporto non si rinnova: si rifà nuovo' },
   { keywords: ['passaporto posta', 'polis passaporto', 'passaporto ufficio postale'], guide: 'Passaporto', href: '/passaporto#faq', desc: 'Passaporto in Posta (Progetto Polis)' },
   { keywords: ['passaporto minorenni', 'passaporto bambini', 'passaporto figlio'], guide: 'Passaporto', href: '/passaporto#faq', desc: 'Passaporto per minorenni' },
+
+  // ═══ BUSTA PAGA ═══
+  { keywords: ['busta paga', 'cedolino', 'prospetto paga'], guide: 'Busta paga', href: '/busta-paga', desc: 'Guida completa alla busta paga' },
+  { keywords: ['lordo netto', 'dal lordo al netto', 'calcolo stipendio netto'], guide: 'Busta paga', href: '/busta-paga#lordo-netto', desc: 'Come si passa dal lordo al netto' },
+  { keywords: ['RAL stipendio', 'retribuzione annua lorda'], guide: 'Busta paga', href: '/busta-paga#faq', desc: 'Cos\u2019è la RAL' },
+  { keywords: ['IRPEF busta paga', 'aliquote IRPEF 2026', 'trattenute fiscali'], guide: 'Busta paga', href: '/busta-paga#lordo-netto', desc: 'IRPEF e trattenute in busta paga' },
+  { keywords: ['contributi INPS busta paga', 'trattenute previdenziali'], guide: 'Busta paga', href: '/busta-paga#lordo-netto', desc: 'Contributi INPS a carico del lavoratore' },
+  { keywords: ['trattamento integrativo', 'bonus Renzi', 'bonus 100 euro'], guide: 'Busta paga', href: '/busta-paga#voci', desc: 'Trattamento integrativo (ex bonus Renzi)' },
+  { keywords: ['conguaglio dicembre', 'conguaglio fiscale'], guide: 'Busta paga', href: '/busta-paga#faq', desc: 'Perché a dicembre il netto è più basso' },
+  { keywords: ['ferie permessi ROL busta paga', 'ferie residue'], guide: 'Busta paga', href: '/busta-paga#voci', desc: 'Ferie, permessi e ROL in busta paga' },
 ];

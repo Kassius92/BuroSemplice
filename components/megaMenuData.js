@@ -82,7 +82,7 @@ export const categories = [
       { title: 'Iniziare e cambiare', links: [
         { name: 'Primo lavoro', href: '#', soon: true },
         { name: 'Dimissioni', href: '/dimissioni' },
-        { name: 'Busta paga', href: '#', soon: true },
+        { name: 'Busta paga', href: '/busta-paga' },
       ]},
       { title: 'Perdere il lavoro', links: [
         { name: 'NASpI', href: '/naspi' },
