@@ -183,4 +183,14 @@ export const searchIndex = [
   { keywords: ['bonus mobili 730', 'detrarre mobili', 'quadro e mobili'], guide: 'Bonus mobili', href: '/bonus-mobili#come-detrarre', desc: 'Come detrarre nel 730' },
   { keywords: ['bonus mobili senza ristrutturazione', 'requisiti bonus mobili'], guide: 'Bonus mobili', href: '/bonus-mobili#requisiti', desc: 'Requisiti: serve la ristrutturazione' },
   { keywords: ['enea bonus mobili', 'comunicazione enea'], guide: 'Bonus mobili', href: '/bonus-mobili#faq', desc: 'Comunicazione ENEA per elettrodomestici' },
+
+  // ═══ CIE ═══
+  { keywords: ['cie', 'carta identit\u00e0 elettronica', 'carta identit\u00e0'], guide: 'CIE', href: '/cie', desc: 'Guida completa alla carta d\u2019identit\u00e0 elettronica' },
+  { keywords: ['richiedere cie', 'prenotare cie', 'agenda cie', 'appuntamento cie'], guide: 'CIE', href: '/cie#come', desc: 'Come richiedere la CIE passo per passo' },
+  { keywords: ['costo cie', 'quanto costa carta identit\u00e0', '22 euro'], guide: 'CIE', href: '/cie#faq', desc: 'Costo CIE: 22,21\u20ac' },
+  { keywords: ['carta cartacea scadenza', 'agosto 2026 carta', 'cartacea non valida'], guide: 'CIE', href: '/cie#scadenza', desc: 'Dal 3 agosto 2026 la cartacea non vale pi\u00f9' },
+  { keywords: ['cieid', 'cie id', 'app cie', 'cie identit\u00e0 digitale'], guide: 'CIE', href: '/cie#digitale', desc: 'CieID: usare la CIE come identit\u00e0 digitale' },
+  { keywords: ['pin cie', 'puk cie', 'cie pin perso'], guide: 'CIE', href: '/cie#faq', desc: 'PIN e PUK della CIE' },
+  { keywords: ['cie espatrio', 'carta identit\u00e0 viaggio', 'cie estero'], guide: 'CIE', href: '/cie#faq', desc: 'CIE per viaggiare all\u2019estero' },
+  { keywords: ['rinnovo carta identit\u00e0', 'cie scaduta', 'validit\u00e0 cie'], guide: 'CIE', href: '/cie#validita', desc: 'Validit\u00e0 e rinnovo CIE' },
 ];

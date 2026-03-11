@@ -66,7 +66,7 @@ export const categories = [
     subs: [
       { title: 'Identità digitale', links: [
         { name: 'SPID', href: '/spid' },
-        { name: 'CIE', href: '#', soon: true },
+        { name: 'CIE', href: '/cie' },
         { name: 'PEC', href: '#', soon: true },
       ]},
       { title: 'Documenti personali', links: [

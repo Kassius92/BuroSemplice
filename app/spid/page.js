@@ -128,7 +128,7 @@ export default function Page() {
             <span className="perc-label">Guide correlate</span>
             <div className="perc-steps">
               <a href="/isee" className="ps">📋 Faccio l'ISEE</a>
-              <span className="ps ps-soon">🪪 Carta identità elettronica <span className="ps-tag">Presto</span></span>
+              <a href="/cie" className="ps">🪪 Carta identità elettronica</a>
               <span className="ps ps-soon">✉️ PEC obbligatoria <span className="ps-tag">Presto</span></span>
             </div>
           </div>
@@ -350,7 +350,7 @@ export default function Page() {
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>
             <a href="/isee" className="sbguide">📋 Faccio l'ISEE<span className="sbg-ar">→</span></a>
-            <span className="sbguide sbguide-soon">🪪 Carta identità elettronica<span className="sbg-soon">Presto</span></span>
+            <a href="/cie" className="sbguide">🪪 Carta identità elettronica<span className="sbg-ar">→</span></a>
             <span className="sbguide sbguide-soon">✉️ PEC obbligatoria<span className="sbg-soon">Presto</span></span>
           </div>
         </aside>
