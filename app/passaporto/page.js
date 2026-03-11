@@ -35,6 +35,7 @@ const tocItems = [
   { id: 'costi', label: 'Quanto costa', bh: true },
   { id: 'come', label: 'Come prenotare e richiederlo' },
   { id: 'tempi', label: 'Tempi e urgenze' },
+  { id: 'minori', label: 'Passaporto per minori' },
   { id: 'esempio', label: 'Esempio pratico' },
   { id: 'faq', label: 'FAQ', bh: true },
 ];
@@ -142,6 +143,18 @@ export default function PaginaPassaporto() {
             <p>&Egrave; un libretto di <strong>48 pagine</strong> con un <Tip t="Un chip a radiofrequenza integrato nella copertina. Contiene i tuoi dati, la foto e le impronte digitali. Rende il passaporto molto difficile da falsificare.">microchip</Tip> nella copertina che contiene i tuoi dati biometrici (foto e impronte). Dal 2006 tutti i passaporti italiani sono elettronici.</p>
             <p>Attenzione: il passaporto <strong>non si &quot;rinnova&quot;</strong> pi&ugrave;. Quando scade, ne fai uno nuovo da zero. Stessa procedura, stessi costi.</p>
 
+            <div className="dark-block">
+              <div style={{ fontSize: '14px', color: 'rgba(251,248,241,.5)', fontWeight: '600', marginBottom: '16px' }}>VALIDIT&Agrave; DEL PASSAPORTO</div>
+              <div className="db-row"><span>Adulti (18+ anni)</span><span><strong>10 anni</strong></span></div>
+              <div className="db-row"><span>Ragazzi (3-17 anni)</span><span><strong>5 anni</strong></span></div>
+              <div className="db-row"><span>Bambini (0-3 anni)</span><span><strong>3 anni</strong></span></div>
+              <div className="db-row db-total"><span>Over 70</span><span><strong>Illimitata</strong> (per la CIE, non per il passaporto)</span></div>
+            </div>
+
+            <div className="ib warn r" style={{ marginTop: '16px' }}><div className="ib-t">⚠️ Attenzione alla &quot;regola dei 6 mesi&quot;</div>
+              <p>Molti Paesi (USA, Thailandia, Brasile, Indonesia e altri) richiedono che il passaporto sia valido per almeno <strong>6 mesi dalla data di ingresso</strong>. Se il tuo passaporto scade tra 5 mesi, potresti essere respinto alla frontiera anche se il documento &egrave; tecnicamente ancora valido. Controlla sempre i requisiti del Paese di destinazione su <strong>viaggiaresicuri.it</strong>.</p>
+            </div>
+
             <div className="ib tip r"><div className="ib-t">📖 Parole che incontrerai in questa guida</div>
               <p><strong>Passaporto elettronico</strong> &mdash; l&apos;unico tipo rilasciato dal 2006. Ha il chip con dati biometrici.</p>
               <p><strong>Contributo amministrativo</strong> &mdash; i 42,70&euro; che paghi allo Stato per il rilascio. Dal 2026 si paga solo via PagoPA.</p>
@@ -222,6 +235,36 @@ export default function PaginaPassaporto() {
             </div>
           </div>
 
+          {/* MINORI */}
+          <div className="sec r" id="minori">
+            <div className="sec-tag">Bambini e ragazzi</div>
+            <h2>Passaporto per minori (0-17 anni)</h2>
+            <p>Dal 2012 ogni minore deve avere il <strong>proprio passaporto individuale</strong> &mdash; non &egrave; pi&ugrave; possibile iscrivere i figli nel passaporto del genitore. Ecco le regole specifiche:</p>
+
+            <div className="glossary">
+              <div className="gl-item"><strong>Validit&agrave; ridotta</strong> &mdash; 0-3 anni: vale <strong>3 anni</strong>. 3-18 anni: vale <strong>5 anni</strong>. Dai 18 in poi: 10 anni. Il motivo: i tratti del viso dei bambini cambiano rapidamente.</div>
+              <div className="gl-item"><strong>Consenso di entrambi i genitori</strong> &mdash; servono le firme di <strong>mamma e pap&agrave;</strong> davanti al pubblico ufficiale. Se un genitore non pu&ograve; essere presente, deve firmare un atto di assenso con copia del documento, autenticato.</div>
+              <div className="gl-item"><strong>Se un genitore non d&agrave; il consenso</strong> &mdash; ci si rivolge al <Tip t="Giudice tutelare: magistrato del Tribunale ordinario che decide sulle questioni relative ai minori, quando i genitori non sono d'accordo (es. rilascio passaporto, viaggi all'estero).">Giudice tutelare</Tip>, che pu&ograve; autorizzare il rilascio. &Egrave; una procedura non rapidissima: metti in conto alcune settimane.</div>
+              <div className="gl-item"><strong>Costo</strong> &mdash; identico a quello degli adulti: 73,50&euro; marca da bollo + 42,70&euro; PagoPA = <strong>116,20&euro;</strong>.</div>
+            </div>
+
+            <div className="ib warn r"><div className="ib-t">⚠️ Minori che viaggiano con un solo genitore</div>
+              <p>Se tuo figlio viaggia con te ma senza l&apos;altro genitore, &egrave; consigliato (e in alcuni Paesi <strong>richiesto</strong>) portare una <strong>dichiarazione di accompagnamento</strong> firmata dall&apos;altro genitore. Per i viaggi extra-UE, alcuni Paesi la richiedono tassativamente alla frontiera.</p>
+            </div>
+          </div>
+
+          {/* RINNOVO E SMARRIMENTO */}
+          <div className="sec r">
+            <div className="sec-tag">Situazioni particolari</div>
+            <h2>Rinnovo, smarrimento e furto</h2>
+            <div className="glossary">
+              <div className="gl-item"><strong>Passaporto scaduto</strong> &mdash; non si &quot;rinnova&quot;: si fa una <strong>nuova domanda</strong> da zero, come se fosse la prima volta. Stessi documenti, stessi costi (116,20&euro;). Il vecchio passaporto viene ritirato.</div>
+              <div className="gl-item"><strong>Smarrimento</strong> &mdash; presenta <strong>denuncia di smarrimento</strong> alla Polizia o ai Carabinieri. Con la copia della denuncia, vai in Questura per richiedere un nuovo passaporto. Se lo smarrisci all&apos;estero, rivolgiti al Consolato italiano.</div>
+              <div className="gl-item"><strong>Furto</strong> &mdash; stessa procedura dello smarrimento: denuncia di furto + nuova richiesta. Se il furto avviene all&apos;estero, il Consolato pu&ograve; rilasciare un <strong>documento di viaggio provvisorio</strong> (ETD) per rientrare in Italia.</div>
+              <div className="gl-item"><strong>Pagine esaurite</strong> &mdash; se hai finito le pagine per i timbri, devi richiedere un nuovo passaporto. Non &egrave; possibile aggiungere pagine a quello esistente.</div>
+            </div>
+          </div>
+
           {/* ESEMPIO */}
           <div className="sec r" id="esempio">
             <div className="sec-tag">Esempio concreto</div>
@@ -255,6 +298,8 @@ export default function PaginaPassaporto() {
             <div className="ib warn r"><div className="ib-t">❌ Aspettare l&apos;ultimo momento</div><p>Nelle grandi citt&agrave; (Roma, Milano, Napoli) trovare un appuntamento pu&ograve; richiedere <strong>mesi</strong>. Se hai un viaggio programmato, prenota subito &mdash; non a ridosso della partenza.</p></div>
             <div className="ib warn r"><div className="ib-t">❌ Presentarsi con il bollettino postale vecchio</div><p>Dal 2026 il pagamento dei 42,70&euro; si fa <strong>solo via PagoPA</strong>. Se arrivi con il vecchio bollettino compilato a mano, non te lo accettano e perdi l&apos;appuntamento.</p></div>
             <div className="ib warn r"><div className="ib-t">❌ Foto non conformi</div><p>Le foto devono rispettare lo standard ICAO: sfondo bianco, viso frontale al 70%, niente occhiali da sole, niente sorriso esagerato. Se le foto non vanno bene, la pratica viene bloccata.</p></div>
+            <div className="ib warn r"><div className="ib-t">❌ Non portare il consenso dell&apos;altro genitore (per minori)</div><p>Se richiedi il passaporto per tuo figlio e l&apos;altro genitore non viene all&apos;appuntamento, devi portare il suo <strong>atto di assenso autenticato</strong> con copia del documento. Senza questa documentazione, la pratica viene rifiutata e dovrai prendere un nuovo appuntamento.</p></div>
+            <div className="ib warn r"><div className="ib-t">❌ Non controllare la scadenza prima di prenotare il viaggio</div><p>Prenota il volo solo <strong>dopo aver verificato</strong> che il passaporto sia valido (e con almeno 6 mesi di margine per molti Paesi). Se &egrave; scaduto o in scadenza, avvia subito la pratica per il nuovo.</p></div>
           </div>
 
           {/* FAQ */}
