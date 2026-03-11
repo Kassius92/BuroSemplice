@@ -116,9 +116,9 @@ export default function Page() {
 <div className="perc r">
             <span className="perc-label">Link utili</span>
             <div className="perc-steps">
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.naspi-702.naspi.html" target="_blank" rel="noopener noreferrer" className="ps">🏛 Domanda NASpI</a>
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.consultazione-domande-di-disoccupazione-702.consultazione-domande-di-disoccupazione.html" target="_blank" rel="noopener noreferrer" className="ps">📋 Stato pratica</a>
-              <a href="https://www.anpal.gov.it/" target="_blank" rel="noopener noreferrer" className="ps">💼 ANPAL</a>
+              <a href="https://www.inps.it" target="_blank" rel="noopener noreferrer" className="ps">🏛 Domanda NASpI</a>
+              <a href="https://www.inps.it" target="_blank" rel="noopener noreferrer" className="ps">📋 Stato pratica</a>
+              <a href="https://www.anpal.gov.it" target="_blank" rel="noopener noreferrer" className="ps">💼 ANPAL</a>
             </div>
           </div>
 
@@ -371,9 +371,9 @@ export default function Page() {
           <SidebarToggle />
                     <div className="sbsec">
             <div className="sbsec-t">🔗 Link utili</div>
-            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.naspi-702.naspi.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Domanda NASpI</div><div className="sbtool-d">Presenta la domanda online</div></div></a>
-            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.consultazione-domande-di-disoccupazione-702.consultazione-domande-di-disoccupazione.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Stato pratica</div><div className="sbtool-d">Controlla lo stato della pratica</div></div></a>
-            <a href="https://www.anpal.gov.it/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">💼</span><div><div className="sbtool-n">ANPAL</div><div className="sbtool-d">Agenzia Nazionale Politiche Attive Lavoro</div></div></a>
+            <a href="https://www.inps.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Domanda NASpI</div><div className="sbtool-d">Presenta la domanda online</div></div></a>
+            <a href="https://www.inps.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Stato pratica</div><div className="sbtool-d">Controlla lo stato della pratica</div></div></a>
+            <a href="https://www.anpal.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">💼</span><div><div className="sbtool-n">ANPAL</div><div className="sbtool-d">Agenzia Nazionale Politiche Attive Lavoro</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

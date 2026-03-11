@@ -127,9 +127,9 @@ export default function Page() {
 <div className="perc r">
             <span className="perc-label">Link utili</span>
             <div className="perc-steps">
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.prospetto-informativo-fondo-di-tesoreria-702.prospetto-informativo-fondo-di-tesoreria.html" target="_blank" rel="noopener noreferrer" className="ps">🏛 TFR su INPS</a>
-              <a href="https://www.covip.it/" target="_blank" rel="noopener noreferrer" className="ps">📊 COVIP</a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/dichiarazioni/modello-730" target="_blank" rel="noopener noreferrer" className="ps">📋 Detrazione 730</a>
+              <a href="https://www.inps.it" target="_blank" rel="noopener noreferrer" className="ps">🏛 TFR su INPS</a>
+              <a href="https://www.covip.it" target="_blank" rel="noopener noreferrer" className="ps">📊 COVIP</a>
+              <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="ps">📋 Detrazione 730</a>
             </div>
           </div>
 
@@ -365,9 +365,9 @@ export default function Page() {
           <SidebarToggle />
                     <div className="sbsec">
             <div className="sbsec-t">🔗 Link utili</div>
-            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.prospetto-informativo-fondo-di-tesoreria-702.prospetto-informativo-fondo-di-tesoreria.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">TFR su INPS</div><div className="sbtool-d">TFR nel fondo INPS</div></div></a>
-            <a href="https://www.covip.it/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📊</span><div><div className="sbtool-n">COVIP</div><div className="sbtool-d">Autorità di vigilanza fondi pensione</div></div></a>
-            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/dichiarazioni/modello-730" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Detrazione 730</div><div className="sbtool-d">Tassazione TFR e dichiarazione</div></div></a>
+            <a href="https://www.inps.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">TFR su INPS</div><div className="sbtool-d">TFR nel fondo INPS</div></div></a>
+            <a href="https://www.covip.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📊</span><div><div className="sbtool-n">COVIP</div><div className="sbtool-d">Autorità di vigilanza fondi pensione</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Detrazione 730</div><div className="sbtool-d">Tassazione TFR e dichiarazione</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

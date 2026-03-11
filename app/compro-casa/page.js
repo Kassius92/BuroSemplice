@@ -123,9 +123,9 @@ export default function Page() {
 <div className="perc r">
             <span className="perc-label">Link utili</span>
             <div className="perc-steps">
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/agevolprima-casa" target="_blank" rel="noopener noreferrer" className="ps">🏛 Agevolazioni casa</a>
+              <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="ps">🏛 Agevolazioni casa</a>
               <a href="https://www.consap.it/fondo-prima-casa/" target="_blank" rel="noopener noreferrer" className="ps">🛡 Garanzia Consap</a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/fabbricatiterreni/omi" target="_blank" rel="noopener noreferrer" className="ps">📊 Quotazioni OMI</a>
+              <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="ps">📊 Quotazioni OMI</a>
             </div>
           </div>
 
@@ -362,9 +362,9 @@ export default function Page() {
           <SidebarToggle />
                     <div className="sbsec">
             <div className="sbsec-t">🔗 Link utili</div>
-            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/agevolprima-casa" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Agevolazioni casa</div><div className="sbtool-d">Agenzia delle Entrate</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Agevolazioni casa</div><div className="sbtool-d">Agenzia delle Entrate</div></div></a>
             <a href="https://www.consap.it/fondo-prima-casa/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🛡</span><div><div className="sbtool-n">Garanzia Consap</div><div className="sbtool-d">Mutuo con garanzia statale</div></div></a>
-            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/fabbricatiterreni/omi" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📊</span><div><div className="sbtool-n">Quotazioni OMI</div><div className="sbtool-d">Quotazioni ufficiali per zona</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📊</span><div><div className="sbtool-n">Quotazioni OMI</div><div className="sbtool-d">Quotazioni ufficiali per zona</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

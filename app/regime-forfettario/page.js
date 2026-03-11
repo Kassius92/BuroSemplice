@@ -105,9 +105,9 @@ export default function Page() {
 <div className="perc r">
             <span className="perc-label">Link utili</span>
             <div className="perc-steps">
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/regime-forfetario" target="_blank" rel="noopener noreferrer" className="ps">🏛 Regole forfettario</a>
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.iscrizione-alla-gestione-artigiani-e-commercianti-50498.iscrizione-alla-gestione-artigiani-e-commercianti.html" target="_blank" rel="noopener noreferrer" className="ps">📋 Contributi INPS</a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="ps">📄 Fatture online</a>
+              <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="ps">🏛 Regole forfettario</a>
+              <a href="https://www.inps.it" target="_blank" rel="noopener noreferrer" className="ps">📋 Contributi INPS</a>
+              <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="ps">📄 Fatture online</a>
             </div>
           </div>
 
@@ -272,9 +272,9 @@ export default function Page() {
           <SidebarToggle />
                     <div className="sbsec">
             <div className="sbsec-t">🔗 Link utili</div>
-            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/regime-forfetario" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Regole forfettario</div><div className="sbtool-d">Requisiti e limiti ufficiali</div></div></a>
-            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.iscrizione-alla-gestione-artigiani-e-commercianti-50498.iscrizione-alla-gestione-artigiani-e-commercianti.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Contributi INPS</div><div className="sbtool-d">Gestione separata e artigiani</div></div></a>
-            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">Fatture online</div><div className="sbtool-d">Portale gratuito Agenzia Entrate</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Regole forfettario</div><div className="sbtool-d">Requisiti e limiti ufficiali</div></div></a>
+            <a href="https://www.inps.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Contributi INPS</div><div className="sbtool-d">Gestione separata e artigiani</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">Fatture online</div><div className="sbtool-d">Portale gratuito Agenzia Entrate</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

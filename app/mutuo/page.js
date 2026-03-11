@@ -134,8 +134,8 @@ export default function PaginaMutuo() {
             <span className="perc-label">Link utili</span>
             <div className="perc-steps">
               <a href="https://www.consap.it/fondo-prima-casa/" target="_blank" rel="noopener noreferrer" className="ps">🏛 Fondo Consap</a>
-              <a href="https://www.bancaditalia.it/compiti/vigilanza/avvisi-pub/avvisi-crif/" target="_blank" rel="noopener noreferrer" className="ps">📊 Banca d&apos;Italia</a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/agevolprima-casa" target="_blank" rel="noopener noreferrer" className="ps">📋 Agenzia Entrate</a>
+              <a href="https://www.bancaditalia.it" target="_blank" rel="noopener noreferrer" className="ps">📊 Banca d&apos;Italia</a>
+              <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="ps">📋 Agenzia Entrate</a>
             </div>
           </div>
 
@@ -336,8 +336,8 @@ export default function PaginaMutuo() {
           <div className="sbsec">
             <div className="sbsec-t">🔗 Link utili</div>
             <a href="https://www.consap.it/fondo-prima-casa/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Fondo Consap</div><div className="sbtool-d">Requisiti e modulo domanda</div></div></a>
-            <a href="https://www.bancaditalia.it/compiti/vigilanza/avvisi-pub/avvisi-crif/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📊</span><div><div className="sbtool-n">Banca d&apos;Italia</div><div className="sbtool-d">Centrale rischi e trasparenza</div></div></a>
-            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/agevolprima-casa" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Agenzia Entrate</div><div className="sbtool-d">Agevolazioni prima casa</div></div></a>
+            <a href="https://www.bancaditalia.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📊</span><div><div className="sbtool-n">Banca d&apos;Italia</div><div className="sbtool-d">Centrale rischi e trasparenza</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Agenzia Entrate</div><div className="sbtool-d">Agevolazioni prima casa</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">📚 Guide correlate</div>

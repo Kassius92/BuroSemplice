@@ -114,9 +114,9 @@ export default function Page() {
 <div className="perc r">
             <span className="perc-label">Link utili</span>
             <div className="perc-steps">
-              <a href="https://www.lavoro.gov.it/strumenti-e-servizi/dimissioni-volontarie/" target="_blank" rel="noopener noreferrer" className="ps">🏛 Invia dimissioni</a>
-              <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.naspi-702.naspi.html" target="_blank" rel="noopener noreferrer" className="ps">📋 Domanda NASpI</a>
-              <a href="https://www.cliclavoro.gov.it/" target="_blank" rel="noopener noreferrer" className="ps">💼 ClicLavoro</a>
+              <a href="https://www.lavoro.gov.it" target="_blank" rel="noopener noreferrer" className="ps">🏛 Invia dimissioni</a>
+              <a href="https://www.inps.it" target="_blank" rel="noopener noreferrer" className="ps">📋 Domanda NASpI</a>
+              <a href="https://www.cliclavoro.gov.it" target="_blank" rel="noopener noreferrer" className="ps">💼 ClicLavoro</a>
             </div>
           </div>
 
@@ -345,9 +345,9 @@ export default function Page() {
           <SidebarToggle />
                     <div className="sbsec">
             <div className="sbsec-t">🔗 Link utili</div>
-            <a href="https://www.lavoro.gov.it/strumenti-e-servizi/dimissioni-volontarie/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Invia dimissioni</div><div className="sbtool-d">Ministero del Lavoro — invia online</div></div></a>
-            <a href="https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.naspi-702.naspi.html" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Domanda NASpI</div><div className="sbtool-d">Dopo le dimissioni per giusta causa</div></div></a>
-            <a href="https://www.cliclavoro.gov.it/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">💼</span><div><div className="sbtool-n">ClicLavoro</div><div className="sbtool-d">Portale pubblico del lavoro</div></div></a>
+            <a href="https://www.lavoro.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Invia dimissioni</div><div className="sbtool-d">Ministero del Lavoro — invia online</div></div></a>
+            <a href="https://www.inps.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Domanda NASpI</div><div className="sbtool-d">Dopo le dimissioni per giusta causa</div></div></a>
+            <a href="https://www.cliclavoro.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">💼</span><div><div className="sbtool-n">ClicLavoro</div><div className="sbtool-d">Portale pubblico del lavoro</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

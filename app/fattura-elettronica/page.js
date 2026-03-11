@@ -104,9 +104,9 @@ export default function Page() {
 <div className="perc r">
             <span className="perc-label">Link utili</span>
             <div className="perc-steps">
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="ps">🏛 Fatture online</a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/aree-tematiche/fatturazione-elettronica" target="_blank" rel="noopener noreferrer" className="ps">📋 Regole fattura</a>
-              <a href="https://ivaservizi.agenziaentrate.gov.it/ser/api/fatturews/v1/fatture/byid" target="_blank" rel="noopener noreferrer" className="ps">📄 Portale SDI</a>
+              <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="ps">🏛 Fatture online</a>
+              <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="ps">📋 Regole fattura</a>
+              <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="ps">📄 Portale SDI</a>
             </div>
           </div>
 
@@ -260,9 +260,9 @@ export default function Page() {
           <SidebarToggle />
                     <div className="sbsec">
             <div className="sbsec-t">🔗 Link utili</div>
-            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/fatture-e-corrispettivi" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Fatture online</div><div className="sbtool-d">Portale gratuito Agenzia Entrate</div></div></a>
-            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/aree-tematiche/fatturazione-elettronica" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Regole fattura</div><div className="sbtool-d">Regole e specifiche tecniche</div></div></a>
-            <a href="https://ivaservizi.agenziaentrate.gov.it/ser/api/fatturews/v1/fatture/byid" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">Portale SDI</div><div className="sbtool-d">Sistema di Interscambio</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Fatture online</div><div className="sbtool-d">Portale gratuito Agenzia Entrate</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Regole fattura</div><div className="sbtool-d">Regole e specifiche tecniche</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📄</span><div><div className="sbtool-n">Portale SDI</div><div className="sbtool-d">Sistema di Interscambio</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>

@@ -115,9 +115,9 @@ export default function Page() {
 <div className="perc r">
             <span className="perc-label">Link utili</span>
             <div className="perc-steps">
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazione-riqualificazione-energetica" target="_blank" rel="noopener noreferrer" className="ps">🏛 Bonus casa</a>
+              <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="ps">🏛 Bonus casa</a>
               <a href="https://detrazionifiscali.enea.it/" target="_blank" rel="noopener noreferrer" className="ps">🌿 Pratica ENEA</a>
-              <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazione-per-le-ristrutturazioni-edilizie" target="_blank" rel="noopener noreferrer" className="ps">📋 Guida detrazioni</a>
+              <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="ps">📋 Guida detrazioni</a>
             </div>
           </div>
 
@@ -351,9 +351,9 @@ export default function Page() {
           <SidebarToggle />
                     <div className="sbsec">
             <div className="sbsec-t">🔗 Link utili</div>
-            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazione-riqualificazione-energetica" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Bonus casa</div><div className="sbtool-d">Detrazioni ristrutturazione</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🏛</span><div><div className="sbtool-n">Bonus casa</div><div className="sbtool-d">Detrazioni ristrutturazione</div></div></a>
             <a href="https://detrazionifiscali.enea.it/" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">🌿</span><div><div className="sbtool-n">Pratica ENEA</div><div className="sbtool-d">Comunicazione lavori ecobonus</div></div></a>
-            <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazione-per-le-ristrutturazioni-edilizie" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Guida detrazioni</div><div className="sbtool-d">Guida ufficiale Agenzia Entrate</div></div></a>
+            <a href="https://www.agenziaentrate.gov.it" target="_blank" rel="noopener noreferrer" className="sbtool"><span className="sbtool-i">📋</span><div><div className="sbtool-n">Guida detrazioni</div><div className="sbtool-d">Guida ufficiale Agenzia Entrate</div></div></a>
           </div>
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>
