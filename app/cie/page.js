@@ -256,6 +256,32 @@ export default function PaginaCie() {
             <div className="ib warn r"><div className="ib-t">❌ Presentarsi senza fototessera</div><p>Se non hai caricato la foto su Agenda CIE, devi portare una <strong>fototessera cartacea formato passaporto</strong> (35&times;45mm). Se arrivi senza, l&apos;appuntamento salta e devi riprogrammare.</p></div>
           </div>
 
+          {/* CIE PER MINORI */}
+          <div className="sec r">
+            <div className="sec-tag">Bambini e ragazzi</div>
+            <h2>CIE per minori (0-17 anni)</h2>
+            <p>Anche i minori possono (e dal 3 agosto 2026 <strong>devono</strong>, per l&apos;espatrio) avere la CIE. Ecco le differenze rispetto agli adulti:</p>
+
+            <div className="glossary">
+              <div className="gl-item"><strong>Validit&agrave; ridotta</strong> &mdash; 0-3 anni: vale <strong>3 anni</strong>. 3-18 anni: vale <strong>5 anni</strong>. La motivazione &egrave; la stessa del passaporto: i tratti del viso cambiano rapidamente.</div>
+              <div className="gl-item"><strong>Servono entrambi i genitori</strong> &mdash; il minore deve essere accompagnato da <strong>entrambi i genitori</strong> (o da chi ne fa le veci). Se un genitore non pu&ograve; venire, deve presentare un atto di assenso con copia del documento.</div>
+              <div className="gl-item"><strong>Impronte digitali</strong> &mdash; dai 12 anni in su vengono acquisite le impronte. Sotto i 12 anni, la CIE viene rilasciata senza impronte.</div>
+              <div className="gl-item"><strong>CieID per minori</strong> &mdash; il PIN e il PUK vengono consegnati ma l&apos;uso come identit&agrave; digitale &egrave; limitato: il minore non pu&ograve; accedere autonomamente ai servizi della PA.</div>
+            </div>
+          </div>
+
+          {/* SMARRIMENTO */}
+          <div className="sec r">
+            <div className="sec-tag">Situazioni particolari</div>
+            <h2>Smarrimento, furto e deterioramento</h2>
+            <div className="glossary">
+              <div className="gl-item"><strong>Smarrimento</strong> &mdash; presenta <strong>denuncia di smarrimento</strong> ai Carabinieri o alla Polizia. Poi prenota un appuntamento al Comune per richiedere una nuova CIE. Costo: 22,21&euro; (come il primo rilascio). Porta la copia della denuncia.</div>
+              <div className="gl-item"><strong>Furto</strong> &mdash; stessa procedura: denuncia + nuova richiesta. Se sei all&apos;estero, rivolgiti al Consolato per un documento di viaggio temporaneo.</div>
+              <div className="gl-item"><strong>CIE deteriorata</strong> &mdash; se la carta &egrave; danneggiata (chip illeggibile, foto non riconoscibile, piegata), puoi richiederne una nuova senza aspettare la scadenza. Porta la vecchia CIE allo sportello.</div>
+              <div className="gl-item"><strong>Cambio residenza o dati</strong> &mdash; se cambi residenza, la CIE resta valida (l&apos;indirizzo non &egrave; sulla carta). Se per&ograve; cambi cognome (matrimonio, divorzio), devi richiedere una nuova CIE.</div>
+            </div>
+          </div>
+
           {/* FAQ */}
           <div className="sec bh r" id="faq">
             <div className="sec-tag">Risposte rapide</div>

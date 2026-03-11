@@ -258,6 +258,36 @@ export default function PaginaPec() {
             <div className="ib warn r"><div className="ib-t">❌ Lasciare scadere l&apos;abbonamento senza salvare i messaggi</div><p>Se non rinnovi, dopo un periodo la casella viene <strong>disattivata e i messaggi cancellati</strong>. Se hai PEC importanti (contratti, disdette, comunicazioni legali), scaricale prima della scadenza.</p></div>
           </div>
 
+          {/* CONFRONTO PROVIDER */}
+          <div className="sec r">
+            <div className="sec-tag">Scegliere</div>
+            <h2>Quale provider PEC scegliere</h2>
+            <p>Tutti i provider accreditati AgID offrono lo stesso valore legale. Le differenze sono nel prezzo, nello spazio e nell&apos;usabilit&agrave;:</p>
+
+            <div className="glossary">
+              <div className="gl-item"><strong>Aruba PEC</strong> &mdash; il pi&ugrave; economico: <strong>5-8&euro;/anno</strong> per 1GB. Interfaccia essenziale ma funzionale. Ideale se usi la PEC poche volte all&apos;anno.</div>
+              <div className="gl-item"><strong>Legalmail (InfoCert)</strong> &mdash; ~25-40&euro;/anno, fino a 5GB. Interfaccia moderna, notifiche push su app mobile. Usata da molti professionisti.</div>
+              <div className="gl-item"><strong>Poste Italiane (PostaCertificat@)</strong> &mdash; ~5,50&euro;/anno per 200MB. Poco spazio ma comoda se hai gi&agrave; altri servizi Poste.</div>
+              <div className="gl-item"><strong>Register.it, Namirial, Actalis</strong> &mdash; alternative valide, prezzi tra 5-15&euro;/anno. Confronta spazio, app mobile e possibilit&agrave; di usare client esterni (Outlook, Thunderbird).</div>
+            </div>
+
+            <div className="ib tip r"><div className="ib-t">💡 PEC gratuita per i cittadini: c&apos;&egrave;?</div>
+              <p>Al momento <strong>non esiste una PEC gratuita</strong> per i cittadini. La vecchia PostaCertificat@ gratuita &egrave; stata dismessa. Per&ograve;, registrando il tuo <strong>domicilio digitale su INAD</strong> (inad.gov.it), la PA pu&ograve; inviarti comunicazioni ufficiali via PEC senza che tu debba andare in posta per le raccomandate.</p>
+            </div>
+          </div>
+
+          {/* GESTIONE QUOTIDIANA */}
+          <div className="sec r">
+            <div className="sec-tag">Consigli pratici</div>
+            <h2>Come gestire la PEC senza impazzire</h2>
+            <div className="glossary">
+              <div className="gl-item"><strong>Attiva le notifiche email</strong> &mdash; la maggior parte dei provider permette di ricevere un avviso sulla tua email normale quando arriva un messaggio PEC. Cos&igrave; non devi controllare manualmente.</div>
+              <div className="gl-item"><strong>Scarica le ricevute</strong> &mdash; ogni PEC inviata genera due ricevute: di <strong>accettazione</strong> (il tuo provider ha preso in carico il messaggio) e di <strong>consegna</strong> (il messaggio &egrave; arrivato nella casella del destinatario). Salvale: sono la tua prova legale.</div>
+              <div className="gl-item"><strong>Archivia periodicamente</strong> &mdash; esporta i messaggi importanti in formato .eml e conservali fuori dalla casella PEC. Se un domani cambi provider o lasci scadere l&apos;abbonamento, avrai comunque le prove delle comunicazioni.</div>
+              <div className="gl-item"><strong>Non usarla come email normale</strong> &mdash; la PEC &egrave; per comunicazioni legali, non per mandare auguri di Natale. Pi&ugrave; messaggi accumuli, pi&ugrave; &egrave; difficile trovare quello importante. Tienila pulita.</div>
+            </div>
+          </div>
+
           {/* FAQ */}
           <div className="sec bh r" id="faq">
             <div className="sec-tag">Risposte rapide</div>

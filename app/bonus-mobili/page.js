@@ -286,6 +286,33 @@ export default function PaginaBonusMobili() {
             <div className="ib warn r"><div className="ib-t">❌ Pensare che basti la tinteggiatura</div><p>La manutenzione ordinaria (tinteggiare, cambiare le piastrelle senza toccare gli impianti) <strong>non d&agrave; diritto</strong> al bonus mobili. Servono lavori pi&ugrave; importanti: almeno manutenzione straordinaria.</p></div>
           </div>
 
+          {/* CASI PARTICOLARI */}
+          <div className="sec r">
+            <div className="sec-tag">Situazioni frequenti</div>
+            <h2>Casi particolari</h2>
+            <div className="glossary">
+              <div className="gl-item"><strong>Due lavori nello stesso anno</strong> &mdash; se fai due interventi di ristrutturazione distinti sullo stesso immobile, il tetto di 5.000&euro; resta unico per l&apos;anno. Non si raddoppia.</div>
+              <div className="gl-item"><strong>Due immobili diversi</strong> &mdash; se ristrutturi due appartamenti, hai <strong>due bonus distinti</strong>, ciascuno con il tetto di 5.000&euro;. Il bonus &egrave; legato all&apos;intervento edilizio, non alla persona.</div>
+              <div className="gl-item"><strong>Convivente o coniuge</strong> &mdash; anche chi non &egrave; proprietario ma convive nell&apos;immobile ristrutturato pu&ograve; usufruire del bonus, purch&eacute; sia lui/lei a sostenere le spese per mobili ed elettrodomestici con pagamento tracciabile a proprio nome.</div>
+              <div className="gl-item"><strong>Mobili per una stanza diversa da quella ristrutturata</strong> &mdash; s&igrave;, si pu&ograve; fare. Se ristrutturi il bagno, puoi comprare un divano per il soggiorno con il bonus. L&apos;importante &egrave; che i lavori siano stati fatti sullo stesso immobile.</div>
+              <div className="gl-item"><strong>Acquisti online</strong> &mdash; il bonus vale anche per gli acquisti su siti e-commerce, purch&eacute; paghi con carta di credito/debito o bonifico e conservi la <strong>fattura</strong> (non basta la conferma d&apos;ordine) e la <strong>ricevuta del pagamento</strong>.</div>
+              <div className="gl-item"><strong>Cucina su misura</strong> &mdash; detraibile al 100%, compresi i lavori di installazione. La cucina &egrave; tra gli acquisti pi&ugrave; comuni con il bonus mobili. Anche gli elettrodomestici inclusi (forno, piano cottura) rientrano, se di classe energetica adeguata.</div>
+            </div>
+          </div>
+
+          {/* DOCUMENTI DA CONSERVARE */}
+          <div className="sec r">
+            <div className="sec-tag">Checklist</div>
+            <h2>Documenti da conservare (per 15 anni)</h2>
+            <p>L&apos;Agenzia delle Entrate pu&ograve; chiederti i documenti fino a 5 anni dopo la dichiarazione, ma la detrazione si spalma su 10 anni &mdash; quindi conserva tutto per almeno <strong>15 anni</strong>:</p>
+            <div className="glossary">
+              <div className="gl-item"><strong>Fattura o scontrino parlante</strong> &mdash; deve riportare la natura, qualit&agrave; e quantit&agrave; dei beni acquistati e il codice fiscale dell&apos;acquirente.</div>
+              <div className="gl-item"><strong>Ricevuta del pagamento tracciabile</strong> &mdash; estratto conto della carta, ricevuta del bonifico o del pagamento a rate.</div>
+              <div className="gl-item"><strong>Comunicazione all&apos;ENEA</strong> &mdash; obbligatoria solo per gli <strong>elettrodomestici</strong> (forni, lavatrici, lavastoviglie, ecc.). Va fatta online su enea.it entro 90 giorni dalla data di acquisto.</div>
+              <div className="gl-item"><strong>Titolo abilitativo della ristrutturazione</strong> &mdash; CILA, SCIA, o permesso di costruire. Oppure autocertificazione con data di inizio lavori per la manutenzione straordinaria.</div>
+            </div>
+          </div>
+
           {/* FAQ */}
           <div className="sec bh r" id="faq">
             <div className="sec-tag">Risposte rapide</div>

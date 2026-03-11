@@ -283,6 +283,20 @@ export default function PaginaCongedoParentale() {
             <div className="ib warn r"><div className="ib-t">❌ Dimenticare di fare domanda INPS</div><p>Avvisare il datore di lavoro <strong>non basta</strong>. Devi anche fare la domanda all&apos;INPS, altrimenti non ricevi l&apos;indennit&agrave;. Sono due cose separate.</p></div>
           </div>
 
+          {/* CASI PARTICOLARI */}
+          <div className="sec r">
+            <div className="sec-tag">Situazioni frequenti</div>
+            <h2>Casi particolari</h2>
+            <div className="glossary">
+              <div className="gl-item"><strong>Genitore solo</strong> &mdash; se sei l&apos;unico genitore (decesso, abbandono, affidamento esclusivo), hai diritto a <strong>tutti gli 11 mesi</strong> complessivi, di cui 3 all&apos;80% e 6 al 30%. Il tetto massimo sale perch&eacute; non c&apos;&egrave; l&apos;altro genitore con cui dividere.</div>
+              <div className="gl-item"><strong>Gemelli</strong> &mdash; i mesi di congedo si <strong>raddoppiano</strong> (o triplicano). Per ogni figlio nato/adottato nello stesso parto hai diritto a un periodo autonomo. In pratica, con due gemelli hai il doppio dei mesi disponibili.</div>
+              <div className="gl-item"><strong>Lavoratori autonomi</strong> &mdash; dal 2007, anche i lavoratori iscritti alla gestione separata INPS hanno diritto al congedo parentale: <strong>3 mesi</strong> entro i primi 12 mesi del figlio, indennit&agrave; al 30%. Non &egrave; previsto per le partite IVA senza contribuzione INPS.</div>
+              <div className="gl-item"><strong>Frazionamento</strong> &mdash; puoi prendere il congedo a mesi, settimane, giorni o persino ore. La flessibilit&agrave; &egrave; massima. Se lo prendi a ore, l&apos;indennit&agrave; si calcola proporzionalmente. Devi comunicare le modalit&agrave; al datore con <strong>5 giorni di preavviso</strong> (2 giorni in caso di urgenza).</div>
+              <div className="gl-item"><strong>Malattia del figlio</strong> &mdash; diversa dal congedo parentale. Fino ai 3 anni del figlio: assenza illimitata (non retribuita). Dai 3 ai 10 anni: 5 giorni/anno per genitore (10 dal 2026). Non serve usare i mesi di congedo parentale.</div>
+              <div className="gl-item"><strong>Adozione e affidamento</strong> &mdash; stesse regole dei genitori biologici. I mesi decorrono dalla data di ingresso del minore in famiglia (non dalla nascita). Vale anche per le adozioni internazionali.</div>
+            </div>
+          </div>
+
           {/* FAQ */}
           <div className="sec bh r" id="faq">
             <div className="sec-tag">Risposte rapide</div>

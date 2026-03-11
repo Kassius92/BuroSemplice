@@ -266,6 +266,34 @@ export default function Page() {
             <div className="ib warn r d3"><div className="ib-t">{'\u26A0\uFE0F'} Buttare gli scontrini</div><p>L&apos;Agenzia delle Entrate pu&ograve; chiederti i documenti fino a <strong>5 anni dopo</strong>. Se non ce li hai, ti revocano la detrazione e devi restituire i soldi + interessi. Conserva tutto in una busta anno per anno.</p></div>
           </div>
 
+          {/* SPESE PER FAMILIARI */}
+          <div className="sec breve-hide r">
+            <div className="sec-tag">Caso frequente</div>
+            <h2>Spese mediche per familiari a carico</h2>
+            <p>Se paghi le spese mediche per un familiare <Tip t="Familiare a carico: persona con reddito annuo lordo inferiore a 2.840,51€ (4.000€ per figli sotto 24 anni). Può essere coniuge, figli, genitori, fratelli, suoceri.">fiscalmente a carico</Tip>, puoi detrarre tu quelle spese nel tuo 730. Le regole:</p>
+
+            <div className="glossary">
+              <div className="gl-item"><strong>Coniuge a carico</strong> &mdash; se il reddito del tuo coniuge &egrave; sotto 2.840,51&euro;/anno, puoi detrarre le sue spese mediche nel tuo 730. La fattura o lo scontrino possono essere intestati a lui/lei.</div>
+              <div className="gl-item"><strong>Figli a carico</strong> &mdash; stessa regola. Per i figli sotto 24 anni il limite sale a 4.000&euro;. Se entrambi i genitori lavorano, le spese si ripartiscono al 50% o nella misura effettiva di sostenimento.</div>
+              <div className="gl-item"><strong>Familiari non a carico</strong> &mdash; se paghi le spese mediche per un genitore anziano che ha una pensione superiore a 2.840,51&euro;, <strong>non puoi detrarle tu</strong>. Le detrae lui (se fa il 730) o si perdono.</div>
+              <div className="gl-item"><strong>Spese per disabili</strong> &mdash; per i familiari con disabilit&agrave; grave (Legge 104), alcune spese mediche sono <strong>deducibili</strong> (riducono il reddito, non l&apos;imposta) e senza franchigia. &Egrave; un vantaggio fiscale pi&ugrave; forte della semplice detrazione al 19%.</div>
+            </div>
+          </div>
+
+          {/* PRECOMPILATO */}
+          <div className="sec breve-hide r">
+            <div className="sec-tag">730 precompilato</div>
+            <h2>Spese mediche e 730 precompilato</h2>
+            <p>Dal 2015 l&apos;Agenzia delle Entrate riceve i dati delle tue spese mediche direttamente da farmacie, medici, ospedali e strutture sanitarie. Li trovi nel <strong>730 precompilato</strong> ad aprile. Ma non fidarti al 100%:</p>
+
+            <div className="ib tip r"><div className="ib-t">✅ Cosa di solito c&apos;&egrave; gi&agrave;</div>
+              <p>Farmaci acquistati in farmacia con tessera sanitaria, visite in strutture private che inviano i dati al Sistema Tessera Sanitaria, ticket SSN, prestazioni ospedaliere.</p>
+            </div>
+            <div className="ib warn r"><div className="ib-t">⚠️ Cosa spesso manca</div>
+              <p>Spese all&apos;estero, prestazioni di professionisti che non hanno trasmesso i dati (capita ancora), farmaci acquistati online (farmacie autorizzate), occhiali e lenti comprati in negozi non collegati, spese per le quali hai esercitato l&apos;opposizione all&apos;invio dei dati. <strong>Controlla sempre</strong> voce per voce e aggiungi quello che manca.</p>
+            </div>
+          </div>
+
           {/* ESEMPIO PRATICO */}
           <div className="sec breve-hide r" id="esempio">
             <div className="sec-tag">Caso reale</div>
