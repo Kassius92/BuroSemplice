@@ -67,7 +67,7 @@ export const categories = [
       { title: 'Identità digitale', links: [
         { name: 'SPID', href: '/spid' },
         { name: 'CIE', href: '/cie' },
-        { name: 'PEC', href: '#', soon: true },
+        { name: 'PEC', href: '/pec' },
       ]},
       { title: 'Documenti personali', links: [
         { name: 'Passaporto', href: '#', soon: true },

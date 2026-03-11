@@ -193,4 +193,13 @@ export const searchIndex = [
   { keywords: ['pin cie', 'puk cie', 'cie pin perso'], guide: 'CIE', href: '/cie#faq', desc: 'PIN e PUK della CIE' },
   { keywords: ['cie espatrio', 'carta identit\u00e0 viaggio', 'cie estero'], guide: 'CIE', href: '/cie#faq', desc: 'CIE per viaggiare all\u2019estero' },
   { keywords: ['rinnovo carta identit\u00e0', 'cie scaduta', 'validit\u00e0 cie'], guide: 'CIE', href: '/cie#validita', desc: 'Validit\u00e0 e rinnovo CIE' },
+
+  // ═══ PEC ═══
+  { keywords: ['pec', 'posta elettronica certificata', 'posta certificata'], guide: 'PEC', href: '/pec', desc: 'Guida completa alla PEC' },
+  { keywords: ['attivare pec', 'come fare pec', 'aprire pec'], guide: 'PEC', href: '/pec#come', desc: 'Come attivare una PEC in 5 minuti' },
+  { keywords: ['pec obbligatoria', 'obbligo pec', 'pec professionisti'], guide: 'PEC', href: '/pec#obbligo', desc: 'Chi \u00e8 obbligato ad avere la PEC' },
+  { keywords: ['costo pec', 'pec gratis', 'pec gratuita', 'quanto costa pec'], guide: 'PEC', href: '/pec#faq', desc: 'Quanto costa una PEC (da ~5\u20ac/anno)' },
+  { keywords: ['domicilio digitale', 'inad', 'inad domicilio'], guide: 'PEC', href: '/pec#domicilio', desc: 'Domicilio digitale INAD' },
+  { keywords: ['ini-pec', 'inipec', 'cercare pec azienda'], guide: 'PEC', href: '/pec#faq', desc: 'Cercare la PEC di un\u2019azienda su INI-PEC' },
+  { keywords: ['pec raccomandata', 'valore legale pec', 'raccomandata digitale'], guide: 'PEC', href: '/pec#cose', desc: 'PEC = raccomandata con ricevuta di ritorno' },
 ];
