@@ -107,7 +107,7 @@ export default function Page() {
             <span className="perc-label">Guide correlate</span>
             <div className="perc-steps">
               <a href="/compro-casa" className="ps">🏠 Compro casa</a>
-              <span className="ps ps-soon">🪑 Bonus mobili <span className="ps-tag">Presto</span></span>
+              <a href="/bonus-mobili" className="ps">🪑 Bonus mobili</a>
               <span className="ps ps-soon">🌿 Ecobonus <span className="ps-tag">Presto</span></span>
             </div>
           </div>
@@ -358,7 +358,7 @@ export default function Page() {
           <div className="sbsec">
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>
             <a href="/compro-casa" className="sbguide">🏠 Compro casa<span className="sbg-ar">→</span></a>
-            <span className="sbguide sbguide-soon">🪑 Bonus mobili<span className="sbg-soon">Presto</span></span>
+            <a href="/bonus-mobili" className="sbguide">🪑 Bonus mobili<span className="sbg-ar">→</span></a>
             <span className="sbguide sbguide-soon">🌿 Ecobonus<span className="sbg-soon">Presto</span></span>
           </div>
         </aside>

@@ -116,7 +116,7 @@ export default function Page() {
             <div className="perc-steps">
               <span className="ps ps-soon">🏦 Mutuo <span className="ps-tag">Presto</span></span>
               <a href="/ristrutturare" className="ps">🔨 Ristrutturare casa</a>
-              <span className="ps ps-soon">🪑 Bonus mobili <span className="ps-tag">Presto</span></span>
+              <a href="/bonus-mobili" className="ps">🪑 Bonus mobili</a>
             </div>
           </div>
 
@@ -370,7 +370,7 @@ export default function Page() {
             <div className="sbsec-t">{'\uD83D\uDCDA'} Guide correlate</div>
             <a href="/mutuo" className="sbguide">🏦 Mutuo<span className="sbg-ar">→</span></a>
             <a href="/ristrutturare" className="sbguide">🔨 Ristrutturare casa<span className="sbg-ar">→</span></a>
-            <span className="sbguide sbguide-soon">🪑 Bonus mobili<span className="sbg-soon">Presto</span></span>
+            <a href="/bonus-mobili" className="sbguide">🪑 Bonus mobili<span className="sbg-ar">→</span></a>
           </div>
         </aside>
       </div>

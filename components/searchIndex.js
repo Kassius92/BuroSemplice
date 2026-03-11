@@ -174,4 +174,13 @@ export const searchIndex = [
   { keywords: ['congedo padre', 'congedo pap\u00e0', 'paternit\u00e0 facoltativa'], guide: 'Congedo parentale', href: '/congedo-parentale#durata', desc: 'Congedo parentale per il pap\u00e0' },
   { keywords: ['congedo 14 anni', 'novit\u00e0 congedo 2026', 'malattia figlio'], guide: 'Congedo parentale', href: '/congedo-parentale#novita', desc: 'Novit\u00e0 2026: esteso a 14 anni' },
   { keywords: ['congedo ore', 'congedo frazionato', 'part time congedo'], guide: 'Congedo parentale', href: '/congedo-parentale#faq', desc: 'Congedo a ore o frazionato' },
+
+  // ═══ BONUS MOBILI ═══
+  { keywords: ['bonus mobili', 'bonus arredi', 'detrazione mobili'], guide: 'Bonus mobili', href: '/bonus-mobili', desc: 'Guida completa al bonus mobili' },
+  { keywords: ['bonus elettrodomestici', 'lavatrice bonus', 'frigorifero bonus', 'classe energetica'], guide: 'Bonus mobili', href: '/bonus-mobili#cosa-compro', desc: 'Elettrodomestici ammessi e classi energetiche' },
+  { keywords: ['5000 euro mobili', 'tetto bonus mobili', 'quanto detraggo mobili'], guide: 'Bonus mobili', href: '/bonus-mobili#cose', desc: 'Tetto 5.000\u20ac e detrazione 50%' },
+  { keywords: ['pagamento bonus mobili', 'bonifico mobili', 'contanti mobili'], guide: 'Bonus mobili', href: '/bonus-mobili#come-pagare', desc: 'Come pagare: carta o bonifico, no contanti' },
+  { keywords: ['bonus mobili 730', 'detrarre mobili', 'quadro e mobili'], guide: 'Bonus mobili', href: '/bonus-mobili#come-detrarre', desc: 'Come detrarre nel 730' },
+  { keywords: ['bonus mobili senza ristrutturazione', 'requisiti bonus mobili'], guide: 'Bonus mobili', href: '/bonus-mobili#requisiti', desc: 'Requisiti: serve la ristrutturazione' },
+  { keywords: ['enea bonus mobili', 'comunicazione enea'], guide: 'Bonus mobili', href: '/bonus-mobili#faq', desc: 'Comunicazione ENEA per elettrodomestici' },
 ];

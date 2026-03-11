@@ -32,7 +32,7 @@ export const categories = [
       ]},
       { title: 'Lavori e bonus', links: [
         { name: 'Ristrutturare', href: '/ristrutturare' },
-        { name: 'Bonus mobili', href: '#', soon: true },
+        { name: 'Bonus mobili', href: '/bonus-mobili' },
         { name: 'Bonus caldaia', href: '#', soon: true },
       ]},
       { title: 'Vivere in casa', links: [
