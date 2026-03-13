@@ -213,6 +213,37 @@ export default function HomePage() {
 
       <div className="scroll-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
 
+      {/* COMMUNITY */}
+      <section className="community-section">
+        <div className="sec-eyebrow">Unisciti a noi</div>
+        <div className="sec-title">Hai una domanda?<br/><em>Chiedi al gruppo.</em></div>
+        <div className="sec-sub">Migliaia di persone come te che si aiutano su ISEE, 730, bonus, INPS e pratiche. Gratis, zero giudizi.</div>
+        <div className="community-cards">
+          <a href="https://www.facebook.com/groups/zeroburocrazia" target="_blank" rel="noopener noreferrer" className="community-card">
+            <div className="cc-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.02 2 10.86c0 2.75 1.36 5.21 3.5 6.82V22l3.77-2.07c1.05.29 2.17.45 3.33.45h.4c5.52 0 10-4.02 10-8.86h-.4C22.4 6.02 17.52 2 12 2zm1.09 11.93l-2.54-2.72L5.18 14l5.89-6.25 2.6 2.72L18.93 8l-5.84 5.93z"/></svg>
+            </div>
+            <div className="cc-text">
+              <div className="cc-title">Entra nel gruppo Facebook</div>
+              <div className="cc-desc">Fai domande e ricevi risposte gratis dalla community.</div>
+            </div>
+            <span className="cc-arrow">&rarr;</span>
+          </a>
+          <a href="https://www.facebook.com/zeroburocrazia" target="_blank" rel="noopener noreferrer" className="community-card">
+            <div className="cc-icon cc-icon-page">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zM6 20V4h5v7h7v9H6z"/></svg>
+            </div>
+            <div className="cc-text">
+              <div className="cc-title">Segui la pagina</div>
+              <div className="cc-desc">Aggiornamenti su scadenze, bonus e nuove guide.</div>
+            </div>
+            <span className="cc-arrow">&rarr;</span>
+          </a>
+        </div>
+      </section>
+
+      <div className="scroll-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+
       {/* NEWSLETTER (DARK) */}
       <BrevoForm pageName="home" id="newsletter" />
 

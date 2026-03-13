@@ -387,11 +387,51 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* ---- COMMUNITY SECTION ---- */
+.community-section {
+  padding: 80px 24px 60px;
+  max-width: 1100px; margin: 0 auto;
+}
+.community-cards {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+}
+.community-card {
+  background: var(--wh);
+  border: 3px solid var(--t1);
+  border-radius: 24px;
+  padding: 28px 24px;
+  text-decoration: none; color: var(--t1);
+  display: flex; align-items: center; gap: 18px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.community-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 7px 0 var(--t1);
+}
+.cc-icon {
+  width: 56px; height: 56px; border-radius: 16px;
+  background: var(--teal); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.cc-icon-page { background: var(--tc); }
+.cc-text { flex: 1; }
+.cc-title {
+  font-family: var(--font-playfair); font-size: 18px;
+  font-weight: 700; margin-bottom: 4px;
+}
+.cc-desc { font-size: 14px; color: var(--t3); line-height: 1.5; }
+.cc-arrow {
+  font-size: 20px; font-weight: 700; color: var(--teal);
+  flex-shrink: 0; transition: color .2s;
+}
+.community-card:hover .cc-arrow { color: var(--tc); }
+
 /* ---- RESPONSIVE ---- */
 @media (max-width: 768px) {
   .h-hero { padding: 86px 20px 40px; }
   .features-strip { grid-template-columns: 1fr; padding: 40px 20px; gap: 12px; }
-  .cards-grid, .how-steps, .demo-grid { grid-template-columns: 1fr; }
+  .cards-grid, .how-steps, .demo-grid, .community-cards { grid-template-columns: 1fr; }
   .guides-section, .demo-section { padding: 60px 20px; }
   .how-section, .final-section { padding: 60px 20px; }
   .hero-ctas { flex-direction: column; align-items: flex-start; }
