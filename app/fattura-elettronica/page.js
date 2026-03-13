@@ -196,7 +196,7 @@ export default function Page() {
             <div className="ib tip r"><div className="ib-t">{'\uD83D\uDCA1'} Il consiglio onesto</div><p>Se sei un <strong>forfettario con pochi clienti</strong>, il portale gratuito dell&apos;Agenzia funziona. Se fai pi&ugrave; di 10 fatture al mese o vuoi la gestione automatica (scadenze, incassi, F24), un servizio come <strong>Fiscozen</strong> ti semplifica la vita e include anche il commercialista.</p></div>
 
             <div className="aff-block r">
-              <img src="/fiscozen-logo.png" alt="Fiscozen" className="aff-logo" width="160" height="32" />
+              <img src="/fiscozen-logo.png" alt="Fiscozen" className="aff-logo" width="120" height="24" />
             <div className="aff-label">Strumento consigliato</div>
               <div className="aff-body">
                 <div className="aff-left">

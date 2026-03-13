@@ -309,7 +309,7 @@ export default function Page() {
           </div>
 
           <div className="aff-block r">
-            <img src="/fiscozen-logo.png" alt="Fiscozen" className="aff-logo" width="160" height="32" />
+            <img src="/fiscozen-logo.png" alt="Fiscozen" className="aff-logo" width="120" height="24" />
             <div className="aff-label">Ti dimetti per metterti in proprio?</div>
             <div className="aff-body">
               <div className="aff-left">

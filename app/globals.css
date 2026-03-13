@@ -455,39 +455,53 @@ footer,.footer-dark{background:var(--navy);border-top:1px solid rgba(255,255,255
 
 /* ─── BLOCCO AFFILIAZIONE ─────────────────────── */
 .aff-block {
-  background: white;
-  border: 3px solid var(--t1);
-  border-left: 4px solid var(--sage);
-  border-radius:24px;
-  padding: 24px 28px;
-  margin: 28px 0;
+  background: linear-gradient(135deg, #0f1623 0%, #162033 50%, #0f1623 100%);
+  border-radius: 24px;
+  padding: 32px 32px 28px;
+  margin: 36px 0;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.06);
 }
+.aff-block::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--sage), var(--teal), var(--sage));
+}
+.aff-block::after {
+  content: ''; position: absolute; top: -80px; right: -60px; width: 200px; height: 200px;
+  border-radius: 50%; background: radial-gradient(circle, rgba(42,157,143,.12), transparent 65%);
+  pointer-events: none;
+}
+.aff-logo { display:block; height:24px; width:auto; margin-bottom:16px; position:relative; z-index:1; opacity:.9; }
 .aff-label {
-  font-size: 10px; font-weight: 700; letter-spacing: 1.2px;
+  font-size: 10px; font-weight: 700; letter-spacing: 1.6px;
   text-transform: uppercase; color: var(--sage);
-  margin-bottom: 14px;
+  margin-bottom: 16px; position: relative; z-index: 1;
+  display: inline-flex; align-items: center; gap: 8px;
 }
-.aff-logo { display:block; height:28px; width:auto; margin-bottom:14px; border-radius:6px; }
-.aff-body { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.aff-label::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--sage); animation: dotP 2s infinite; }
+.aff-body { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; position: relative; z-index: 1; }
 .aff-left { flex: 1; min-width: 220px; }
-.aff-title { font-size: 17px; font-weight: 700; color: var(--warm-brown); margin-bottom: 8px; }
-.aff-text { font-size: 14px; line-height: 1.65; color: var(--t2); margin-bottom: 10px; }
-.aff-note { font-size: 11px; color: var(--t3); line-height: 1.5; font-style: italic; }
+.aff-title { font-family: var(--font-playfair), serif; font-size: 19px; font-weight: 700; color: #fff; margin-bottom: 10px; line-height: 1.35; }
+.aff-text { font-size: 14px; line-height: 1.7; color: rgba(255,255,255,.55); margin-bottom: 12px; }
+.aff-note { font-size: 11px; color: rgba(255,255,255,.3); line-height: 1.5; font-style: italic; }
 .aff-btn {
-  display: inline-flex; align-items: center;
-  background: var(--sage); color: white;
-  font-size: 14px; font-weight: 600;
-  padding: 13px 22px; border-radius: 50px;
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--sage); color: #fff;
+  font-size: 15px; font-weight: 700;
+  padding: 15px 28px; border-radius: 50px;
   text-decoration: none; white-space: nowrap;
+  font-family: var(--font-dm), sans-serif;
   transition: transform .15s, box-shadow .15s;
-  box-shadow: 0 3px 0 #1e7a6e;
+  box-shadow: 0 4px 0 #1e7a6e, 0 0 20px rgba(42,157,143,.2);
   flex-shrink: 0;
 }
-.aff-btn:hover { transform: translateY(-2px); box-shadow: 0 5px 0 #1e7a6e; }
-.aff-btn:active { transform: translateY(1px); box-shadow: 0 1px 0 #1e7a6e; }
+.aff-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #1e7a6e, 0 0 30px rgba(42,157,143,.35); }
+.aff-btn:active { transform: translateY(1px); box-shadow: 0 2px 0 #1e7a6e; }
 @media(max-width:600px) {
+  .aff-block { padding: 24px 20px 22px; }
   .aff-body { flex-direction: column; align-items: stretch; }
-  .aff-btn { text-align: center; justify-content: center; }
+  .aff-btn { text-align: center; justify-content: center; width: 100%; }
 }
 
 /* ---- HAMBURGER ---- */
