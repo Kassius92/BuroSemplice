@@ -10,6 +10,7 @@ import VersionToggle from '@/components/VersionToggle';
 import QuizForfettario from '@/components/QuizForfettario';
 import Tip from '@/components/Tip';
 import SidebarFiscozen from '@/components/SidebarFiscozen';
+import StickyFiscozen from '@/components/StickyFiscozen';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
@@ -321,6 +322,7 @@ export default function Page() {
         </aside>
       </div>
 
+      <StickyFiscozen />
       <BrevoForm pageName="regime-forfettario" />
       <Footer variant="scheda" />
     </>

@@ -10,6 +10,7 @@ import VersionToggle from '@/components/VersionToggle';
 import QuizFatturaE from '@/components/QuizFatturaE';
 import Tip from '@/components/Tip';
 import SidebarFiscozen from '@/components/SidebarFiscozen';
+import StickyFiscozen from '@/components/StickyFiscozen';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
@@ -305,6 +306,7 @@ export default function Page() {
         </aside>
       </div>
 
+      <StickyFiscozen />
       <BrevoForm pageName="fattura-elettronica" />
       <Footer variant="scheda" />
     </>

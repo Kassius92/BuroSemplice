@@ -9,6 +9,7 @@ import SidebarToggle from '@/components/SidebarToggle';
 import QuizDimissioni from '@/components/QuizDimissioni';
 import Tip from '@/components/Tip';
 import SidebarFiscozen from '@/components/SidebarFiscozen';
+import StickyFiscozen from '@/components/StickyFiscozen';
 import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
@@ -361,6 +362,7 @@ export default function Page() {
         </aside>
       </div>
 
+      <StickyFiscozen />
       <BrevoForm pageName="dimissioni" />
       <Footer variant="scheda" />
     </>

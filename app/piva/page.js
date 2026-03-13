@@ -10,6 +10,7 @@ import QuizPiva from '@/components/QuizPiva';
 import CalcPiva from '@/components/CalcPiva';
 import Tip from '@/components/Tip';
 import SidebarFiscozen from '@/components/SidebarFiscozen';
+import StickyFiscozen from '@/components/StickyFiscozen';
 import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
@@ -404,6 +405,7 @@ export default function Page() {
         </aside>
       </div>
 
+      <StickyFiscozen />
       <BrevoForm pageName="piva" />
       <Footer variant="scheda" />
     </>
