@@ -85,6 +85,8 @@ export default function HomePage() {
         </div>
       </div>
 
+      <div className="scroll-arrow">{'\u2193'}</div>
+
       {/* MARQUEE */}
       <div className="marquee-wrap">
         <div className="marquee-track">
@@ -114,6 +116,8 @@ export default function HomePage() {
           <OpenMenuButton />
         </div>
       </section>
+
+      <div className="scroll-arrow">{'\u2193'}</div>
 
       {/* DEMO CARDS — dentro le guide */}
       <section className="demo-section">
@@ -179,7 +183,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* COME FUNZIONA (DARK) */}
+      <div className="scroll-arrow">{'\u2193'}</div>
+
       <section className="how-section">
         <div className="how-inner">
           <div className="sec-eyebrow">Come funziona</div>
@@ -204,6 +209,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <div className="scroll-arrow-dark" style={{ background: 'var(--navy)' }}>{'\u2193'}</div>
 
       {/* NEWSLETTER (DARK) */}
       <section className="final-section" id="newsletter">

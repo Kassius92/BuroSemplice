@@ -345,106 +345,28 @@
 .flinks-dark a { color: rgba(255,255,255,.35); text-decoration: none; margin: 0 10px; font-size: 13px; transition: color .2s; }
 .flinks-dark a:hover { color: #fff; }
 
-/* ---- HAND-DRAWN DECORATIONS ---- */
-.h-hero { position: relative; overflow: visible; }
-.h-hero::before {
-  content: ''; position: absolute; top: 40px; right: 60px;
-  width: 80px; height: 80px;
-  border: 2px dashed rgba(227,100,20,.15);
-  border-radius: 50%;
-  transform: rotate(12deg);
-  pointer-events: none;
+/* ---- SCROLL GUIDE ARROWS ---- */
+.scroll-arrow {
+  text-align: center;
+  padding: 20px 0;
+  color: rgba(15,76,92,.2);
+  font-size: 24px;
+  letter-spacing: 4px;
+  user-select: none;
+  animation: bobDown 2s ease-in-out infinite;
 }
-.h-hero::after {
-  content: '✦'; position: absolute; top: 160px; right: 180px;
-  font-size: 18px; color: rgba(42,157,143,.2);
-  transform: rotate(-15deg);
-  pointer-events: none;
+.scroll-arrow-dark {
+  text-align: center;
+  padding: 20px 0;
+  color: rgba(255,255,255,.1);
+  font-size: 24px;
+  letter-spacing: 4px;
+  user-select: none;
+  animation: bobDown 2s ease-in-out infinite;
 }
-
-.features-strip { position: relative; }
-.features-strip::before {
-  content: '~'; position: absolute; top: -8px; left: 50%;
-  font-size: 28px; color: rgba(15,76,92,.1); font-weight: 700;
-  letter-spacing: 12px;
-  pointer-events: none;
-}
-
-.guides-section { position: relative; overflow: visible; }
-.guides-section::before {
-  content: ''; position: absolute; top: 30px; right: 40px;
-  width: 48px; height: 48px;
-  border: 2px solid rgba(42,157,143,.12);
-  border-radius: 12px;
-  transform: rotate(22deg);
-  pointer-events: none;
-}
-.guides-section::after {
-  content: '→'; position: absolute; bottom: 120px; right: 80px;
-  font-size: 32px; color: rgba(227,100,20,.1);
-  transform: rotate(-25deg);
-  pointer-events: none;
-}
-
-.demo-section { position: relative; overflow: visible; }
-.demo-section::before {
-  content: '✦'; position: absolute; top: 20px; right: 100px;
-  font-size: 22px; color: rgba(227,100,20,.15);
-  pointer-events: none;
-}
-.demo-section::after {
-  content: ''; position: absolute; bottom: 40px; left: 40px;
-  width: 60px; height: 60px;
-  border: 2px dashed rgba(15,76,92,.08);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.how-inner { position: relative; overflow: visible; }
-.how-inner::before {
-  content: '✦'; position: absolute; top: -10px; right: 20px;
-  font-size: 16px; color: rgba(227,100,20,.25);
-  pointer-events: none;
-}
-.how-inner::after {
-  content: ''; position: absolute; bottom: -20px; right: 80px;
-  width: 36px; height: 36px;
-  border: 2px solid rgba(255,255,255,.06);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-/* Small dots scattered */
-.home-divider { position: relative; }
-.home-divider::before {
-  content: '• • •'; position: absolute; top: -22px; right: 60px;
-  font-size: 10px; color: rgba(15,76,92,.12); letter-spacing: 6px;
-  pointer-events: none;
-}
-
-/* Wavy line decoration */
-.sec-title { position: relative; }
-
-/* Sparkle near CTA sections */
-.open-all { position: relative; }
-.open-all::before {
-  content: '✦'; position: absolute; top: -8px; left: calc(50% - 120px);
-  font-size: 12px; color: rgba(42,157,143,.2);
-  transform: rotate(20deg);
-  pointer-events: none;
-}
-.open-all::after {
-  content: '✦'; position: absolute; top: -4px; right: calc(50% - 130px);
-  font-size: 9px; color: rgba(227,100,20,.18);
-  transform: rotate(-15deg);
-  pointer-events: none;
-}
-
-@media (max-width: 768px) {
-  .h-hero::before, .h-hero::after,
-  .guides-section::before, .guides-section::after,
-  .demo-section::before, .demo-section::after,
-  .how-inner::before, .how-inner::after { display: none; }
+@keyframes bobDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
 }
 
 /* ---- ANIMATIONS ---- */
