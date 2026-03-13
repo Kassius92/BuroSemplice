@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
 import SchemaOrg from '@/components/SchemaOrg';
 import OpenMenuButton from '@/components/OpenMenuButton';
+import BrevoForm from '@/components/BrevoForm';
 import './home.css';
 
 export const metadata = {
@@ -213,19 +214,7 @@ export default function HomePage() {
       <div className="scroll-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
 
       {/* NEWSLETTER (DARK) */}
-      <section className="final-section" id="newsletter">
-        <div className="sec-title">Resta aggiornato.<br/>Senza <em>impazzire.</em></div>
-        <div className="final-sub">Scadenze, bonus e novit&agrave; che ti riguardano. Una email quando serve. Ti cancelli in un click.</div>
-        <div className="final-form">
-          <input type="email" placeholder="la-tua@email.com" />
-          <button>Iscriviti gratis &rarr;</button>
-        </div>
-        <div className="final-trust">
-          <span>Gratis, per sempre</span>
-          <span>Solo cose utili</span>
-          <span>Via in 1 click</span>
-        </div>
-      </section>
+      <BrevoForm pageName="home" id="newsletter" />
 
       <Footer variant="home" />
     </>

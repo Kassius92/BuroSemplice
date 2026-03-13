@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 
-export default function BrevoForm({ pageName = 'default' }) {
+export default function BrevoForm({ pageName = 'default', id = null }) {
   const [email, setEmail] = useState('');
   const [privacy, setPrivacy] = useState(false);
   const [msg, setMsg] = useState(null);
@@ -49,34 +49,37 @@ export default function BrevoForm({ pageName = 'default' }) {
   };
 
   return (
-    <div className="remind-box">
-      <div className="remind-inner">
-        <div className="remind-icon">{'\uD83D\uDD14'}</div>
-        <div className="remind-title">Resta aggiornato</div>
-        <div className="remind-desc">Scadenze, nuove guide e consigli utili. Gratis, niente spam, cancelli quando vuoi.</div>
-        {msg && <div className={`remind-msg remind-msg--${msg.type}`}>{msg.text}</div>}
-        {!sent && (
-          <>
-            <div className="remind-row">
-              <input
-                className="remind-input"
-                type="email"
-                placeholder="La tua email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                onKeyDown={(e) => { if (e.key === 'Enter') handleSubmit(); }}
-              />
-              <button className="remind-btn" onClick={handleSubmit} disabled={loading}>
-                {loading ? 'Invio...' : 'Iscriviti'}
-              </button>
-            </div>
-            <label className="remind-check">
-              <input type="checkbox" checked={privacy} onChange={(e) => setPrivacy(e.target.checked)} />
-              <span>Accetto la <a href="/privacy" target="_blank" rel="noopener">privacy policy</a></span>
-            </label>
-          </>
-        )}
-      </div>
-    </div>
+    <section className="final-section" id={id}>
+      <div className="sec-title">Resta aggiornato.<br/>Senza <em>impazzire.</em></div>
+      <div className="final-sub">Scadenze, bonus e novit&agrave; che ti riguardano. Una email quando serve. Ti cancelli in un click.</div>
+      {msg && <div className={`final-msg final-msg--${msg.type}`}>{msg.text}</div>}
+      {!sent ? (
+        <>
+          <div className="final-form">
+            <input
+              type="email"
+              placeholder="la-tua@email.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              onKeyDown={(e) => { if (e.key === 'Enter') handleSubmit(); }}
+            />
+            <button onClick={handleSubmit} disabled={loading}>
+              {loading ? 'Invio...' : 'Iscriviti gratis \u2192'}
+            </button>
+          </div>
+          <label className="final-check">
+            <input type="checkbox" checked={privacy} onChange={(e) => setPrivacy(e.target.checked)} />
+            <span>Accetto la <a href="/privacy" target="_blank" rel="noopener">privacy policy</a></span>
+          </label>
+          <div className="final-trust">
+            <span>Gratis, per sempre</span>
+            <span>Solo cose utili</span>
+            <span>Via in 1 click</span>
+          </div>
+        </>
+      ) : (
+        <div className="final-done">{'\u2705'} Sei iscritto! Ti avviseremo sulle prossime scadenze.</div>
+      )}
+    </section>
   );
 }

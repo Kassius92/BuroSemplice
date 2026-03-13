@@ -14,7 +14,8 @@
 .prose li { font-size:15px; line-height:1.8; color:var(--t2); margin-bottom:6px; }
 
 .values { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:32px 0; }
-.val { background:white; border:1px solid var(--bd); border-radius:14px; padding:22px; }
+.val { background:white; border:3px solid var(--t1); border-radius:24px; padding:22px; transition:transform .2s ease,box-shadow .2s ease; }
+.val:hover { transform:translateY(-4px); box-shadow:4px 6px 0 var(--t1); }
 .val-icon { font-size:26px; margin-bottom:10px; }
 .val-title { font-size:15px; font-weight:600; color:var(--warm-brown); margin-bottom:6px; }
 .val-text { font-size:13px; line-height:1.65; color:var(--t2); }
@@ -39,8 +40,8 @@
 
 /* Contact grid */
 .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:40px 0; }
-.contact-card { background:white; border:1px solid var(--bd); border-radius:14px; padding:28px 24px; text-decoration:none; transition:box-shadow .2s, transform .2s; display:block; color:inherit; }
-.contact-card:hover { box-shadow:0 8px 32px rgba(15,76,92,.10); transform:translateY(-2px); }
+.contact-card { background:white; border:3px solid var(--t1); border-radius:24px; padding:28px 24px; text-decoration:none; transition:transform .2s ease,box-shadow .2s ease; display:block; color:inherit; }
+.contact-card:hover { box-shadow:5px 7px 0 var(--t1); transform:translateY(-5px); }
 .contact-icon { font-size:28px; margin-bottom:12px; }
 .contact-type { font-size:11px; font-weight:600; letter-spacing:1px; text-transform:uppercase; color:var(--t3); margin-bottom:6px; }
 .contact-value { font-size:16px; font-weight:600; color:var(--warm-brown); margin-bottom:8px; }
