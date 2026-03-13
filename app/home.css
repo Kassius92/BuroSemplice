@@ -189,13 +189,14 @@
   border-radius: 24px;
   overflow: hidden;
   display: flex; flex-direction: column;
-  transition: transform .2s ease, box-shadow .2s ease, border-color .25s;
+  transition: border-color .25s ease, box-shadow .25s ease;
 }
 .demo-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 4px 6px 0 rgba(0,0,0,.5);
-  border-color: rgba(255,255,255,.2);
+  border-color: rgba(255,255,255,.35);
 }
+.demo-c1:hover { box-shadow: 0 0 18px rgba(15,76,92,.5); border-color: var(--teal); }
+.demo-c2:hover { box-shadow: 0 0 18px rgba(227,100,20,.5); border-color: var(--tc); }
+.demo-c3:hover { box-shadow: 0 0 18px rgba(42,157,143,.5); border-color: var(--sage); }
 .demo-text {
   padding: 28px 24px;
   background: rgba(255,255,255,.03);
@@ -388,13 +389,14 @@
 
 /* ---- RESPONSIVE ---- */
 @media (max-width: 768px) {
-  .h-hero { padding: 60px 20px 40px; }
+  .h-hero { padding: 86px 20px 40px; }
   .features-strip { grid-template-columns: 1fr; padding: 40px 20px; gap: 12px; }
   .cards-grid, .how-steps, .demo-grid { grid-template-columns: 1fr; }
   .guides-section, .demo-section { padding: 60px 20px; }
   .how-section, .final-section { padding: 60px 20px; }
   .hero-ctas { flex-direction: column; align-items: flex-start; }
   .final-form { flex-direction: column; border-radius: 20px; padding: 16px; gap: 12px; }
+  .final-form input { width: 100%; min-width: 0; padding: 12px 0; font-size: 16px; text-align: center; }
   .final-form button { width: 100%; }
 }
 @media (max-width: 480px) {

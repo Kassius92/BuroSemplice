@@ -1015,7 +1015,7 @@ body.mega-open .toc { display: none; }
 .final-section .sec-title em{font-style:italic;color:var(--tc);}
 .final-sub{font-size:17px;color:rgba(255,255,255,.45);margin-bottom:36px;max-width:440px;margin-left:auto;margin-right:auto;line-height:1.55;}
 .final-form{display:flex;align-items:center;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.15);border-radius:60px;padding:6px 6px 6px 28px;max-width:480px;margin:0 auto;transition:transform .2s ease,box-shadow .2s ease,border-color .2s;}
-.final-form:focus-within{transform:translateY(-3px);box-shadow:4px 5px 0 rgba(255,255,255,.08);border-color:var(--tc);}
+.final-form:focus-within{box-shadow:0 0 16px rgba(227,100,20,.4);border-color:var(--tc);}
 .final-form input{flex:1;border:none;outline:none;font-size:15px;font-family:var(--font-dm),sans-serif;background:none;color:#fff;}
 .final-form input::placeholder{color:rgba(255,255,255,.3);}
 .final-form button{background:var(--tc);color:#fff;border:none;padding:13px 24px;border-radius:50px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--font-dm),sans-serif;transition:transform .15s,box-shadow .15s;box-shadow:0 3px 0 #b34e0e;white-space:nowrap;}
@@ -1031,7 +1031,7 @@ body.mega-open .toc { display: none; }
 .final-msg--ok{background:rgba(42,157,143,.2);color:#a8f0e0;border:1px solid rgba(42,157,143,.4);}
 .final-msg--err{background:rgba(227,100,20,.2);color:#ffcba4;border:1px solid rgba(227,100,20,.4);}
 .final-done{font-size:16px;color:rgba(255,255,255,.7);margin-top:8px;}
-@media(max-width:768px){.final-section{padding:60px 20px;}.final-form{flex-direction:column;border-radius:20px;padding:16px;gap:12px;}.final-form button{width:100%;}.final-trust{flex-direction:column;gap:8px;}}
+@media(max-width:768px){.final-section{padding:60px 20px;}.final-form{flex-direction:column;border-radius:20px;padding:16px;gap:12px;}.final-form input{width:100%;min-width:0;padding:12px 0;font-size:16px;text-align:center;}.final-form button{width:100%;}.final-trust{flex-direction:column;gap:8px;}}
 
 /* ═══════════════════════════════════════════ */
 /* UNIFIED HERO STAT CARDS                     */
