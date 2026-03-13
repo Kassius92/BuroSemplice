@@ -727,12 +727,14 @@ body.breve .breve-hide { display:none !important; }
 /* ─── HOMEPAGE NAV LINKS ─── */
 .nav-fb-group { display:flex; gap:6px; align-items:center; }
 .nav-fb-btn { display:inline-flex; align-items:center; gap:5px; padding:6px 12px; border-radius:50px; font-size:11px; font-weight:700; text-decoration:none; color:#fff; background:#1877F2; transition:transform .15s,box-shadow .15s; box-shadow:0 2px 0 #0d5bbd; white-space:nowrap; font-family:var(--font-dm),sans-serif; letter-spacing:.2px; }
-.nav-fb-btn:hover { transform:translateY(-1px); box-shadow:0 3px 0 #0d5bbd; }
+.nav-fb-btn:hover { transform:translateY(-1px); box-shadow:0 3px 0 #0d5bbd; color:#fff; }
 .nav-fb-btn:active { transform:translateY(1px); box-shadow:0 1px 0 #0d5bbd; }
-.nav-fb-page { background:#1877F2; }
+.nav-fb-btn svg { fill:#fff; }
 .nav-links { display: flex; gap: 14px; align-items: center; margin-left: auto; }
 .nav-links a { font-size: 14px; font-weight: 600; color: var(--t2); text-decoration: none; transition: color .2s; }
 .nav-links a:hover { color: var(--tc); }
+.nav-links a.nav-fb-btn { color:#fff !important; font-size:11px; }
+.nav-links a.nav-fb-btn:hover { color:#fff !important; }
 .nav-novita { position: relative; }
 .nav-dot { position: absolute; top: -2px; right: -8px; width: 7px; height: 7px; background: var(--tc); border-radius: 50%; animation: dotPulse 2s ease-in-out infinite; }
 @keyframes dotPulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:.6; transform:scale(1.3); } }
