@@ -85,7 +85,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="scroll-arrow">{'\u2193'}</div>
+      <div className="scroll-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
 
       {/* MARQUEE */}
       <div className="marquee-wrap">
@@ -117,7 +117,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="scroll-arrow">{'\u2193'}</div>
+      <div className="scroll-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
 
       {/* DEMO CARDS — dentro le guide */}
       <section className="demo-section">
@@ -183,7 +183,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="scroll-arrow">{'\u2193'}</div>
+      <div className="scroll-arrow-dark" style={{ background: 'var(--navy)' }}><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
 
       <section className="how-section">
         <div className="how-inner">
@@ -210,7 +210,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="scroll-arrow-dark" style={{ background: 'var(--navy)' }}>{'\u2193'}</div>
+      <div className="scroll-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
 
       {/* NEWSLETTER (DARK) */}
       <section className="final-section" id="newsletter">
