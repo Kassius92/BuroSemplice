@@ -741,7 +741,7 @@ body.breve .breve-hide { display:none !important; }
 .nav-cta { background: var(--teal) !important; color: #fff !important; padding: 10px 22px !important; border-radius: 50px; font-size: 13px !important; font-weight: 600 !important; transition: transform .15s, box-shadow .15s !important; border:none; cursor:pointer; font-family:var(--font-dm),sans-serif; text-decoration:none; box-shadow: 0 3px 0 #0a3540; }
 .nav-cta:hover { transform: translateY(-2px) !important; box-shadow: 0 5px 0 #0a3540 !important; }
 .nav-cta:active { transform: translateY(1px) !important; box-shadow: 0 1px 0 #0a3540 !important; }
-@media(max-width:768px) { .nav-links a.nav-novita, .nav-links button:not(.nav-cta) { display: none; } .nav-links-novita a:not(:last-child) { display: none; } .nav-links-novita a:last-child { display: inline; } .nav-links { gap: 6px; } .nav-fb-btn { padding:5px 8px; font-size:10px; } .nav-fb-btn svg { width:13px; height:13px; } }
+@media(max-width:768px) { .nav-links a.nav-novita, .nav-links button:not(.nav-cta) { display: none; } .nav-links-novita a:not(:last-child) { display: none; } .nav-links-novita a:last-child { display: inline; } .nav-links { gap: 6px; } .nav-fb-btn { padding:7px; font-size:0; gap:0; width:32px; height:32px; border-radius:10px; justify-content:center; } .nav-fb-btn svg { width:16px; height:16px; } .nav-cta { padding:8px 14px !important; font-size:12px !important; } }
 
 /* Homepage nav slightly taller */
 .nav-home { height: 68px; background: rgba(250,248,243,.75); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid rgba(0,0,0,.05); }
