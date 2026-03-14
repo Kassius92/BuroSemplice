@@ -1,0 +1,19 @@
+{
+  "name": "ZeroBurocrazia",
+  "short_name": "ZeroBuro",
+  "description": "La burocrazia italiana, finalmente semplice. Guide gratuite su 730, ISEE, SPID, NASpI e molto altro.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F3",
+  "theme_color": "#0F4C5C",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/favicon16x16.png", "sizes": "16x16", "type": "image/png" },
+    { "src": "/favicon32x32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/appletouchicon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/androidchrome192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "categories": ["finance", "education", "utilities"],
+  "lang": "it",
+  "dir": "ltr"
+}
