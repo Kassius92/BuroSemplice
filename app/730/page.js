@@ -65,7 +65,7 @@ export default function Pagina730() {
       {/* ═══ 1. COS'È ═══ */}
       <section className="ws ws-gray" id="cose">
         <div className="ws-label">Le basi</div>
-        <div className="ws-title">Cos\u2019è il 730</div>
+        <div className="ws-title">Cos'è il 730</div>
         <div className="ws-sub">In 30 secondi</div>
         <div className="ws-vgrid">
           <div className="ws-vcard"><div className="ws-vcard-e">💼</div><div className="ws-vcard-t">Tu lavori</div><div className="ws-vcard-s">Il datore toglie le tasse &quot;a occhio&quot;</div></div>
@@ -77,8 +77,8 @@ export default function Pagina730() {
           <div style={{fontSize:'13px',color:'rgba(255,255,255,.8)',marginTop:'4px'}}>In busta paga tra luglio e agosto</div>
         </div>
         <WiseSection expandText={<>
-          <p>Quando lavori come dipendente, il tuo datore di lavoro (il <strong>sostituto d\u2019imposta</strong>) ti toglie le tasse dallo stipendio ogni mese. Il problema è che lui non sa tutto di te: non sa se paghi l\u2019affitto, se vai dal dentista, se hai figli che fanno sport.</p>
-          <p>Il 730 serve a dire allo Stato: <strong>&quot;Ehi, ho speso questi soldi. Ridammene un po\u2019.&quot;</strong> Nella maggior parte dei casi hai pagato più tasse del dovuto. Il 730 ti fa riottenere la differenza.</p>
+          <p>Quando lavori come dipendente, il tuo datore di lavoro (il <strong>sostituto d'imposta</strong>) ti toglie le tasse dallo stipendio ogni mese. Il problema è che lui non sa tutto di te: non sa se paghi l'affitto, se vai dal dentista, se hai figli che fanno sport.</p>
+          <p>Il 730 serve a dire allo Stato: <strong>&quot;Ehi, ho speso questi soldi. Ridammene un po'.&quot;</strong> Nella maggior parte dei casi hai pagato più tasse del dovuto. Il 730 ti fa riottenere la differenza.</p>
           <div className="ws-tip"><div className="ws-tip-t">💡 Conviene anche se non sei obbligato</div><p>Dentista + metro + sport + affitto fanno facilmente 500–1.500€ di rimborso. Ogni anno. Se non fai il 730, quei soldi li regali allo Stato.</p></div>
           <p style={{fontSize:'15px',fontWeight:700,color:'var(--t1)',marginBottom:'8px'}}>📖 Glossario</p>
           <div className="ws-gloss">
@@ -86,7 +86,7 @@ export default function Pagina730() {
             <div className="ws-gloss-item"><span className="ws-gloss-term">IRPEF</span> <span className="ws-gloss-def">— la tassa principale sui redditi. Quella in busta paga.</span></div>
             <div className="ws-gloss-item"><span className="ws-gloss-term">Detrazione</span> <span className="ws-gloss-def">— spesa che lo Stato ti rimborsa in parte (di solito 19%).</span></div>
             <div className="ws-gloss-item"><span className="ws-gloss-term">Franchigia</span> <span className="ws-gloss-def">— soglia sotto cui non rimborsano. Per le mediche: 129,11€.</span></div>
-            <div className="ws-gloss-item"><span className="ws-gloss-term">Precompilata</span> <span className="ws-gloss-def">— il 730 che l\u2019Agenzia prepara per te, già parzialmente compilato.</span></div>
+            <div className="ws-gloss-item"><span className="ws-gloss-term">Precompilata</span> <span className="ws-gloss-def">— il 730 che l'Agenzia prepara per te, già parzialmente compilato.</span></div>
             <div className="ws-gloss-item"><span className="ws-gloss-term">Conguaglio</span> <span className="ws-gloss-def">— il conto finale. Troppe tasse = rimborso. Poche = devi saldare.</span></div>
           </div>
         </>} />
@@ -156,11 +156,11 @@ export default function Pagina730() {
         <div style={{display:'flex',flexDirection:'column',gap:'8px'}}>
           <div style={{padding:'16px',borderRadius:'14px',background:'#f0f8f5',border:'1px solid rgba(42,157,143,.2)'}}><div style={{fontSize:'14px',fontWeight:700,color:'var(--sage)'}}>✅ Devi farlo se</div><div style={{fontSize:'14px',color:'var(--t2)',marginTop:'4px'}}>Dipendente o pensionato con redditi nel 2025</div></div>
           <div style={{padding:'16px',borderRadius:'14px',background:'#FFF0E0',border:'1px solid rgba(227,100,20,.15)'}}><div style={{fontSize:'14px',fontWeight:700,color:'#b34e0e'}}>⚠️ Praticamente obbligatorio se</div><div style={{fontSize:'14px',color:'var(--t2)',marginTop:'4px'}}>Cambiato lavoro (due CU) o stipendio + NASpI</div></div>
-          <div style={{padding:'16px',borderRadius:'14px',background:'#f3f7fb',border:'1px solid rgba(15,76,92,.12)'}}><div style={{fontSize:'14px',fontWeight:700,color:'var(--teal)'}}>💡 Ti conviene se</div><div style={{fontSize:'14px',color:'var(--t2)',marginTop:'4px'}}>Un lavoro tutto l\u2019anno + spese da scaricare</div></div>
+          <div style={{padding:'16px',borderRadius:'14px',background:'#f3f7fb',border:'1px solid rgba(15,76,92,.12)'}}><div style={{fontSize:'14px',fontWeight:700,color:'var(--teal)'}}>💡 Ti conviene se</div><div style={{fontSize:'14px',color:'var(--t2)',marginTop:'4px'}}>Un lavoro tutto l'anno + spese da scaricare</div></div>
           <div style={{padding:'16px',borderRadius:'14px',background:'#f5f5f2'}}><div style={{fontSize:'14px',fontWeight:700,color:'var(--t3)'}}>🚫 Non puoi farlo se</div><div style={{fontSize:'14px',color:'var(--t2)',marginTop:'4px'}}>Hai la partita IVA → serve il Modello Redditi</div></div>
         </div>
         <WiseSection expandText={<>
-          <p><strong>Due datori = 730 obbligatorio.</strong> Ogni datore ti ha tolto le tasse come se fossi stato lì tutto l\u2019anno. Senza 730: avviso + sanzioni.</p>
+          <p><strong>Due datori = 730 obbligatorio.</strong> Ogni datore ti ha tolto le tasse come se fossi stato lì tutto l'anno. Senza 730: avviso + sanzioni.</p>
           <div className="ws-tip"><div className="ws-tip-t">💡 La regola semplice</div><p>Se hai speso per salute, casa, figli, trasporti o animali — fai il 730. Ti spetta un rimborso.</p></div>
         </>} />
       </section>
@@ -253,9 +253,9 @@ export default function Pagina730() {
         <div className="ws-title">Maria fa il 730</div>
         <div className="ws-sub">26 anni, impiegata a Torino, 22.000€ lordi</div>
         <div className="ws-flow">
-          {[["📄","Marzo: raccoglie i documenti","CU + dentista 320€ + GTT 350€ + affitto"],["💻","Maggio: apre la precompilata","Dentista c\u2019è, manca GTT — lo aggiunge"],["🔍","Controlla tutto","Mediche 36€ + affitto 991€ + trasporti 66€ = 1.093€"],["✅","Invia e aspetta","A luglio: 1.093€ in più. Costo: 0€. Tempo: 1h30"]].map((s,i)=><div key={i}><div className="ws-flow-item"><div className="ws-flow-icon"><span dangerouslySetInnerHTML={{__html:s[0]}}/></div><div className="ws-flow-info"><div className="ws-flow-t">{s[1]}</div><div className="ws-flow-s">{s[2]}</div></div></div>{i<3&&<div className="ws-flow-line"/>}</div>)}
+          {[["📄","Marzo: raccoglie i documenti","CU + dentista 320€ + GTT 350€ + affitto"],["💻","Maggio: apre la precompilata","Dentista c'è, manca GTT — lo aggiunge"],["🔍","Controlla tutto","Mediche 36€ + affitto 991€ + trasporti 66€ = 1.093€"],["✅","Invia e aspetta","A luglio: 1.093€ in più. Costo: 0€. Tempo: 1h30"]].map((s,i)=><div key={i}><div className="ws-flow-item"><div className="ws-flow-icon"><span dangerouslySetInnerHTML={{__html:s[0]}}/></div><div className="ws-flow-info"><div className="ws-flow-t">{s[1]}</div><div className="ws-flow-s">{s[2]}</div></div></div>{i<3&&<div className="ws-flow-line"/>}</div>)}
         </div>
-        <div className="ws-money"><div className="ws-money-t">💶 Morale</div><p>Maria per 4 anni non ha fatto il 730. Ha perso ~4.000€. Quest\u2019anno ha recuperato 1.093€ in 1 ora e mezza.</p></div>
+        <div className="ws-money"><div className="ws-money-t">💶 Morale</div><p>Maria per 4 anni non ha fatto il 730. Ha perso ~4.000€. Quest'anno ha recuperato 1.093€ in 1 ora e mezza.</p></div>
       </section>
 
       {/* ═══ 13. RITARDO ═══ */}
