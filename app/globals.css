@@ -1245,6 +1245,50 @@ body.mega-open .toc { display: none; }
   .ge-ch-body .stepn::after{content:'';position:absolute;left:calc(100% + 8px);top:50%;transform:translateY(-50%);width:80vw;height:2px;background:var(--cat,var(--tc));opacity:.25;border-radius:1px;}
   .ge-ch-body .stepb{width:100% !important;padding:10px 0 0 44px !important;}
   .ge-ch-body .quiz{padding:18px;margin-bottom:16px;border-radius:16px;}
+  /* ── CHECKLIST: flat list with separators ── */
+  .ge-ch-body .cl{gap:0 !important;margin:12px 0 !important;}
+  .ge-ch-body .cli{background:none !important;border:none !important;border-radius:0 !important;border-bottom:1px solid var(--bd) !important;padding:12px 0 !important;gap:12px !important;box-shadow:none !important;}
+  .ge-ch-body .cli:last-child{border-bottom:none !important;}
+  .ge-ch-body .cli:hover{transform:none !important;box-shadow:none !important;}
+  .ge-ch-body .ci{width:28px;height:28px;border-radius:8px;font-size:14px;background:transparent !important;color:var(--t1);}
+  .ge-ch-body .clb .note{font-size:13px;color:var(--t3);}
+  /* ── TIMELINE: clean dots with colored dates ── */
+  .ge-ch-body .timeline{padding-left:24px !important;margin:14px 0 !important;}
+  .ge-ch-body .timeline::before{left:6px !important;width:2px;background:var(--bd) !important;}
+  .ge-ch-body .tli{padding:12px 0 12px 18px !important;}
+  .ge-ch-body .tli::before{left:-22px !important;top:18px !important;width:10px;height:10px;border-color:var(--cat,var(--tc)) !important;}
+  .ge-ch-body .tli.act::before{background:var(--cat,var(--tc)) !important;border-color:var(--cat,var(--tc)) !important;}
+  .ge-ch-body .tl-d{color:var(--cat,var(--tc)) !important;}
+  /* ── GLOSSARY: compact with left border ── */
+  .ge-ch-body .glossary{gap:6px !important;margin:12px 0 !important;}
+  .ge-ch-body .gl-item{padding:10px 14px !important;border-radius:0 10px 10px 0 !important;border-left-width:3px !important;}
+  /* ── USE CASE GRID: single column, compact ── */
+  .ge-ch-body .ucgrid{grid-template-columns:1fr !important;gap:8px !important;margin:14px 0 !important;}
+  .ge-ch-body .uc{padding:14px 16px !important;border-radius:14px !important;display:flex;flex-direction:row !important;align-items:flex-start !important;gap:12px !important;}
+  .ge-ch-body .uc:hover{transform:none !important;box-shadow:none !important;}
+  .ge-ch-body .uc::after{display:none !important;}
+  .ge-ch-body .uc-e{font-size:22px;margin-bottom:0 !important;flex-shrink:0;}
+  .ge-ch-body .uc-n{font-size:15px;}
+  .ge-ch-body .uc-d{font-size:14px;}
+  /* ── INFO BOXES: consistent border + colors ── */
+  .ge-ch-body .ib.tip{background:#f0f8f5 !important;border-left:3px solid var(--sage) !important;border-radius:12px !important;}
+  .ge-ch-body .ib.warn{background:#fff8f5 !important;border-left:3px solid var(--tc) !important;border-radius:12px !important;}
+  .ge-ch-body .ib.mon{background:#f3f7fb !important;border-left:3px solid var(--teal) !important;border-radius:12px !important;}
+  .ge-ch-body .ib.tip .ib-t{color:#0a6b5a !important;}
+  .ge-ch-body .ib.warn .ib-t{color:#b34e0e !important;}
+  .ge-ch-body .ib.mon .ib-t{color:var(--teal) !important;}
+  /* Dark-section info boxes: override back to dark style */
+  .ge-ch-body .bh .ib.tip,.ge-ch-body .bh .ib.warn,.ge-ch-body .bh .ib.mon{background:rgba(255,255,255,.08) !important;border-left-color:rgba(255,255,255,.3) !important;}
+  .ge-ch-body .bh .ib.tip .ib-t,.ge-ch-body .bh .ib.warn .ib-t,.ge-ch-body .bh .ib.mon .ib-t{color:#fff !important;}
+  /* ── SINTESI: compact grid ── */
+  .ge-ch-body .sintesi{padding:16px !important;margin-bottom:14px !important;border-radius:16px !important;}
+  .ge-ch-body .scards{gap:8px !important;}
+  .ge-ch-body .sc{padding:12px 10px !important;border-radius:12px !important;}
+  /* ── FAQ: clean accordion ── */
+  .ge-ch-body .faq-list{margin:12px 0;}
+  .ge-ch-body .faqw{border-radius:12px !important;margin-bottom:6px !important;overflow:hidden;}
+  .ge-ch-body .faqq{padding:14px 16px !important;}
+  .ge-ch-body .faqa-i{padding:0 16px 14px !important;}
   /* ── TOC: horizontal pill scroll ── */
   .toc-list{display:flex !important;gap:6px;overflow-x:auto;flex-wrap:nowrap;padding:0 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
   .toc-list::-webkit-scrollbar{display:none;}
