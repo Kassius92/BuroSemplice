@@ -3,7 +3,7 @@
 /* ═══════════════════════════════════════════ */
 
 /* Section wrappers */
-.ws{padding:36px 28px;}
+.ws{padding:36px 28px;overflow-x:hidden;}
 .ws-teal{background:var(--teal);color:#fff;}
 .ws-gray{background:#f5f5f2;}
 .ws-warn{background:#FFF5F0;}
@@ -118,7 +118,7 @@
 .ws-expand.ws-open{border-color:var(--tc);background:rgba(227,100,20,.05);color:var(--tc);}
 .ws-teal .ws-expand{border-color:rgba(255,255,255,.2);background:transparent;color:rgba(255,255,255,.7);}
 .ws-teal .ws-expand:hover,.ws-teal .ws-expand.ws-open{border-color:rgba(255,255,255,.4);color:#fff;background:rgba(255,255,255,.08);}
-.ws-body{margin-top:16px;padding-top:16px;border-top:1px solid var(--bd);}
+.ws-body{margin-top:16px;padding-top:16px;border-top:1px solid var(--bd);overflow-x:hidden;word-break:break-word;}
 .ws-teal .ws-body{border-top-color:rgba(255,255,255,.15);}
 .ws-body p{font-size:15px;color:var(--t2);line-height:1.7;margin:0 0 12px;}
 .ws-teal .ws-body p{color:rgba(255,255,255,.8);}
@@ -143,10 +143,10 @@
 .ws-teal .ws-gloss-def{color:rgba(255,255,255,.7);}
 
 /* Detrazioni table in expand */
-.ws-dtable{margin:12px 0;}
-.ws-dtable-row{display:flex;align-items:center;padding:10px 0;border-bottom:1px solid var(--bd);}
-.ws-dtable-name{flex:1;font-size:14px;font-weight:600;color:var(--t1);}
-.ws-dtable-pct{font-size:14px;font-weight:800;color:var(--sage);width:65px;text-align:center;}
+.ws-dtable{margin:12px 0;overflow-x:hidden;}
+.ws-dtable-row{display:flex;align-items:center;padding:10px 0;border-bottom:1px solid var(--bd);gap:8px;}
+.ws-dtable-name{flex:1;font-size:14px;font-weight:600;color:var(--t1);min-width:0;}
+.ws-dtable-pct{font-size:14px;font-weight:800;color:var(--sage);width:65px;text-align:center;flex-shrink:0;}
 
 /* FAQ */
 .ws-faq{margin:10px 0;}
@@ -164,6 +164,7 @@
 .ws-teal .ws-faq-a strong{color:#fff;}
 
 /* ═══ MOBILE OVERRIDE: disable old GuideEnhancer on 730 ═══ */
+.page-730{overflow-x:hidden;}
 .page-730 .ge-enhanced{border:revert !important;padding:revert !important;margin:revert !important;background:revert !important;border-radius:revert !important;}
 .page-730 .ge-ch-header{display:none !important;}
 .page-730 .ge-ch-body{max-height:none !important;overflow:visible !important;}
