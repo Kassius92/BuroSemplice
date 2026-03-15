@@ -178,8 +178,8 @@ body.breve .bh{display:none !important;}
   .sintesi-label{margin-bottom:12px;}
   .sc{padding:12px 10px;border-radius:12px;}
   .si{font-size:18px;margin-bottom:4px;}
-  .sn{font-size:18px;margin-bottom:3px;}
-  .sl{font-size:10px;line-height:1.3;}
+  .sn{font-size:20px;margin-bottom:3px;}
+  .sl{font-size:11px;line-height:1.3;}
 }
 
 /* QUIZ */
@@ -1173,7 +1173,7 @@ body.mega-open .toc { display: none; }
   .hero-c{flex-direction:column;gap:12px;}
   .hero-left{max-width:100%;}
   .hero h1{font-size:clamp(26px,7vw,36px) !important;}
-  .hero-sub{font-size:14px !important;margin-bottom:16px !important;color:var(--t2) !important;}
+  .hero-sub{font-size:15px !important;margin-bottom:16px !important;color:var(--t2) !important;}
   .hero-pills{margin-bottom:8px !important;}
   .hero-source{display:none;}
   .hero-actions{display:none;}
@@ -1207,26 +1207,20 @@ body.mega-open .toc { display: none; }
   .ge-ch-body .dgrid .dcard-v{color:#fff !important;}
   .ge-ch-body .dtotals .dt-l{color:rgba(255,255,255,.75) !important;}
   .ge-ch-body .dtotals .dt-n{color:#fff !important;}
-  /* ── COMPACT INNER ELEMENTS ── */
-  .ge-ch-body .ib{margin:10px 0;padding:12px;border-radius:12px;}
-  .ge-ch-body .ib .ib-t{font-size:13px;}
-  .ge-ch-body .ib p{font-size:13px;}
-  .ge-ch-body p{font-size:13px;}
-  .ge-ch-body .dblock{padding:16px;border-radius:12px;margin:8px 0 !important;}
-  .ge-ch-body .dblock h3{font-size:16px !important;margin-bottom:6px !important;}
-  .ge-ch-body .dblock > p{font-size:13px !important;margin-bottom:14px !important;}
+  /* ── COMPACT INNER ELEMENTS — spacing only, NO font-size shrinks ── */
+  .ge-ch-body .ib{margin:10px 0;padding:14px;border-radius:12px;}
+  .ge-ch-body .dblock{padding:18px;border-radius:14px;margin:8px 0 !important;}
+  .ge-ch-body .dblock h3{margin-bottom:8px !important;}
+  .ge-ch-body .dblock > p{margin-bottom:16px !important;}
   .ge-ch-body .dblock-grid{gap:8px;}
-  .ge-ch-body .dblock-item{padding:10px 12px;}
-  .ge-ch-body .dblock-item span:last-child{font-size:16px !important;}
-  .ge-ch-body .dblock-total{padding:12px 14px;margin-top:10px;}
+  .ge-ch-body .dblock-item{padding:12px 14px;}
+  .ge-ch-body .dblock-total{padding:14px 16px;margin-top:10px;}
   .ge-ch-body .dgrid{gap:8px;}
-  .ge-ch-body .dcard{padding:10px 12px;}
-  .ge-ch-body .dcard-v{font-size:13px !important;}
+  .ge-ch-body .dcard{padding:12px 14px;}
   .ge-ch-body .dtotals{gap:8px;margin-top:10px;}
-  .ge-ch-body .dt-n{font-size:24px !important;}
-  .ge-ch-body .step{padding:10px 0;}
-  .ge-ch-body .stepn{width:26px;height:26px;font-size:11px;}
-  .ge-ch-body .quiz{padding:16px;margin-bottom:16px;border-radius:14px;}
+  .ge-ch-body .step{padding:12px 0;}
+  .ge-ch-body .stepn{width:28px;height:28px;font-size:13px;}
+  .ge-ch-body .quiz{padding:18px;margin-bottom:16px;border-radius:16px;}
   /* ── TOC: horizontal pill scroll ── */
   .toc-list{display:flex !important;gap:6px;overflow-x:auto;flex-wrap:nowrap;padding:0 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
   .toc-list::-webkit-scrollbar{display:none;}
