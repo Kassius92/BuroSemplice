@@ -14,7 +14,7 @@ export const metadata = {
 export default function GuidePage() {
   return (
     <>
-      <div className="desktop-only"><Nav variant="home" /></div>
+      <Nav variant="home" />
       <section className="guide-page">
         <h1 className="gp-title">Cerca</h1>
         <p className="gp-sub">{totalGuides} guide gratuite sulla burocrazia italiana</p>
@@ -22,7 +22,7 @@ export default function GuidePage() {
           <GuideFilter />
         </Suspense>
       </section>
-      <div className="desktop-only"><Footer /></div>
+      <Footer />
     </>
   );
 }

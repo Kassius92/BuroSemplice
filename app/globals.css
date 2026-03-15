@@ -1309,34 +1309,6 @@ body.mega-open .toc { display: none; }
 }
 
 /* ═══════════════════════════════════════════ */
-/* RESPONSIVE LAYOUT — desktop vs app          */
-/* ═══════════════════════════════════════════ */
-.app-only { display: none; }
-.desktop-only { display: contents; }
-@media (max-width: 768px) {
-  .app-only { display: block; }
-  .desktop-only { display: none !important; }
-}
-
-/* ═══════════════════════════════════════════ */
-/* BOTTOM NAV — PWA (mobile only)              */
-/* ═══════════════════════════════════════════ */
-.bottom-nav{display:none;}
-@media(max-width:768px){
-.bottom-nav{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:300;background:var(--wh);border-top:1px solid var(--bd);height:60px;align-items:center;justify-content:space-around;padding-bottom:env(safe-area-inset-bottom,0);}
-.bnav-tab{display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;color:var(--t3);font-size:10px;font-weight:500;padding:6px 8px;border-radius:10px;transition:color .15s;position:relative;-webkit-tap-highlight-color:transparent;}
-.bnav-tab:hover{color:var(--teal);}
-.bnav-on{color:var(--teal);}
-.bnav-icon{width:22px;height:22px;display:flex;align-items:center;justify-content:center;}
-.bnav-icon svg{width:20px;height:20px;}
-.bnav-label{line-height:1;}
-.bnav-dot-active{position:absolute;bottom:0;width:4px;height:4px;border-radius:50%;background:var(--tc);}
-body{padding-bottom:0;}
-}
-@media(max-width:768px){body{padding-bottom:64px;}}
-@media print{.bottom-nav{display:none!important;}}
-
-/* ═══════════════════════════════════════════ */
 /* TOOL PAGES                                  */
 /* ═══════════════════════════════════════════ */
 .tool-page{max-width:680px;margin:0 auto;padding:90px 24px 60px;}

@@ -4,7 +4,6 @@ import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
 import SchemaOrg from '@/components/SchemaOrg';
 import BrevoForm from '@/components/BrevoForm';
-import HomeApp from '@/components/HomeApp';
 import { categoriesGuide, totalGuides, tools } from '@/components/categoriesData';
 import './home.css';
 
@@ -41,13 +40,6 @@ export default function HomePage() {
       <SchemaOrg schemas={[websiteSchema]} />
       <ScrollReveal />
 
-      {/* ═══ MOBILE APP HOME ═══ */}
-      <div className="app-only">
-        <HomeApp />
-      </div>
-
-      {/* ═══ DESKTOP SITE ═══ */}
-      <div className="desktop-only">
       <Nav variant="home" />
 
       {/* HERO */}
@@ -59,7 +51,7 @@ export default function HomePage() {
             <p className="hero-sub">Guide gratuite su 730, ISEE, mutui, bonus e molto altro. Scritte come te le spiegherebbe un amico &mdash; non un avvocato.</p>
             <div className="hero-ctas">
               <a href="#categorie" className="btn-primary">Scegli la tua guida &darr;</a>
-              <Link href="/strumenti" className="btn-ghost">Strumenti gratuiti &rarr;</Link>
+              <Link href="/guide" className="btn-ghost">Tutte le guide &rarr;</Link>
             </div>
           </div>
           <div className="hero-stats">
@@ -190,7 +182,6 @@ export default function HomePage() {
       <BrevoForm pageName="home" id="newsletter" />
 
       <Footer variant="home" />
-      </div>{/* end desktop-only */}
     </>
   );
 }
