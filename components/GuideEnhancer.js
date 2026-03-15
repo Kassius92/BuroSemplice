@@ -22,6 +22,10 @@ export default function GuideEnhancer() {
     const mainEl = document.querySelector('.main');
     if (!mainEl) return () => window.removeEventListener('scroll', updateProgress);
 
+    /* Hide bottom related section on mobile */
+    const relatedEl = mainEl.querySelector('.related');
+    if (relatedEl) relatedEl.style.display = 'none';
+
     const sections = mainEl.querySelectorAll('.sec');
     let chapterNum = 0;
 
@@ -31,7 +35,6 @@ export default function GuideEnhancer() {
       if (!h2) return;
 
       chapterNum++;
-      const isSintesi = sec.id === 'sintesi';
       const num = chapterNum;
 
       /* Create collapsible header */
@@ -49,14 +52,23 @@ export default function GuideEnhancer() {
       const body = document.createElement('div');
       body.className = 'ge-ch-body' + (num <= 1 ? ' open' : '');
 
-      /* Move all children into body */
+      /* Move all children of .sec into body */
       while (sec.firstChild) {
         body.appendChild(sec.firstChild);
       }
 
+      /* Also grab orphan siblings that follow this .sec
+         (dblocks, ib boxes, etc. that aren't inside a .sec) */
+      var next = sec.nextElementSibling;
+      while (next && !next.classList.contains('sec') && !next.classList.contains('related') && !next.classList.contains('perc')) {
+        var grab = next;
+        next = next.nextElementSibling;
+        body.appendChild(grab);
+      }
+
       /* Hide original sec-tag and h2 inside the body */
-      const origTag = body.querySelector('.sec-tag');
-      const origH2 = body.querySelector('h2');
+      var origTag = body.querySelector('.sec-tag');
+      var origH2 = body.querySelector('h2');
       if (origTag) origTag.style.display = 'none';
       if (origH2) origH2.style.display = 'none';
 
@@ -66,22 +78,17 @@ export default function GuideEnhancer() {
       sec.classList.add('ge-enhanced');
 
       /* Toggle handler */
-      header.addEventListener('click', () => {
-        const isOpen = body.classList.contains('open');
+      header.addEventListener('click', function() {
+        var isOpen = body.classList.contains('open');
         body.classList.toggle('open');
         header.querySelector('.ge-ch-arrow').classList.toggle('open');
-
-        /* Scroll into view when opening */
         if (!isOpen) {
-          setTimeout(() => {
+          setTimeout(function() {
             header.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }, 50);
         }
       });
     });
-
-    /* ── TAKEAWAY BOXES (find .ib.tip that is last child in a sec, style as takeaway) ── */
-    /* This is handled purely via CSS — no DOM changes needed */
 
     return () => window.removeEventListener('scroll', updateProgress);
   }, []);
