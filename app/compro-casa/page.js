@@ -25,9 +25,9 @@ export const metadata = {
     type: 'article',
     siteName: 'ZeroBurocrazia',
     locale: 'it_IT',
-    images: [{ url: 'https://zeroburocrazia.it/og-compro-casa.png', width: 1200, height: 630 }],
+    images: [{ url: 'https://zeroburocrazia.it/ogcomprocasa.png', width: 1200, height: 630 }],
   },
-  twitter: { card: 'summary_large_image', images: ['https://zeroburocrazia.it/og-compro-casa.png'] },
+  twitter: { card: 'summary_large_image', images: ['https://zeroburocrazia.it/ogcomprocasa.png'] },
 };
 
 const tocItems = [
@@ -58,7 +58,7 @@ export default function Page() {
       title: 'Comprare casa nel 2026: guida completa e gratuita',
       description: 'Comprare casa in Italia nel 2026: mutuo, notaio, imposte, bonus prima casa e costi nascosti. Tutto quello che devi sapere prima di firmare.',
       url: '/compro-casa',
-      image: 'og-compro-casa.png',
+      image: 'ogcomprocasa.png',
       datePublished: '2026-03-04',
       dateModified: '2026-03-09',
     }),

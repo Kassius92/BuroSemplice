@@ -70,7 +70,6 @@ export default function CalcNaspi() {
             <div className="cbi"><span>Massimale 2026</span><span className="cbv">1.584,70€ lordi</span></div>
           </div>
           <p style={{fontSize:'12px',color:'var(--text-3)',marginTop:'12px',lineHeight:'1.4'}}>Stima indicativa. L&apos;importo effettivo dipende dalla retribuzione imponibile INPS, non dalla RAL. Tasse IRPEF stimate al ~22%.</p>
-          <a href="/ordina?scheda=naspi" className="btni">Personalizza — Gratis</a>
         </div>
       </div>
     </div>

@@ -59,7 +59,6 @@ export default function CalcTfr() {
             <div className="cbi"><span>TFR netto stimato</span><span className="cbv">{fmt(result.tfrNetto)}</span></div>
           </div>
           <p style={{fontSize:'12px',color:'var(--text-3)',marginTop:'12px',lineHeight:'1.4'}}>Stima indicativa. L&apos;importo reale dipende dalla retribuzione utile TFR (non sempre uguale alla RAL), dalla rivalutazione ISTAT effettiva e dall&apos;aliquota media IRPEF calcolata dall&apos;Agenzia delle Entrate.</p>
-          <a href="/ordina?scheda=tfr" className="btni">Personalizza — Gratis</a>
         </div>
       </div>
     </div>

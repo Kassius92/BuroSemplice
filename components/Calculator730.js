@@ -1,6 +1,5 @@
 'use client';
 import { useState, useMemo } from 'react';
-import Link from 'next/link';
 
 export default function Calculator730() {
   const [reddito, setReddito] = useState(25000);
@@ -15,7 +14,6 @@ export default function Calculator730() {
   const [sport, setSport] = useState(200);
 
   const result = useMemo(() => {
-    const aliquota = reddito <= 15000 ? 0.23 : reddito <= 28000 ? 0.25 : reddito <= 50000 ? 0.35 : 0.43;
     const detMed = mediche > 129.11 ? Math.round((mediche - 129.11) * 0.19) : 0;
     let detAff = 0;
     if (hasAffitto) {
@@ -26,7 +24,7 @@ export default function Calculator730() {
     const detTra = Math.round(Math.min(trasporti, 250) * 0.19);
     let detScu = 0, detSpo = 0;
     if (figli > 0) {
-      detScu = Math.round(Math.min(scuola, 800 * figli) * 0.19);
+      detScu = Math.round(Math.min(scuola, 1000 * figli) * 0.19);
       detSpo = Math.round(Math.min(sport, 210 * figli) * 0.19);
     }
     const totale = detMed + detAff + detMut + detTra + detScu + detSpo;
@@ -112,7 +110,6 @@ export default function Calculator730() {
             <div className="calc-bd-it"><span>Scuola figli</span><span className={`bdv${result.detScu === 0 ? ' z' : ''}`}>{fmt(result.detScu)}</span></div>
             <div className="calc-bd-it"><span>Sport figli</span><span className={`bdv${result.detSpo === 0 ? ' z' : ''}`}>{fmt(result.detSpo)}</span></div>
           </div>
-          <Link href="/ordina?scheda=730" className="btni">Personalizza — Gratis</Link>
           <div className="calc-dis">Stima indicativa basata sulle aliquote 2026. Non considera tutte le casistiche.</div>
         </div>
       </div>

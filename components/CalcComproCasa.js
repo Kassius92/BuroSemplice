@@ -75,7 +75,6 @@ export default function CalcComproCasa() {
             <div className="cbi"><span>Agenzia</span><span className="cbv">{agenzia ? fmt(result.cag) : 'N/A'}</span></div>
             <div className="cbi"><span>Costi mutuo</span><span className="cbv">{mutuo ? fmt(result.cmu) : 'N/A'}</span></div>
           </div>
-          <a href="/ordina?scheda=compro-casa" className="btni">Calcolo preciso — Gratis</a>
           <p style={{fontSize:'11px',color:'var(--text-3)',marginTop:'14px',lineHeight:'1.6'}}>{'\u26A0\uFE0F'} Stima indicativa. Le imposte si calcolano sul valore catastale rivalutato, non sul prezzo.</p>
         </div>
       </div>

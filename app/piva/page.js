@@ -27,9 +27,9 @@ export const metadata = {
     type: 'article',
     siteName: 'ZeroBurocrazia',
     locale: 'it_IT',
-    images: [{ url: 'https://zeroburocrazia.it/og-piva.png', width: 1200, height: 630 }],
+    images: [{ url: 'https://zeroburocrazia.it/ogpiva.png', width: 1200, height: 630 }],
   },
-  twitter: { card: 'summary_large_image', images: ['https://zeroburocrazia.it/og-piva.png'] },
+  twitter: { card: 'summary_large_image', images: ['https://zeroburocrazia.it/ogpiva.png'] },
 };
 
 const tocItems = [
@@ -56,7 +56,7 @@ const faqItems = [
 
 export default function Page() {
   const schemas = [
-    articleSchema({ title: 'Come aprire Partita IVA nel 2026: guida completa e gratuita', description: metadata.description, url: '/piva', image: 'og-piva.png', datePublished: '2026-03-04', dateModified: '2026-03-09' }),
+    articleSchema({ title: 'Come aprire Partita IVA nel 2026: guida completa e gratuita', description: metadata.description, url: '/piva', image: 'ogpiva.png', datePublished: '2026-03-04', dateModified: '2026-03-09' }),
     faqSchema(faqItems),
   ];
 

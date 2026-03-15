@@ -52,7 +52,6 @@ export default function CalcRistrutturare() {
             <div className="cbi"><span>Aliquota applicata</span><span className="cbv">{primaCasa ? '50%' : '36%'}</span></div>
             <div className="cbi"><span>Bonus mobili</span><span className="cbv">{mobili ? fmt(detMobili) : 'N/A'}</span></div>
           </div>
-          <a href="/ordina?scheda=ristrutturare" className="btni">Personalizza — Gratis</a>
           <p style={{fontSize:'11px',color:'var(--t3)',marginTop:'14px',lineHeight:'1.6'}}>⚠️ Stima indicativa. La detrazione effettiva dipende dalla capienza IRPEF. Se paghi meno tasse della rata annuale, perdi la differenza.</p>
         </div>
       </div>

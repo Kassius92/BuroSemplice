@@ -72,7 +72,6 @@ export default function CalcPiva() {
             <div className="cbi"><span>Imposta sostitutiva</span><span className="cbv">{fmt(result.imposta)}</span></div>
             <div className="cbi"><span>Netto stimato</span><span className="cbv">{fmt(result.netto)}</span></div>
           </div>
-          <a href="/ordina?scheda=piva" className="btni">Personalizza — Gratis</a>
         </div>
       </div>
     </div>
