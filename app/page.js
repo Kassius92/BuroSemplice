@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
 import SchemaOrg from '@/components/SchemaOrg';
 import BrevoForm from '@/components/BrevoForm';
+import HomeApp from '@/components/HomeApp';
 import { categoriesGuide, totalGuides, tools } from '@/components/categoriesData';
 import './home.css';
 
@@ -37,9 +38,17 @@ const websiteSchema = {
 export default function HomePage() {
   return (
     <>
-      <Nav variant="home" />
-      <ScrollReveal />
       <SchemaOrg schemas={[websiteSchema]} />
+      <ScrollReveal />
+
+      {/* ═══ MOBILE APP HOME ═══ */}
+      <div className="app-only">
+        <HomeApp />
+      </div>
+
+      {/* ═══ DESKTOP SITE ═══ */}
+      <div className="desktop-only">
+      <Nav variant="home" />
 
       {/* HERO */}
       <section className="h-hero">
@@ -181,6 +190,7 @@ export default function HomePage() {
       <BrevoForm pageName="home" id="newsletter" />
 
       <Footer variant="home" />
+      </div>{/* end desktop-only */}
     </>
   );
 }
