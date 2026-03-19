@@ -138,6 +138,13 @@
   box-shadow: 4px 6px 0 var(--t1);
   border-color: var(--t1);
 }
+@media (hover: none) {
+  .cat-card-link:hover .cat-card:not(.cat-card-soon) {
+    transform: none;
+    box-shadow: none;
+    border-color: var(--bd);
+  }
+}
 .cat-card-soon { opacity: .55; }
 .cat-card-top {
   display: flex; align-items: center; justify-content: space-between;
