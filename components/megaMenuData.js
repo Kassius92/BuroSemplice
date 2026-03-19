@@ -49,7 +49,7 @@ export const categories = [
         { name: 'Aspetto un figlio', href: '/figlio' },
         { name: 'Assegno unico', href: '/assegno-unico' },
         { name: 'Congedo parentale', href: '/congedo-parentale' },
-        { name: 'Bonus nido', href: '#', soon: true },
+        { name: 'Bonus nido', href: '/bonus-nido' },
       ]},
       { title: 'Coppia', links: [
         { name: 'Mi sposo', href: '/mi-sposo' },

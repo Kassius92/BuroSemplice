@@ -36,6 +36,7 @@ export const categoriesGuide = [
       { emoji: '\u{1F476}', name: 'Aspetto un figlio', href: '/figlio', desc: 'Tutto dalla A alla Z', tag: '\u{1F4D6} Completa' },
       { emoji: '\u{1F468}\u200D\u{1F467}', name: 'Assegno unico', href: '/assegno-unico', desc: 'Importi e domanda', tag: '\u{1F4B0} Bonus' },
       { emoji: '\u{1F469}\u200D\u{1F466}', name: 'Congedo parentale', href: '/congedo-parentale', desc: 'Durata e retribuzione', tag: '\u{1F4D6} Completa' },
+      { emoji: '\u{1F3EB}', name: 'Bonus nido', href: '/bonus-nido', desc: 'Fino a 3.600\u20AC/anno', tag: '\u{1F4B0} Bonus' },
       { emoji: '\u{1F48D}', name: 'Mi sposo', href: '/mi-sposo', desc: 'Documenti e procedura', tag: '\u{1F4D6} Completa' },
     ],
   },

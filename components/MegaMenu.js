@@ -137,7 +137,7 @@ export default function MegaMenu({ isOpen, onClose, variant = 'scheda' }) {
 
           <div className="mega-foot">
             <div className="mega-foot-left">
-              <strong>25</strong> guide pronte &middot; 40+ in arrivo
+              <strong>26</strong> guide pronte &middot; 40+ in arrivo
             </div>
             <div className="mega-foot-right">
               <Link href="/novita" className="mega-btn mega-btn-ghost" onClick={onClose}>{'\uD83D\uDCF0'} Novit&agrave; 2026</Link>
