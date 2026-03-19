@@ -1,0 +1,116 @@
+{
+  "slug": "esenzione-ticket",
+  "category": "salute",
+  "categoryLabel": "Salute",
+  "categoryEmoji": "🏥",
+  "title": "Esenzione Ticket Sanitario 2026",
+  "metaTitle": "Esenzione Ticket Sanitario 2026: chi ne ha diritto, codici e come richiederla",
+  "metaDesc": "Esenzione ticket sanitario 2026: reddito, età, patologia, invalidità. Chi ne ha diritto, come ottenerla e quali visite sono gratuite.",
+  "keywords": ["esenzione ticket", "esenzione ticket 2026", "ticket sanitario", "esenzione reddito", "esenzione patologia", "codice esenzione", "ticket visite mediche"],
+  "ogImage": "ogesenzioneticket.png",
+  "datePublished": "2026-03-20",
+  "dateModified": "2026-03-20",
+
+  "heroH1": "Esenzione <em>ticket</em><br/>sanitario",
+  "heroSub": "Chi non paga il ticket, quali visite sono gratuite, come richiederla. Codici, requisiti e procedura completa.",
+  "heroPills": [
+    { "class": "pill pill-g", "emoji": "✦", "text": "100% gratuita" },
+    { "class": "pill pill-b", "emoji": "🕐", "text": "6 min di lettura" },
+    { "class": "pill pill-w", "emoji": "💊", "text": "Visite ed esami gratis" },
+    { "class": "pill pill-s", "emoji": "✓", "text": "Aggiornato marzo 2026" }
+  ],
+  "heroSource": "Ministero della Salute &middot; ASL &middot; INPS",
+  "heroStats": [
+    { "value": "0&euro;", "label": "ticket per chi ne ha diritto<br/>visite, esami, farmaci" },
+    { "value": "36.151&euro;", "label": "soglia reddito per esenzione<br/>E01 (under 6 e over 65)" },
+    { "value": "ASL", "label": "dove si richiede<br/>o medico di base" }
+  ],
+
+  "tocItems": [
+    { "id": "sintesi", "label": "In sintesi" },
+    { "id": "cose", "label": "Cos'è" },
+    { "id": "chi", "label": "Chi ne ha diritto" },
+    { "id": "codici", "label": "Codici esenzione" },
+    { "id": "come", "label": "Come richiederla" },
+    { "id": "cosa-copre", "label": "Cosa copre", "bh": true },
+    { "id": "faq", "label": "FAQ", "bh": true }
+  ],
+
+  "percorsoGuide": [
+    { "href": "/isee", "emoji": "📋", "label": "ISEE" },
+    { "href": "/spid", "emoji": "🔐", "label": "SPID" }
+  ],
+  "percorsoLinks": [
+    { "href": "https://www.salute.gov.it/", "emoji": "🏥", "label": "Ministero della Salute" }
+  ],
+
+  "glossario": [
+    { "term": "Ticket", "def": "La quota che il cittadino paga per visite specialistiche, esami e farmaci del SSN." },
+    { "term": "SSN", "def": "Servizio Sanitario Nazionale — il sistema pubblico che eroga le prestazioni sanitarie." },
+    { "term": "ASL", "def": "Azienda Sanitaria Locale — l'ente che gestisce i servizi sanitari nel tuo territorio." },
+    { "term": "Codice esenzione", "def": "Un codice alfanumerico (es. E01, 013) che identifica il tipo di esenzione e va scritto sulla ricetta." },
+    { "term": "MEF", "def": "Ministero dell'Economia e delle Finanze — verifica automaticamente i requisiti di reddito." }
+  ],
+
+  "sintesiCards": [
+    { "emoji": "💊", "value": "0€", "label": "ticket su visite<br/>esami e farmaci", "class": "bl" },
+    { "emoji": "📋", "value": "ISEE", "label": "non serve<br/>(basta il reddito)", "class": "sg" },
+    { "emoji": "🏥", "value": "ASL", "label": "dove si richiede<br/>o medico di base", "class": "tc" },
+    { "emoji": "👶", "value": "<6 anni", "label": "esenzione per et&agrave;<br/>sotto i 6 anni", "class": "" },
+    { "emoji": "🧓", "value": ">65 anni", "label": "esenzione per et&agrave;<br/>sopra i 65 anni", "class": "" },
+    { "emoji": "🩺", "value": "Patologia", "label": "malattie croniche<br/>senza limiti reddito", "class": "" }
+  ],
+
+  "sections": [
+    {
+      "id": "cose",
+      "tag": "Le basi",
+      "title": "Cos&apos;&egrave; l&apos;esenzione ticket",
+      "breveHide": false,
+      "content": "<p>L&apos;esenzione ticket &egrave; il diritto a <strong>non pagare</strong> (in tutto o in parte) il ticket sulle prestazioni sanitarie del SSN...</p>\n\n            <p>Non tutti la conoscono, ma in Italia ci sono <strong>milioni di persone</strong> che hanno diritto a visite specialistiche, esami del sangue, ecografie e farmaci senza pagare il ticket &mdash; e non lo sanno.</p>"
+    },
+    {
+      "id": "chi",
+      "tag": "Requisiti",
+      "title": "Chi ne ha diritto",
+      "breveHide": false,
+      "content": "<p>Ci sono 4 categorie principali di esenzione...</p>\n\n            <h3>1. Esenzione per reddito</h3>\n            <p>Bambini sotto i 6 anni e anziani sopra i 65 con reddito familiare sotto 36.151,98&euro;...</p>"
+    }
+  ],
+
+  "faqItems": [
+    { "q": "Come faccio a sapere se ho diritto all'esenzione?", "a": "Chiedi al tuo <strong>medico di base</strong> o all'ASL..." },
+    { "q": "L'esenzione per reddito è automatica?", "a": "<strong>Per under 6 e over 65 sì</strong> — il MEF verifica automaticamente..." }
+  ],
+
+  "related": [
+    { "href": "/isee", "emoji": "📋", "title": "Faccio l'ISEE", "desc": "Per alcune esenzioni serve l'ISEE." },
+    { "href": "/spid", "emoji": "🔐", "title": "Faccio lo SPID", "desc": "Serve per accedere al fascicolo sanitario." }
+  ],
+
+  "sidebarLinks": [
+    { "href": "https://www.salute.gov.it/", "emoji": "🏥", "name": "Min. Salute", "desc": "Esenzioni e ticket" },
+    { "href": "https://www.inps.it", "emoji": "🏦", "name": "INPS", "desc": "Invalidità e pensioni" }
+  ],
+  "sidebarGuide": [
+    { "href": "/isee", "emoji": "📋", "label": "ISEE" },
+    { "href": "/spid", "emoji": "🔐", "label": "SPID" },
+    { "href": "/bonus-bollette", "emoji": "💡", "label": "Bonus bollette" }
+  ],
+
+  "categoriesEntry": {
+    "emoji": "🩺",
+    "name": "Esenzione ticket",
+    "desc": "Chi non paga e come",
+    "tag": "💊 Salute"
+  },
+  "megaMenuEntry": {
+    "subTitle": "Servizio sanitario",
+    "name": "Esenzione ticket"
+  },
+  "searchTerms": [
+    { "keywords": ["esenzione ticket", "ticket sanitario", "non pagare ticket"], "desc": "Esenzione ticket sanitario 2026" },
+    { "keywords": ["esenzione reddito", "E01", "esenzione under 6", "esenzione over 65"], "anchor": "#chi", "desc": "Esenzione ticket per reddito (E01)" },
+    { "keywords": ["esenzione patologia", "malattia cronica esenzione", "codice esenzione"], "anchor": "#codici", "desc": "Codici esenzione per patologia cronica" }
+  ]
+}
