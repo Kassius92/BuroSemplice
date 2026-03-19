@@ -51,11 +51,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="it" className={`${dmSans.variable} ${playfair.variable}`}>
       <head>
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7003185964120229"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
       </head>
       <body>
