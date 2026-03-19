@@ -45,12 +45,23 @@ export const metadata = {
   },
 };
 
-import Script from 'next/script';
+import CookieBanner from '@/components/CookieBanner';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="it" className={`${dmSans.variable} ${playfair.variable}`}>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('consent', 'default', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            analytics_storage: 'denied',
+            wait_for_update: 500,
+          });
+        `}} />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7003185964120229"
@@ -59,6 +70,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         {children}
+        <CookieBanner />
       </body>
     </html>
   );
