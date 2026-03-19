@@ -82,18 +82,3 @@ export const allGuides = categoriesGuide.flatMap(c =>
   c.guides.map(g => ({ ...g, cat: c.title, catColor: c.color, catSlug: c.slug }))
 );
 
-export const tools = [
-  { emoji: '\u{1F4C5}', title: 'Le mie scadenze', desc: 'Traccia le date importanti e ricevi promemoria prima di ogni scadenza fiscale.', color: '#E36414', href: '/le-mie-scadenze' },
-  { emoji: '\u{1F4B6}', title: 'Quanto mi spetta?', desc: 'Rispondi a poche domande e scopri tutti i bonus e le agevolazioni a cui hai diritto.', color: '#2A9D8F', href: '/quanto-mi-spetta' },
-  { emoji: '\u2705', title: 'Checklist documenti', desc: 'La lista esatta dei documenti per ogni pratica. Cos\u00ec non ti rimandano a casa.', color: '#0F4C5C', href: '/checklist' },
-  { emoji: '\u{1F4B0}', title: 'Stipendio netto', desc: 'Dal lordo al netto in 2 secondi. Con contributi, IRPEF e detrazioni.', color: '#9B5DE5', href: '/stipendio' },
-];
-
-export const calculators = [
-  { emoji: '\u{1F9EE}', title: 'Calcola il 730', guide: '730', href: '/730#calcolatore' },
-  { emoji: '\u{1F4D0}', title: 'Calcola il TFR', guide: 'TFR', href: '/tfr#calcolatore' },
-  { emoji: '\u{1F3E6}', title: 'Rata del mutuo', guide: 'Mutuo', href: '/mutuo#calcolatore' },
-  { emoji: '\u{1F528}', title: 'Bonus ristrutturazione', guide: 'Ristrutturare', href: '/ristrutturare#calcolatore' },
-  { emoji: '\u{1F4B0}', title: 'Calcola la NASpI', guide: 'NASpI', href: '/naspi#calcolatore' },
-  { emoji: '\u{1F3DB}\uFE0F', title: 'Calcola l\u2019IMU', guide: 'IMU', href: '/imu#calcolatore' },
-];

@@ -40,7 +40,6 @@ export default function Nav({ variant = 'scheda' }) {
               <Link href="/" className="logo"><img src="/logo-z.webp" alt="ZeroBurocrazia" className="logo-mark" width="36" height="36" /><div className="logo-text">Zero<span>Burocrazia</span><small className="logo-sub">Burocrazia? Ci pensiamo noi.</small></div></Link>
               <div className="nav-center-links">
                 <Link href="/guide" className="nav-pill">Guide</Link>
-                <Link href="/strumenti" className="nav-pill">Strumenti</Link>
                 <Link href="/novita" className="nav-pill">Novit&agrave;<span className="nav-dot" /></Link>
               </div>
               <div className="nav-links">

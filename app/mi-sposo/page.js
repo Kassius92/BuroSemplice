@@ -1,6 +1,5 @@
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
-import BrevoForm from '@/components/BrevoForm';
 import ScrollReveal from '@/components/ScrollReveal';
 import GuideEnhancer from '@/components/GuideEnhancer';
 import TOC from '@/components/TOC';
@@ -395,7 +394,6 @@ export default function Page() {
         </aside>
       </div>
 
-      <BrevoForm pageName="mi-sposo" />
       <Footer variant="scheda" />
     </>
     </div>

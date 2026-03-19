@@ -3,8 +3,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
 import SchemaOrg from '@/components/SchemaOrg';
-import BrevoForm from '@/components/BrevoForm';
-import { categoriesGuide, totalGuides, tools } from '@/components/categoriesData';
+import { categoriesGuide, totalGuides } from '@/components/categoriesData';
 import './home.css';
 
 export const metadata = {
@@ -104,25 +103,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* TOOLS — dark bg */}
-      <section className="tools-section">
-        <div className="tools-inner">
-          <div className="sec-eyebrow" style={{ color: 'var(--tc)' }}>Strumenti interattivi</div>
-          <div className="sec-title" style={{ color: '#fff' }}>Non solo testo.<br/><em>Numeri veri.</em></div>
-          <div className="sec-sub" style={{ color: 'rgba(255,255,255,.45)' }}>Calcolatori, checklist e tracker che ti dicono esattamente cosa fare e quanto ti spetta.</div>
-          <div className="tools-grid">
-            {tools.map((t, i) => (
-              <Link key={i} href={t.href} className="tool-card" style={{ '--tool-c': t.color }}>
-                <span className="tool-emoji">{t.emoji}</span>
-                <div className="tool-title">{t.title}</div>
-                <div className="tool-desc">{t.desc}</div>
-                <div className="tool-cta">Prova gratis &rarr;</div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* COME FUNZIONA */}
       <section className="how-section">
         <div className="how-inner">
@@ -177,9 +157,6 @@ export default function HomePage() {
           </a>
         </div>
       </section>
-
-      {/* NEWSLETTER (DARK) */}
-      <BrevoForm pageName="home" id="newsletter" />
 
       <Footer variant="home" />
     </>

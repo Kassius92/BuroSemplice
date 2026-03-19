@@ -1,6 +1,5 @@
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
-import BrevoForm from '@/components/BrevoForm';
 import ScrollReveal from '@/components/ScrollReveal';
 import GuideEnhancer from '@/components/GuideEnhancer';
 import TOC from '@/components/TOC';
@@ -390,7 +389,6 @@ export default function Pagina730() {
         </aside>
       </div>
 
-      <BrevoForm pageName="730" />
       <Footer variant="scheda" />
     </>
     </div>
