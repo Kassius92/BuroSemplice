@@ -997,6 +997,9 @@ body.mega-open .toc { display: none; }
 .cat-famiglia .gl-item{border-left-color:var(--cat,#7C3AED);}
 .cat-lavoro .gl-item{border-left-color:var(--cat,#2563EB);}
 .cat-documenti .gl-item{border-left-color:var(--cat,#0F4C5C);}
+.cat-salute .gl-item{border-left-color:var(--cat,#DC2626);}
+.cat-auto .gl-item{border-left-color:var(--cat,#4F46E5);}
+.cat-pensione .gl-item{border-left-color:var(--cat,#7C3AED);}
 
 /* DARK BLOCK (esempio pratico confronto prima/dopo) */
 .dark-block{background:#1A1A2E;border-radius:12px;padding:20px 24px;margin:20px 0;display:flex;flex-direction:column;gap:10px;}
@@ -1033,91 +1036,94 @@ body.mega-open .toc { display: none; }
 .cat-famiglia { --cat:#7C3AED; --cat-h:#6D28D9; --cat-l:#F0EBFF; --cat-rgb:124,58,237; }
 .cat-lavoro { --cat:#2563EB; --cat-h:#1D4ED8; --cat-l:#E8F0FE; --cat-rgb:37,99,235; }
 .cat-documenti { --cat:#0F4C5C; --cat-h:#0a3742; --cat-l:#E0EDEF; --cat-rgb:15,76,92; }
+.cat-salute { --cat:#DC2626; --cat-h:#B91C1C; --cat-l:#FEE2E2; --cat-rgb:220,38,38; }
+.cat-auto { --cat:#4F46E5; --cat-h:#4338CA; --cat-l:#EEF2FF; --cat-rgb:79,70,229; }
+.cat-pensione { --cat:#7C3AED; --cat-h:#6D28D9; --cat-l:#F3E8FF; --cat-rgb:124,58,237; }
 
 /* Shorthand: tutte le categorie non-default */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .hero em{color:var(--cat) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .hn{color:var(--cat) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .cfr{color:var(--cat) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .hl-text{background:linear-gradient(to top,rgba(var(--cat-rgb),.12) 40%,transparent 40%) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .hero em{color:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .hn{color:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .cfr{color:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .hl-text{background:linear-gradient(to top,rgba(var(--cat-rgb),.12) 40%,transparent 40%) !important;}
 
 /* Badge (sfondo!) */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .badge{background:var(--cat) !important;color:#fff !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .badge{background:var(--cat) !important;color:#fff !important;}
 
 /* Table header */
-:is(.cat-fisco,.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) thead th{background:linear-gradient(135deg,var(--cat-h),var(--cat)) !important;}
+:is(.cat-fisco,.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) thead th{background:linear-gradient(135deg,var(--cat-h),var(--cat)) !important;}
 
 /* Riga raccomandata */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) tr.rec{background:rgba(var(--cat-rgb),.04) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) tr.rec{background:rgba(var(--cat-rgb),.04) !important;}
 
 /* Hero tint */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .hero-mesh{background:radial-gradient(ellipse 900px 600px at 75% 10%,rgba(var(--cat-rgb),.10) 0%,transparent 55%),radial-gradient(ellipse 600px 700px at 5% 85%,rgba(var(--cat-rgb),.06) 0%,transparent 55%),linear-gradient(155deg,#F8F4E8 0%,var(--cat-l) 55%,var(--cat-l) 100%) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .hero-mesh{background:radial-gradient(ellipse 900px 600px at 75% 10%,rgba(var(--cat-rgb),.10) 0%,transparent 55%),radial-gradient(ellipse 600px 700px at 5% 85%,rgba(var(--cat-rgb),.06) 0%,transparent 55%),linear-gradient(155deg,#F8F4E8 0%,var(--cat-l) 55%,var(--cat-l) 100%) !important;}
 
 /* Blobs */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .b1,:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .b3{background:radial-gradient(circle at 40% 40%,rgba(var(--cat-rgb),.09) 0%,transparent 65%) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .b1,:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .b3{background:radial-gradient(circle at 40% 40%,rgba(var(--cat-rgb),.09) 0%,transparent 65%) !important;}
 
 /* Shimmer line */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .shimmer-line{background:linear-gradient(90deg,transparent 0%,rgba(var(--cat-rgb),.4) 30%,rgba(var(--cat-rgb),.4) 70%,transparent 100%) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .shimmer-line{background:linear-gradient(90deg,transparent 0%,rgba(var(--cat-rgb),.4) 30%,rgba(var(--cat-rgb),.4) 70%,transparent 100%) !important;}
 
 /* Hero stat card top line */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .hstat::before{background:linear-gradient(90deg,var(--cat),rgba(var(--cat-rgb),.3)) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .hstat::before{background:linear-gradient(90deg,var(--cat),rgba(var(--cat-rgb),.3)) !important;}
 
 /* Ring SVG */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .ring circle:nth-child(3){stroke:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .ring circle:nth-child(3){stroke:var(--cat) !important;}
 
 /* TOC active + progress */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .ta.on{color:var(--cat) !important;border-color:var(--cat) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .toc-fill{background:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .ta.on{color:var(--cat) !important;border-color:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .toc-fill{background:var(--cat) !important;}
 
 /* Pills */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .pill-g,:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .pill-o{background:rgba(var(--cat-rgb),.08) !important;color:var(--cat) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .pill-s{color:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .pill-g,:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .pill-o{background:rgba(var(--cat-rgb),.08) !important;color:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .pill-s{color:var(--cat) !important;}
 
 /* Info boxes */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .ib.tip{border-left-color:var(--cat) !important;background:linear-gradient(135deg,var(--cat-l),var(--wh)) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .ib.warn{border-left-color:var(--cat) !important;background:linear-gradient(135deg,var(--cat-l),var(--wh)) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .ib.mon{border-left-color:var(--cat) !important;background:linear-gradient(135deg,var(--cat-l),var(--wh)) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .ib-t{color:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .ib.tip{border-left-color:var(--cat) !important;background:linear-gradient(135deg,var(--cat-l),var(--wh)) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .ib.warn{border-left-color:var(--cat) !important;background:linear-gradient(135deg,var(--cat-l),var(--wh)) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .ib.mon{border-left-color:var(--cat) !important;background:linear-gradient(135deg,var(--cat-l),var(--wh)) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .ib-t{color:var(--cat) !important;}
 
 /* Step number */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .stepn{background:var(--cat) !important;color:#fff !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .stepn{background:var(--cat) !important;color:#fff !important;}
 
 /* Sintesi cards */
-:is(.cat-fisco,.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .sc{background:var(--cat-l) !important;border-color:var(--bd) !important;}
-:is(.cat-fisco,.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .sc:hover{border-color:var(--cat) !important;box-shadow:0 0 12px rgba(var(--cat-rgb),.35) !important;}
+:is(.cat-fisco,.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .sc{background:var(--cat-l) !important;border-color:var(--bd) !important;}
+:is(.cat-fisco,.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .sc:hover{border-color:var(--cat) !important;box-shadow:0 0 12px rgba(var(--cat-rgb),.35) !important;}
 
 /* Dark block accents */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .dblock::before{background:radial-gradient(circle,rgba(var(--cat-rgb),.22),transparent 60%) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .dblock .sec-tag{color:var(--cat) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .dblock .dt-n{color:var(--cat) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .dblock-total{background:rgba(var(--cat-rgb),.18) !important;border-color:rgba(var(--cat-rgb),.30) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .dblock-total .dblock-val{color:rgba(var(--cat-rgb),.8) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .cres{background:linear-gradient(135deg,var(--cat-l),rgba(var(--cat-rgb),.08)) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .dblock::before{background:radial-gradient(circle,rgba(var(--cat-rgb),.22),transparent 60%) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .dblock .sec-tag{color:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .dblock .dt-n{color:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .dblock-total{background:rgba(var(--cat-rgb),.18) !important;border-color:rgba(var(--cat-rgb),.30) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .dblock-total .dblock-val{color:rgba(var(--cat-rgb),.8) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .cres{background:linear-gradient(135deg,var(--cat-l),rgba(var(--cat-rgb),.08)) !important;}
 
 /* Cross-link arrow */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .xlink:hover{border-color:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .xlink:hover{border-color:var(--cat) !important;}
 
 /* Related cards hover */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .rc:hover{border-color:rgba(var(--cat-rgb),.3) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .rc:hover{border-color:rgba(var(--cat-rgb),.3) !important;}
 
 /* Sidebar */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .sb-cb{background:var(--cat) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .sb-cb:hover{background:var(--cat-h) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .sb-cb{background:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .sb-cb:hover{background:var(--cat-h) !important;}
 
 /* Category badge in hero */
 .cat-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 14px;border-radius:8px;font-size:12px;font-weight:700;letter-spacing:.3px;margin-bottom:12px;background:var(--cat);color:#fff;}
 
 /* Calcolatori */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .calc-hd{background:linear-gradient(135deg,#1a1a2e,var(--cat)) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .calc-hd::before{background:radial-gradient(circle,rgba(var(--cat-rgb),.35),transparent 60%) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .calc-h{background:linear-gradient(135deg,#1a1a2e,var(--cat)) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .cslider::-webkit-slider-thumb{background:var(--cat) !important;box-shadow:0 3px 12px rgba(var(--cat-rgb),.40) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .cslider::-moz-range-thumb{background:var(--cat) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .ctog input:checked+.ctrack{background:var(--cat) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .calc-tog input:checked+.calc-track{background:var(--cat) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .calc-tag{color:rgba(var(--cat-rgb),.7) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .cres-l{color:var(--cat) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .calc-lv{color:var(--cat) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .cres-n{color:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .calc-hd{background:linear-gradient(135deg,#1a1a2e,var(--cat)) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .calc-hd::before{background:radial-gradient(circle,rgba(var(--cat-rgb),.35),transparent 60%) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .calc-h{background:linear-gradient(135deg,#1a1a2e,var(--cat)) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .cslider::-webkit-slider-thumb{background:var(--cat) !important;box-shadow:0 3px 12px rgba(var(--cat-rgb),.40) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .cslider::-moz-range-thumb{background:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .ctog input:checked+.ctrack{background:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .calc-tog input:checked+.calc-track{background:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .calc-tag{color:rgba(var(--cat-rgb),.7) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .cres-l{color:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .calc-lv{color:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .cres-n{color:var(--cat) !important;}
 
 /* ═══════════════════════════════════════════ */
 /* UNIFIED DARK NEWSLETTER (final-section)     */
@@ -1147,11 +1153,11 @@ body.mega-open .toc { display: none; }
 @media(max-width:768px){.final-section{padding:60px 20px;}.final-form{flex-direction:column;border-radius:20px;padding:16px;gap:12px;}.final-form input{width:100%;min-width:0;padding:12px 0;font-size:16px;text-align:center;}.final-form button{width:100%;}.final-trust{flex-direction:column;gap:8px;}}
 
 /* Checklist icon category override */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .ci{background:var(--cat) !important;color:#fff !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .ci{background:var(--cat) !important;color:#fff !important;}
 
 /* Sidebar CTA category override */
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .sb-cb{background:var(--cat) !important;}
-:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti) .sb-cb:hover{box-shadow:0 5px 0 var(--cat-h) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .sb-cb{background:var(--cat) !important;}
+:is(.cat-casa,.cat-famiglia,.cat-lavoro,.cat-documenti,.cat-salute,.cat-auto,.cat-pensione) .sb-cb:hover{box-shadow:0 5px 0 var(--cat-h) !important;}
 
 /* ═══════════════════════════════════════════ */
 /* GUIDE ENHANCER — progress bar + chapters   */
