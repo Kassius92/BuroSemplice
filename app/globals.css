@@ -130,7 +130,7 @@ body{font-family:var(--font-dm),sans-serif;background:var(--cream);color:var(--t
 body.breve .bh{display:none !important;}
 
 /* LAYOUT */
-.layout{max-width:1110px;margin:0 auto;padding:0 28px;display:flex;gap:48px;align-items:flex-start;}
+.layout{max-width:1110px;margin:0 auto;padding:0 28px;display:flex;gap:48px;align-items:flex-start;position:relative;z-index:1;}
 .main{flex:1;min-width:0;padding:56px 0 100px;}
 .aside{width:228px;flex-shrink:0;position:sticky;top:116px;max-height:calc(100vh - 136px);overflow-y:auto;scrollbar-width:none;padding:56px 0 24px;}
 .aside::-webkit-scrollbar{display:none;}
