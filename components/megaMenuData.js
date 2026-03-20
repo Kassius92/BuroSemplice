@@ -13,6 +13,7 @@ export const categories = [
         { name: 'Bonus bollette luce e gas', href: '/bonus-bollette' },
         { name: 'ISEE corrente', href: '#', soon: true },
         { name: 'Bonus e detrazioni 2026', href: '#', soon: true },
+        { name: 'Assegno di inclusione (ADI)', href: '/assegno-inclusione' },
       ]},
       { title: 'Tasse e imposte', links: [
         { name: 'Partita IVA', href: '/piva' },
@@ -55,6 +56,7 @@ export const categories = [
       { title: 'Coppia', links: [
         { name: 'Mi sposo', href: '/mi-sposo' },
         { name: 'Divorzio', href: '#', soon: true },
+        { name: 'Successione ed eredità', href: '/successione' },
       ]},
       { title: 'Eredità', links: [
         { name: 'Successione', href: '#', soon: true },
@@ -74,6 +76,7 @@ export const categories = [
         { name: 'Passaporto', href: '/passaporto' },
         { name: 'Codice fiscale', href: '#', soon: true },
         { name: 'Tessera sanitaria', href: '#', soon: true },
+        { name: 'Codice fiscale', href: '/codice-fiscale' },
       ]},
     ]
   },

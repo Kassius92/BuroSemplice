@@ -270,4 +270,27 @@ export const searchIndex = [
   { keywords: ["bonus psicologo requisiti","ISEE bonus psicologo","bonus psicologo chi può"], guide: "Bonus Psicologo 2026", href: '/bonus-psicologo#requisiti', desc: "Requisiti per il bonus psicologo" },
   { keywords: ["graduatoria bonus psicologo","click day psicologo","bonus psicologo scorrimento"], guide: "Bonus Psicologo 2026", href: '/bonus-psicologo#graduatoria', desc: "Come funzionano le graduatorie INPS" },
   { keywords: ["codice univoco psicologo","come usare bonus psicologo","psicoterapeuta aderente"], guide: "Bonus Psicologo 2026", href: '/bonus-psicologo#uso', desc: "Come usare il bonus psicologo dopo l'ammissione" },
+
+  // ═══ ASSEGNO DI INCLUSIONE 2026 ═══
+  { keywords: ["assegno di inclusione","ADI","assegno inclusione 2026","ex reddito cittadinanza"], guide: "Assegno di Inclusione 2026", href: '/assegno-inclusione', desc: "Assegno di Inclusione 2026: guida completa" },
+  { keywords: ["assegno inclusione requisiti","chi ha diritto ADI","ISEE assegno inclusione","10140 euro"], guide: "Assegno di Inclusione 2026", href: '/assegno-inclusione#chi', desc: "Requisiti ADI: ISEE, reddito e nucleo familiare" },
+  { keywords: ["assegno inclusione importo","quanto spetta ADI","500 euro mese","carta ADI"], guide: "Assegno di Inclusione 2026", href: '/assegno-inclusione#importi', desc: "Importi Assegno di Inclusione" },
+  { keywords: ["domanda assegno inclusione","come richiedere ADI","domanda INPS ADI","SIISL PAD"], guide: "Assegno di Inclusione 2026", href: '/assegno-inclusione#domanda', desc: "Come fare domanda per l'ADI" },
+  { keywords: ["assegno inclusione novita 2026","rinnovo ADI","legge bilancio ADI"], guide: "Assegno di Inclusione 2026", href: '/assegno-inclusione#novita', desc: "Novità ADI 2026" },
+
+  // ═══ SUCCESSIONE ED EREDITÀ 2026 ═══
+  { keywords: ["successione","dichiarazione successione","eredità","successione ereditaria","successione 2026"], guide: "Successione ed Eredità 2026", href: '/successione', desc: "Successione ed eredità 2026: guida completa" },
+  { keywords: ["imposte successione","franchigia successione","tasse eredità","aliquota successione","1 milione franchigia"], guide: "Successione ed Eredità 2026", href: '/successione#imposte', desc: "Imposte e franchigie sulla successione" },
+  { keywords: ["documenti successione","cosa serve per successione","visura catastale successione"], guide: "Successione ed Eredità 2026", href: '/successione#documenti', desc: "Documenti necessari per la successione" },
+  { keywords: ["costo successione","successione CAF","quanto costa successione","successione notaio"], guide: "Successione ed Eredità 2026", href: '/successione#costi', desc: "Costi della successione: CAF vs notaio" },
+  { keywords: ["rinuncia eredità","rifiutare eredità","eredità con debiti"], guide: "Successione ed Eredità 2026", href: '/successione#faq', desc: "Rinuncia all'eredità e debiti ereditari" },
+  { keywords: ["successione telematica","come fare successione","procedura successione"], guide: "Successione ed Eredità 2026", href: '/successione#procedura', desc: "Come fare la dichiarazione di successione" },
+
+  // ═══ CODICE FISCALE 2026 ═══
+  { keywords: ["codice fiscale","cos'è codice fiscale","codice fiscale 16 caratteri"], guide: "Codice Fiscale 2026", href: '/codice-fiscale', desc: "Codice fiscale: cos'è e come funziona" },
+  { keywords: ["codice fiscale neonato","codice fiscale nascita","codice fiscale bambino","tessera sanitaria neonato"], guide: "Codice Fiscale 2026", href: '/codice-fiscale#neonati', desc: "Codice fiscale per neonati: come si ottiene" },
+  { keywords: ["duplicato codice fiscale","tessera sanitaria smarrita","codice fiscale perso","richiesta duplicato online"], guide: "Codice Fiscale 2026", href: '/codice-fiscale#duplicato', desc: "Duplicato codice fiscale e tessera sanitaria online" },
+  { keywords: ["codice fiscale stranieri","codice fiscale extracomunitari","codice fiscale immigrati","codice fiscale permesso soggiorno"], guide: "Codice Fiscale 2026", href: '/codice-fiscale#stranieri', desc: "Codice fiscale per cittadini stranieri" },
+  { keywords: ["tessera sanitaria","CNS","carta nazionale servizi","tessera sanitaria scaduta"], guide: "Codice Fiscale 2026", href: '/codice-fiscale#tessera', desc: "Tessera sanitaria e CNS" },
+  { keywords: ["calcolo codice fiscale","come si legge codice fiscale","significato lettere codice fiscale"], guide: "Codice Fiscale 2026", href: '/codice-fiscale#cose', desc: "Come si legge e calcola il codice fiscale" },
 ];

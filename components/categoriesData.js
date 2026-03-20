@@ -17,6 +17,7 @@ export const categoriesGuide = [
       { emoji: '\u{1F3DB}\uFE0F', name: 'IMU', href: '/imu', desc: 'Calcolo e scadenze', tag: '\u{1F527} Calcolatore' },
       { emoji: '\u{1FA7A}', name: 'Spese mediche', href: '/spese-mediche', desc: 'Detrazioni sanitarie', tag: '\u{1F4B0} Detrazione' },
       { emoji: '\u{1F4A1}', name: 'Bonus bollette', href: '/bonus-bollette', desc: 'Sconto luce e gas', tag: '\u{1F4B0} Bonus' },
+      { emoji: '\u{1F91D}', name: 'Assegno inclusione', href: '/assegno-inclusione', desc: 'Ex RdC, fino a 500\u20ac/mese', tag: '\u{1F4B0} Bonus' },
     ],
   },
   {
@@ -39,6 +40,7 @@ export const categoriesGuide = [
       { emoji: '\u{1F469}\u200D\u{1F466}', name: 'Congedo parentale', href: '/congedo-parentale', desc: 'Durata e retribuzione', tag: '\u{1F4D6} Completa' },
       { emoji: '\u{1F3EB}', name: 'Bonus nido', href: '/bonus-nido', desc: 'Fino a 3.600\u20AC/anno', tag: '\u{1F4B0} Bonus' },
       { emoji: '\u{1F48D}', name: 'Mi sposo', href: '/mi-sposo', desc: 'Documenti e procedura', tag: '\u{1F4D6} Completa' },
+      { emoji: '📜', name: 'Successione', href: '/successione', desc: 'Eredità e dichiarazione', tag: '📖 Completa' },
     ],
   },
   {
@@ -49,6 +51,7 @@ export const categoriesGuide = [
       { emoji: '\u{1F4B3}', name: 'CIE', href: '/cie', desc: 'Carta d\u2019identit\u00e0 elettronica', tag: '\u{1F4DD} Procedura' },
       { emoji: '\u{1F4E7}', name: 'PEC', href: '/pec', desc: 'Posta certificata', tag: '\u{1F680} Veloce' },
       { emoji: '\u2708\uFE0F', name: 'Passaporto', href: '/passaporto', desc: 'Richiesta e rinnovo', tag: '\u{1F4DD} Procedura' },
+      { emoji: '💳', name: 'Codice fiscale', href: '/codice-fiscale', desc: 'Richiesta e duplicato', tag: '📝 Procedura' },
     ],
   },
   {
