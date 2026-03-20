@@ -332,7 +332,15 @@ export default function Page() {
           </div>
 
           {/* GUIDE CORRELATE */}
-          <div className="related r">
+          
+          <div className="related r" style={{marginBottom: '32px'}}>
+            <h2>{'\uD83D\uDCDA'} Approfondimenti</h2>
+            <div className="rg">
+              <a href="/dimissioni/preavviso" className="rc"><span className="rc-e">{'📅'}</span><div className="rc-t">Giorni di preavviso</div><div className="rc-d">Tabella per CCNL, livello e anzianità.</div><span className="rc-ar">&rarr;</span></a>
+            </div>
+          </div>
+
+<div className="related r">
             <h2>Guide correlate</h2>
             <div className="rg">
               <a href="/tfr" className="rc"><span className="rc-e">💰</span><div className="rc-t">TFR</div><div className="rc-d">Dopo le dimissioni ti spetta la liquidazione.</div><span className="rc-ar">→</span></a>

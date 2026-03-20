@@ -322,7 +322,15 @@ export default function PaginaMutuo() {
           </div>
 
           {/* RELATED */}
-          <div className="related r">
+          
+          <div className="related r" style={{marginBottom: '32px'}}>
+            <h2>{'\uD83D\uDCDA'} Approfondimenti</h2>
+            <div className="rg">
+              <a href="/mutuo/tassi-2026" className="rc"><span className="rc-e">{'📈'}</span><div className="rc-t">Tassi mutuo 2026</div><div className="rc-d">Fisso vs variabile, Euribor e surroga.</div><span className="rc-ar">&rarr;</span></a>
+            </div>
+          </div>
+
+<div className="related r">
             <h2>Guide correlate</h2>
             <div className="rg">
               <a href="/compro-casa" className="rc"><span className="rc-e">🏠</span><div className="rc-t">Compro casa</div><div className="rc-d">Tutta la procedura di acquisto dall&apos;inizio alla fine.</div><span className="rc-ar">→</span></a>

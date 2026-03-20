@@ -355,7 +355,16 @@ export default function Page() {
           </div>
 
           {/* GUIDE CORRELATE */}
-          <div className="related r">
+          
+          <div className="related r" style={{marginBottom: '32px'}}>
+            <h2>{'\uD83D\uDCDA'} Approfondimenti</h2>
+            <div className="rg">
+              <a href="/naspi/calcolo" className="rc"><span className="rc-e">{'🧮'}</span><div className="rc-t">Calcolo NASpI</div><div className="rc-d">Formula, massimale 1.584€, decalage ed esempi.</div><span className="rc-ar">&rarr;</span></a>
+              <a href="/naspi/domanda-inps" className="rc"><span className="rc-e">{'📝'}</span><div className="rc-t">Domanda NASpI INPS</div><div className="rc-d">Come farla entro 68 giorni, passo per passo.</div><span className="rc-ar">&rarr;</span></a>
+            </div>
+          </div>
+
+<div className="related r">
             <h2>Guide correlate</h2>
             <div className="rg">
               <a href="/dimissioni" className="rc"><span className="rc-e">✍️</span><div className="rc-t">Dimissioni volontarie</div><div className="rc-d">Come dimettersi correttamente online.</div><span className="rc-ar">→</span></a>

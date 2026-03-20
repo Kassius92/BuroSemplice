@@ -343,7 +343,16 @@ export default function Page() {
           </div>
 
           {/* GUIDE CORRELATE */}
-          <div className="related r">
+          
+          <div className="related r" style={{marginBottom: '32px'}}>
+            <h2>{'\uD83D\uDCDA'} Approfondimenti</h2>
+            <div className="rg">
+              <a href="/isee/isee-corrente" className="rc"><span className="rc-e">{'⚡'}</span><div className="rc-t">ISEE Corrente</div><div className="rc-d">Quando serve, requisiti (calo 25%) e procedura.</div><span className="rc-ar">&rarr;</span></a>
+              <a href="/isee/scadenza" className="rc"><span className="rc-e">{'📅'}</span><div className="rc-t">Scadenza e rinnovo ISEE</div><div className="rc-d">Quando scade, come rinnovarlo e cosa succede ai bonus.</div><span className="rc-ar">&rarr;</span></a>
+            </div>
+          </div>
+
+<div className="related r">
             <h2>Guide correlate</h2>
             <div className="rg">
               <a href="/figlio" className="rc"><span className="rc-e">👶</span><div className="rc-t">Aspetto un figlio</div><div className="rc-d">Assegno unico, bonus nido: servono l'ISEE.</div><span className="rc-ar">→</span></a>

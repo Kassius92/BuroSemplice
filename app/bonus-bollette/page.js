@@ -344,7 +344,16 @@ export default function BonusBollettePage() {
           </div>
 
           {/* GUIDE CORRELATE */}
-          <div className="related r">
+          
+          <div className="related r" style={{marginBottom: '32px'}}>
+            <h2>{'\uD83D\uDCDA'} Approfondimenti</h2>
+            <div className="rg">
+              <a href="/bonus-bollette/decreto-2026" className="rc"><span className="rc-e">{'📜'}</span><div className="rc-t">Decreto Bollette 2026</div><div className="rc-d">Bonus extra 115€ per chi ha il bonus sociale.</div><span className="rc-ar">&rarr;</span></a>
+              <a href="/bonus-bollette/bonus-tari" className="rc"><span className="rc-e">{'♻️'}</span><div className="rc-t">Bonus TARI</div><div className="rc-d">Novità 2026: sconto 25% sulla tassa rifiuti.</div><span className="rc-ar">&rarr;</span></a>
+            </div>
+          </div>
+
+<div className="related r">
             <h2>Guide correlate</h2>
             <div className="rg">
               <a href="/isee" className="rc"><span className="rc-e">{'\uD83D\uDCCB'}</span><div className="rc-t">Faccio l&apos;ISEE</div><div className="rc-d">Senza ISEE niente bonus. Come farlo gratis in 15 minuti.</div><span className="rc-ar">&rarr;</span></a>

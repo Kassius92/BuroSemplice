@@ -305,7 +305,15 @@ export default function PaginaCie() {
           </div>
 
           {/* RELATED */}
-          <div className="related r">
+          
+          <div className="related r" style={{marginBottom: '32px'}}>
+            <h2>{'\uD83D\uDCDA'} Approfondimenti</h2>
+            <div className="rg">
+              <a href="/cie/scadenza-cartacea" className="rc"><span className="rc-e">{'⏰'}</span><div className="rc-t">Scadenza carta cartacea</div><div className="rc-d">Dal 3 agosto 2026 non vale più per l’espatrio.</div><span className="rc-ar">&rarr;</span></a>
+            </div>
+          </div>
+
+<div className="related r">
             <h2>Guide correlate</h2>
             <div className="rg">
               <a href="/spid" className="rc"><span className="rc-e">🪪</span><div className="rc-t">Faccio lo SPID</div><div className="rc-d">L&apos;altra identit&agrave; digitale &mdash; complementare alla CIE.</div><span className="rc-ar">&rarr;</span></a>

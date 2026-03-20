@@ -361,7 +361,16 @@ export default function Pagina730() {
           </div>
 
           {/* GUIDE CORRELATE */}
-          <div className="related r">
+          
+          <div className="related r" style={{marginBottom: '32px'}}>
+            <h2>{'\uD83D\uDCDA'} Approfondimenti</h2>
+            <div className="rg">
+              <a href="/730/precompilato" className="rc"><span className="rc-e">{'💻'}</span><div className="rc-t">730 Precompilato</div><div className="rc-d">Come accedere, controllare e inviare il precompilato.</div><span className="rc-ar">&rarr;</span></a>
+              <a href="/730/detrazioni-affitto" className="rc"><span className="rc-e">{'🏠'}</span><div className="rc-t">Detrazioni affitto nel 730</div><div className="rc-d">Quanto recuperi e come inserirle: importi e codici.</div><span className="rc-ar">&rarr;</span></a>
+            </div>
+          </div>
+
+<div className="related r">
             <h2>Guide correlate</h2>
             <div className="rg">
               <a href="/isee" className="rc"><span className="rc-e">{'\uD83D\uDCCB'}</span><div className="rc-t">Faccio l&apos;ISEE</div><div className="rc-d">Bonus e agevolazioni: ti serve l&apos;ISEE.</div><span className="rc-ar">&rarr;</span></a>

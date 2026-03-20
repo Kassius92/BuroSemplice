@@ -339,7 +339,16 @@ export default function Page() {
           </div>
 
           {/* GUIDE CORRELATE */}
-          <div className="related r">
+          
+          <div className="related r" style={{marginBottom: '32px'}}>
+            <h2>{'\uD83D\uDCDA'} Approfondimenti</h2>
+            <div className="rg">
+              <a href="/spid/costo-2026" className="rc"><span className="rc-e">{'💰'}</span><div className="rc-t">Costo SPID 2026</div><div className="rc-d">Poste 6€/anno e provider ancora gratis.</div><span className="rc-ar">&rarr;</span></a>
+              <a href="/spid/non-funziona" className="rc"><span className="rc-e">{'⚠️'}</span><div className="rc-t">SPID non funziona</div><div className="rc-d">Problemi comuni e come risolverli.</div><span className="rc-ar">&rarr;</span></a>
+            </div>
+          </div>
+
+<div className="related r">
             <h2>Guide correlate</h2>
             <div className="rg">
               <a href="/isee" className="rc"><span className="rc-e">📋</span><div className="rc-t">Faccio l'ISEE</div><div className="rc-d">Con lo SPID fai l'ISEE online in 15 minuti.</div><span className="rc-ar">→</span></a>
