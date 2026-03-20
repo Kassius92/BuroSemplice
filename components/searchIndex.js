@@ -293,4 +293,10 @@ export const searchIndex = [
   { keywords: ["codice fiscale stranieri","codice fiscale extracomunitari","codice fiscale immigrati","codice fiscale permesso soggiorno"], guide: "Codice Fiscale 2026", href: '/codice-fiscale#stranieri', desc: "Codice fiscale per cittadini stranieri" },
   { keywords: ["tessera sanitaria","CNS","carta nazionale servizi","tessera sanitaria scaduta"], guide: "Codice Fiscale 2026", href: '/codice-fiscale#tessera', desc: "Tessera sanitaria e CNS" },
   { keywords: ["calcolo codice fiscale","come si legge codice fiscale","significato lettere codice fiscale"], guide: "Codice Fiscale 2026", href: '/codice-fiscale#cose', desc: "Come si legge e calcola il codice fiscale" },
+  { keywords: ["730 precompilato","730 precompilato 2026","come fare 730 precompilato","730 online","730 fai da te"], guide: "730 Precompilato", href: '/730/precompilato', desc: "Come fare il 730 precompilato nel 2026" },
+  { keywords: ["detrazione affitto 730","affitto 730","scaricare affitto","detrazione affitto","rigo E71"], guide: "Detrazioni affitto nel 730", href: '/730/detrazioni-affitto', desc: "Come detrarre l\u2019affitto nel 730" },
+  { keywords: ["ISEE corrente","ISEE corrente 2026","ISEE aggiornato","ISEE perdita lavoro","ISEE calo reddito"], guide: "ISEE Corrente", href: '/isee/isee-corrente', desc: "Come fare l\u2019ISEE corrente nel 2026" },
+  { keywords: ["ISEE scadenza","ISEE scaduto","quando scade ISEE","rinnovo ISEE","ISEE 31 dicembre"], guide: "ISEE Scadenza", href: '/isee/scadenza', desc: "Quando scade l\u2019ISEE e come rinnovarlo" },
+  { keywords: ["SPID costo","SPID costo 2026","SPID gratis","SPID 6 euro","SPID Poste pagamento","PosteID costo"], guide: "SPID Costo 2026", href: '/spid/costo-2026', desc: "Quanto costa lo SPID nel 2026" },
+  { keywords: ["SPID non funziona","SPID problemi","SPID errore","SPID OTP non arriva","SPID bloccato","PosteID non funziona"], guide: "SPID Non Funziona", href: '/spid/non-funziona', desc: "SPID non funziona: problemi e soluzioni" },
 ];
