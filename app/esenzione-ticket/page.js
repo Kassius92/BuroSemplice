@@ -11,7 +11,7 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: "Esenzione Ticket Sanitario 2026: chi non paga, codici e come richiederla",
+  title: "Come Ottenere l\u2019Esenzione Ticket nel 2026: Requisiti, Codici e Procedura",
   description: "Esenzione ticket sanitario 2026: requisiti per reddito, età, patologia e invalidità. Codici E01-E04, come richiederla alla ASL e verificarla online.",
   keywords: ["esenzione ticket","esenzione ticket 2026","esenzione ticket sanitario","codice esenzione E01","esenzione reddito","esenzione patologia","ticket sanitario","non pagare ticket","esenzione ticket come richiederla"],
   alternates: { canonical: 'https://zeroburocrazia.it/esenzione-ticket' },

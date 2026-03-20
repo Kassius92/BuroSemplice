@@ -11,7 +11,7 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: 'Bonus Nido 2026: Importi fino a 3.600\u20AC, Requisiti ISEE e Domanda INPS',
+  title: 'Come Richiedere il Bonus Nido nel 2026: fino a 3.600\u20AC e Domanda INPS',
   description: 'Bonus asilo nido 2026: come richiederlo, importi per fascia ISEE (fino a 3.600\u20AC), documenti, scadenze e procedura INPS. Guida gratuita aggiornata.',
   keywords: ['bonus nido', 'bonus nido 2026', 'bonus asilo nido', 'bonus nido INPS', 'bonus nido ISEE', 'bonus nido importi', 'bonus nido domanda', 'bonus nido requisiti', 'asilo nido rimborso', 'bonus nido come richiederlo'],
   alternates: { canonical: 'https://zeroburocrazia.it/bonus-nido' },

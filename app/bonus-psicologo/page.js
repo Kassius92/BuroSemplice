@@ -11,12 +11,12 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: "Bonus Psicologo 2026: importi fino a 1.500€, requisiti ISEE e domanda INPS",
+  title: "Come Richiedere il Bonus Psicologo nel 2026: fino a 1.500€ e Domanda INPS",
   description: "Bonus psicologo 2026: fino a 1.500€ per sedute di psicoterapia. Requisiti ISEE, importi per fascia, come fare domanda sul portale INPS e graduatorie.",
   keywords: ["bonus psicologo 2026","bonus psicologo","bonus psicologo INPS","bonus psicologo ISEE","bonus psicologo importi","bonus psicologo domanda","contributo psicoterapia","bonus psicologo come richiederlo"],
   alternates: { canonical: 'https://zeroburocrazia.it/bonus-psicologo' },
   openGraph: {
-    title: "Bonus Psicologo 2026: importi fino a 1.500€, requisiti ISEE e domanda INPS",
+    title: "Come Richiedere il Bonus Psicologo nel 2026: fino a 1.500€ e Domanda INPS",
     description: "Bonus psicologo 2026: fino a 1.500€ per sedute di psicoterapia. Requisiti ISEE, importi per fascia, come fare domanda sul portale INPS e graduatorie.",
     url: 'https://zeroburocrazia.it/bonus-psicologo',
     type: 'article',
@@ -53,7 +53,7 @@ const faqItems = [
 export default function GuidePage() {
   const schemas = [
     articleSchema({
-      title: "Bonus Psicologo 2026: importi fino a 1.500€, requisiti ISEE e domanda INPS",
+      title: "Come Richiedere il Bonus Psicologo nel 2026: fino a 1.500€, requisiti ISEE e domanda INPS",
       description: "Bonus psicologo 2026: fino a 1.500€ per sedute di psicoterapia. Requisiti ISEE, importi per fascia, come fare domanda sul portale INPS e graduatorie.",
       url: '/bonus-psicologo',
       image: 'ogbonuspsicologo.png',

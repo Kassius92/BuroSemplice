@@ -13,12 +13,12 @@ import CalcRistrutturare from '@/components/CalcRistrutturare';
 import Tip from '@/components/Tip';
 
 export const metadata = {
-  title: 'Ristrutturare Casa nel 2026: Bonus, Detrazioni, Permessi e Costi',
+  title: 'Come Ristrutturare Casa nel 2026: Bonus, Detrazioni e Permessi',
   description: 'Ristrutturare casa nel 2026: bonus ristrutturazione 50%, ecobonus, superbonus residuo, permessi comunali, preventivi e detrazioni fiscali. Guida gratuita.',
   keywords: ["ristrutturazione casa", "bonus ristrutturazione 2026", "detrazione 50", "CILA", "SCIA", "bonifico parlante", "bonus mobili", "ecobonus", "permesso lavori", "ristrutturare casa"],
   alternates: { canonical: 'https://zeroburocrazia.it/ristrutturare' },
   openGraph: {
-    title: 'Ristrutturare Casa nel 2026: Bonus, Detrazioni, Permessi e Costi',
+    title: 'Come Ristrutturare Casa nel 2026: Bonus, Detrazioni e Permessi',
     description: 'Ristrutturare casa nel 2026: bonus ristrutturazione 50%, ecobonus, superbonus residuo, permessi comunali, preventivi e detrazioni fiscali. Guida gratuita.',
     url: 'https://zeroburocrazia.it/ristrutturare',
     type: 'article',
@@ -26,7 +26,7 @@ export const metadata = {
     locale: 'it_IT',
     images: [{ url: 'https://zeroburocrazia.it/ogristrutturare.png', width: 1200, height: 630 }],
   },
-  twitter: { card: 'summary_large_image', title: 'Ristrutturare Casa nel 2026: Bonus, Detrazioni, Permessi e Costi', description: 'Ristrutturare casa nel 2026: bonus ristrutturazione 50%, ecobonus, superbonus residuo, permessi comunali, preventivi e detrazioni fiscali. Guida gratuita.', images: ['https://zeroburocrazia.it/ogristrutturare.png'] },
+  twitter: { card: 'summary_large_image', title: 'Come Ristrutturare Casa nel 2026: Bonus, Detrazioni e Permessi', description: 'Ristrutturare casa nel 2026: bonus ristrutturazione 50%, ecobonus, superbonus residuo, permessi comunali, preventivi e detrazioni fiscali. Guida gratuita.', images: ['https://zeroburocrazia.it/ogristrutturare.png'] },
 };
 
 const tocItems = [

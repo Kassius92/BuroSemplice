@@ -11,12 +11,12 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: "Successione ed Eredità 2026: come fare, documenti, costi e imposte",
+  title: "Come Fare la Successione nel 2026: Documenti, Costi, Imposte e Procedura",
   description: "Dichiarazione di successione 2026: quando farla, documenti necessari, imposte, franchigie, costi del CAF e procedura telematica passo per passo.",
   keywords: ["successione","dichiarazione di successione","successione 2026","eredità","successione ereditaria","imposte successione","successione costi","successione documenti","franchigia successione"],
   alternates: { canonical: 'https://zeroburocrazia.it/successione' },
   openGraph: {
-    title: "Successione ed Eredità 2026: come fare, documenti, costi e imposte",
+    title: "Come Fare la Successione nel 2026: Documenti, Costi, Imposte e Procedura",
     description: "Dichiarazione di successione 2026: quando farla, documenti necessari, imposte, franchigie, costi del CAF e procedura telematica passo per passo.",
     url: 'https://zeroburocrazia.it/successione',
     type: 'article',
@@ -53,7 +53,7 @@ const faqItems = [
 export default function GuidePage() {
   const schemas = [
     articleSchema({
-      title: "Successione ed Eredità 2026: come fare, documenti, costi e imposte",
+      title: "Come Fare la Successione nel 2026: Documenti, Costi, Imposte e Procedura",
       description: "Dichiarazione di successione 2026: quando farla, documenti necessari, imposte, franchigie, costi del CAF e procedura telematica passo per passo.",
       url: '/successione',
       image: 'ogsuccessione.png',

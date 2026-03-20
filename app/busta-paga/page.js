@@ -13,7 +13,7 @@ import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 import CalcBustaPaga from '@/components/CalcBustaPaga';
 
 export const metadata = {
-  title: 'Busta Paga 2026: Come Leggerla, Voci, Dal Lordo al Netto',
+  title: 'Come Leggere la Busta Paga nel 2026: Voci, Lordo al Netto e Calcolo',
   description: 'Busta paga 2026: come leggerla voce per voce, dal lordo al netto, trattenute IRPEF, contributi INPS, detrazioni, TFR, ferie e nuove aliquote. Guida gratuita.',
   keywords: ["busta paga", "come leggere busta paga", "busta paga 2026", "lordo netto", "stipendio netto", "trattenute busta paga", "IRPEF busta paga", "contributi INPS", "calcolo stipendio netto", "cedolino"],
   alternates: { canonical: 'https://zeroburocrazia.it/busta-paga' },
@@ -59,6 +59,8 @@ export default function PaginaBustaPaga() {
       description: 'Come leggere la busta paga nel 2026: voci, trattenute IRPEF, contributi INPS, detrazioni, TFR. Guida gratuita.',
       url: '/busta-paga',
       image: 'ogbustapaga.png',
+      datePublished: '2026-03-11',
+      dateModified: '2026-03-11',
     }),
     faqSchema(faqItems),
   ];

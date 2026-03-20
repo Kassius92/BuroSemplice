@@ -12,13 +12,13 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema, howToSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: 'Cambio di Residenza 2026: Come Farlo Online, Documenti e Tempi',
+  title: 'Come Fare il Cambio di Residenza nel 2026: Online, Documenti e Tempi',
   description: 'Cambio di residenza 2026: come farlo online su ANPR con SPID, documenti necessari, tempi, cosa aggiornare dopo e sanzioni. Guida gratuita passo per passo.',
   keywords: ["cambio residenza", "cambio residenza online", "cambio residenza ANPR", "come cambiare residenza", "cambio residenza documenti", "cambio residenza tempi", "cambio residenza 2026", "dichiarazione cambio residenza", "cambio residenza stesso comune", "cambio residenza auto"],
   alternates: { canonical: 'https://zeroburocrazia.it/cambio-residenza' },
   openGraph: {
     type: 'article',
-    title: 'Cambio di Residenza 2026: Come Farlo Online, Documenti e Tempi',
+    title: 'Come Fare il Cambio di Residenza nel 2026: Online, Documenti e Tempi',
     description: 'Cambio di residenza 2026: come farlo online su ANPR con SPID, documenti necessari, tempi, cosa aggiornare dopo e sanzioni. Guida gratuita passo per passo.',
     url: 'https://zeroburocrazia.it/cambio-residenza',
     siteName: 'ZeroBurocrazia',
@@ -27,7 +27,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cambio di Residenza 2026: Come Farlo Online, Documenti e Tempi',
+    title: 'Come Fare il Cambio di Residenza nel 2026: Online, Documenti e Tempi',
     description: 'Cambio di residenza 2026: come farlo online su ANPR con SPID, documenti necessari, tempi, cosa aggiornare dopo e sanzioni. Guida gratuita passo per passo.',
     images: ['https://zeroburocrazia.it/ogcambioresidenza.png'],
   },
@@ -62,6 +62,8 @@ export default function PaginaCambioResidenza() {
       description: 'Come cambiare residenza nel 2026: procedura online su ANPR, documenti, tempi, cosa aggiornare dopo e sanzioni. Guida gratuita aggiornata.',
       url: '/cambio-residenza',
       image: 'ogcambioresidenza.png',
+      datePublished: '2026-03-11',
+      dateModified: '2026-03-11',
     }),
     faqSchema(faqItems),
     howToSchema({

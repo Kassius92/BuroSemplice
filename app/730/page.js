@@ -12,7 +12,7 @@ import Calculator730 from '@/components/Calculator730';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: '730 Precompilato 2026: Come Farlo, Detrazioni, Scadenze e Rimborso',
+  title: 'Come Fare il 730 nel 2026: Detrazioni, Scadenze e Rimborso',
   description: 'Guida completa al 730 precompilato 2026: chi deve farlo, tutte le detrazioni, documenti necessari, scadenze aggiornate e come ottenere il massimo rimborso. Gratis.',
   keywords: ['730', '730 2026', 'dichiarazione redditi', '730 precompilato', 'come fare 730', 'detrazioni fiscali', 'scadenza 730', 'modello 730', '730 online', 'CAF 730'],
   alternates: { canonical: 'https://zeroburocrazia.it/730' },

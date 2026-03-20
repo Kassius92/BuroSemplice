@@ -14,12 +14,12 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: 'Dimissioni Volontarie Online 2026: Procedura, Preavviso e TFR',
+  title: 'Come Dare le Dimissioni nel 2026: Procedura Online, Preavviso e TFR',
   description: 'Come dare le dimissioni volontarie online nel 2026: procedura telematica INPS, giorni di preavviso per CCNL, revoca entro 7 giorni, TFR e ultima busta paga. Guida gratuita.',
   keywords: ["dimissioni", "dimissioni volontarie", "dimissioni online", "preavviso dimissioni", "come dare dimissioni", "TFR dimissioni", "giusta causa", "ClicLavoro", "ultima busta paga", "ferie non godute"],
   alternates: { canonical: 'https://zeroburocrazia.it/dimissioni' },
   openGraph: {
-    title: 'Dimissioni Volontarie Online 2026: Procedura, Preavviso e TFR',
+    title: 'Come Dare le Dimissioni nel 2026: Procedura Online, Preavviso e TFR',
     description: 'Come dare le dimissioni volontarie online nel 2026: procedura telematica INPS, giorni di preavviso per CCNL, revoca entro 7 giorni, TFR e ultima busta paga. Guida gratuita.',
     url: 'https://zeroburocrazia.it/dimissioni',
     type: 'article',
@@ -27,7 +27,7 @@ export const metadata = {
     locale: 'it_IT',
     images: [{ url: 'https://zeroburocrazia.it/ogdimissioni.png', width: 1200, height: 630 }],
   },
-  twitter: { card: 'summary_large_image', title: 'Dimissioni Volontarie Online 2026: Procedura, Preavviso e TFR', description: 'Come dare le dimissioni volontarie online nel 2026: procedura telematica INPS, giorni di preavviso per CCNL, revoca entro 7 giorni, TFR e ultima busta paga. Guida gratuita.', images: ['https://zeroburocrazia.it/ogdimissioni.png'] },
+  twitter: { card: 'summary_large_image', title: 'Come Dare le Dimissioni nel 2026: Procedura Online, Preavviso e TFR', description: 'Come dare le dimissioni volontarie online nel 2026: procedura telematica INPS, giorni di preavviso per CCNL, revoca entro 7 giorni, TFR e ultima busta paga. Guida gratuita.', images: ['https://zeroburocrazia.it/ogdimissioni.png'] },
 };
 
 const tocItems = [

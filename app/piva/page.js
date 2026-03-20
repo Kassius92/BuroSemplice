@@ -15,12 +15,12 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: 'Aprire Partita IVA nel 2026: Costi, Tasse, Forfettario e Procedura',
+  title: 'Come Aprire la Partita IVA nel 2026: Costi, Tasse e Forfettario',
   description: 'Come aprire partita IVA nel 2026: regime forfettario o ordinario, costi reali, tasse, contributi INPS, codice ATECO e procedura online. Guida gratuita.',
   keywords: ["partita IVA", "aprire partita IVA", "partita IVA 2026", "regime forfettario", "codice ATECO", "contributi INPS", "P.IVA costi", "commercialista", "partita IVA online", "quanto si paga"],
   alternates: { canonical: 'https://zeroburocrazia.it/piva' },
   openGraph: {
-    title: 'Aprire Partita IVA nel 2026: Costi, Tasse, Forfettario e Procedura',
+    title: 'Come Aprire la Partita IVA nel 2026: Costi, Tasse e Forfettario',
     description: 'Come aprire partita IVA nel 2026: regime forfettario o ordinario, costi reali, tasse, contributi INPS, codice ATECO e procedura online. Guida gratuita.',
     url: 'https://zeroburocrazia.it/piva',
     type: 'article',

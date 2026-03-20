@@ -11,7 +11,7 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: "Assegno di Inclusione 2026 (ex RdC): requisiti, importi e come fare domanda",
+  title: "Come Richiedere l\u2019Assegno di Inclusione nel 2026: Requisiti, Importi e Domanda",
   description: "Assegno di Inclusione 2026: chi ne ha diritto, quanto spetta, requisiti ISEE, come fare domanda INPS e novità della Legge di Bilancio.",
   keywords: ["assegno di inclusione","assegno inclusione 2026","ADI 2026","ex reddito di cittadinanza","assegno inclusione requisiti","assegno inclusione importi","assegno inclusione ISEE","assegno inclusione domanda"],
   alternates: { canonical: 'https://zeroburocrazia.it/assegno-inclusione' },

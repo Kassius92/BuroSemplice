@@ -12,7 +12,7 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: 'Bonus Mobili 2026: Come Funziona, Cosa Si Pu\u00f2 Comprare, Detrazione 50%',
+  title: 'Come Ottenere il Bonus Mobili nel 2026: Detrazione 50% e Cosa Comprare',
   description: 'Bonus mobili 2026: detrazione 50% fino a 5.000\u20ac per mobili ed elettrodomestici con ristrutturazione. Cosa si pu\u00f2 comprare, come pagare, come detrarre. Guida gratuita.',
   keywords: ["bonus mobili", "bonus mobili 2026", "detrazione mobili", "bonus elettrodomestici", "bonus mobili ristrutturazione", "bonus mobili come funziona", "bonus arredi", "detrazione 50% mobili", "bonus mobili 5000 euro", "bonus mobili 730"],
   alternates: { canonical: 'https://zeroburocrazia.it/bonus-mobili' },
@@ -61,6 +61,8 @@ export default function PaginaBonusMobili() {
       description: 'Bonus mobili 2026: detrazione 50% fino a 5.000\u20ac per mobili ed elettrodomestici con ristrutturazione. Guida gratuita aggiornata.',
       url: '/bonus-mobili',
       image: 'ogbonusmobili.png',
+      datePublished: '2026-03-11',
+      dateModified: '2026-03-11',
     }),
     faqSchema(faqItems),
   ];

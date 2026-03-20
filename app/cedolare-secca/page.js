@@ -13,7 +13,7 @@ import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 import CalcCedolare from '@/components/CalcCedolare';
 
 export const metadata = {
-  title: 'Cedolare Secca 2026: Cos\u2019è, Aliquote 10% e 21%, Calcolo e Quando Conviene',
+  title: 'Come Funziona la Cedolare Secca nel 2026: Aliquote, Calcolo e Quando Conviene',
   description: 'Cedolare secca 2026: cos\u2019è, come funziona, aliquote 21% e 10%, quando conviene rispetto all\u2019IRPEF, come si paga con F24, novità affitti brevi. Guida gratuita.',
   keywords: ["cedolare secca", "cedolare secca 2026", "cedolare secca cos'è", "cedolare secca calcolo", "cedolare secca aliquota", "cedolare secca affitti brevi", "cedolare secca canone concordato", "cedolare secca F24", "cedolare secca quando conviene", "cedolare secca 10%"],
   alternates: { canonical: 'https://zeroburocrazia.it/cedolare-secca' },
@@ -61,6 +61,8 @@ export default function PaginaCedolareSecca() {
       description: 'Guida completa alla cedolare secca: aliquote 21% e 10%, confronto IRPEF, affitti brevi 2026, F24 e scadenze.',
       url: '/cedolare-secca',
       image: 'ogcedolaresecca.png',
+      datePublished: '2026-03-11',
+      dateModified: '2026-03-11',
     }),
     faqSchema(faqItems),
   ];

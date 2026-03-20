@@ -12,12 +12,12 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: "ISEE 2026: Come Farlo, Documenti Necessari, Costi e Simulazione",
+  title: "Come Fare l’ISEE nel 2026: Documenti, Costi e Simulazione",
   description: "ISEE 2026: come si fa, documenti necessari, dove farlo gratis, quanto vale, simulazione online e a cosa serve. Guida gratuita aggiornata.",
   keywords: ["ISEE", "ISEE 2026", "come fare ISEE", "ISEE online", "DSU", "documenti ISEE", "ISEE precompilato", "calcolo ISEE", "CAF ISEE gratis", "ISEE corrente"],
   alternates: { canonical: 'https://zeroburocrazia.it/isee' },
   openGraph: {
-    title: "ISEE 2026: Come Farlo, Documenti Necessari, Costi e Simulazione",
+    title: "Come Fare l’ISEE nel 2026: Documenti, Costi e Simulazione",
     description: "ISEE 2026: come si fa, documenti necessari, dove farlo gratis, quanto vale, simulazione online e a cosa serve. Guida gratuita aggiornata.",
     url: 'https://zeroburocrazia.it/isee',
     type: 'article',
@@ -28,7 +28,7 @@ export const metadata = {
   twitter: {
     card: 'summary',
     images: ['https://zeroburocrazia.it/ogisee.png'],
-    title: "ISEE 2026: Come Farlo, Documenti Necessari, Costi e Simulazione",
+    title: "Come Fare l’ISEE nel 2026: Documenti, Costi e Simulazione",
     description: "ISEE 2026: come si fa, documenti necessari, dove farlo gratis, quanto vale, simulazione online e a cosa serve. Guida gratuita aggiornata.",
   },
 };

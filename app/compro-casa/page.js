@@ -13,12 +13,12 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: 'Comprare Casa nel 2026: Mutuo, Bonus Prima Casa, Costi e Documenti',
+  title: 'Come Comprare Casa nel 2026: Mutuo, Bonus Prima Casa e Costi',
   description: 'Comprare casa nel 2026: come funziona il mutuo, bonus prima casa, imposte, notaio, costi nascosti e documenti necessari. Guida gratuita completa.',
   keywords: ["comprare casa", "acquisto casa 2026", "prima casa agevolazioni", "mutuo casa", "rogito", "compromesso", "spese notaio", "caparra", "imposta registro", "costi acquisto casa"],
   alternates: { canonical: 'https://zeroburocrazia.it/compro-casa' },
   openGraph: {
-    title: 'Comprare Casa nel 2026: Mutuo, Bonus Prima Casa, Costi e Documenti',
+    title: 'Come Comprare Casa nel 2026: Mutuo, Bonus Prima Casa e Costi',
     description: 'Comprare casa nel 2026: come funziona il mutuo, bonus prima casa, imposte, notaio, costi nascosti e documenti necessari. Guida gratuita completa.',
     url: 'https://zeroburocrazia.it/compro-casa',
     type: 'article',

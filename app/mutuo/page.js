@@ -12,7 +12,7 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: 'Mutuo Prima Casa 2026: Come Funziona, Requisiti, Garanzia Consap e Tassi',
+  title: 'Come Richiedere il Mutuo Prima Casa nel 2026: Requisiti, Tassi e Garanzia',
   description: 'Mutuo prima casa 2026: come funziona, requisiti, garanzia Consap under 36, documenti necessari, tassi fisso e variabile, quanto puoi chiedere. Guida gratuita.',
   keywords: ["mutuo prima casa", "mutuo 2026", "mutuo under 36", "mutuo Consap", "garanzia mutuo", "mutuo tasso fisso", "come chiedere mutuo", "requisiti mutuo", "mutuo 100%", "mutuo giovani"],
   alternates: { canonical: 'https://zeroburocrazia.it/mutuo' },
@@ -62,6 +62,8 @@ export default function PaginaMutuo() {
       description: 'Come ottenere un mutuo prima casa nel 2026: requisiti, garanzia Consap, tasso fisso o variabile, documenti, detrazioni. Guida gratuita aggiornata.',
       url: '/mutuo',
       image: 'ogmutuo.png',
+      datePublished: '2026-03-11',
+      dateModified: '2026-03-11',
     }),
     faqSchema(faqItems),
   ];

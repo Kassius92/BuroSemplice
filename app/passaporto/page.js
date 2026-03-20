@@ -12,7 +12,7 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema, howToSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: 'Passaporto 2026: Come Richiederlo, Costi, Documenti e Tempi di Rilascio',
+  title: 'Come Fare il Passaporto nel 2026: Costi, Documenti e Tempi',
   description: 'Passaporto 2026: come richiederlo online, costo 116\u20ac, documenti necessari, tempi, prenotazione in Questura e novit\u00e0 PagoPA. Guida gratuita passo per passo.',
   keywords: ["passaporto", "passaporto 2026", "come fare passaporto", "costo passaporto", "rinnovo passaporto", "passaporto elettronico", "prenotazione passaporto", "documenti passaporto", "passaporto online", "passaporto urgente"],
   alternates: { canonical: 'https://zeroburocrazia.it/passaporto' },
@@ -58,6 +58,8 @@ export default function PaginaPassaporto() {
       description: 'Come richiedere il passaporto nel 2026: prenotazione, documenti, costo 116\u20ac, tempi di rilascio e urgenze.',
       url: '/passaporto',
       image: 'ogpassaporto.png',
+      datePublished: '2026-03-11',
+      dateModified: '2026-03-11',
     }),
     faqSchema(faqItems),
     howToSchema({

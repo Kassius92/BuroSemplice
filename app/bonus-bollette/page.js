@@ -11,7 +11,7 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: 'Bonus Bollette Luce e Gas 2026: requisiti ISEE, importi e come ottenerlo',
+  title: 'Come Ottenere il Bonus Bollette nel 2026: Requisiti ISEE e Importi',
   description: 'Bonus bollette luce e gas 2026: chi ne ha diritto, quanto vale, come si ottiene. Guida completa e aggiornata con importi ARERA e soglie ISEE.',
   keywords: ['bonus bollette 2026', 'bonus luce e gas', 'bonus sociale elettrico', 'bonus sociale gas', 'ISEE bollette', 'sconto bollette', 'ARERA bonus', 'bonus energia 2026', 'bonus bollette requisiti', 'bonus bollette come ottenerlo'],
   alternates: { canonical: 'https://zeroburocrazia.it/bonus-bollette' },

@@ -11,12 +11,12 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: "Codice Fiscale: cos'è, come richiederlo, duplicato online e neonati",
+  title: "Come Richiedere il Codice Fiscale: Duplicato Online, Neonati e Stranieri",
   description: "Codice fiscale: come richiederlo per la prima volta, duplicato online, neonati, stranieri. Procedura Agenzia delle Entrate e tessera sanitaria.",
   keywords: ["codice fiscale","codice fiscale online","richiesta codice fiscale","duplicato codice fiscale","codice fiscale neonato","codice fiscale stranieri","tessera sanitaria","codice fiscale smarrito"],
   alternates: { canonical: 'https://zeroburocrazia.it/codice-fiscale' },
   openGraph: {
-    title: "Codice Fiscale: cos'è, come richiederlo, duplicato online e neonati",
+    title: "Come Richiedere il Codice Fiscale: Duplicato Online, Neonati e Stranieri",
     description: "Codice fiscale: come richiederlo per la prima volta, duplicato online, neonati, stranieri. Procedura Agenzia delle Entrate e tessera sanitaria.",
     url: 'https://zeroburocrazia.it/codice-fiscale',
     type: 'article',
@@ -50,7 +50,7 @@ const faqItems = [
 export default function GuidePage() {
   const schemas = [
     articleSchema({
-      title: "Codice Fiscale: cos'è, come richiederlo, duplicato online e neonati",
+      title: "Come Richiedere il Codice Fiscale: Duplicato Online, Neonati e Stranieri",
       description: "Codice fiscale: come richiederlo per la prima volta, duplicato online, neonati, stranieri. Procedura Agenzia delle Entrate e tessera sanitaria.",
       url: '/codice-fiscale',
       image: 'ogcodicefiscale.png',

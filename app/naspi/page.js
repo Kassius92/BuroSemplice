@@ -13,12 +13,12 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: 'NASpI 2026: Requisiti, Importo, Durata e Come Fare Domanda',
+  title: 'Come Richiedere la NASpI nel 2026: Requisiti, Importo e Durata',
   description: 'NASpI 2026: chi ne ha diritto, come si calcola, quanto dura, come fare domanda INPS entro 68 giorni e novità sulla NASpI anticipata. Guida gratuita aggiornata.',
   keywords: ["NASpI", "NASpI 2026", "disoccupazione", "indennità disoccupazione", "come richiedere NASpI", "NASpI importo", "NASpI durata", "NASpI requisiti", "NASpI anticipata", "licenziamento"],
   alternates: { canonical: 'https://zeroburocrazia.it/naspi' },
   openGraph: {
-    title: 'NASpI 2026: Requisiti, Importo, Durata e Come Fare Domanda',
+    title: 'Come Richiedere la NASpI nel 2026: Requisiti, Importo e Durata',
     description: 'NASpI 2026: chi ne ha diritto, come si calcola, quanto dura, come fare domanda INPS entro 68 giorni e novità sulla NASpI anticipata. Guida gratuita aggiornata.',
     url: 'https://zeroburocrazia.it/naspi',
     type: 'article',
@@ -26,7 +26,7 @@ export const metadata = {
     locale: 'it_IT',
     images: [{ url: 'https://zeroburocrazia.it/ognaspi.png', width: 1200, height: 630 }],
   },
-  twitter: { card: 'summary_large_image', title: 'NASpI 2026: Requisiti, Importo, Durata e Come Fare Domanda', description: 'NASpI 2026: chi ne ha diritto, come si calcola, quanto dura, come fare domanda INPS entro 68 giorni e novità sulla NASpI anticipata. Guida gratuita aggiornata.', images: ['https://zeroburocrazia.it/ognaspi.png'] },
+  twitter: { card: 'summary_large_image', title: 'Come Richiedere la NASpI nel 2026: Requisiti, Importo e Durata', description: 'NASpI 2026: chi ne ha diritto, come si calcola, quanto dura, come fare domanda INPS entro 68 giorni e novità sulla NASpI anticipata. Guida gratuita aggiornata.', images: ['https://zeroburocrazia.it/ognaspi.png'] },
 };
 
 const tocItems = [

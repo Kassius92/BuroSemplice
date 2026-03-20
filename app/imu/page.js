@@ -13,7 +13,7 @@ import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 import CalcIMU from '@/components/CalcIMU';
 
 export const metadata = {
-  title: 'IMU 2026: Calcolo, Aliquote, Esenzioni, Scadenze e Come Pagarla',
+  title: 'Come Calcolare e Pagare l\u2019IMU nel 2026: Aliquote, Esenzioni e Scadenze',
   description: 'IMU 2026: chi paga, chi \u00e8 esente, come si calcola, aliquote, scadenze 16 giugno e 16 dicembre, F24. Prima casa esente, seconda casa, comodato. Guida gratuita.',
   keywords: ["IMU", "IMU 2026", "calcolo IMU", "IMU prima casa", "IMU seconda casa", "esenzione IMU", "aliquote IMU", "scadenze IMU", "F24 IMU", "rendita catastale"],
   alternates: { canonical: 'https://zeroburocrazia.it/imu' },
@@ -60,6 +60,8 @@ export default function PaginaIMU() {
       description: 'Come calcolare l\u2019IMU nel 2026: chi paga, chi \u00e8 esente, formula, aliquote, scadenze e F24.',
       url: '/imu',
       image: 'ogimu.png',
+      datePublished: '2026-03-11',
+      dateModified: '2026-03-11',
     }),
     faqSchema(faqItems),
   ];

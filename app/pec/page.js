@@ -12,7 +12,7 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema, howToSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: 'PEC 2026: Cos\u2019\u00e8, Come Attivarla, Costi e Quando \u00e8 Obbligatoria',
+  title: 'Come Attivare la PEC nel 2026: Costi, Obblighi e Domicilio Digitale',
   description: 'PEC 2026: cos\u2019\u00e8 la posta elettronica certificata, come attivarla, quanto costa, quando \u00e8 obbligatoria e come usarla come domicilio digitale. Guida gratuita.',
   keywords: ["PEC", "posta elettronica certificata", "PEC 2026", "come attivare PEC", "PEC obbligatoria", "PEC gratuita", "domicilio digitale", "INAD", "PEC costo", "PEC Poste"],
   alternates: { canonical: 'https://zeroburocrazia.it/pec' },
@@ -57,6 +57,8 @@ export default function PaginaPec() {
       description: 'Guida completa alla PEC: come attivarla, quanto costa, chi \u00e8 obbligato e come usarla come domicilio digitale.',
       url: '/pec',
       image: 'ogpec.png',
+      datePublished: '2026-03-11',
+      dateModified: '2026-03-11',
     }),
     faqSchema(faqItems),
     howToSchema({

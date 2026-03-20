@@ -12,7 +12,7 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: 'Congedo Parentale 2026: Mesi, Indennit\u00e0 80%, Come Fare Domanda INPS',
+  title: 'Come Richiedere il Congedo Parentale nel 2026: Mesi, 80% e Domanda INPS',
   description: 'Congedo parentale 2026: quanti mesi spettano, indennit\u00e0 80% e 30%, novit\u00e0 fino a 14 anni, come fare domanda INPS. Guida gratuita per mamme e pap\u00e0.',
   keywords: ["congedo parentale", "congedo parentale 2026", "congedo parentale INPS", "indennit\u00e0 congedo parentale", "congedo parentale 80%", "congedo facoltativo", "mesi congedo parentale", "domanda congedo parentale", "congedo parentale padre", "congedo maternit\u00e0 facoltativo"],
   alternates: { canonical: 'https://zeroburocrazia.it/congedo-parentale' },
@@ -62,6 +62,8 @@ export default function PaginaCongedoParentale() {
       description: 'Come funziona il congedo parentale nel 2026: durata, indennit\u00e0 80% e 30%, novit\u00e0 14 anni, come fare domanda INPS. Guida gratuita.',
       url: '/congedo-parentale',
       image: 'ogcongedoparentale.png',
+      datePublished: '2026-03-11',
+      dateModified: '2026-03-11',
     }),
     faqSchema(faqItems),
   ];

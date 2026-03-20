@@ -12,7 +12,7 @@ import VersionToggle from '@/components/VersionToggle';
 import SchemaOrg, { articleSchema, faqSchema, howToSchema } from '@/components/SchemaOrg';
 
 export const metadata = {
-  title: 'Carta d\u2019Identit\u00e0 Elettronica (CIE) 2026: Come Richiederla, Costi e Tempi',
+  title: 'Come Fare la CIE nel 2026: Carta d\u2019Identit\u00e0 Elettronica, Costi e Tempi',
   description: 'CIE 2026: come richiedere la carta d\u2019identit\u00e0 elettronica, documenti, costi (22,21\u20ac), tempi, app CieID e scadenza cartacea 3 agosto 2026. Guida gratuita.',
   keywords: ["carta identit\u00e0 elettronica", "CIE", "CIE 2026", "come richiedere CIE", "costo carta identit\u00e0", "rinnovo carta identit\u00e0", "CIE documenti", "carta identit\u00e0 scaduta", "prenotazione CIE", "CieID app"],
   alternates: { canonical: 'https://zeroburocrazia.it/cie' },
@@ -61,6 +61,8 @@ export default function PaginaCie() {
       description: 'Come richiedere la CIE nel 2026: costi, tempi, documenti, app CieID e scadenza carta cartacea. Guida gratuita.',
       url: '/cie',
       image: 'ogcie.png',
+      datePublished: '2026-03-11',
+      dateModified: '2026-03-11',
     }),
     faqSchema(faqItems),
     howToSchema({
