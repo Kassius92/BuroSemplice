@@ -58,6 +58,10 @@ export const categories = [
         { name: 'Divorzio', href: '#', soon: true },
         { name: 'Successione ed eredità', href: '/successione' },
       ]},
+      { title: 'Salute e assistenza', links: [
+        { name: 'Legge 104', href: '/legge-104' },
+        { name: 'Esenzione ticket', href: '/esenzione-ticket' },
+      ]},
       { title: 'Eredità', links: [
         { name: 'Successione', href: '#', soon: true },
         { name: 'Testamento', href: '#', soon: true },

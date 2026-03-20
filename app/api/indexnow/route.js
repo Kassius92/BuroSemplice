@@ -52,6 +52,7 @@ const URLS = [
   '/cie/scadenza-cartacea',
   '/mutuo/tassi-2026',
   '/dimissioni/preavviso',
+  '/legge-104',
   '/novita',
   '/chi-siamo',
   '/contatti',

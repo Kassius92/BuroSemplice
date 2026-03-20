@@ -307,4 +307,13 @@ export const searchIndex = [
   { keywords: ["carta identit\u00e0 cartacea scadenza","scadenza carta identit\u00e0 2026","agosto 2026","CIE rinnovo","carta identit\u00e0 cartacea valida"], guide: "Scadenza Carta Cartacea", href: '/cie/scadenza-cartacea', desc: "Carta identit\u00e0 cartacea: scade agosto 2026" },
   { keywords: ["tassi mutuo 2026","mutuo tasso fisso","mutuo tasso variabile","Euribor 2026","surroga mutuo","mutuo prima casa tassi"], guide: "Tassi Mutuo 2026", href: '/mutuo/tassi-2026', desc: "Tassi mutuo 2026: fisso vs variabile" },
   { keywords: ["preavviso dimissioni","giorni preavviso","preavviso CCNL","preavviso commercio","preavviso metalmeccanico","dimissioni senza preavviso"], guide: "Preavviso Dimissioni", href: '/dimissioni/preavviso', desc: "Giorni di preavviso per le dimissioni" },
+
+  // ═══ LEGGE 104 NEL 2026 ═══
+  { keywords: ["legge 104","104","legge 104 2026","disabilità legge","handicap grave"], guide: "Legge 104 nel 2026", href: '/legge-104', desc: "Legge 104: guida completa a permessi e agevolazioni" },
+  { keywords: ["permessi 104","3 giorni 104","permessi legge 104 lavoro","permessi retribuiti 104","ore permesso 104"], guide: "Legge 104 nel 2026", href: '/legge-104#permessi', desc: "Permessi lavorativi Legge 104: 3 giorni al mese" },
+  { keywords: ["congedo straordinario","congedo 104","congedo 2 anni","congedo retribuito disabilità"], guide: "Legge 104 nel 2026", href: '/legge-104#congedo', desc: "Congedo straordinario 2 anni Legge 104" },
+  { keywords: ["agevolazioni 104 auto","IVA 4% auto disabili","bollo auto 104","detrazione auto disabilità"], guide: "Legge 104 nel 2026", href: '/legge-104#agevolazioni', desc: "Agevolazioni auto e fiscali Legge 104" },
+  { keywords: ["come richiedere 104","domanda 104 INPS","procedura legge 104","visita commissione ASL"], guide: "Legge 104 nel 2026", href: '/legge-104#domanda', desc: "Come richiedere la Legge 104" },
+  { keywords: ["104 comma 3","handicap grave","art 3 comma 3","differenza comma 1 comma 3"], guide: "Legge 104 nel 2026", href: '/legge-104#cose', desc: "Differenza tra comma 1 e comma 3" },
+  { keywords: ["104 genitore anziano","104 familiare","caregiver 104","referente unico"], guide: "Legge 104 nel 2026", href: '/legge-104#chi', desc: "Legge 104 per familiari: chi ne ha diritto" },
 ];

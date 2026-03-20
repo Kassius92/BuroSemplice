@@ -41,6 +41,7 @@ export const categoriesGuide = [
       { emoji: '\u{1F3EB}', name: 'Bonus nido', href: '/bonus-nido', desc: 'Fino a 3.600\u20AC/anno', tag: '\u{1F4B0} Bonus' },
       { emoji: '\u{1F48D}', name: 'Mi sposo', href: '/mi-sposo', desc: 'Documenti e procedura', tag: '\u{1F4D6} Completa' },
       { emoji: '📜', name: 'Successione', href: '/successione', desc: 'Eredità e dichiarazione', tag: '📖 Completa' },
+      { emoji: '♿', name: 'Legge 104', href: '/legge-104', desc: 'Permessi e agevolazioni disabilità', tag: '📖 Completa' },
     ],
   },
   {
