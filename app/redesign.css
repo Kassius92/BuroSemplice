@@ -262,7 +262,8 @@
 .v8-nav{position:sticky;top:0;z-index:100;background:rgba(250,248,244,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.04);padding:0 40px;height:64px;display:flex;align-items:center;gap:16px}
 .v8-nav-s{box-shadow:0 2px 20px rgba(0,0,0,.04)}
 .v8-nav-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;text-decoration:none;color:var(--v8-ink)}
-.v8-nav-logo-icon{width:32px;height:32px;background:var(--v8-green);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:13px}
+.v8-nav-logo-img{width:32px;height:32px;border-radius:8px;object-fit:contain;flex-shrink:0;transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
+.v8-nav-logo:hover .v8-nav-logo-img{transform:rotate(-5deg) scale(1.08)}
 .v8-nav-links{display:flex;gap:4px;margin-left:auto}
 .v8-nav-links a{font-size:14px;font-weight:500;color:var(--v8-soft);padding:7px 14px;border-radius:10px;transition:all .25s;text-decoration:none}
 .v8-nav-links a:hover{color:var(--v8-ink);background:var(--v8-warm)}

@@ -37,7 +37,7 @@ export default function NavV8() {
 
         {/* Logo */}
         <Link href="/" className="v8-nav-logo">
-          <div className="v8-nav-logo-icon">ZB</div>
+          <img src="/logo-z.webp" alt="ZeroBurocrazia" className="v8-nav-logo-img" width="32" height="32" />
           ZeroBurocrazia
         </Link>
 

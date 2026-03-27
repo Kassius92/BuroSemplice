@@ -7,7 +7,7 @@ export default function FooterV8() {
       <div className="v8-ft-inner">
         <div className="v8-ft-brand-col">
           <div className="v8-ft-brand">
-            <div className="v8-ft-brand-icon">ZB</div>
+            <img src="/logo-z.webp" alt="ZeroBurocrazia" width="24" height="24" style={{ borderRadius: '6px' }} />
             ZeroBurocrazia
           </div>
           <p className="v8-ft-desc">La burocrazia italiana spiegata in italiano. Gratis, aggiornato, senza paroloni.</p>
