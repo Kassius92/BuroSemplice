@@ -1,5 +1,6 @@
 import './globals.css';
-import { DM_Sans, Playfair_Display } from 'next/font/google';
+import './redesign.css';
+import { DM_Sans, Playfair_Display, DM_Serif_Display, Plus_Jakarta_Sans } from 'next/font/google';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -14,6 +15,22 @@ const playfair = Playfair_Display({
   weight: ['700'],
   style: ['normal', 'italic'],
   variable: '--font-playfair',
+  display: 'swap',
+});
+
+/* ── Redesign V8 fonts ── */
+const dmSerif = DM_Serif_Display({
+  subsets: ['latin'],
+  weight: ['400'],
+  style: ['normal', 'italic'],
+  variable: '--font-sf',
+  display: 'swap',
+});
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-sn',
   display: 'swap',
 });
 
@@ -49,7 +66,7 @@ import CookieBanner from '@/components/CookieBanner';
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="it" className={`${dmSans.variable} ${playfair.variable}`}>
+    <html lang="it" className={`${dmSans.variable} ${playfair.variable} ${dmSerif.variable} ${jakarta.variable}`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: `
           window.dataLayer = window.dataLayer || [];

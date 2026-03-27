@@ -12,6 +12,33 @@
   --accent-blue:#E36414; --accent-blue-h:#CC5810; --accent-blue-light:#FFF0E0;
   --text-1:#353535; --text-2:#4A5568; --text-3:#8A8A9A;
   --white:#FFFFFF; --border:#E8DFD0;
+
+  /* ═══ Redesign V8 — Design System ═══ */
+  --v8-bg:#FAF8F4;
+  --v8-card:#FFFFFF;
+  --v8-warm:#F0EBE3;
+  --v8-sand:#E8E0D4;
+  --v8-ink:#2C2C2C;
+  --v8-ink2:#4A4A46;
+  --v8-soft:#8A857C;
+  --v8-faded:#B5B0A8;
+  --v8-green:#2D8A6E;
+  --v8-green-bg:#E4F3ED;
+  --v8-green-dark:#1F6B54;
+  --v8-coral:#E8724A;
+  --v8-coral-bg:#FDF0EB;
+  --v8-coral-dark:#B5472A;
+  --v8-blue:#5B7EC5;
+  --v8-blue-bg:#ECF0FA;
+  --v8-violet:#8B6CC1;
+  --v8-violet-bg:#F1ECF9;
+  --v8-gold:#C49A2A;
+  --v8-gold-bg:#FBF5E6;
+  --v8-bounce:cubic-bezier(.34,1.56,.64,1);
+  --v8-smooth:cubic-bezier(.22,1,.36,1);
+  --v8-r:16px;
+  --v8-r2:24px;
+  --v8-r3:32px;
 }
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;overscroll-behavior-x:none;}
