@@ -2,9 +2,8 @@
 import { useEffect, useState } from 'react';
 
 /**
- * DotNav — pallini laterali fissi per navigazione sezioni
- * @param {Object} props
- * @param {Array<{id: string, label: string}>} props.sections - Array di {id, label}
+ * DotNav — pallini laterali fissi con etichetta al hover/attivo
+ * @param {Array<{id: string, label: string}>} sections
  */
 export default function DotNav({ sections = [] }) {
   const [active, setActive] = useState(0);
@@ -14,7 +13,7 @@ export default function DotNav({ sections = [] }) {
       let cur = 0;
       sections.forEach((s, i) => {
         const el = document.getElementById(s.id);
-        if (el && window.scrollY >= el.offsetTop - 300) cur = i;
+        if (el && window.scrollY >= el.offsetTop - 200) cur = i;
       });
       setActive(cur);
     };
@@ -24,7 +23,10 @@ export default function DotNav({ sections = [] }) {
   }, [sections]);
 
   const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    const el = document.getElementById(id);
+    if (!el) return;
+    const top = el.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top, behavior: 'smooth' });
   };
 
   if (!sections.length) return null;
@@ -35,10 +37,12 @@ export default function DotNav({ sections = [] }) {
         <button
           key={s.id}
           className={`v8-dot${i === active ? ' on' : ''}`}
-          title={s.label}
           onClick={() => scrollTo(s.id)}
           aria-label={s.label}
-        />
+        >
+          <span className="v8-dot-label">{s.label}</span>
+          <span className="v8-dot-circle" />
+        </button>
       ))}
     </div>
   );

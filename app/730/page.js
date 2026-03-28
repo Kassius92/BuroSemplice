@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import NavV8 from '@/components/redesign/NavV8';
+import DotNav from '@/components/redesign/DotNav';
 import FooterV8 from '@/components/redesign/FooterV8';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 import Calculator730 from '@/components/Calculator730';
@@ -43,6 +44,7 @@ export default function Pagina730() {
     <div className="v8">
       <SchemaOrg schemas={schemas} />
       <Guide730Client />
+      <DotNav sections={[{"id": "quiz", "label": "Lo devo fare?"}, {"id": "cose", "label": "Cos'è il 730"}, {"id": "chi-deve", "label": "Chi deve farlo"}, {"id": "detr", "label": "Cosa recuperi"}, {"id": "percorso", "label": "Come si fa"}, {"id": "documenti", "label": "Documenti"}, {"id": "calcolatore", "label": "Calcolatore"}, {"id": "esempio", "label": "Esempio"}, {"id": "scad", "label": "Scadenze"}, {"id": "faq", "label": "FAQ"}]} />
       <NavV8 />
 
       {/* ═══ 1. HERO ═══ */}

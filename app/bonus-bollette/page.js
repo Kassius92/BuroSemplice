@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import NavV8 from '@/components/redesign/NavV8';
+import DotNav from '@/components/redesign/DotNav';
 import FooterV8 from '@/components/redesign/FooterV8';
 import SchemaOrg, { articleSchema, faqSchema } from '@/components/SchemaOrg';
 import Tip from '@/components/Tip';
@@ -35,6 +36,7 @@ export default function BonusBollettePage() {
     <div className="v8">
       <SchemaOrg schemas={schemas} />
       <GuideClient />
+      <DotNav sections={[{"id": "cose", "label": "Cos'è"}, {"id": "importi", "label": "Importi"}, {"id": "come", "label": "Come ottenerlo"}, {"id": "esempio", "label": "Esempio"}, {"id": "faq", "label": "FAQ"}]} />
       <NavV8 />
 
       <section className="v8-ghero" id="hero" style={{'--glow1':'rgba(232,114,74,.06)'}}>

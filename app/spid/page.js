@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import NavV8 from '@/components/redesign/NavV8';
+import DotNav from '@/components/redesign/DotNav';
 import FooterV8 from '@/components/redesign/FooterV8';
 import SchemaOrg, { articleSchema, faqSchema, howToSchema } from '@/components/SchemaOrg';
 import Tip from '@/components/Tip';
@@ -40,6 +41,7 @@ export default function Page() {
     <div className="v8">
       <SchemaOrg schemas={schemas} />
       <GuideClient />
+      <DotNav sections={[{"id": "cose", "label": "Cos'è lo SPID"}, {"id": "come", "label": "Come si fa"}, {"id": "provider", "label": "I provider"}, {"id": "esempio", "label": "Esempio"}, {"id": "faq", "label": "FAQ"}]} />
       <NavV8 />
 
       {/* HERO */}
