@@ -84,13 +84,15 @@ export default function Page() {
             <p>Sara fattura 30.000&euro;/anno. Regime forfettario, primi 5 anni, Gestione Separata INPS, coefficiente 78%.</p>
           </div>
           <div style={{maxWidth:'600px',margin:'0 auto'}}>
-            <div className="v8-esempio-math">
-              <div className="v8-esempio-line rv"><span>Ricavi annui</span><span>30.000&euro;</span></div>
-              <div className="v8-esempio-line rv rv-d1"><span>Reddito imponibile (78%)</span><span>23.400&euro;</span></div>
-              <div className="v8-esempio-line rv rv-d2"><span>Contributi INPS (26,23%)</span><span>&minus;6.138&euro;</span></div>
-              <div className="v8-esempio-line rv rv-d3"><span>Imposta sostitutiva (5%)</span><span>&minus;863&euro;</span></div>
-              <div className="v8-esempio-line rv rv-d4"><span>Commercialista online</span><span>&minus;400&euro;</span></div>
-              <div className="v8-esempio-line v8-esempio-total rv"><span>Netto in tasca</span><span>~22.600&euro;</span></div>
+            <div className="v8-esempio-inner" style={{background:'var(--v8-dark)',borderRadius:'20px',padding:'32px 28px'}}>
+              <div className="v8-esempio-math" style={{margin:0}}>
+                <div className="v8-esempio-line rv"><span>Ricavi annui</span><span>30.000&euro;</span></div>
+                <div className="v8-esempio-line rv rv-d1"><span>Reddito imponibile (78%)</span><span>23.400&euro;</span></div>
+                <div className="v8-esempio-line rv rv-d2"><span>Contributi INPS (26,23%)</span><span>&minus;6.138&euro;</span></div>
+                <div className="v8-esempio-line rv rv-d3"><span>Imposta sostitutiva (5%)</span><span>&minus;863&euro;</span></div>
+                <div className="v8-esempio-line rv rv-d4"><span>Commercialista online</span><span>&minus;400&euro;</span></div>
+                <div className="v8-esempio-line v8-esempio-total rv"><span>Netto in tasca</span><span>~22.600&euro;</span></div>
+              </div>
             </div>
           </div>
           <div className="v8-prose rv" style={{marginTop:'24px'}}>
