@@ -83,28 +83,18 @@ export default function Page() {
             <h3 style={{fontFamily:'var(--font-sf),Georgia,serif',fontSize:'22px',marginBottom:'12px'}}>Sara, graphic designer, 30.000&euro; di ricavi</h3>
             <p>Sara fattura 30.000&euro;/anno. Regime forfettario, primi 5 anni, Gestione Separata INPS, coefficiente 78%.</p>
           </div>
-        </div>
-      </section>
-
-      <section className="v8-section dark" id="sara-numeri">
-        <div className="v8-esempio-inner">
-          <h2 className="rv">I numeri di <em>Sara</em></h2>
-          <div className="v8-esempio-math">
-            <div className="v8-esempio-line rv"><span>Ricavi annui</span><span>30.000&euro;</span></div>
-            <div className="v8-esempio-line rv rv-d1"><span>Reddito imponibile (78%)</span><span>23.400&euro;</span></div>
-            <div className="v8-esempio-line rv rv-d2"><span>Contributi INPS (26,23%)</span><span>&minus;6.138&euro;</span></div>
-            <div className="v8-esempio-line rv rv-d3"><span>Imposta sostitutiva (5%)</span><span>&minus;863&euro;</span></div>
-            <div className="v8-esempio-line rv rv-d4"><span>Commercialista online</span><span>&minus;400&euro;</span></div>
-            <div className="v8-esempio-line v8-esempio-total rv"><span>Netto in tasca</span><span>~22.600&euro;</span></div>
+          <div style={{maxWidth:'600px',margin:'24px auto 0'}}>
+            <div className="v8-esempio-math">
+              <div className="v8-esempio-line rv"><span>Ricavi annui</span><span>30.000&euro;</span></div>
+              <div className="v8-esempio-line rv rv-d1"><span>Reddito imponibile (78%)</span><span>23.400&euro;</span></div>
+              <div className="v8-esempio-line rv rv-d2"><span>Contributi INPS (26,23%)</span><span>&minus;6.138&euro;</span></div>
+              <div className="v8-esempio-line rv rv-d3"><span>Imposta sostitutiva (5%)</span><span>&minus;863&euro;</span></div>
+              <div className="v8-esempio-line rv rv-d4"><span>Commercialista online</span><span>&minus;400&euro;</span></div>
+              <div className="v8-esempio-line v8-esempio-total rv"><span>Netto in tasca</span><span>~22.600&euro;</span></div>
+            </div>
           </div>
-          <p className="rv" style={{fontSize:'15px',color:'rgba(250,250,247,.4)',marginTop:'24px',lineHeight:'1.7'}}>Sara tiene in tasca il <strong style={{color:'#E4F3ED'}}>75% di quello che fattura</strong>. Il 25% va in contributi (la sua pensione) e tasse.</p>
-        </div>
-      </section>
-
-      <section className="v8-section warm" id="regola-oro">
-        <div className="v8-section-inner">
-          <div className="v8-prose rv">
-            <p>La regola d&apos;oro: <strong>metti da parte il 30% di ogni incasso</strong> fin dal primo giorno. Il secondo anno paghi saldo + primo acconto insieme.</p>
+          <div className="v8-prose rv" style={{marginTop:'24px'}}>
+            <p>Sara tiene in tasca il <strong>75% di quello che fattura</strong>. La regola d&apos;oro: <strong>metti da parte il 30% di ogni incasso</strong> fin dal primo giorno.</p>
           </div>
           <div className="v8-info warn rv" style={{maxWidth:'700px',margin:'24px auto 0'}}>
             <svg className="v8-info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
