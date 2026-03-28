@@ -1,9 +1,15 @@
 'use client';
 import { useEffect } from 'react';
 
-export default function Guide730Client() {
+/**
+ * GuideClient — client-side enhancements per tutte le guide V8
+ * - Scroll reveal bidirezionale su tutti .rv, .rv-scale, .rv-left, .rv-right
+ * - Progress bar di lettura in cima
+ * - FAQ accordion
+ */
+export default function GuideClient() {
   useEffect(() => {
-    // ── Scroll reveal (bidirectional) ──
+    // Scroll reveal globale
     const obs = new IntersectionObserver(
       (entries) => {
         entries.forEach(e => {
@@ -11,60 +17,28 @@ export default function Guide730Client() {
           else e.target.classList.remove('v');
         });
       },
-      { threshold: 0.06, rootMargin: '0px 0px -60px 0px' }
+      { threshold: 0.08, rootMargin: '0px 0px -50px 0px' }
     );
-    document.querySelectorAll('.rv,.rv-scale,.rv-left,.rv-right,.r').forEach(el => obs.observe(el));
+    document.querySelectorAll('.rv,.rv-scale,.rv-left,.rv-right,.rv-tilt,.r').forEach(el => obs.observe(el));
 
-    // ── Progress bar ──
+    // Progress bar
     const prog = document.createElement('div');
     prog.className = 'v8-prog';
     document.body.prepend(prog);
     const onScroll = () => {
-      const pct = Math.min((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100, 100);
-      prog.style.width = pct + '%';
+      prog.style.width = Math.min(
+        (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100, 100
+      ) + '%';
     };
     window.addEventListener('scroll', onScroll, { passive: true });
 
-    // ── Quiz logic ──
-    const qs = {};
-    document.querySelectorAll('.v8-qq-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const q = btn.dataset.q, v = btn.dataset.v;
-        qs[q] = v;
-        btn.parentElement.querySelectorAll('.v8-qq-btn').forEach(b => b.classList.remove('y', 'n'));
-        btn.classList.add(v === 'y' ? 'y' : 'n');
-        if (qs[1] && qs[2] && qs[3]) {
-          const r = document.getElementById('qRes');
-          if (qs[1] === 'n') {
-            r.className = 'v8-quiz-res neg';
-            r.textContent = 'Il 730 non fa per te. Potresti dover usare il Modello Redditi PF.';
-            r.style.display = 'block';
-          } else if (qs[2] === 'y' || qs[3] === 'y') {
-            r.className = 'v8-quiz-res pos';
-            r.textContent = 'Sì, ti conviene! Potresti recuperare un bel rimborso.';
-            r.style.display = 'block';
-          } else {
-            r.className = 'v8-quiz-res pos';
-            r.textContent = 'Non obbligatorio, ma conviene: potresti avere un rimborso dalle spese mediche.';
-            r.style.display = 'block';
-          }
-        }
-      });
-    });
-
-    // ── FAQ accordion ──
-    document.querySelectorAll('[data-faq] .v8-faq-q').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.parentElement;
+    // FAQ accordion
+    document.querySelectorAll('.v8-faq-item').forEach(item => {
+      item.querySelector('.v8-faq-q')?.addEventListener('click', () => {
         const wasOpen = item.classList.contains('open');
-        document.querySelectorAll('[data-faq]').forEach(i => i.classList.remove('open'));
+        document.querySelectorAll('.v8-faq-item').forEach(i => i.classList.remove('open'));
         if (!wasOpen) item.classList.add('open');
       });
-    });
-
-    // ── Detraction cards toggle ──
-    document.querySelectorAll('[data-detr]').forEach(card => {
-      card.addEventListener('click', () => card.classList.toggle('open'));
     });
 
     return () => {

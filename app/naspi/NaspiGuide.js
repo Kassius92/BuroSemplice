@@ -1,4 +1,5 @@
 'use client';
+import GuideClient from '@/components/redesign/GuideClient';
 import Link from 'next/link';
 import NavV8 from '@/components/redesign/NavV8';
 import FooterV8 from '@/components/redesign/FooterV8';
@@ -25,6 +26,7 @@ export default function NaspiGuide({ faqItems }) {
   return (
     <div className="v8">
       <NavV8 />
+      <GuideClient />
 
       <GuideHero
         category="lavoro"

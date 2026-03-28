@@ -40,7 +40,7 @@ export default function GuidePage() {
       {/* HERO */}
       <section className="v8-ghero" id="hero" style={{'--glow1':'rgba(139,92,246,.06)'}}>
         <div className="v8-ghero-inner">
-          <div className="v8-ghero-cat famiglia rv">Famiglia &middot; Aggiornato marzo 2026</div>
+          <div className="v8-ghero-cat salute rv">Salute &middot; Aggiornato marzo 2026</div>
           <h1 className="rv rv-d1">Legge <em>104</em></h1>
           <p className="v8-ghero-sub rv rv-d2">Riconoscimento della disabilit&agrave;, permessi dal lavoro, congedo straordinario, agevolazioni auto e fiscali. Tutto quello che devi sapere.</p>
           <div className="v8-ghero-nums">

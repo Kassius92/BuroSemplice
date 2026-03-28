@@ -12,7 +12,9 @@ export default function TfrGuide({ faqItems }) {
   return (
     <div className="v8">
       <NavV8 />
-
+      <GuideClient />
+      <DotNav sections={[{"id": "cose", "label": "Cos'è"}, {"id": "calcolo", "label": "Come si calcola"}, {"id": "tassazione", "label": "Tassazione"}, {"id": "quando", "label": "Quando lo ricevi"}, {"id": "fondo", "label": "Azienda o fondo"}, {"id": "esempio", "label": "Esempio"}, {"id": "faq", "label": "FAQ"}]} />
+      
       <GuideHero
         category="lavoro"
         categoryLabel="Lavoro &middot; Aggiornato marzo 2026"

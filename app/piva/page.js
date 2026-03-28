@@ -40,9 +40,9 @@ export default function Page() {
       <FiscozenSticky />
 
       {/* HERO */}
-      <section className="v8-ghero" id="hero" style={{'--glow1':'rgba(196,154,42,.06)'}}>
+      <section className="v8-ghero" id="hero" style={{'--glow1':'rgba(232,114,74,.06)'}}>
         <div className="v8-ghero-inner">
-          <div className="v8-ghero-cat lavoro rv">Lavoro &middot; Aggiornato marzo 2026</div>
+          <div className="v8-ghero-cat fisco rv">Fisco e soldi &middot; Aggiornato marzo 2026</div>
           <h1 className="rv rv-d1">Aprire <em>Partita IVA</em> nel 2026</h1>
           <p className="v8-ghero-sub rv rv-d2">Forfettario o ordinario, costi reali, tasse, contributi INPS, codice ATECO. Tutto quello che devi sapere prima di metterti in proprio.</p>
           <div className="v8-ghero-nums">

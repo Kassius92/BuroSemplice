@@ -11,7 +11,9 @@ export default function SpeseMedicheGuide({ faqItems }) {
   return (
     <div className="v8">
       <NavV8 />
-
+      <GuideClient />
+      <DotNav sections={[{"id": "cose", "label": "Come funziona"}, {"id": "elenco", "label": "Cosa detrarre"}, {"id": "pagamento", "label": "Come pagare"}, {"id": "documenti", "label": "Documenti"}, {"id": "errori", "label": "Errori comuni"}, {"id": "esempio", "label": "Esempio"}, {"id": "faq", "label": "FAQ"}]} />
+      
       <GuideHero
         category="fisco"
         categoryLabel="Fisco &middot; Aggiornato marzo 2026"

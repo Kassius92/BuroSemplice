@@ -12,7 +12,9 @@ export default function BustaPagaGuide({ faqItems }) {
   return (
     <div className="v8">
       <NavV8 />
-
+      <GuideClient />
+      <DotNav sections={[{"id": "cose", "label": "Cos'è"}, {"id": "parti", "label": "Le 3 parti"}, {"id": "lordo-netto", "label": "Lordo al netto"}, {"id": "novita", "label": "Novità 2026"}, {"id": "calcolatore", "label": "Calcolatore"}, {"id": "voci", "label": "Voci"}, {"id": "esempio", "label": "Esempio"}, {"id": "faq", "label": "FAQ"}]} />
+      
       <GuideHero
         category="lavoro"
         categoryLabel="Lavoro &middot; Aggiornato marzo 2026"
